@@ -18,7 +18,7 @@
                                     % .-target .-value))}]])
 
 (defn color-components []
-  [:div.colorcomponents 
+  [:div.colorcomponents.mdl-cell.mdl--cell-4-col 
    [color-component :mainbg]
    [color-component :mainfg]
    [color-component :builtin]
@@ -32,6 +32,14 @@
    [color-component :warning]
    [color-component :warning2]])
 
+(defn preview-component []
+  [:div.previewcomponent.mdl-cell.mdl--cell-8-col])
+
+(defn theme-component []
+  [:div.themecomponent.mdl-grid
+   [color-components]
+   [preview-component]])
+
 (defn init []
-  (reagent/render-component [color-components]
+  (reagent/render-component [theme-component]
                             (.getElementById js/document "container")))
