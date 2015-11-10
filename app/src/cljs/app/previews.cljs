@@ -11,7 +11,9 @@
 (defn preview-typescript
   []
   [:div
-   [span-component "import " :keyword]
-   [span-component " {Theme} " :mainfg]
-   [span-component " from " :keyword]
-   [span-component " './Theme' " :string]])
+   [:pre
+    [span-component "import" :keyword]
+    [span-component " {Theme}" :mainfg]
+    [span-component " from " :keyword]
+    [span-component "'./Theme'" :string]
+    [span-component ";" :mainfg]]])
