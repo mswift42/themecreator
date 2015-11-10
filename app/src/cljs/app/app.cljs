@@ -13,10 +13,14 @@
     ]])
 
 (defn color-component [facename]
-  [:div.colorcomponent
-   [:label.colortitle (name facename)]
-   [:span.colorpreview {:style {:background-color (facename @app-db)}} (str "")]
-   [:input {:type "text" }]])
+  [:div.colorcomponent.mdl-grid
+   [:label.colortitle.mdl-cell.mdl--cell-4-col (name facename)]
+   [:span.colorpreview.mdl-cell.mdl--cell-2-col {:style {:background-color (facename @app-db)}} (str "")]
+   [:input.mdl-cell.mdl--cell-4-col
+    {:type "text" :value (facename @app-db)
+     :on-change
+     #(swap! app-db assoc facename (->
+                                    % .-target .-value))}]])
 
 (defn calling-component []
   [:div "Parent component"
