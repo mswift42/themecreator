@@ -30,10 +30,24 @@
    :warning  "#ff1276"
    :warning2  "#ff4d12"})
 
+(def warm-night
+  {:mainbg "#292424"
+   :mainfg "#b1b1b1"
+   :keyword "#96905f"
+   :builtin "#71a46c"
+   :string "#71a19f"
+   :functionname "#b680b1"
+   :variable "#c27d7b"
+   :type "#8b8fc6"
+   :constant "#bd845f"
+   :comment "#5d5a58"
+   :warning "#e81050"
+   :warning2 "#e86310"})
+
 
 (def app-db
   (r/atom
-   white-sand))
+   warm-night))
 
 (defn switch-theme
   [theme]
