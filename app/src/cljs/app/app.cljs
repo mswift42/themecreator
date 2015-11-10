@@ -16,7 +16,7 @@
   [:div.colorcomponent
    [:label.colortitle (name facename)]
    [:span.colorpreview {:style {:background-color (facename @app-db)}} (str "")]
-   [:input {:type "text"}]])
+   [:input {:type "text" }]])
 
 (defn calling-component []
   [:div "Parent component"
