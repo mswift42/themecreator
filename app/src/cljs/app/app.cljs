@@ -1,6 +1,7 @@
 (ns app.app
   (:require [reagent.core :as reagent :refer [atom]]
-            [app.db :refer [app-db]]))
+            [app.db :refer [app-db]]
+            [app.previews :as previews]))
 
 (defn some-component []
   [:div
@@ -33,7 +34,9 @@
    [color-component :warning2]])
 
 (defn preview-component []
-  [:div.previewcomponent.mdl-cell.mdl--cell-8-col])
+  [:div.previewcomponent.mdl-cell.mdl--cell-8-col
+   {:style {:background-color (:mainbg @app-db)}}
+   [previews/preview-typescript]])
 
 (defn theme-component []
   [:div.themecomponent.mdl-grid
