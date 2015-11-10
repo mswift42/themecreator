@@ -4,13 +4,8 @@
 
 (defn some-component []
   [:div
-   [:h3 "I am a component!"]
-   [:p.someclass
-    "I have " [:strong "bold"]
-    [:span {:style {:color "red"}} " and red"]
-    " text."]
-   [:span.someotherclass {:style {:background-color (:mainfg @app-db)}} "more text " (str (:mainfg @app-db))
-    ]])
+  [:span.someotherclass {:style {:background-color (:mainfg @app-db)}} "more text " (str (:mainfg @app-db))
+   ]])
 
 (defn color-component [facename]
   [:div.colorcomponent.mdl-grid
@@ -22,12 +17,21 @@
      #(swap! app-db assoc facename (->
                                     % .-target .-value))}]])
 
-(defn calling-component []
-  [:div "Parent component"
-   [some-component]
+(defn color-components []
+  [:div.colorcomponents 
    [color-component :mainbg]
-   [color-component :mainfg]])
+   [color-component :mainfg]
+   [color-component :builtin]
+   [color-component :keyword]
+   [color-component :string]
+   [color-component :functionname]
+   [color-component :variable]
+   [color-component :type]
+   [color-component :constant]
+   [color-component :comment]
+   [color-component :warning]
+   [color-component :warning2]])
 
 (defn init []
-  (reagent/render-component [calling-component]
+  (reagent/render-component [color-components]
                             (.getElementById js/document "container")))
