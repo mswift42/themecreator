@@ -1,8 +1,18 @@
+body {
+    background-color:#f2f2f2;
+}
 .colorcomponent {
     margin-bottom:1vh;
-    padding:1em;
 }
 
 .mdl-card {
-    min-height:4vh;
+    min-height:2vh;
+    padding:1vh;
+}
+
+.previewcomponent {
+    padding:1vh;
+    -webkit-box-shadow: 2px 0px 12px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 4px 12px 4px rgba(0,0,0,0.75);
+    box-shadow: 2px 0px 12px 0px rgba(0,0,0,0.75);   
 }
