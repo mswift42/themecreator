@@ -6,7 +6,7 @@
 
 
 (defn color-component [facename]
-  [:div.colorcomponent.mdl-grid
+  [:div.colorcomponent.mdl-grid.mdl-card.mdl-shadow--2dp
    [:label.colortitle.mdl-cell.mdl--cell-4-col (name facename)]
    [:span.colorpreview.mdl-cell.mdl--cell-2-col {:style {:background-color (facename @app-db)}} (str "")]
    [:input.mdl-cell.mdl--cell-4-col
