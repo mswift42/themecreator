@@ -3,10 +3,7 @@
             [app.db :refer [app-db]]
             [app.previews :as previews]))
 
-(defn some-component []
-  [:div
-  [:span.someotherclass {:style {:background-color (:mainfg @app-db)}} "more text " (str (:mainfg @app-db))
-   ]])
+
 
 (defn color-component [facename]
   [:div.colorcomponent.mdl-grid
@@ -19,7 +16,7 @@
                                     % .-target .-value))}]])
 
 (defn color-components []
-  [:div.colorcomponents.mdl-cell.mdl--cell-4-col 
+  [:div.colorcomponents.mdl-cell.mdl--cell-4-col
    [color-component :mainbg]
    [color-component :mainfg]
    [color-component :builtin]
