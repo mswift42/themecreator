@@ -16,4 +16,10 @@
     [span-component " {Theme}" :mainfg]
     [span-component " from " :keyword]
     [span-component "'./Theme'" :string]
-    [span-component ";" :mainfg]]])
+    [span-component ";" :mainfg]
+    [:br]
+    [:br]
+    [span-component "export" :keyword]
+    [span-component " class Themeservice " :type]
+    [span-component "{" :mainfg]]])
+
