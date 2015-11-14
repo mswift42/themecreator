@@ -16,30 +16,38 @@
                                     % .-target .-value))}]])
 
 (defn color-components []
-  [:div.colorcomponents.mdl-cell.mdl--cell-4-col
-   [color-component :mainbg]
-   [color-component :mainfg]
-   [color-component :builtin]
-   [color-component :keyword]
-   [color-component :string]
-   [color-component :functionname]
-   [color-component :variable]
-   [color-component :type]
-   [color-component :constant]
-   [color-component :comment]
-   [color-component :warning]
-   [color-component :warning2]])
+  [:div.col-md-4
+   [:div.colorcomponents
+    [color-component :mainbg]
+    [color-component :mainfg]
+    [color-component :builtin]
+    [color-component :keyword]
+    [color-component :string]
+    [color-component :functionname]
+    [color-component :variable]
+    [color-component :type]
+    [color-component :constant]
+    [color-component :comment]
+    [color-component :warning]
+    [color-component :warning2]]])
 
 (defn preview-component []
-  [:div.previewcomponent.mdl-cell.mdl--cell-8-col
-   {:style {:background-color (:mainbg @app-db)}}
-   [previews/preview-typescript]])
+  [:div.col-md-8
+   [:div.previewcomponent
+    {:style {:background-color (:mainbg @app-db)}}
+    [previews/preview-typescript]]])
 
 (defn theme-component []
-  [:div.themecomponent.mdl-grid
+  [:div.container
    [color-components]
    [preview-component]])
 
+(defn navbar-component []
+  [:div.navbar-header
+   [:a.navbar-brand {:href "#"} "ITC"]])
+
 (defn init []
   (reagent/render-component [theme-component]
-                            (.getElementById js/document "container")))
+                            (.getElementById js/document "container"))
+  (reagent/render-component [navbar-component]
+                            (.getElementById js/document "navbarcontainer")))
