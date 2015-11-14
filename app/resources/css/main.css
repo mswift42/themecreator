@@ -11,6 +11,7 @@ body {
     padding:1em;
     border: 1px solid;
     border-color:#d1d1d1;
+    opacity:0.9;
 }
 .colorpreview {
     padding:0.8em;
@@ -27,6 +28,7 @@ body {
 
 
 .previewcomponent {
+    
     padding:1vh;
     -webkit-box-shadow: 2px 0px 12px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 4px 12px 4px rgba(0,0,0,0.75);
