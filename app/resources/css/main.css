@@ -22,6 +22,14 @@ body {
     border:1px solid;
     borger-color:#d1d1d1;
 }
+@media (min-width:768px) {
+    .previewcomponent {
+        margin-right:5vw;
+    }
+    .colorcomponents {
+        margin-left:1vw;
+    }
+}
 .colorinput {
     margin-right:1vw;
 }
