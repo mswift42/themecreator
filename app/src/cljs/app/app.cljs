@@ -8,9 +8,9 @@
 (defn color-component [facename]
   [:div.colorcomponent
    [:div.row
-    [:label.colortitle.col-md-3 (name facename)]
-    [:span.colorpreview.col-md-1 {:style {:background-color (facename @app-db)}} (str "          ")]
-    [:input.col-md-4.pull-right.colorinput
+    [:label.colortitle.col-xs-5 (name facename)]
+    [:span.colorpreview.col-xs-1.col-xs-offset-1 {:style {:background-color (facename @app-db)}} (str "          ")]
+    [:input.col-xs-3.pull-right.colorinput
      {:type "text" :value (facename @app-db)
       :on-change
       #(swap! app-db assoc facename (->
