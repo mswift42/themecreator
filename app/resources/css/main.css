@@ -14,19 +14,17 @@ body {
 }
 .colorpreview {
     padding:0.8em;
-    margin-left:3vw;
-    margin-top:2px;
-    margin-right:1vw;
-    border-radius:40px;
+    /* margin-left:3vw; */
+    /* margin-top:2px; */
+    /* margin-right:1vw; */
+    border-radius:1em;
+    border:1px solid;
+    borger-color:#d1d1d1;
 }
 .colorinput {
     margin-right:1vw;
 }
 
-.mdl-card {
-    min-height:2vh;
-    padding:1vh;
-}
 
 .previewcomponent {
     padding:1vh;
