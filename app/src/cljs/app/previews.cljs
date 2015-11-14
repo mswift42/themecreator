@@ -11,7 +11,7 @@
 (defn preview-typescript
   []
   [:div
-   [:pre
+   [:pre {:style {:background-color (:mainbg @app-db)}}
     [span-component "import" :keyword]
     [span-component " {Theme}" :mainfg]
     [span-component " from " :keyword]
