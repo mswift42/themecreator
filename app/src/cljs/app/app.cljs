@@ -6,14 +6,15 @@
 
 
 (defn color-component [facename]
-  [:div.colorcomponent.mdl-grid.mdl-card.mdl-shadow--2dp
-   [:label.colortitle.mdl-cell.mdl--cell-4-col (name facename)]
-   [:span.colorpreview.mdl-cell.mdl--cell-2-col {:style {:background-color (facename @app-db)}} (str "")]
-   [:input.mdl-cell.mdl--cell-4-col
-    {:type "text" :value (facename @app-db)
-     :on-change
-     #(swap! app-db assoc facename (->
-                                    % .-target .-value))}]])
+  [:div.colorcomponent
+   [:div.row
+    [:label.colortitle.col-md-3 (name facename)]
+    [:span.colorpreview.col-md-1 {:style {:background-color (facename @app-db)}} (str "          ")]
+    [:input.col-md-4.pull-right.colorinput
+     {:type "text" :value (facename @app-db)
+      :on-change
+      #(swap! app-db assoc facename (->
+                                     % .-target .-value))}]]])
 
 (defn color-components []
   [:div.col-md-4
@@ -33,12 +34,11 @@
 
 (defn preview-component []
   [:div.col-md-8
-   [:div.previewcomponent
-    {:style {:background-color (:mainbg @app-db)}}
+   [:div.previewcomponent {:style {:background-color (:mainbg @app-db)}}
     [previews/preview-typescript]]])
 
 (defn theme-component []
-  [:div.container
+  [:div.row
    [color-components]
    [preview-component]])
 
