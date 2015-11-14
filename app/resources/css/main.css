@@ -9,6 +9,8 @@ body {
 .colorcomponents {
     background-color:#ffffff;
     padding:1em;
+    border: 1px solid;
+    border-color:#d1d1d1;
 }
 .colorpreview {
     padding:0.8em;
