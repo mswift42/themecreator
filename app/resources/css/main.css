@@ -43,6 +43,6 @@ body {
     box-shadow: 2px 0px 12px 0px rgba(0,0,0,0.75);
     min-height:70vh;
 }
-.previewcomponent > pre {
-    height:100%;
+.previewcomponent pre {
+    border:0px;
 }
