@@ -17,7 +17,7 @@
                                      % .-target .-value))}]]])
 
 (defn color-components []
-  [:div.col-md-4
+  [:div.col-md-4.col-lg-3
    [:div.colorcomponents
     [color-component :mainbg]
     [color-component :mainfg]
@@ -33,7 +33,7 @@
     [color-component :warning2]]])
 
 (defn preview-component []
-  [:div.col-md-8
+  [:div.col-md-6.col-lg-8.col-lg-offset-1
    [:div.previewcomponent {:style {:background-color (:mainbg @app-db)}}
     [previews/preview-typescript]]])
 
