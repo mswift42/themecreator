@@ -37,5 +37,11 @@
     [:br]
     [span-component "export" :keyword]
     [span-component " class Themeservice " :type]
-    [span-component "{" :mainfg]]])
+    [span-component "{" :mainfg]
+    [:br]
+    [span-component "  theme" :variable]
+    [span-component ": " :mainfg]
+    [span-component "Theme" :type]
+    [span-component ";" :mainfg]
+    ]])
 
