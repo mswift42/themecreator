@@ -44,6 +44,20 @@
    :warning "#e81050"
    :warning2 "#e86310"})
 
+(def oldlace
+  {:mainfg "#525252"
+   :mainbg "#fdf5e6"
+   :keyword "#3f567b"
+   :builtin "#7b4135"
+   :string "#305f5e"
+   :functionname "#714355"
+   :variable "#3f5b32"
+   :type "#634575"
+   :constant "#64502f"
+   :comment "#949494"
+   :warning "#fa0c0c"
+   :warning2 "#fa7b0c"})
+
 
 (def app-db
   (r/atom
