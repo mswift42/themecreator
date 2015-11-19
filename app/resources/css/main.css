@@ -46,3 +46,7 @@ body {
 .previewcomponent pre {
     border:0px;
 }
+input[type=text] {
+    font-size:14px;
+    padding:0;
+}
