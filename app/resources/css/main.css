@@ -50,3 +50,7 @@ input[type=text] {
     font-size:14px;
     padding:0;
 }
+pre {
+    font-size:14px;
+    font-family:Source Code Pro, Ubuntu Mono, Monospace;
+}
