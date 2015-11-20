@@ -1,5 +1,5 @@
 body {
-    margin-top:70px;
+    margin-top:80px;
     background-color:#f2f2f2;
 }
 
@@ -126,4 +126,9 @@ pre {
                                                                                                                                               color: #ecdbff;
                                                                                                                                               background-color: #49414d;
                                                                                                                                           }
+}
+.themedrop > .btn-default {
+    background-color:#584b5f;
+    border:1px solid #ecf0f1;
+    color:#ecf0f1;
 }
