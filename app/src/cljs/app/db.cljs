@@ -72,6 +72,20 @@
    :warning "#fa0c0c"
    :warning2 "#fa7b0c"})
 
+(def soft-charcoal
+  {:mainfg "#c2c2c2"
+   :mainbg "#191919"
+   :keyword "#8aa234"
+   :builtin "#54686d"
+   :string "#5d90cd"
+   :functionname "#7a8bbd"
+   :variable "#8885b2"
+   :type "#8aa6c1"
+   :constant "#8aa6c1"
+   :comment "#808080"
+   :warning "#ff6523"
+   :warning2 "#ff2370"})
+
 
 (def app-db
   (r/atom
