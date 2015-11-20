@@ -7,7 +7,7 @@
 
 
 (defn color-component [facename]
-  [:div.colorcomponent
+  [:div.colorcomponent 
    [:div.row
     [:label.colortitle.col-xs-4 (name facename)]
     ;; [:span.colorpreview.col-xs-1.col-xs-offset-1
