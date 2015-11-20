@@ -14,6 +14,8 @@
   (is (= (colors/darken "#222222") "#1b1b1b"))
   (is (= (colors/darken "#222222" 0.2) "#1b1b1b"))
   (is (= (colors/darken "#000000") "#000000"))
-  (is (= (colors/darken "#ffffff" 1.0) "#000000")))
+  (is (= (colors/darken "#ffffff" 1.0) "#000000"))
+  (is (= (colors/darken "#ffffff" 0.0) "#ffffff"))
+  (is (= (colors/darken "#ffffff") "#cccccc")))
 
 
