@@ -8,7 +8,7 @@
   [:div.themename
    [:div.row
     [:label.colortitle.col-xs-5 (str "Themename")]
-    [:input.col-xs-4.textinput.col-xs-offset-1
+    [:input.col-xs-4.textinput.col-xs-offset-1.nameinput
      {:type "text" :value (:themename @app-db)
       :on-change #(swap! app-db assoc :themename (-> % .-target .-value))}]]])
 
@@ -18,8 +18,6 @@
   [:div.colorcomponent 
    [:div.row
     [:label.colortitle.col-xs-4 (name facename)]
-    ;; [:span.colorpreview.col-xs-1.col-xs-offset-1
-    ;;  {:style {:background-color (facename @app-db)}} (str "          ")]
     [:input.col-xs-3.colorinput.col-xs-offset-1
      {:type "color"  :value (facename @app-db)
       :on-change
@@ -34,7 +32,9 @@
 (defn color-components []
   [:div.col-md-4.col-lg-3
    [:div.colorcomponents
+    [:br]
     [name-component]
+    [:br]
     [:br]
     [color-component :mainbg]
     [color-component :mainfg]
@@ -54,10 +54,10 @@
    [:div.previewcomponent {:style {:background-color (:mainbg @app-db)}}
     [previews/preview-typescript]]])
 (defn navbar-component []
-  [:div.container-fluid
+  [:div.container
    [:a.navbar-brand {:href "#"} "ITC"]
    [:div.navbar.navbar-collapse
-    [:div.container-fluid
+    [:div
      [theme-select]]]])
 (defn theme-component []
   [navbar-component]
@@ -71,4 +71,4 @@
   (reagent/render-component [navbar-component]
                             (.getElementById js/document "navcontainer"))
   (reagent/render-component [theme-component]
-                            (.getElementById js/document "container")))
+                            (.getElementById js/document "mainapp")))
