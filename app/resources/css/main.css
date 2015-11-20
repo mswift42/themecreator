@@ -106,7 +106,8 @@ pre {
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-    border-color: #ecf0f1;
+    /* border-color: #ecf0f1; */
+    border:0px;
 }
 .navbar-default .navbar-link {
     color: #ecf0f1;
@@ -129,6 +130,7 @@ pre {
 }
 .themedrop > .btn-default {
     background-color:#584b5f;
-    border:1px solid #ecf0f1;
+    border:1px solid #49414d;
     color:#ecf0f1;
+    margin-top:20px;
 }
