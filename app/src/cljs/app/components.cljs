@@ -4,7 +4,7 @@
 
 (defn theme-select
   []
-  [:div.btn-group
+  [:div.btn-group.themedrop {:id "themedrop"}
    [:button.btn.btn-default {:type "button"}
     "Theme Samples"]
    [:button.btn.btn-default.dropdown-toggle
