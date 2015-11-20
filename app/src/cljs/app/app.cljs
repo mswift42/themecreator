@@ -1,7 +1,8 @@
 (ns app.app
   (:require [reagent.core :as reagent :refer [atom]]
             [app.db :refer [app-db]]
-            [app.previews :as previews]))
+            [app.previews :as previews]
+            [app.components :refer [theme-select]]))
 
 
 
@@ -42,18 +43,22 @@
   [:div.col-md-6.col-lg-8.col-lg-offset-1
    [:div.previewcomponent {:style {:background-color (:mainbg @app-db)}}
     [previews/preview-typescript]]])
-
+(defn navbar-component []
+  [:div.container-fluid
+   [:a.navbar-brand {:href "#"} "ITC"]
+   [:div.navbar.navbar-collapse
+    [:div.container-fluid
+     [theme-select]]]])
 (defn theme-component []
+  [navbar-component]
   [:div.row
    [color-components]
    [preview-component]])
 
-(defn navbar-component []
-  [:div.navbar-header
-   [:a.navbar-brand {:href "#"} "ITC"]])
+
 
 (defn init []
-  (reagent/render-component [theme-component]
-                            (.getElementById js/document "container"))
   (reagent/render-component [navbar-component]
-                            (.getElementById js/document "navbarcontainer")))
+                            (.getElementById js/document "navcontainer"))
+  (reagent/render-component [theme-component]
+                            (.getElementById js/document "container")))
