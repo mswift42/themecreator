@@ -68,7 +68,7 @@
    :variable "#3f5b32"
    :type "#634575"
    :constant "#64502f"
-   "comment" "#949494"
+   :comment "#949494"
    :warning "#fa0c0c"
    :warning2 "#fa7b0c"})
 
