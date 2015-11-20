@@ -14,6 +14,8 @@
     ]
    [:ul.dropdown-menu {:aria-labelledby "themedrop"}
     [:li [:a
+          {:href "#" :on-click #(db/switch-theme db/preset)} "preset"]]
+    [:li [:a
           {:href "#" :on-click #(db/switch-theme db/warm-night)} "warm-night"]]
     [:li [:a
           {:href "#" :on-click #(db/switch-theme db/white-sand)}
