@@ -2,7 +2,8 @@
   (:require [reagent.core :as r]))
 
 (def preset
-  {:mainbg "#ffffff"
+  {:themename "preset"
+   :mainbg "#ffffff"
    :mainfg "#303030"
    :builtin "#000000"
    :keyword "#000000"
@@ -17,7 +18,8 @@
    :name "atc"})
 
 (def white-sand
-  {:mainbg  "#f5ebe1"                ;
+  {:themename "white-sand"
+   :mainbg  "#f5ebe1"                ;
    :mainfg  "#585858"
    :keyword  "#4a858c"
    :builtin  "#1a8591"
@@ -31,7 +33,8 @@
    :warning2  "#ff4d12"})
 
 (def warm-night
-  {:mainbg "#292424"
+  {:themename "warm-night"
+   :mainbg "#292424"
    :mainfg "#b1b1b1"
    :keyword "#96905f"
    :builtin "#71a46c"
@@ -45,7 +48,8 @@
    :warning2 "#e86310"})
 
 (def oldlace
-  {:mainfg "#525252"
+  {:themename "Oldlace"
+   :mainfg "#525252"
    :mainbg "#fdf5e6"
    :keyword "#3f567b"
    :builtin "#7b4135"
@@ -59,7 +63,8 @@
    :warning2 "#fa7b0c"})
 
 (def greymatters
-  {:mainfg "#2f2f2f"
+  {:themename "Greymatters"
+   :mainfg "#2f2f2f"
    :mainbg "#f9fbfd"
    :keyword "#3f567b"
    :builtin "#7b4135"
@@ -73,7 +78,8 @@
    :warning2 "#fa7b0c"})
 
 (def soft-charcoal
-  {:mainfg "#c2c2c2"
+  {:themename "soft-charcoal"
+   :mainfg "#c2c2c2"
    :mainbg "#191919"
    :keyword "#8aa234"
    :builtin "#54686d"
