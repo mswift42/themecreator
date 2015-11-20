@@ -1,5 +1,5 @@
 body {
-    margin-top:80px;
+    /* margin-top:80px; */
     background-color:#f2f2f2;
 }
 
@@ -30,7 +30,7 @@ body {
         margin-left:1vw;
     }
 }
-.colorinput {
+.colorinput  {
     margin-right:1vw;
 }
 
@@ -60,6 +60,8 @@ pre {
 }
 .navbar-default .navbar-brand {
     color: #ecf0f1;
+    font-size:200%;
+    margin-top:20px;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
                                          color: #ecdbff;
@@ -133,4 +135,5 @@ pre {
     border:1px solid #49414d;
     color:#ecf0f1;
     margin-top:20px;
+    padding:1em;
 }

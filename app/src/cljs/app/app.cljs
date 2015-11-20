@@ -54,7 +54,7 @@
    [:div.previewcomponent {:style {:background-color (:mainbg @app-db)}}
     [previews/preview-typescript]]])
 (defn navbar-component []
-  [:div.container
+  [:div.container-fluid
    [:a.navbar-brand {:href "#"} "ITC"]
    [:div.navbar.navbar-collapse
     [:div
