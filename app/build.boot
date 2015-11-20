@@ -9,7 +9,7 @@
                  [com.cemerick/piggieback "0.2.1"]
                  [weasel "0.7.0" :scope "test"]
                  [org.clojure/tools.nrepl "0.2.12" :scope "test"]
-                 [crisptrutski/boot-cljs-test "0.1.0-SNAPSHOT" :scope "test"]
+                 [crisptrutski/boot-cljs-test "0.2.0-SNAPSHOT" :scope "test"]
                  [reagent "0.5.0"]])
 
 (require
