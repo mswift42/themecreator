@@ -4,6 +4,14 @@
             [app.previews :as previews]
             [app.components :refer [theme-select]]))
 
+(defn name-component []
+  [:div.themename
+   [:div.row
+    [:label.colortitle.col-xs-5 (str "Themename")]
+    [:input.col-xs-4.textinput.col-xs-offset-1
+     {:type "text" :value (:themename @app-db)
+      :on-change #(swap! app-db assoc :themename (-> % .-target .-value))}]]])
+
 
 
 (defn color-component [facename]
@@ -26,6 +34,8 @@
 (defn color-components []
   [:div.col-md-4.col-lg-3
    [:div.colorcomponents
+    [name-component]
+    [:br]
     [color-component :mainbg]
     [color-component :mainfg]
     [color-component :builtin]
