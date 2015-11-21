@@ -53,3 +53,20 @@
         (lighten-color-in-db :mainbg))
       (doseq [i db/contrastcolors]
         (darken-color-in-db i)))))
+
+(defn red-contrast []
+  (if (dark-bg? (:mainbg @db/app-db))
+    (if @db/adjustbg
+      (do
+        (doseq [i db/contrastcolors]
+          (darken-color-in-db i))
+        (lighten-color-in-db :mainbg))
+      (doseq [i db/contrastcolors]
+        (darken-color-in-db i)))
+    (if @db/adjustbg
+      (do
+        (doseq [i db/contrastcolors]
+          (lighten-color-in-db i))
+        (darken-color-in-db :mainbg))
+      (doseq [i db/contrastcolors]
+        (lighten-color-in-db i)))))
