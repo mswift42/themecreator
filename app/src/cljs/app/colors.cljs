@@ -37,14 +37,19 @@
 (defn darken-color-in-db [color]
   (swap! db/app-db assoc color (darken (color @db/app-db) 0.1)))
 
-;; (defn inc-contrast []
-;;   (if (dark-bg? (:mainbg @db/app-db))
-;;     (if @db/adjustbg
-;;       (do
-;;         (doseq [i db/contrastcolors]
-;;           (swap! db/app-db assoc i (lighten (i @db/app-db)0.1))
-;;           (swap! db/app-db assoc color (lighten (color @db/app-db) 0.1))
-;;           (swap! db/app-db assoc :mainbg (darken (:mainbg @db/app-db) 0.1))))
-      
-;;       )
-;;     ))
+(defn inc-contrast []
+  (if (dark-bg? (:mainbg @db/app-db))
+    (if @db/adjustbg
+      (do
+        (doseq [i db/contrastcolors]
+          (lighten-color-in-db i))
+        (darken-color-in-db :mainbg))
+      (doseq [i db/contrastcolors]
+        (lighten-color-in-db i)))
+    (if @db/adjustbg
+      (do
+        (doseq [i db/contrastcolors]
+          (darken-color-in-db i))
+        (lighten-color-in-db :mainbg))
+      (doseq [i db/contrastcolors]
+        (darken-color-in-db i)))))
