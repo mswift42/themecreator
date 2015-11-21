@@ -1,5 +1,6 @@
 (ns app.colors
-  (:require [goog.color :as color]))
+  (:require [goog.color :as color]
+            [app.db :as db]))
 
 (defn darken
   "darken darkens a rgb color by a given factor.
@@ -29,3 +30,21 @@
                   (* 0.114 b))
                255))
        0.5)))
+
+(defn lighten-color-in-db [color]
+  (swap! db/app-db assoc color (lighten (color @db/app-db) 0.1)))
+
+(defn darken-color-in-db [color]
+  (swap! db/app-db assoc color (darken (color @db/app-db) 0.1)))
+
+;; (defn inc-contrast []
+;;   (if (dark-bg? (:mainbg @db/app-db))
+;;     (if @db/adjustbg
+;;       (do
+;;         (doseq [i db/contrastcolors]
+;;           (swap! db/app-db assoc i (lighten (i @db/app-db)0.1))
+;;           (swap! db/app-db assoc color (lighten (color @db/app-db) 0.1))
+;;           (swap! db/app-db assoc :mainbg (darken (:mainbg @db/app-db) 0.1))))
+      
+;;       )
+;;     ))
