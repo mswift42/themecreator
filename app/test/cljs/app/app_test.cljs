@@ -26,3 +26,9 @@
   (is (= (colors/lighten "#000000" 0.1) "#1a1a1a"))
   (is (= (colors/lighten "#000000" 1.0) "#ffffff"))
   (is (= (colors/lighten "#ffffff" 0.0) "#ffffff")))
+
+(deftest test-dark-bg? []
+  (is (= (colors/dark-bg? "#000000") true))
+  (is (= (colors/dark-bg? "#ffffff") false))
+  (is (= (colors/dark-bg? "#932ad7") false))
+  (is (= (colors/dark-bg? "#d7cf47") false)))
