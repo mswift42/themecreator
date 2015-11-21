@@ -31,4 +31,14 @@
 (defn inc-contrast-component
   []
   [:button.btn.btn-default
-   {:on-click #(colors/inc-contrast)} "inc constrast"])
+   {:on-click #(colors/inc-contrast)} "Inc. constrast"])
+
+(defn red-contrast-component
+  []
+  [:button.btn.btn-default
+   {:type "button" :on-click #(colors/red-contrast)} "Red. contrast"])
+
+(defn adjustbg-component
+  []
+  [:input {:type "checkbox" :value @db/adjustbg :on-change
+           #(db/toggle-adjust)}])
