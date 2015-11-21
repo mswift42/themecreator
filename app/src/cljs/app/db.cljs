@@ -97,6 +97,10 @@
   (r/atom
    warm-night))
 
+(def adjustbg
+  (r/atom
+   false))
+
 (defn switch-theme
   [theme]
   (reset! app-db theme ))
