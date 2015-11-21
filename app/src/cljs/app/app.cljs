@@ -2,7 +2,7 @@
   (:require [reagent.core :as reagent :refer [atom]]
             [app.db :refer [app-db]]
             [app.previews :as previews]
-            [app.components :refer [theme-select]]))
+            [app.components :refer [theme-select inc-contrast-component]]))
 
 (defn name-component []
   [:div.themename
@@ -47,7 +47,9 @@
     [color-component :constant]
     [color-component :comment]
     [color-component :warning]
-    [color-component :warning2]]])
+    [color-component :warning2]
+    [:br]
+    [inc-contrast-component]]])
 
 (defn preview-component []
   [:div.col-md-6.col-lg-8.col-lg-offset-1
