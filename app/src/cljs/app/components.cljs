@@ -1,6 +1,7 @@
 (ns app.components
   (:require [reagent.core :as r]
-            [app.db :as db]))
+            [app.db :as db]
+            [app.colors :as colors]))
 
 (defn theme-select
   []
@@ -26,3 +27,8 @@
           {:href "#" :on-click #(db/switch-theme db/oldlace)} "oldlace"]]
     [:li [:a
           {:href "#" :on-click #(db/switch-theme db/soft-charcoal)} "soft-charcoal"]]]])
+
+(defn inc-contrast-component
+  []
+  [:button.btn.btn-default
+   {:on-click #(colors/inc-contrast)} "inc constrast"])
