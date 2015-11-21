@@ -2,7 +2,7 @@
   (:require [reagent.core :as reagent :refer [atom]]
             [app.db :refer [app-db]]
             [app.previews :as previews]
-            [app.components :refer [theme-select inc-contrast-component]]))
+            [app.components  :as comps]))
 
 (defn name-component []
   [:div.themename
@@ -49,7 +49,13 @@
     [color-component :warning]
     [color-component :warning2]
     [:br]
-    [inc-contrast-component]]])
+    [:div.row
+     [:div.col-xs-2
+      [comps/inc-contrast-component]]
+     [:div.col-xs-2.col-xs-offset-1
+      [comps/red-contrast-component]]
+     [:div.col-xs-2.col-xs-offset-2
+      [comps/adjustbg-component]]]]])
 
 (defn preview-component []
   [:div.col-md-6.col-lg-8.col-lg-offset-1
@@ -60,7 +66,7 @@
    [:a.navbar-brand {:href "#"} "ITC"]
    [:div.navbar.navbar-collapse
     [:div
-     [theme-select]]]])
+     [comps/theme-select]]]])
 (defn theme-component []
   [navbar-component]
   [:div.row
