@@ -32,10 +32,10 @@
        0.5)))
 
 (defn lighten-color-in-db [color]
-  (swap! db/app-db assoc color (lighten (color @db/app-db) 0.1)))
+  (swap! db/app-db assoc color (lighten (color @db/app-db) 0.03)))
 
 (defn darken-color-in-db [color]
-  (swap! db/app-db assoc color (darken (color @db/app-db) 0.1)))
+  (swap! db/app-db assoc color (darken (color @db/app-db) 0.03)))
 
 (defn inc-contrast []
   (if (dark-bg? (:mainbg @db/app-db))
