@@ -37,3 +37,7 @@
   (is (= (colors/dark-bg? "#d2d2d2") false)))
 
 
+(deftest test-toggle []
+  (is (= @db/adjustbg false))
+  (db/toggle-adjust)
+  (is (= @db/adjustbg true)))
