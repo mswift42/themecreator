@@ -30,5 +30,10 @@
 (deftest test-dark-bg? []
   (is (= (colors/dark-bg? "#000000") true))
   (is (= (colors/dark-bg? "#ffffff") false))
-  (is (= (colors/dark-bg? "#932ad7") false))
-  (is (= (colors/dark-bg? "#d7cf47") false)))
+  (is (= (colors/dark-bg? "#932ad7") true))
+  (is (= (colors/dark-bg? "#d7cf47") false))
+  (is (= (colors/dark-bg? "#586e75") true))
+  (is (= (colors/dark-bg? "#daa1e6") false))
+  (is (= (colors/dark-bg? "#d2d2d2") false)))
+
+
