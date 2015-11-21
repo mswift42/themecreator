@@ -103,7 +103,12 @@
 
 (def adjustbg
   (r/atom
-   true))
+   false))
+
+(defn toggle-adjust []
+  (if @adjustbg
+    (reset! adjustbg false)
+    (reset! adjustbg true)))
 
 (defn switch-theme
   [theme]
