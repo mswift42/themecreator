@@ -19,3 +19,10 @@
   (is (= (colors/darken "#ffffff") "#cccccc")))
 
 
+(deftest test-lighten []
+  (is (= (colors/lighten "#222222") "#4e4e4e"))
+  (is (= (colors/lighten "#222222" 0.2) "#4e4e4e"))
+  (is (= (colors/lighten "#ffffff") "#ffffff"))
+  (is (= (colors/lighten "#000000" 0.1) "#1a1a1a"))
+  (is (= (colors/lighten "#000000" 1.0) "#ffffff"))
+  (is (= (colors/lighten "#ffffff" 0.0) "#ffffff")))
