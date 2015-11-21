@@ -137,3 +137,10 @@ pre {
     margin-top:20px;
     padding:1em;
 }
+.butsection .btn {
+    font-size:90%;
+    background-color:#dadada;
+}
+.butsection label {
+    font-size:60%;
+}
