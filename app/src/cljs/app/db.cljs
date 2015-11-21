@@ -92,6 +92,10 @@
    :warning "#ff6523"
    :warning2 "#ff2370"})
 
+(def contrastcolors
+  [:mainfg :keyword :builtin :string :functionname :variable :type
+   :constant :comment])
+
 
 (def app-db
   (r/atom
@@ -99,7 +103,7 @@
 
 (def adjustbg
   (r/atom
-   false))
+   true))
 
 (defn switch-theme
   [theme]
