@@ -18,3 +18,9 @@
   ([colorstring factor]
    (color/rgbArrayToHex
     (color/lighten (color/hexToRgb colorstring) factor))))
+
+(defn dark-bg?
+  "dark-bg? returns true if the given hex color is 'dark'"
+  [color]
+  (let [[h s v] (color/hexToHsv color)]
+    (< v 120)))
