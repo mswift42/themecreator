@@ -3,6 +3,7 @@
   (:require [cljs.test :as t]
             [app.app :as app]
             [app.db :as db]
+            [goog.color :as color]
             [app.colors :as colors]))
 
 
@@ -36,8 +37,25 @@
   (is (= (colors/dark-bg? "#daa1e6") false))
   (is (= (colors/dark-bg? "#d2d2d2") false)))
 
+(defn darker? [col1 col2]
+  (let [[r1 g1 b1] (color/hexToHsv col1)
+        [r2 g2 b2] (color/hexToHsv col2)]
+    (> b2 b1)))
+
+(deftest test-darker? []
+  (is (= (darker? "#000000" "#ffffff") true))
+  (is (= (darker? "#000000" "#010101") true))
+  (is (= (darker? "#222222" "#222222") false)))
+
 
 (deftest test-toggle []
   (is (= @db/adjustbg false))
   (db/toggle-adjust)
   (is (= @db/adjustbg true)))
+
+(deftest test-random-hue []
+  (dotimes [_ 1000]
+    (is (= (and
+            (< (colors/random-hue) 360)
+            (>= (colors/random-hue) 0))
+           true))))
