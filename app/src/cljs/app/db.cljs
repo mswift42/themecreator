@@ -97,7 +97,7 @@
    :constant :comment])
 
 (def randomcolors
-  [:keyword :builtin :string :functionname :variable :type :constant ])
+  [:keyword :builtin :string :functionname :variable :type :constant])
 
 
 (def app-db

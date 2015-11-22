@@ -76,12 +76,17 @@
   []
   (rand-int 360))
 
+
+
 (defn hue-range
+  "hue-range returns a vecor of equidistant huevalues."
   [length startvalue]
   (let [distance (Math/floor (/ 360 length))]
     (take length (iterate #(+ % (mod distance 360)) startvalue))))
 
 (defn color-list
+  "color-list returns a vector of 7 hex-colors with the same 
+   saturation and lightness values and equidistant hue values."
   [saturation lightness]
-  (let [hr (hue-range 7 (random-hue))]
+  (let [hr (hue-range (count db/randomcolors) (random-hue))]
     (mapv #(color/hslToHex % saturation lightness) hr)))
