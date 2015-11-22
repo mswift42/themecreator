@@ -40,9 +40,11 @@
 
 (defn adjustbg-component
   []
-  [:div.row
-   [:div.adbggroup
-    [:label.col-xs-2.checkbox-inline.adbg  {:for "adbg"} "Adjust BG"]
-    [:input.col-xs-1.col-xs-offset-1
-     {:type "checkbox" :id "adbg" :value @db/adjustbg :on-change
-      #(db/toggle-adjust)}]]])
+  [:div.adbggroup
+   [:div.input-group
+    [:span.input-group-addon
+     [:input
+      {:type "checkbox" :id "adbg" :value @db/adjustbg :on-change
+       #(db/toggle-adjust)}]]
+    [:input.form-control  {:type "text" :disabled "" :value "adjust bg"}]
+    ]])
