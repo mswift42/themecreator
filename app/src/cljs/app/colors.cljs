@@ -70,3 +70,8 @@
         (darken-color-in-db :mainbg))
       (doseq [i db/contrastcolors]
         (lighten-color-in-db i)))))
+
+(defn random-hue
+  "return a random int between 0 and 360 "
+  []
+  (rand-int 360))
