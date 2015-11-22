@@ -80,3 +80,8 @@
   [length startvalue]
   (let [distance (Math/floor (/ 360 length))]
     (take length (iterate #(+ % (mod distance 360)) startvalue))))
+
+(defn color-list
+  [saturation lightness]
+  (let [hr (hue-range 7 (random-hue))]
+    (mapv #(color/hslToHex % saturation lightness) hr)))
