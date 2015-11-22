@@ -75,3 +75,8 @@
   "return a random int between 0 and 360 "
   []
   (rand-int 360))
+
+(defn hue-range
+  [length startvalue]
+  (let [distance (Math/floor (/ 360 length))]
+    (take length (iterate #(+ % (mod distance 360)) startvalue))))
