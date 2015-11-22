@@ -96,6 +96,9 @@
   [:mainfg :keyword :builtin :string :functionname :variable :type
    :constant :comment])
 
+(def randomcolors
+  [:keyword :builtin :string :functionname :variable :type :constant ])
+
 
 (def app-db
   (r/atom
