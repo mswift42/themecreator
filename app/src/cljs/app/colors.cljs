@@ -107,3 +107,11 @@
   (color-list 0.514 0.42))
 
 
+(defn set-random-palette
+  "set :keyword :builtin :string :functionname :variable
+   :type and constant colors in app-db to colors of a
+   random color palette"
+  [palette]
+  (map (fn [colorname colorstring]
+         (swap! db/app-db assoc colorname colorstring))
+       db/randomcolors palette))
