@@ -90,3 +90,11 @@
   [saturation lightness]
   (let [hr (hue-range (count db/randomcolors) (random-hue))]
     (mapv #(color/hslToHex % saturation lightness) hr)))
+
+(defn soft-palette
+  "soft-palette returns a vector of 7 random soft colors."
+  []
+  (color-list 0.41 0.51))
+
+
+
