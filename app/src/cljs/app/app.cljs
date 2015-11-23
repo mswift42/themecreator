@@ -49,12 +49,12 @@
     [color-component :warning]
     [color-component :warning2]
     [:br]
-    [:div.row
-     [:div.col-xs-2
+    [:div.butsection.row
+     [:div.col-xs-3
       [comps/inc-contrast-component]]
-     [:div.col-xs-2.col-xs-offset-1
+     [:div.col-xs-3
       [comps/red-contrast-component]]
-     [:div.col-xs-2.col-xs-offset-2
+     [:div.col-xs-5
       [comps/adjustbg-component]]]]])
 
 (defn preview-component []
