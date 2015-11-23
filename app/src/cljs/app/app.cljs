@@ -55,7 +55,8 @@
      [:div.col-xs-3
       [comps/red-contrast-component]]
      [:div.col-xs-5
-      [comps/adjustbg-component]]]]])
+      [comps/adjustbg-component]]]
+    [comps/random-colors-component]]])
 
 (defn preview-component []
   [:div.col-md-6.col-lg-8.col-lg-offset-1
