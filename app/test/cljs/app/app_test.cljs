@@ -47,6 +47,9 @@
   (is (= (darker? "#000000" "#010101") true))
   (is (= (darker? "#222222" "#222222") false)))
 
+(deftest test-darken []
+  (is (= (darker? ))))
+
 
 (deftest test-toggle []
   (is (= @db/adjustbg false))
