@@ -48,3 +48,19 @@
        #(db/toggle-adjust)}]]
     [:input.form-control  {:type "text" :disabled "" :value "adjust bg"}]
     ]])
+
+(defn random-colors-component
+  []
+  [:div.randbuttons.row
+   [:button.btn.btn-default.col-xs-3.col-xs-offset-1
+    {:type "button" :on-click
+     #(colors/set-random-palette (colors/warm-palette))}
+    "Warm Colors"]
+   [:button.btn.btn-default.col-xs-3.col-xs-offset-1
+    {:type "button" :on-click
+     #(colors/set-random-palette (colors/soft-palette))}
+    "Soft Colors"]
+   [:button.btn.btn-default.col-xs-3
+    {:type "button" :on-click
+     #(colors/set-random-palette (colors/pop-palette))}
+    "Pop Colors"]])
