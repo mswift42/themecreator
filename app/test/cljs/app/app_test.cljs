@@ -48,7 +48,10 @@
   (is (= (darker? "#222222" "#222222") false)))
 
 (deftest test-darken []
-  (is (= (darker? ))))
+  (is (= (darker? (colors/darken "#222222")
+                  "#222222")))
+  is (not= (darker? (colors/lighten "#222222")
+                    "#222222")))
 
 
 (deftest test-toggle []
@@ -62,3 +65,8 @@
             (< (colors/random-hue) 360)
             (>= (colors/random-hue) 0))
            true))))
+
+(deftest test-color-list []
+  (dotimes [_ 1000]
+    (is (= (count (colors/color-list 0 0)) 7))))
+
