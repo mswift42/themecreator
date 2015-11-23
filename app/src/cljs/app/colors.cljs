@@ -112,6 +112,5 @@
    :type and constant colors in app-db to colors of a
    random color palette"
   [palette]
-  (map (fn [colorname colorstring]
-         (swap! db/app-db assoc colorname colorstring))
-       db/randomcolors palette))
+  (doseq [[colorname colorstring] (map list db/randomcolors palette)]
+    (swap! db/app-db assoc colorname colorstring)))
