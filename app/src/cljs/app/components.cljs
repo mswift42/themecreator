@@ -63,4 +63,8 @@
    [:button.btn.btn-default.col-xs-3
     {:type "button" :on-click
      #(colors/set-random-palette (colors/pop-palette))}
-    "Pop Colors"]])
+    "Pop Colors"]
+   [:button.btn.btn-default.col-xs-2
+    {:type "button" :on-click
+     #(colors/set-random-palette (colors/muted-palette))}
+    "Muted Colors"]])
