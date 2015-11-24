@@ -28,6 +28,13 @@
     [:li [:a
           {:href "#" :on-click #(db/switch-theme db/soft-charcoal)} "soft-charcoal"]]]])
 
+(defn button-component
+  "button-component returns the markup for a bootstrap default button"
+  [text handler]
+  [:button.btn.btn-default
+   {:type "button" :on-click handler}
+   text])
+
 (defn inc-contrast-component
   []
   [:button.btn.btn-default
@@ -49,22 +56,22 @@
     [:input.form-control  {:type "text" :disabled "" :value "adjust bg"}]
     ]])
 
+
+
 (defn random-colors-component
   []
-  [:div.randbuttons.row
-   [:button.btn.btn-default.col-xs-3.col-xs-offset-1
+  [:div.randbuttons.row.row-centered
+   [:button.btn.btn-default.col-xs-4.col-xs-offset-2
     {:type "button" :on-click
      #(colors/set-random-palette (colors/warm-palette))}
     "Warm Colors"]
-   [:button.btn.btn-default.col-xs-3.col-xs-offset-1
+   [:button.btn.btn-default.col-xs-4.col-xs-offset-2
     {:type "button" :on-click
      #(colors/set-random-palette (colors/soft-palette))}
     "Soft Colors"]
-   [:button.btn.btn-default.col-xs-3
+   [:button.btn.btn-default.col-xs-4.col-xs-offset-2
     {:type "button" :on-click
      #(colors/set-random-palette (colors/pop-palette))}
     "Pop Colors"]
-   [:button.btn.btn-default.col-xs-2
-    {:type "button" :on-click
-     #(colors/set-random-palette (colors/muted-palette))}
-    "Muted Colors"]])
+   [button-component "Muted colors"
+    #(colors/set-random-palette (colors/muted-palette))]])
