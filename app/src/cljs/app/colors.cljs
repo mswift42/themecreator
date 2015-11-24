@@ -102,7 +102,11 @@
 (defn pop-palette
   "pop-palette returns a vector of 7 random 'pop' colors."
   []
-  (color-list 0.66 0.70))
+  (color-list 0.68 0.64))
+
+(defn muted-palette
+  []
+  (color-list 0.28 0.80))
 
 
 (defn set-random-palette
