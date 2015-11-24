@@ -106,7 +106,7 @@
 
 (defn muted-palette
   []
-  (color-list 0.28 0.80))
+  (color-list 0.22 0.60))
 
 
 (defn set-random-palette
