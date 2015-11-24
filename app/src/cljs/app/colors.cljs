@@ -76,8 +76,6 @@
   []
   (rand-int 360))
 
-
-
 (defn hue-range
   "hue-range returns a vecor of equidistant huevalues."
   [length startvalue]
@@ -99,12 +97,12 @@
 (defn warm-palette
   "warm-palette returns a vector of 7 random warm colors." 
   []
-  (color-list 0.31, 0.661))
+  (color-list 0.37, 0.59))
 
 (defn pop-palette
   "pop-palette returns a vector of 7 random 'pop' colors."
   []
-  (color-list 0.514 0.42))
+  (color-list 0.66 0.70))
 
 
 (defn set-random-palette
