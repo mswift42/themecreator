@@ -61,17 +61,11 @@
 (defn random-colors-component
   []
   [:div.randbuttons.row.row-centered
-   [:button.btn.btn-default.col-xs-4.col-xs-offset-2
-    {:type "button" :on-click
-     #(colors/set-random-palette (colors/warm-palette))}
-    "Warm Colors"]
-   [:button.btn.btn-default.col-xs-4.col-xs-offset-2
-    {:type "button" :on-click
-     #(colors/set-random-palette (colors/soft-palette))}
-    "Soft Colors"]
-   [:button.btn.btn-default.col-xs-4.col-xs-offset-2
-    {:type "button" :on-click
-     #(colors/set-random-palette (colors/pop-palette))}
-    "Pop Colors"]
+   [button-component "Warm Colors"
+    #(colors/set-random-palette (colors/warm-palette))]
+   [button-component "Soft Colors"
+    #(colors/set-random-palette (colors/soft-palette))]
+   [button-component "Pop Colors"
+    #(colors/set-random-palette (colors/pop-palette))]
    [button-component "Muted colors"
     #(colors/set-random-palette (colors/muted-palette))]])
