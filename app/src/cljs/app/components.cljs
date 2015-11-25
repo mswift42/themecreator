@@ -48,13 +48,10 @@
 (defn adjustbg-component
   []
   [:div.adbggroup
-   [:div.input-group
-    [:span.col-xs-2.col-xs-offset-2
-     [:input
-      {:type "checkbox" :value @db/adjustbg :on-change
-       #(db/toggle-adjust)}]]
-    [:span.col-xs-2.pull-right "Adjust BG"]
-    ]])
+   [:input#adbg.adbgcheckbox
+    {:type "checkbox" :value @db/adjustbg :on-change
+     #(db/toggle-adjust)}]
+   [:label {:for "adbg"} "Adjust Bg"]])
 
 (defn random-button-component
   [text handler]
