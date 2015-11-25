@@ -56,16 +56,20 @@
     [:span.col-xs-2.pull-right "Adjust BG"]
     ]])
 
-
+(defn random-button-component
+  [text handler]
+  [:button.btn.btn-default
+   {:type "button" :on-click handler}
+   [:span.randicons [:i.fa.fa-random] text]])
 
 (defn random-colors-component
   []
   [:div.randbuttons.row
-   [button-component "Warm Colors"
+   [random-button-component "Warm"
     #(colors/set-random-palette (colors/warm-palette))]
-   [button-component "Soft Colors"
+   [random-button-component "Soft"
     #(colors/set-random-palette (colors/soft-palette))]
-   [button-component "Pop Colors"
+   [random-button-component "Pop"
     #(colors/set-random-palette (colors/pop-palette))]
-   [button-component "Muted colors"
+   [random-button-component "Muted"
     #(colors/set-random-palette (colors/muted-palette))]])
