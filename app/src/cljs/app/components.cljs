@@ -38,29 +38,29 @@
 (defn inc-contrast-component
   []
   [:button.btn.btn-default
-   {:on-click #(colors/inc-contrast)} "Inc. constrast"])
+   {:on-click #(colors/inc-contrast)} [:span.conticons [:i.fa.fa-adjust] [:i.fa.fa-plus]]])
 
 (defn red-contrast-component
   []
   [:button.btn.btn-default
-   {:type "button" :on-click #(colors/red-contrast)} "Red. contrast"])
+   {:type "button" :on-click #(colors/red-contrast)} [:span.conticons [:i.fa.fa-adjust] [:i.fa.fa-minus]]])
 
 (defn adjustbg-component
   []
   [:div.adbggroup
    [:div.input-group
-    [:span.input-group-addon
+    [:span.col-xs-2.col-xs-offset-2
      [:input
-      {:type "checkbox" :id "adbg" :value @db/adjustbg :on-change
+      {:type "checkbox" :value @db/adjustbg :on-change
        #(db/toggle-adjust)}]]
-    [:input.form-control  {:type "text" :disabled "" :value "adjust bg"}]
+    [:span.col-xs-2.pull-right "Adjust BG"]
     ]])
 
 
 
 (defn random-colors-component
   []
-  [:div.randbuttons.row.row-centered
+  [:div.randbuttons.row
    [button-component "Warm Colors"
     #(colors/set-random-palette (colors/warm-palette))]
    [button-component "Soft Colors"
