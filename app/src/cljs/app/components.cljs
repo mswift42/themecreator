@@ -70,3 +70,26 @@
     #(colors/set-random-palette (colors/pop-palette))]
    [random-button-component "Muted"
     #(colors/set-random-palette (colors/muted-palette))]])
+
+(defn color-component [facename]
+  [:div.colorcomponent 
+   [:div.row
+    [:label.colortitle.col-xs-4 (name facename)]
+    [:input.col-xs-3.colorinput.col-xs-offset-1
+     {:type "color"  :value (facename @db/app-db)
+      :on-change
+      #(swap! db/app-db assoc facename (->
+                                     % .-target .-value))}]
+    [:input.col-xs-3.textinput
+     {:type "text" :value (facename @db/app-db)
+      :on-change
+      #(swap! db/app-db assoc facename (->
+                                     % .-target .-value))}]]])
+
+(defn name-component []
+  [:div.themename
+   [:div.row
+    [:label.colortitle.col-xs-5 (str "Themename")]
+    [:input.col-xs-4.textinput.col-xs-offset-1.nameinput
+     {:type "text" :value (:themename @db/app-db)
+      :on-change #(swap! db/app-db assoc :themename (-> % .-target .-value))}]]])
