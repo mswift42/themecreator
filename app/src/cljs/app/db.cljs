@@ -112,6 +112,12 @@
 (defn toggle-adjust []
   (reset! adjustbg (not @adjustbg)))
 
+(def storagename "mswift42morethemes")
+
+(defn save-to-storage
+  []
+  (.setItem (.-localStorage js/window) storagename @app-db))
+
 (defn switch-theme
   [theme]
   (reset! app-db theme ))
