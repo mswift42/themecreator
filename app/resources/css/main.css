@@ -173,3 +173,12 @@ pre {
     margin-left:0.4em;
     margin-right:0.4em;
 }
+
+.randicons > i {
+    margin-right:0.3em;
+}
+
+.randbuttons {
+    margin-left:0.2em;
+    font-size:80%;
+}
