@@ -7,7 +7,7 @@ body {
     margin-bottom:2vh;
 }
 .colorcomponents {
-    background-color:#ffffff;
+    background-color:#f8eff2;
     padding:1em;
     border: 1px solid;
     border-color:#d1d1d1;
@@ -130,6 +130,37 @@ pre {
                                                                                                                                               background-color: #49414d;
                                                                                                                                           }
 }
+/* .butsection .col-xs-3 { */
+/*     margin-left:0.2em; */
+/* } */
+/* .butsection .btn { */
+/*     background-color:#eaeaea; */
+/*     padding:0.2em; */
+/* } */
+/* .butsection label { */
+/*     font-size:80%; */
+/* } */
+
+/* /\* .randbuttons  .btn  .btn-default{ *\/ */
+/* /\*     font-size:80%; *\/ */
+/* /\* } *\/ */
+/* .btn { */
+/*     font-size:80%; */
+/*     margin-left:-1em; */
+/*     padding:0.2em; */
+/* } */
+
+/* .butsection & .row .btn { */
+/*     margin-left:-1em; */
+/* } */
+
+/* .adbg { */
+/*     margin-right:3em; */
+/* } */
+/* .input-group { */
+/*     margin-right:2em; */
+
+
 .themedrop > .btn-default {
     background-color:#584b5f;
     border:1px solid #49414d;
@@ -137,10 +168,8 @@ pre {
     margin-top:20px;
     padding:1em;
 }
-.butsection .btn {
-    font-size:90%;
-    background-color:#dadada;
-}
-.butsection label {
-    font-size:60%;
+
+.conticons > i {
+    margin-left:0.4em;
+    margin-right:0.4em;
 }
