@@ -48,5 +48,13 @@
     [span-component "  constructor" :keyword]
     [span-component "(theme: Theme) {" :mainfg]
     [:br]
+    [span-component "    this" :keyword]
+    [span-component "." :mainfg]
+    [span-component "theme" :variable]
+    [span-component " = theme" :mainfg]
+    [:br]
+    [span-component "  }" :mainfg]
+    [:br]
+    [:br]
     ]])
 
