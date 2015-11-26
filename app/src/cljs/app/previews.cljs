@@ -56,5 +56,13 @@
     [span-component "  }" :mainfg]
     [:br]
     [:br]
-    ]])
+    [span-component "  getTheme" :functionname]
+    [span-component "() : Theme {" :mainfg]
+    [:br]
+    [span-component "    return this" :keyword]
+    [span-component "." :mainfg]
+    [span-component "theme" :variable]
+    [:br]
+    [span-component "  }" :mainfg]
+    [:br]]])
 
