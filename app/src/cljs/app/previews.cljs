@@ -75,5 +75,16 @@
     [span-component " = theme" :mainfg]
     [:br]
     [span-component "  }" :mainfg]
-    [:br]]])
+    [:br]
+    [:br]
+    [span-component "  // changeColor sets one themeface of" :comment]
+    [:br]
+    [span-component "  // 'theme' to a given color." :comment]
+    [:br]
+    [span-component "  changeColor" :functionname]
+    [span-component "(face: Face): " :mainfg]
+    [span-component "void " :type]
+    [span-component "{" :mainfg]
+    [:br]
+    [span-component "    for" :keyword]]])
 
