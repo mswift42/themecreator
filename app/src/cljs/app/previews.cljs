@@ -15,7 +15,15 @@
    [:br]
    [:br]
    [span-component "function " :keyword]
-   [span-component "eratosthenes" :mainfg]] )
+   [span-component "eratosthenes" :functionname]
+   [span-component "(" :mainfg]
+   [span-component "limit" :constant]
+   [span-component ") {" :mainfg]
+   [:br]
+   [span-component "  var " :keyword]
+   [span-component "primes " :variable]
+   [span-component "= [];" :mainfg]
+   [:br]] )
 
 (defn preview-typescript
   []
