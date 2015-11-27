@@ -113,12 +113,18 @@
   (r/atom
    prev/preview-typescript))
 
+(defn toggle-preview
+  [lang]
+  (reset! active-preview lang))
+
 (defn switch-theme
   [theme]
   (reset! app-db theme ))
 
 (defn toggle-adjust []
   (reset! adjustbg (not @adjustbg)))
+
+
 
 (def storagename "mswift42morethemes")
 
