@@ -1,6 +1,6 @@
 (ns app.app
   (:require [reagent.core :as reagent :refer [atom]]
-            [app.db :refer [app-db]]
+            [app.db :refer [app-db active-preview]]
             [app.previews :as previews]
             [app.components  :as comps]))
 
@@ -38,7 +38,7 @@
 (defn preview-component []
   [:div.col-md-6.col-lg-8.col-lg-offset-1
    [:div.previewcomponent {:style {:background-color (:mainbg @app-db)}}
-    [previews/preview-typescript]]])
+    [@active-preview]]])
 
 (defn navbar-component []
   [:div.container-fluid
