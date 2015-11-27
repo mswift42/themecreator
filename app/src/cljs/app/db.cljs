@@ -1,5 +1,6 @@
 (ns app.db
-  (:require [reagent.core :as r]))
+  (:require [reagent.core :as r]
+            [app.previews :as prev]))
 
 (def preset
   {:themename "preset"
@@ -108,6 +109,13 @@
   (r/atom
    false))
 
+(def active-preview
+  (r/atom
+   prev/preview-typescript))
+
+(defn switch-theme
+  [theme]
+  (reset! app-db theme ))
 
 (defn toggle-adjust []
   (reset! adjustbg (not @adjustbg)))
@@ -116,10 +124,12 @@
 
 (defn save-to-storage
   []
-  (.setItem (.-localStorage js/window) storagename @app-db))
+  (.setItem (.-localStorage js/window) storagename (clj->js @app-db)))
 
-(defn switch-theme
-  [theme]
-  (reset! app-db theme ))
+(defn load-from-storage
+  []
+  (switch-theme (.getItem (.-localStorage js/window) storagename)))
+
+
 
 
