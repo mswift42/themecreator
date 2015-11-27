@@ -38,7 +38,9 @@
 (defn preview-component []
   [:div.col-md-6.col-lg-8.col-lg-offset-1
    [:div.previewcomponent {:style {:background-color (:mainbg @app-db)}}
-    [@active-preview]]])
+    [:div
+     [:pre {:style {:background-color (:mainbg @app-db)}}
+      [@active-preview]]]]])
 
 (defn navbar-component []
   [:div.container-fluid
