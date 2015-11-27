@@ -47,7 +47,8 @@
    [:a.navbar-brand {:href "#"} "ITC"]
    [:div.navbar.navbar-collapse
     [:div
-     [comps/theme-select]]]])
+     [comps/theme-select]
+     [comps/language-select]]]])
 
 (defn theme-component []
   [navbar-component]
