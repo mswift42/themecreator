@@ -23,7 +23,19 @@
    [span-component "  var " :keyword]
    [span-component "primes " :variable]
    [span-component "= [];" :mainfg]
-   [:br]] )
+   [:br]
+   [span-component "  if " :keyword]
+   [span-component "(limit >= 2) {" :mainfg]
+   [:br]
+   [span-component "    var " :keyword]
+   [span-component "sqrtlmt " :variable]
+   [span-component "= " :mainfg]
+   [span-component "Math" :type]
+   [span-component "." :mainfg]
+   [span-component "sqrt" :functionname]
+   [span-component "(" :mainfg]
+   [span-component "limit" :variable]
+   [span-component ") - 2;" :mainfg]] )
 
 (defn preview-typescript
   []
