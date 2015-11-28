@@ -53,8 +53,7 @@
   [navbar-component]
   [:div.row
    [color-components]
-   [preview-component]
-   ])
+   [preview-component]])
 
 
 (defn init []

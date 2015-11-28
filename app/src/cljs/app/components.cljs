@@ -28,49 +28,19 @@
 
 (defn theme-select
   []
-  [:div.btn-group.themedrop {:id "themedrop"}
-   [:button.btn.btn-default {:type "button"}
-    "Theme Samples"]
-   [:button.btn.btn-default.dropdown-toggle
-    {:type "button" :data-toggle "dropdown"}
-    [:span.caret]
-    [:span.sr-only]
-    ]
-   [:ul.dropdown-menu {:aria-labelledby "themedrop"}
-    [:li [:a
-          {:href "#" :on-click #(db/switch-theme db/preset)} "preset"]]
-    [:li [:a
-          {:href "#" :on-click #(db/switch-theme db/warm-night)} "warm-night"]]
-    [:li [:a
-          {:href "#" :on-click #(db/switch-theme db/white-sand)}
-          "white-sand"] ]
-    [:li [:a
-          {:href "#" :on-click #(db/switch-theme db/greymatters)}"greymatters"]]
-    [:li [:a
-          {:href "#" :on-click #(db/switch-theme db/oldlace)} "oldlace"]]
-    [:li [:a
-          {:href "#" :on-click #(db/switch-theme db/soft-charcoal)} "soft-charcoal"]]]])
+  [select-component "themedrop" "Theme Samples"
+   [[#(db/switch-theme db/preset) "preset"]
+    [#(db/switch-theme db/warm-night) "warm-night"]
+    [#(db/switch-theme db/white-sand) "white-sand"]
+    [#(db/switch-theme db/greymatters) "greymatters"]
+    [#(db/switch-theme db/oldlace) "oldlace"]
+    [#(db/switch-theme db/soft-charcoal) "soft-charcoal"]]])
+
 (defn language-select
   []
   [select-component "langdrop" "Languages"
    [[#(toggle-preview prev/preview-typescript) "Typescript"]
     [#(toggle-preview prev/preview-javascript) "Javascript"]]])
-;; (defn language-select
-;;   []
-;;   [:div.btn-group.themedrop {:id "langdrop"}
-;;    [:button.btn.btn-default {:type "button"}
-;;     "Languages"]
-;;    [:button.btn.btn-default.dropdown-toggle
-;;     {:type "button" :data-toggle "dropdown"}
-;;     [:span.caret]
-;;     [:span.sr-only]]
-;;    [:ul.dropdown-menu {:aria-labelledby "langdrop"}
-;;     [:li [:a
-;;           {:href "#" :on-click #(toggle-preview prev/preview-typescript)}
-;;           "Typescript"]]
-;;     [:li [:a
-;;           {:href "#" :on-click #(toggle-preview prev/preview-javascript)}
-;;           "Javascript"]]]])
 
 (defn button-component
   "button-component returns the markup for a bootstrap default button"
