@@ -1,7 +1,18 @@
 (ns app.components
   (:require [reagent.core :as r]
             [app.db :as db]
-            [app.colors :as colors]))
+            [app.colors :as colors]
+            [app.previews :as prev]
+            ))
+
+
+(def active-preview
+  (r/atom
+   prev/preview-typescript))
+
+(defn toggle-preview
+  [lang]
+  (reset! active-preview lang))
 
 (defn theme-select
   []
@@ -27,6 +38,24 @@
           {:href "#" :on-click #(db/switch-theme db/oldlace)} "oldlace"]]
     [:li [:a
           {:href "#" :on-click #(db/switch-theme db/soft-charcoal)} "soft-charcoal"]]]])
+
+(defn language-select
+  []
+  [:div.btn-group.themedrop {:id "langdrop"}
+   [:button.btn.btn-default {:type "button"}
+    "Languages"]
+   [:button.btn.btn-default.dropdown-toggle
+    {:type "button" :data-toggle "dropdown"}
+    [:span.caret]
+    [:span.sr-only]]
+   [:ul.dropdown-menu {:aria-labelledby "langdrop"}
+    [:li [:a
+          {:href "#" :on-click #(toggle-preview prev/preview-typescript)}
+          "Typescript"]]
+    [:li [:a
+          {:href "#" :on-click #(toggle-preview prev/preview-javascript)}
+          "Javascript"]]]])
+
 
 (defn button-component
   "button-component returns the markup for a bootstrap default button"
