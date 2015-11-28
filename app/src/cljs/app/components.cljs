@@ -24,6 +24,7 @@
     [:span.sr-only]]
    [:ul.dropdown-menu {:aria-labelledby compid}
     (for [[linkhandler linktitle] linklist]
+      ^{:key linkhandler}
       [:li [:a {:href "#" :on-click linkhandler} linktitle]])]])
 
 (defn theme-select
