@@ -35,7 +35,27 @@
    [span-component "sqrt" :functionname]
    [span-component "(" :mainfg]
    [span-component "limit" :variable]
-   [span-component ") - 2;" :mainfg]] )
+   [span-component ") - 2;" :mainfg]
+   [:br]
+   [span-component "    var " :keyword]
+   [span-component "nums " :variable]
+   [span-component "= new " :mainfg]
+   [span-component "Array" :type]
+   [span-component "();" :mainfg]
+   [span-component " // start with an empty Array." :comment]
+   [:br]
+   [span-component "    for " :keyword]
+   [span-component "(" :mainfg]
+   [span-component "var " :keyword]
+   [span-component "i " :variable]
+   [span-component "= 2; " :mainfg]
+   [span-component "i " :variable]
+   [span-component "<= " :mainfg]
+   [span-component "limit" :variable]
+   [span-component "; " :mainfg]
+   [span-component "i" :variable]
+   [span-component "++)" :mainfg]
+   [:br]] )
 
 (defn preview-typescript
   []
