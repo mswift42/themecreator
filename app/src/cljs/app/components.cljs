@@ -13,6 +13,19 @@
   [lang]
   (reset! active-preview lang))
 
+(defn select-component
+  [compid title linklist]
+  [:div.btn-group.themedrop {:id compid}
+   [:button.btn.btn-default {:type "button"}
+    title]
+   [:button.btn.btn-default.dropdown-toggle
+    {:type "button" :data-toggle "dropdown"}
+    [:span.caret]
+    [:span.sr-only]]
+   [:ul.dropdown-menu {:aria-labelledby compid}
+    (for [[linkhandler linktitle] linklist]
+      [:li [:a {:href "#" :on-click linkhandler} linktitle]])]])
+
 (defn theme-select
   []
   [:div.btn-group.themedrop {:id "themedrop"}
@@ -37,23 +50,27 @@
           {:href "#" :on-click #(db/switch-theme db/oldlace)} "oldlace"]]
     [:li [:a
           {:href "#" :on-click #(db/switch-theme db/soft-charcoal)} "soft-charcoal"]]]])
-
 (defn language-select
   []
-  [:div.btn-group.themedrop {:id "langdrop"}
-   [:button.btn.btn-default {:type "button"}
-    "Languages"]
-   [:button.btn.btn-default.dropdown-toggle
-    {:type "button" :data-toggle "dropdown"}
-    [:span.caret]
-    [:span.sr-only]]
-   [:ul.dropdown-menu {:aria-labelledby "langdrop"}
-    [:li [:a
-          {:href "#" :on-click #(toggle-preview prev/preview-typescript)}
-          "Typescript"]]
-    [:li [:a
-          {:href "#" :on-click #(toggle-preview prev/preview-javascript)}
-          "Javascript"]]]])
+  [select-component "langdrop" "Languages"
+   [[#(toggle-preview prev/preview-typescript) "Typescript"]
+    [#(toggle-preview prev/preview-javascript) "Javascript"]]])
+;; (defn language-select
+;;   []
+;;   [:div.btn-group.themedrop {:id "langdrop"}
+;;    [:button.btn.btn-default {:type "button"}
+;;     "Languages"]
+;;    [:button.btn.btn-default.dropdown-toggle
+;;     {:type "button" :data-toggle "dropdown"}
+;;     [:span.caret]
+;;     [:span.sr-only]]
+;;    [:ul.dropdown-menu {:aria-labelledby "langdrop"}
+;;     [:li [:a
+;;           {:href "#" :on-click #(toggle-preview prev/preview-typescript)}
+;;           "Typescript"]]
+;;     [:li [:a
+;;           {:href "#" :on-click #(toggle-preview prev/preview-javascript)}
+;;           "Javascript"]]]])
 
 (defn button-component
   "button-component returns the markup for a bootstrap default button"
