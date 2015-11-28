@@ -107,6 +107,11 @@
    [span-component "+= " :mainfg]
    [span-component "p" :variable]
    [span-component ")" :mainfg]
+   [:br]
+   [span-component "          nums" :variable]
+   [span-component "[" :mainfg]
+   [span-component "j" :variable]
+   [span-component "] = 0;" :mainfg]
    [:br]] )
 
 (defn preview-typescript
