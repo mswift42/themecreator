@@ -111,7 +111,7 @@
 
 (def active-preview
   (r/atom
-   prev/preview-javascript))
+   prev/preview-typescript))
 
 (defn toggle-preview
   [lang]
@@ -126,15 +126,15 @@
 
 
 
-(def storagename "mswift42morethemes")
+;; (def storagename "mswift42morethemes")
 
-(defn save-to-storage
-  []
-  (.setItem (.-localStorage js/window) storagename (clj->js @app-db)))
+;; (defn save-to-storage
+;;   []
+;;   (.setItem (.-localStorage js/window) storagename (clj->js @app-db)))
 
-(defn load-from-storage
-  []
-  (switch-theme (.getItem (.-localStorage js/window) storagename)))
+;; (defn load-from-storage
+;;   []
+;;   (switch-theme (.getItem (.-localStorage js/window) storagename)))
 
 
 
