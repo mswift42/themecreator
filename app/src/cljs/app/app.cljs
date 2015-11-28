@@ -1,7 +1,6 @@
 (ns app.app
   (:require [reagent.core :as reagent :refer [atom]]
             [app.db :refer [app-db active-preview]]
-            [app.previews :as previews]
             [app.components  :as comps]))
 
 
@@ -54,9 +53,10 @@
   [navbar-component]
   [:div.row
    [color-components]
-   [preview-component]])
+   [preview-component]
+   ])
 
-
+(devtools/install!)
 
 (defn init []
   (reagent/render-component [navbar-component]
