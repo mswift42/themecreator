@@ -32,7 +32,7 @@
    [span-component "= " :mainfg]
    [span-component "Math" :type]
    [span-component "." :mainfg]
-   [span-component "sqrt" :functionname]
+   [span-component "sqrt" :builtin]
    [span-component "(" :mainfg]
    [span-component "limit" :variable]
    [span-component ") - 2;" :mainfg]
