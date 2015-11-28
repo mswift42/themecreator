@@ -56,7 +56,6 @@
    [preview-component]
    ])
 
-(devtools/install!)
 
 (defn init []
   (reagent/render-component [navbar-component]
