@@ -55,6 +55,13 @@
    [span-component "; " :mainfg]
    [span-component "i" :variable]
    [span-component "++)" :mainfg]
+   [:br]
+   [span-component "      nums" :variable]
+   [span-component "." :mainfg]
+   [span-component "push" :builtin]
+   [span-component "(" :mainfg]
+   [span-component "i" :variable]
+   [span-component ");" :mainfg]
    [:br]] )
 
 (defn preview-typescript
