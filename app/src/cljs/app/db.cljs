@@ -1,6 +1,5 @@
 (ns app.db
-  (:require [reagent.core :as r]
-            [app.previews :as prev]))
+  (:require [reagent.core :as r]))
 
 (def preset
   {:themename "preset"
@@ -109,13 +108,6 @@
   (r/atom
    false))
 
-(def active-preview
-  (r/atom
-   prev/preview-typescript))
-
-(defn toggle-preview
-  [lang]
-  (reset! active-preview lang))
 
 (defn switch-theme
   [theme]

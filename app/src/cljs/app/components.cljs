@@ -4,6 +4,15 @@
             [app.colors :as colors]
             [app.previews :as prev]))
 
+
+(def active-preview
+  (r/atom
+   prev/preview-typescript))
+
+(defn toggle-preview
+  [lang]
+  (reset! active-preview lang))
+
 (defn theme-select
   []
   [:div.btn-group.themedrop {:id "themedrop"}
@@ -40,10 +49,10 @@
     [:span.sr-only]]
    [:ul.dropdown-menu {:aria-labelledby "langdrop"}
     [:li [:a
-          {:href "#" :on-click #(db/toggle-preview prev/preview-typescript)}
+          {:href "#" :on-click #(toggle-preview prev/preview-typescript)}
           "Typescript"]]
     [:li [:a
-          {:href "#" :on-click #(db/toggle-preview prev/preview-javascript)}
+          {:href "#" :on-click #(toggle-preview prev/preview-javascript)}
           "Javascript"]]]])
 
 (defn button-component

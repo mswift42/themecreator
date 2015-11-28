@@ -1,6 +1,6 @@
 (ns app.app
   (:require [reagent.core :as reagent :refer [atom]]
-            [app.db :refer [app-db active-preview]]
+            [app.db :refer [app-db ]]
             [app.components  :as comps]))
 
 
@@ -39,7 +39,7 @@
    [:div.previewcomponent {:style {:background-color (:mainbg @app-db)}}
     [:div
      [:pre {:style {:background-color (:mainbg @app-db)}}
-      [@active-preview]]]]])
+      [@comps/active-preview]]]]])
 
 (defn navbar-component []
   [:div.container-fluid
