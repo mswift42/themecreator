@@ -215,7 +215,7 @@
     <option name="COFFEESCRIPT.BAD_CHARACTER">
       <value>
         <option name="FOREGROUND" value="{{.bg2}}" />
-        <option name="BACKGROUND" value="{{.doc}}" />
+        <option name="BACKGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="COFFEESCRIPT.BLOCK_COMMENT">
@@ -241,7 +241,7 @@
     </option>
     <option name="COFFEESCRIPT.ESCAPE_SEQUENCE">
       <value>
-        <option name="FOREGROUND" value="{{.doc}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="COFFEESCRIPT.EXPRESSIONS_SUBSTITUTION_MARK">
@@ -295,7 +295,7 @@
     </option>
     <option name="COFFEESCRIPT.JAVASCRIPT_ID">
       <value>
-        <option name="FOREGROUND" value="{{.doc}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -729,7 +729,7 @@
     </option>
     <option name="DEFAULT_CONSTANT">
       <value>
-        <option name="FOREGROUND" value="{{.doc}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="DEFAULT_DOC_COMMENT">
@@ -820,7 +820,7 @@
     </option>
     <option name="DEFAULT_STATIC_FIELD">
       <value>
-        <option name="FOREGROUND" value="{{.doc}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="DEFAULT_STRING">
@@ -905,7 +905,7 @@
     </option>
     <option name="ECMAL4.ATTRIBUTE">
       <value>
-        <option name="FOREGROUND" value="{{.doc}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
         <option name="EFFECT_TYPE" value="0" />
       </value>
     </option>
@@ -915,13 +915,13 @@
         <option name="EFFECT_TYPE" value="0" />
       </value>
     </option>
-    <option name="ECMAL4.DOC_MARKUP">
+    <option name="ECMAL4CONSTANT_MARKUP">
       <value>
         <option name="FOREGROUND" value="{{string}}" />
         <option name="EFFECT_TYPE" value="0" />
       </value>
     </option>
-    <option name="ECMAL4.DOC_TAG">
+    <option name="ECMAL4CONSTANT_TAG">
       <value>
         <option name="FOREGROUND" value="{{.warning2}}" />
         <option name="EFFECT_TYPE" value="1" />
@@ -979,7 +979,7 @@
     </option>
     <option name="ECMAL4.STATIC_MEMBER_FUNCTION">
       <value>
-        <option name="FOREGROUND" value="{{.doc}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
         <option name="EFFECT_TYPE" value="0" />
       </value>
     </option>
@@ -1109,7 +1109,7 @@
     </option>
     <option name="GHERKIN_TAG">
       <value>
-        <option name="FOREGROUND" value="{{.doc}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="GQL_ID">
@@ -1189,7 +1189,7 @@
     </option>
     <option name="HAML_RUBY_START">
       <value>
-        <option name="FOREGROUND" value="{{.doc}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="HAML_TAG">
@@ -1485,18 +1485,18 @@
         <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
-    <option name="JS.DOC_COMMENT">
+    <option name="JSCONSTANT_COMMENT">
       <value>
         <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
-    <option name="JS.DOC_MARKUP">
+    <option name="JSCONSTANT_MARKUP">
       <value>
         <option name="BACKGROUND" value="{{.bg2}}" />
       </value>
     </option>
-    <option name="JS.DOC_TAG">
+    <option name="JSCONSTANT_TAG">
       <value>
         <option name="FOREGROUND" value="{{.warning2}}" />
         <option name="EFFECT_TYPE" value="1" />
@@ -1794,7 +1794,7 @@
     </option>
     <option name="LOGCAT_ASSERT_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="{{.doc}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="LOGCAT_DEBUG_OUTPUT">
@@ -1839,7 +1839,7 @@
     </option>
     <option name="LUA_BAD_CHARACTER">
       <value>
-        <option name="BACKGROUND" value="{{.doc}}" />
+        <option name="BACKGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="LUA_COMMENT">
@@ -2265,7 +2265,7 @@
     </option>
     <option name="PHP_ESCAPE_SEQUENCE">
       <value>
-        <option name="FOREGROUND" value="{{.doc}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -2335,7 +2335,7 @@
     </option>
     <option name="PROPERTIES.VALID_STRING_ESCAPE">
       <value>
-        <option name="FOREGROUND" value="{{.doc}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="PROPERTIES.VALUE">
@@ -2346,7 +2346,7 @@
     <option name="PROPS.INVALID_STRING_ESCAPE">
       <value>
         <option name="FOREGROUND" value="{{.bg2}}" />
-        <option name="BACKGROUND" value="{{.doc}}" />
+        <option name="BACKGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="PROPS.KEY">
@@ -2419,7 +2419,7 @@
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
-    <option name="PY.DOC_COMMENT">
+    <option name="PYCONSTANT_COMMENT">
       <value>
         <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
@@ -2433,7 +2433,7 @@
     </option>
     <option name="PY.INVALID_STRING_ESCAPE">
       <value>
-        <option name="FOREGROUND" value="{{.doc}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
         <option name="EFFECT_COLOR" value="ffffff" />
         <option name="EFFECT_TYPE" value="2" />
       </value>
@@ -2490,7 +2490,7 @@
     </option>
     <option name="PY.VALID_STRING_ESCAPE">
       <value>
-        <option name="FOREGROUND" value="{{.doc}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="Predefined types">
@@ -2513,7 +2513,7 @@
     </option>
     <option name="QL_DATETIME">
       <value>
-        <option name="FOREGROUND" value="{{.doc}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="QL_ENTITY">
@@ -2593,7 +2593,7 @@
     </option>
     <option name="REGEXP.ESC_CHARACTER">
       <value>
-        <option name="FOREGROUND" value="{{.doc}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="REGEXP.INVALID_STRING_ESCAPE">
@@ -2892,13 +2892,13 @@
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
-    <option name="SOY.DOC_COMMENT">
+    <option name="SOYCONSTANT_COMMENT">
       <value>
         <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
-    <option name="SOY.DOC_COMMENT_IDENTIFIER">
+    <option name="SOYCONSTANT_COMMENT_IDENTIFIER">
       <value>
         <option name="FOREGROUND" value="{{builtin}}" />
         <option name="FONT_TYPE" value="1" />
@@ -2908,7 +2908,7 @@
     <option name="SOY.IGNORE">
       <value>
         <option name="FOREGROUND" value="{{.fg3}}" />
-        <option name="BACKGROUND" value="{{.doc}}" />
+        <option name="BACKGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="SOY.KEYWORD">
@@ -3019,7 +3019,7 @@
     </option>
     <option name="SQL_LABEL">
       <value>
-        <option name="FOREGROUND" value="{{.doc}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="SQL_LOCAL_ALIAS">
@@ -3069,7 +3069,7 @@
     </option>
     <option name="STATIC_FIELD_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="{{.doc}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="STATIC_METHOD_ATTRIBUTES">
@@ -3094,7 +3094,7 @@
     </option>
     <option name="Scala Bad character">
       <value>
-        <option name="FOREGROUND" value="{{.doc}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="Scala Block comment">
@@ -3115,7 +3115,7 @@
     </option>
     <option name="Scala Invalid escape in string">
       <value>
-        <option name="FOREGROUND" value="{{.doc}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="Scala Keyword">
@@ -3158,7 +3158,7 @@
     </option>
     <option name="Scala Pattern value">
       <value>
-        <option name="FOREGROUND" value="{{.doc}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="Scala Predefined types">
@@ -3248,12 +3248,12 @@
     </option>
     <option name="Static field">
       <value>
-        <option name="FOREGROUND" value="{{.doc}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="Static property reference ID">
       <value>
-        <option name="FOREGROUND" value="{{.doc}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="String">
@@ -3264,7 +3264,7 @@
     <option name="TEA.BADCHARACTER">
       <value>
         <option name="FOREGROUND" value="{{.bg3}}" />
-        <option name="BACKGROUND" value="{{.doc}}" />
+        <option name="BACKGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="TEA.BLOCK_COMMENT">
@@ -3276,7 +3276,7 @@
     <option name="TEA.INVALID_STRING_ESCAPE">
       <value>
         <option name="FOREGROUND" value="{{.bg3}}" />
-        <option name="BACKGROUND" value="{{.doc}}" />
+        <option name="BACKGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="TEA.KEYWORD">
@@ -3517,7 +3517,7 @@
     </option>
     <option name="XML_ENTITY_REFERENCE">
       <value>
-        <option name="FOREGROUND" value="{{.doc}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="XML_PROLOGUE">
@@ -3704,7 +3704,7 @@
     </option>
     <option name="go.type.name">
       <value>
-        <option name="FOREGROUND" value="{{.doc}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
         <option name="FONT_TYPE" value="2" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
