@@ -166,7 +166,18 @@
    [span-component "eratosthenes" :functionname]
    [span-component "(" :mainfg]
    [span-component "100" :constant]
-   [span-component ");" :mainfg]] )
+   [span-component ");" :mainfg]
+   [:br]
+   [:br]
+   [span-component "console" :keyword]
+   [span-component "." :mainfg]
+   [span-component "log" :builtin]
+   [span-component "(" :mainfg]
+   [span-component "'An array of the prime numbers from 0 to 100: '" :string]
+   [span-component "+ " :mainfg]
+   [span-component "primes" :variable]
+   [span-component ");" :mainfg]
+   [:br]] )
 
 (defn preview-typescript
   []
