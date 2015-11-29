@@ -37,9 +37,9 @@
         <option name="FOREGROUND" value="{{.keyword}}" />
       </value>
     </option>
-    <option name="APACHE_CONFIG.COMMENT">
+    <option name="APACHE_CONFIGCOMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -94,12 +94,12 @@
     </option>
     <option name="BASH.HERE_DOC_END">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="BASH.HERE_DOC_START">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="BASH.INTERNAL_COMMAND">
@@ -114,7 +114,7 @@
     </option>
     <option name="BASH.LINE_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -134,14 +134,14 @@
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
-    <option name="BASH.STRING">
+    <option name="BASHSTRING">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
-    <option name="BASH.STRING2">
+    <option name="BASHSTRING2">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="BASH.SUBSHELL_COMMAND">
@@ -182,7 +182,7 @@
     </option>
     <option name="BUILDOUT.LINE_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -199,7 +199,7 @@
     </option>
     <option name="Block comment">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -208,7 +208,7 @@
     </option>
     <option name="CLASS_REFERENCE">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
@@ -220,7 +220,7 @@
     </option>
     <option name="COFFEESCRIPT.BLOCK_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -306,7 +306,7 @@
     </option>
     <option name="COFFEESCRIPT.LINE_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -317,18 +317,18 @@
     </option>
     <option name="COFFEESCRIPT.OBJECT_KEY">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="COFFEESCRIPT.OPERATIONS">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
     <option name="COFFEESCRIPT.REGULAR_EXPRESSION_CONTENT">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="COFFEESCRIPT.REGULAR_EXPRESSION_FLAG">
@@ -339,22 +339,22 @@
     </option>
     <option name="COFFEESCRIPT.REGULAR_EXPRESSION_ID">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="COFFEESCRIPT.SEMICOLON">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
-    <option name="COFFEESCRIPT.STRING">
+    <option name="COFFEESCRIPTSTRING">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
-    <option name="COFFEESCRIPT.STRING_LITERAL">
+    <option name="COFFEESCRIPTSTRING_LITERAL">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -380,13 +380,13 @@
     </option>
     <option name="CONSOLE_CYAN_BRIGHT_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="CONSOLE_CYAN_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="CONSOLE_DARKGRAY_OUTPUT">
@@ -455,24 +455,24 @@
     </option>
     <option name="CONSOLE_YELLOW_BRIGHT_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="CONSOLE_YELLOW_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
-    <option name="CSS.COMMENT">
+    <option name="CSSCOMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="CSS.FUNCTION">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
     <option name="CSS.IDENT">
@@ -494,22 +494,22 @@
     </option>
     <option name="CSS.NUMBER">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="CSS.PROPERTY_NAME">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
     <option name="CSS.PROPERTY_VALUE">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
-    <option name="CSS.STRING">
+    <option name="CSSSTRING">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="CSS.TAG_NAME">
@@ -519,7 +519,7 @@
     </option>
     <option name="CSS.URL">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="CTRL_CLICKABLE">
@@ -551,18 +551,18 @@
     </option>
     <option name="CUSTOM_KEYWORD4_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
     <option name="CUSTOM_LINE_COMMENT_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="CUSTOM_MULTI_LINE_COMMENT_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -573,7 +573,7 @@
     </option>
     <option name="CUSTOM_STRING_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="CUSTOM_VALID_STRING_ESCAPE_ATTRIBUTES">
@@ -600,7 +600,7 @@
     </option>
     <option name="Clojure Line comment">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -621,9 +621,9 @@
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
-    <option name="Cmd.COMMENT">
+    <option name="CmdCOMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -658,7 +658,7 @@
         <option name="FOREGROUND" value="{{.warning2}}" />
       </value>
     </option>
-    <option name="Cmd.STRING">
+    <option name="CmdSTRING">
       <value>
         <option name="FOREGROUND" value="{{.keyword}}" />
         <option name="FONT_TYPE" value="1" />
@@ -683,9 +683,9 @@
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
-    <option name="DART.COMMENT">
+    <option name="DARTCOMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -700,7 +700,7 @@
         <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
-    <option name="DART.STRING">
+    <option name="DARTSTRING">
       <value>
         <option name="FOREGROUND" value="{{.keyword}}" />
         <option name="FONT_TYPE" value="1" />
@@ -714,7 +714,7 @@
     </option>
     <option name="DEFAULT_BLOCK_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -734,7 +734,7 @@
     </option>
     <option name="DEFAULT_DOC_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
       </value>
     </option>
     <option name="DEFAULT_DOC_COMMENT_TAG">
@@ -778,7 +778,7 @@
     </option>
     <option name="DEFAULT_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
     <option name="DEFAULT_LABEL">
@@ -790,7 +790,7 @@
     </option>
     <option name="DEFAULT_LINE_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -825,7 +825,7 @@
     </option>
     <option name="DEFAULT_STRING">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="DEFAULT_TAG">
@@ -856,7 +856,7 @@
     </option>
     <option name="DJANGO_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -879,7 +879,7 @@
     </option>
     <option name="DJANGO_STRING_LITERAL">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -911,13 +911,13 @@
     </option>
     <option name="ECMAL4.CLASS">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
         <option name="EFFECT_TYPE" value="0" />
       </value>
     </option>
     <option name="ECMAL4.DOC_MARKUP">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
         <option name="EFFECT_TYPE" value="0" />
       </value>
     </option>
@@ -955,7 +955,7 @@
     </option>
     <option name="ECMAL4.NUMBER">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
         <option name="EFFECT_TYPE" value="0" />
       </value>
     </option>
@@ -990,12 +990,12 @@
     </option>
     <option name="EL.IDENT">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
     <option name="EL.KEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -1004,9 +1004,9 @@
         <option name="FOREGROUND" value="{{.warning}}" />
       </value>
     </option>
-    <option name="EL.STRING">
+    <option name="ELSTRING">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -1017,7 +1017,7 @@
     </option>
     <option name="ENUM_CONST">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
@@ -1066,13 +1066,13 @@
     </option>
     <option name="GHERKIN_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="GHERKIN_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
     <option name="GHERKIN_OUTLINE_PARAMETER_SUBSTITUTION">
@@ -1104,7 +1104,7 @@
     </option>
     <option name="GHERKIN_TABLE_PIPE">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
     <option name="GHERKIN_TAG">
@@ -1128,23 +1128,23 @@
     </option>
     <option name="GQL_STRING_LITERAL">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="GROOVY_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
     <option name="GString">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="Groovydoc comment">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
       </value>
     </option>
     <option name="Groovydoc tag">
@@ -1160,7 +1160,7 @@
     </option>
     <option name="HAML_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
       </value>
     </option>
     <option name="HAML_FILTER">
@@ -1194,7 +1194,7 @@
     </option>
     <option name="HAML_TAG">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
     <option name="HAML_TEXT">
@@ -1204,7 +1204,7 @@
     </option>
     <option name="HAML_XHTML">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
     <option name="HTML_ATTRIBUTE_NAME">
@@ -1214,12 +1214,12 @@
     </option>
     <option name="HTML_ATTRIBUTE_VALUE">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="HTML_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
       </value>
     </option>
     <option name="HTML_ENTITY_REFERENCE">
@@ -1257,9 +1257,9 @@
     </option>
     <option name="INFO_ATTRIBUTES">
       <value>
-        <option name="EFFECT_COLOR" value="{{.functionname}}" />
+        <option name="EFFECT_COLOR" value="{{functionname}}" />
         <option name="EFFECT_TYPE" value="5" />
-        <option name="ERROR_STRIPE_COLOR" value="{{.functionname}}" />
+        <option name="ERROR_STRIPE_COLOR" value="{{functionname}}" />
       </value>
     </option>
     <option name="INJECTED_LANGUAGE_FRAGMENT">
@@ -1312,12 +1312,12 @@
     </option>
     <option name="JADE_JS_BLOCK">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="JADE_STATEMENTS">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
     <option name="JADE_TAG_ID">
@@ -1332,13 +1332,13 @@
     </option>
     <option name="JAVA_BLOCK_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="JAVA_DOC_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
       </value>
     </option>
     <option name="JAVA_DOC_TAG">
@@ -1355,12 +1355,12 @@
     </option>
     <option name="JAVA_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
     <option name="JAVA_LINE_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -1371,7 +1371,7 @@
     </option>
     <option name="JAVA_STRING">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="JAVA_VALID_STRING_ESCAPE">
@@ -1379,15 +1379,15 @@
         <option name="FOREGROUND" value="{{.warning2}}" />
       </value>
     </option>
-    <option name="JFLEX.COMMENT">
+    <option name="JFLEXCOMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="JFLEX.OPTION_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
         <option name="FONT_TYPE" value="1" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
@@ -1412,7 +1412,7 @@
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
-    <option name="JFLEX.STRING">
+    <option name="JFLEXSTRING">
       <value>
         <option name="FOREGROUND" value="{{.keyword}}" />
         <option name="FONT_TYPE" value="1" />
@@ -1452,7 +1452,7 @@
     </option>
     <option name="JFLEX_REGEXP_SYMBOL">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
@@ -1471,7 +1471,7 @@
     </option>
     <option name="JS.BLOCK_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -1487,7 +1487,7 @@
     </option>
     <option name="JS.DOC_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -1504,7 +1504,7 @@
     </option>
     <option name="JS.GLOBAL_FUNCTION">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
     <option name="JS.GLOBAL_VARIABLE">
@@ -1537,7 +1537,7 @@
     </option>
     <option name="JS.LINE_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -1563,7 +1563,7 @@
     </option>
     <option name="JS.REGEXP">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
@@ -1578,9 +1578,9 @@
         <option name="FONT_TYPE" value="3" />
       </value>
     </option>
-    <option name="JS.STRING">
+    <option name="JSSTRING">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="JS.VALID_STRING_ESCAPE">
@@ -1595,12 +1595,12 @@
     </option>
     <option name="JSP_ATTRIBUTE_VALUE">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="JSP_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -1631,7 +1631,7 @@
     </option>
     <option name="KOTLIN_BLOCK_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -1653,7 +1653,7 @@
     </option>
     <option name="KOTLIN_DOC_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -1679,7 +1679,7 @@
     </option>
     <option name="KOTLIN_LINE_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -1718,7 +1718,7 @@
     </option>
     <option name="KOTLIN_STRING">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="KOTLIN_STRING_ESCAPE">
@@ -1741,7 +1741,7 @@
     </option>
     <option name="LESS_INJECTED_CODE">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
         <option name="BACKGROUND" value="{{.bg2}}" />
       </value>
     </option>
@@ -1758,7 +1758,7 @@
     </option>
     <option name="LOCALE.LINE_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -1787,9 +1787,9 @@
         <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
-    <option name="LOCALE.STRING_LITERAL">
+    <option name="LOCALESTRING_LITERAL">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="LOGCAT_ASSERT_OUTPUT">
@@ -1809,7 +1809,7 @@
     </option>
     <option name="LOGCAT_INFO_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="LOGCAT_VERBOSE_OUTPUT">
@@ -1819,7 +1819,7 @@
     </option>
     <option name="LOGCAT_WARNING_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
     <option name="LOG_ERROR_OUTPUT">
@@ -1834,7 +1834,7 @@
     </option>
     <option name="LOG_WARNING_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
     <option name="LUA_BAD_CHARACTER">
@@ -1844,7 +1844,7 @@
     </option>
     <option name="LUA_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -1861,24 +1861,24 @@
     </option>
     <option name="LUA_LONGCOMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="LUA_LONGCOMMENT_BRACES">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="LUA_LONGSTRING">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
     <option name="LUA_LONGSTRING_BRACES">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
     <option name="LUA_LUADOC">
@@ -1913,7 +1913,7 @@
     </option>
     <option name="LUA_STRING">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -1925,17 +1925,17 @@
     </option>
     <option name="Local lazy val/var">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="Local value">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="Local variable">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -1965,7 +1965,7 @@
     </option>
     <option name="MAKO.LINE_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -2024,37 +2024,37 @@
     </option>
     <option name="MARKDOWN.HEADER_LEVEL_1">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="MARKDOWN.HEADER_LEVEL_2">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="MARKDOWN.HEADER_LEVEL_3">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="MARKDOWN.HEADER_LEVEL_4">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="MARKDOWN.HEADER_LEVEL_5">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="MARKDOWN.HEADER_LEVEL_6">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -2142,7 +2142,7 @@
     </option>
     <option name="OC.BLOCK_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -2178,7 +2178,7 @@
     </option>
     <option name="OC.LINE_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -2204,9 +2204,9 @@
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
-    <option name="OC.STRING">
+    <option name="OCSTRING">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="OC.STRUCT_FIELD">
@@ -2240,19 +2240,19 @@
     </option>
     <option name="PHP_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="PHP_CONSTANT">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="PHP_DOC_COMMENT_ID">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -2276,7 +2276,7 @@
     </option>
     <option name="PHP_HEREDOC_CONTENT">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="PHP_KEYWORD">
@@ -2286,7 +2286,7 @@
     </option>
     <option name="PHP_NUMBER">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="PHP_OPERATION_SIGN">
@@ -2304,7 +2304,7 @@
     </option>
     <option name="PHP_STRING">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="PHP_TAG">
@@ -2330,7 +2330,7 @@
     </option>
     <option name="PROPERTIES.LINE_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
       </value>
     </option>
     <option name="PROPERTIES.VALID_STRING_ESCAPE">
@@ -2357,7 +2357,7 @@
     </option>
     <option name="PROPS.LINE_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -2396,7 +2396,7 @@
     </option>
     <option name="PROTOCOL_REFERENCE">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
         <option name="FONT_TYPE" value="2" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
@@ -2421,7 +2421,7 @@
     </option>
     <option name="PY.DOC_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -2445,13 +2445,13 @@
     </option>
     <option name="PY.LINE_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="PY.NUMBER">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="PY.PREDEFINED_DEFINITION">
@@ -2471,17 +2471,17 @@
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
-    <option name="PY.STRING">
+    <option name="PYSTRING">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
-    <option name="PY.STRING.B">
+    <option name="PYSTRING.B">
       <value>
         <option name="FOREGROUND" value="{{.keyword}}" />
       </value>
     </option>
-    <option name="PY.STRING.U">
+    <option name="PYSTRING.U">
       <value>
         <option name="FOREGROUND" value="{{.keyword}}" />
         <option name="FONT_TYPE" value="1" />
@@ -2518,12 +2518,12 @@
     </option>
     <option name="QL_ENTITY">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="QL_FUNCTION">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -2534,7 +2534,7 @@
     </option>
     <option name="QL_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -2568,12 +2568,12 @@
     </option>
     <option name="REGEXP.BRACES">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="REGEXP.BRACKETS">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="REGEXP.CHAR_CLASS">
@@ -2583,12 +2583,12 @@
     </option>
     <option name="REGEXP.COMMA">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
-    <option name="REGEXP.COMMENT">
+    <option name="REGEXPCOMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
       </value>
     </option>
     <option name="REGEXP.ESC_CHARACTER">
@@ -2604,17 +2604,17 @@
     </option>
     <option name="REGEXP.META">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="REGEXP.PARENTHS">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="REGEXP.QUOTE_CHARACTER">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
     <option name="REGEXP.REDUNDANT_ESCAPE">
@@ -2656,7 +2656,7 @@
     <option name="REST.INTERPRETED">
       <value>
         <option name="FOREGROUND" value="{{.fg3}}" />
-        <option name="BACKGROUND" value="{{.functionname}}" />
+        <option name="BACKGROUND" value="{{functionname}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
@@ -2668,7 +2668,7 @@
     </option>
     <option name="REST.LINE_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -2689,18 +2689,18 @@
     </option>
     <option name="RUBY_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="RUBY_CONSTANT">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
     <option name="RUBY_CONSTANT_DECLARATION">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
     <option name="RUBY_CVAR">
@@ -2803,18 +2803,18 @@
     </option>
     <option name="Regular expression">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="SASS_ATTRIBUTE">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
     <option name="SASS_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
       </value>
     </option>
     <option name="SASS_CONSTANT">
@@ -2835,7 +2835,7 @@
     </option>
     <option name="SASS_NUMBER">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="SASS_RULE">
@@ -2894,7 +2894,7 @@
     </option>
     <option name="SOY.DOC_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -2934,7 +2934,7 @@
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
-    <option name="SOY.STRING">
+    <option name="SOYSTRING">
       <value>
         <option name="FOREGROUND" value="{{.keyword}}" />
         <option name="FONT_TYPE" value="1" />
@@ -3002,18 +3002,18 @@
     </option>
     <option name="SQL_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="SQL_DATABASE_OBJECT">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
     <option name="SQL_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -3039,13 +3039,13 @@
     </option>
     <option name="SQL_PROCEDURE">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="SQL_SCHEMA">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="SQL_STRING">
@@ -3059,7 +3059,7 @@
     </option>
     <option name="SQL_TABLE">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="SQL_VARIABLE">
@@ -3077,13 +3077,13 @@
     </option>
     <option name="STRUCT_LIKE">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
     <option name="Scala Abstract class">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
     <option name="Scala Annotation name">
@@ -3099,13 +3099,13 @@
     </option>
     <option name="Scala Block comment">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="Scala Class">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
     <option name="Scala Class method call">
@@ -3126,7 +3126,7 @@
     </option>
     <option name="Scala Line comment">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -3142,7 +3142,7 @@
     </option>
     <option name="Scala Number">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="Scala Object method call">
@@ -3168,12 +3168,12 @@
     </option>
     <option name="Scala Semicolon">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
     <option name="Scala String">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="Scala Template lazy val/var">
@@ -3196,7 +3196,7 @@
     </option>
     <option name="Scala Trait">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
     <option name="Scala Type Alias">
@@ -3217,13 +3217,13 @@
     </option>
     <option name="Scala XML Text">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="ScalaDoc comment">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -3242,7 +3242,7 @@
     </option>
     <option name="Standard function">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
         <option name="FONT_TYPE" value="3" />
       </value>
     </option>
@@ -3258,7 +3258,7 @@
     </option>
     <option name="String">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="TEA.BADCHARACTER">
@@ -3269,7 +3269,7 @@
     </option>
     <option name="TEA.BLOCK_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -3287,7 +3287,7 @@
     </option>
     <option name="TEA.LINE_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -3307,7 +3307,7 @@
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
-    <option name="TEA.STRING">
+    <option name="TEASTRING">
       <value>
         <option name="FOREGROUND" value="{{.keyword}}" />
         <option name="FONT_TYPE" value="1" />
@@ -3321,7 +3321,7 @@
     </option>
     <option name="TEMPLATE_VARIABLE_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -3334,7 +3334,7 @@
     <option name="TEXT_SEARCH_RESULT_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="{{.bg2}}" />
-        <option name="BACKGROUND" value="{{.functionname}}" />
+        <option name="BACKGROUND" value="{{functionname}}" />
         <option name="ERROR_STRIPE_COLOR" value="{{.warning}}" />
       </value>
     </option>
@@ -3360,7 +3360,7 @@
     </option>
     <option name="TWIG_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -3376,7 +3376,7 @@
     </option>
     <option name="TWIG_NUMBER">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="TWIG_OPERATION_SIGN">
@@ -3386,12 +3386,12 @@
     </option>
     <option name="TWIG_STRING">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="TYPEDEF">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
@@ -3418,7 +3418,7 @@
     </option>
     <option name="Template var">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -3507,12 +3507,12 @@
     </option>
     <option name="XML_ATTRIBUTE_VALUE">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="XML_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
       </value>
     </option>
     <option name="XML_ENTITY_REFERENCE">
@@ -3539,7 +3539,7 @@
     </option>
     <option name="XPATH.FUNCTION">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -3553,14 +3553,14 @@
         <option name="FOREGROUND" value="{{.warning}}" />
       </value>
     </option>
-    <option name="XPATH.STRING">
+    <option name="XPATHSTRING">
       <value>
         <option name="FOREGROUND" value="{{.keyword}}" />
       </value>
     </option>
     <option name="XPATH.XPATH_NAME">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="XPATH.XPATH_VARIABLE">
@@ -3570,7 +3570,7 @@
     </option>
     <option name="YAML_COMMENT">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -3593,7 +3593,7 @@
     </option>
     <option name="YAML_SCALAR_STRING">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -3605,14 +3605,14 @@
     </option>
     <option name="bemhtml.bem.mlcomment">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
     <option name="bemhtml.bem.slcomment">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
@@ -3660,9 +3660,9 @@
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
-    <option name="go.block.comment">
+    <option name="go.blockcomment">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
@@ -3680,13 +3680,13 @@
     </option>
     <option name="go.keyword">
       <value>
-        <option name="FOREGROUND" value="{{.functionname}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
-    <option name="go.line.comment">
+    <option name="go.linecomment">
       <value>
-        <option name="FOREGROUND" value="{{.comment}}" />
+        <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
@@ -3696,9 +3696,9 @@
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
-    <option name="go.string">
+    <option name="gostring">
       <value>
-        <option name="FOREGROUND" value="{{.string}}" />
+        <option name="FOREGROUND" value="{{string}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
