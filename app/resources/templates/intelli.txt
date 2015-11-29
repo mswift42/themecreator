@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<scheme name="{{.themename}}" version="1" parent_scheme="Default">
+<scheme name="{{themename}}" version="1" parent_scheme="Default">
   <option name="LINE_SPACING" value="1.2" />
   <option name="EDITOR_FONT_SIZE" value="13" />
   <option name="EDITOR_FONT_NAME" value="Source Code Pro 13" />
@@ -20,7 +20,7 @@
     <option name="RIGHT_MARGIN_COLOR" value="{{.bg2}}" />
     <option name="SELECTED_INDENT_GUIDE" value="{{.fg2}}" />
     <option name="SELECTED_TEARLINE_COLOR" value="" />
-    <option name="SELECTION_BACKGROUND" value="{{.mainfg}}" />
+    <option name="SELECTION_BACKGROUND" value="{{mainfg}}" />
     <option name="SELECTION_FOREGROUND" value="{{.mainbg}}" />
     <option name="TEARLINE_COLOR" value="{{.fg2}}" />
     <option name="WHITESPACES" value="{{.fg2}}" />
@@ -363,7 +363,7 @@
     </option>
     <option name="CONDITIONALLY_NOT_COMPILED">
       <value>
-        <option name="FOREGROUND" value="{{.mainfg}}" />
+        <option name="FOREGROUND" value="{{mainfg}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
@@ -843,7 +843,7 @@
     </option>
     <option name="DELETED_TEXT_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="{{.mainfg}}" />
+        <option name="FOREGROUND" value="{{mainfg}}" />
         <option name="BACKGROUND" value="{{.bg2}}" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
@@ -1209,7 +1209,7 @@
     </option>
     <option name="HTML_ATTRIBUTE_NAME">
       <value>
-        <option name="FOREGROUND" value="{{.mainfg}}" />
+        <option name="FOREGROUND" value="{{mainfg}}" />
       </value>
     </option>
     <option name="HTML_ATTRIBUTE_VALUE">
@@ -1224,7 +1224,7 @@
     </option>
     <option name="HTML_ENTITY_REFERENCE">
       <value>
-        <option name="FOREGROUND" value="{{.mainfg}}" />
+        <option name="FOREGROUND" value="{{mainfg}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -1590,7 +1590,7 @@
     </option>
     <option name="JSP_ATTRIBUTE_NAME">
       <value>
-        <option name="FOREGROUND" value="{{.mainfg}}" />
+        <option name="FOREGROUND" value="{{mainfg}}" />
       </value>
     </option>
     <option name="JSP_ATTRIBUTE_VALUE">
@@ -2643,7 +2643,7 @@
     <option name="REST.FIXED">
       <value>
         <option name="FOREGROUND" value="{{.fg3}}" />
-        <option name="BACKGROUND" value="{{.mainfg}}" />
+        <option name="BACKGROUND" value="{{mainfg}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
