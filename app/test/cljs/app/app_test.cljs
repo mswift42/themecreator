@@ -70,3 +70,13 @@
   (dotimes [_ 1000]
     (is (= (count (colors/color-list 0 0)) 7))))
 
+(deftest test-derive-colors []
+  (let [theme (colors/derive-colors-from-theme db/preset)]
+    (is (= (:warning theme) "#ff0000"))
+    (is (= (:mainfg theme) "#303030"))
+    (is (= (:fg2 theme) "#414141"))
+    (is (= (:fg3 theme) "#515151"))
+    (is (= (:fg4 theme) "#626262"))
+    (is (= (:bg2 theme) "#ebebeb"))
+    (is (= (:bg3 theme) "#d6d6d6"))))
+
