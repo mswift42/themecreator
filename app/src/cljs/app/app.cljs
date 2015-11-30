@@ -2,7 +2,8 @@
   (:require [reagent.core :as reagent :refer [atom]]
             [app.db :refer [app-db ]]
             [app.components  :as comps]
-            [cljsjs.mustache]))
+            [cljsjs.mustache]
+            [goog.net.XhrIo :as xhr]))
 
 
 
@@ -56,6 +57,11 @@
    [color-components]
    [preview-component]])
 
+(defn GET
+  [url]
+  (xhr/send url
+            (fn [event]
+              (-> event .-target .getResponse ))))
 
 
 
