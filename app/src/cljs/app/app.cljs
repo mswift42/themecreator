@@ -1,7 +1,8 @@
 (ns app.app
   (:require [reagent.core :as reagent :refer [atom]]
             [app.db :refer [app-db ]]
-            [app.components  :as comps]))
+            [app.components  :as comps]
+            [cljsjs.mustache]))
 
 
 
@@ -54,6 +55,8 @@
   [:div.row
    [color-components]
    [preview-component]])
+
+
 
 
 (defn init []
