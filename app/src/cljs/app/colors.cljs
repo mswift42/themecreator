@@ -105,6 +105,7 @@
   (color-list 0.92 0.23))
 
 (defn muted-palette
+  "muted-palette returns a vector of 7 random muted colors."
   []
   (color-list 0.22 0.60))
 
@@ -123,12 +124,14 @@
    variants of the background and foreground colors."
   [theme]
   (if (dark-bg? (:mainbg theme))
-    (assoc theme :fg2 (darken (:mainfg theme)0.08)
+    (assoc theme
+           :fg2 (darken (:mainfg theme)0.08)
            :fg3 (darken (:mainfg theme) 0.16)
            :fg4 (darken (:mainfg theme) 0.24)
            :bg2 (lighten (:mainbg theme) 0.08)
            :bg3 (lighten (:mainbg theme) 0.16))
-    (assoc theme :fg2 (lighten (:mainfg theme) 0.08)
+    (assoc theme
+           :fg2 (lighten (:mainfg theme) 0.08)
            :fg3 (lighten (:mainfg theme) 0.16)
            :fg4 (lighten (:mainfg theme) 0.24)
            :bg2 (darken (:mainbg theme) 0.08)
