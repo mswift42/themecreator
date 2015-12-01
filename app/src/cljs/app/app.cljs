@@ -58,19 +58,32 @@
    [color-components]
    [preview-component]])
 
-(defn GET
-  [url]
-  (xhr/send url
-            (fn [event]
-              (-> event .-target .-getResponseText ))))
+(defn log
+  [s]
+  (.log js/console (str s)))
 
 (defn parse-template
   [templ]
   (.parse js/Mustache templ))
 
+(def texttemplate (atom ""))
+
 (defn compile-template
   [templ varmap]
-  (.render js/Mustache templ))
+  (.render js/Mustache templ (clj->js varmap)))
+(defn GET
+  [url]
+  (xhr/send url
+            (fn [event]
+              (reset! texttemplate   (.getResponse (.-target event))))))
+
+(defn render-templ
+  [varmap]
+  (let [tmp (GET "js/templates/testtempl.txt")]
+    (compile-template tmp varmap)))
+
+
+
 
 
 
