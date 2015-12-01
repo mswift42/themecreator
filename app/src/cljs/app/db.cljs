@@ -92,6 +92,7 @@
    :warning "#ff6523"
    :warning2 "#ff2370"})
 
+
 (def contrastcolors
   [:mainfg :keyword :builtin :string :functionname :variable :type
    :constant :comment])
@@ -118,15 +119,15 @@
 
 
 
-;; (def storagename "mswift42morethemes")
+(def storagename "activetheme")
 
-;; (defn save-to-storage
-;;   []
-;;   (.setItem (.-localStorage js/window) storagename (clj->js @app-db)))
+(defn save-to-storage
+  []
+  (.setItem (.-localStorage js/window) storagename (clj->js white-sand)))
 
-;; (defn load-from-storage
-;;   []
-;;   (switch-theme (.getItem (.-localStorage js/window) storagename)))
+(defn load-from-storage
+  []
+  (switch-theme (.getItem (.-localStorage js/window) storagename)))
 
 
 
