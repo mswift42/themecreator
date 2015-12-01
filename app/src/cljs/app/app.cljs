@@ -1,7 +1,8 @@
 (ns app.app
   (:require [reagent.core :as reagent :refer [atom]]
-            [app.db :refer [app-db ]]
+            [app.db :refer [app-db white-sand]]
             [app.components  :as comps]
+            [app.colors :refer [derive-colors-from-theme]]
             [cljsjs.mustache]
             [goog.net.XhrIo :as xhr]))
 
@@ -61,7 +62,15 @@
   [url]
   (xhr/send url
             (fn [event]
-              (-> event .-target .getResponse ))))
+              (-> event .-target .-getResponseText ))))
+
+(defn parse-template
+  [templ]
+  (.parse js/Mustache templ))
+
+(defn compile-template
+  [templ varmap]
+  (.render js/Mustache templ))
 
 
 
