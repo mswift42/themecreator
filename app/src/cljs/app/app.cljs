@@ -35,10 +35,20 @@
     (compile-template @texttemplate (derive-colors-from-theme @app-db))
     ))
 
-(defn template-select
+
+
+(defn template-select-component
   []
-  [comps/select-component "templatedrop" "Theme Template"
-   [[#(generate-template db/intellij) "IntelliJ"]]])
+  [:div.btn-group.templatedrop {:id "templatedrop"}
+   [:button.btn.btn-default {:type "button"}
+    "Theme Download"]
+   [:button.btn.btn-default.dropdown-toggle
+    {:type "button" :data-toggle "dropdown"}
+    [:span.caret]
+    [:span.sr-only]]
+   [:ul.dropdown-menu {:aria-labelledby "templatedrop"}
+    [:li
+     [:a {:href (generate-template db/intellij) :download (str (:themename @app-db) ".icls")} "IntelliJ"]]]])
 
 
 (defn color-components []
@@ -69,7 +79,7 @@
      [:div.col-xs-5
       [comps/adjustbg-component]]]
     [comps/random-colors-component]
-    [template-select]
+    [template-select-component]
     ]])
 
 (defn preview-component []
