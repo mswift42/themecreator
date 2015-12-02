@@ -33,7 +33,7 @@
   (do
     (GET url)
     (compile-template @texttemplate (derive-colors-from-theme @app-db))
-    (log @texttemplate)))
+    ))
 
 (defn template-select
   []
