@@ -48,7 +48,11 @@
     [:span.sr-only]]
    [:ul.dropdown-menu {:aria-labelledby "templatedrop"}
     [:li
-     [:a {:href (generate-template db/intellij) :download (str (:themename @app-db) ".icls")} "IntelliJ"]]]])
+     [:a {:href (str "data:application/xml,"
+                     (js/encodeURIComponent
+                      (generate-template "js/templates/intelli.txt")
+                      :download "white-sand.icls"))}
+      "IntelliJ" ]]]])
 
 
 (defn color-components []
