@@ -5,8 +5,14 @@
   "span-component represents a span component
    with a text content 'text' of background-color 
    'color'"
-  [text color]
-  [:span {:style {:color (color @app-db)} } (str text)])
+  ([text color ]
+   [:span  {:style {:color (color @app-db)}}
+    (str text)])
+  ([text color textdecoration]
+   [:span {:style {:color (color @app-db)
+                   :text-decoration "underline"
+                   :text-decoration-color (textdecoration @app-db)}}
+    (str text)]))
 
 (defn preview-javascript
   []
@@ -15,7 +21,7 @@
    [:br]
    [:br]
    [span-component "function " :keyword]
-   [span-component "eratosthenes" :functionname]
+   [span-component "eratosthenes" :functionname ]
    [span-component "(" :mainfg]
    [span-component "limit" :constant]
    [span-component ") {" :mainfg]
@@ -163,7 +169,7 @@
    [span-component "var " :keyword]
    [span-component "primes " :variable]
    [span-component "= " :mainfg]
-   [span-component "eratosthenes" :functionname]
+   [span-component "Eratosthenes" :functionname :warning]
    [span-component "(" :mainfg]
    [span-component "100" :constant]
    [span-component ");" :mainfg]
