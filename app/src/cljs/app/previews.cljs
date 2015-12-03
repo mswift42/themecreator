@@ -11,7 +11,9 @@
   ([text color textdecoration]
    [:span {:style {:color (color @app-db)
                    :text-decoration "underline"
-                   :text-decoration-color (textdecoration @app-db)}}
+                   :-webkit-text-decoration "underline"
+                   :text-decoration-color (textdecoration @app-db)
+                   :-webkit-text-decoration-color (textdecoration @app-db)}}
     (str text)]))
 
 (defn preview-javascript
@@ -166,6 +168,7 @@
    [span-component "}" :mainfg]
    [:br]
    [:br]
+   [span-component "! " :warning]
    [span-component "var " :keyword]
    [span-component "primes " :variable]
    [span-component "= " :mainfg]
@@ -173,6 +176,12 @@
    [span-component "(" :mainfg]
    [span-component "100" :constant]
    [span-component ");" :mainfg]
+   [:br]
+   [:br]
+   [span-component "! " :warning2]
+   [span-component "var " :keyword]
+   [span-component "x " :variable :warning2]
+   [span-component "= 2;" :mainfg]
    [:br]
    [:br]
    [span-component "console" :keyword]
