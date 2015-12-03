@@ -3,26 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>comment</key>
-	<string>http://chriskempson.com</string>
+	<string>{{themeauthor}}</string>
 	<key>name</key>
-	<string>Tomorrow</string>
+	<string>{{themename}}</string>
 	<key>settings</key>
 	<array>
 		<dict>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#FFFFFF</string>
+				<string>{{mainbg}}</string>
 				<key>caret</key>
-				<string>#AEAFAD</string>
+				<string>{{bg3}}</string>
 				<key>foreground</key>
-				<string>#4D4D4C</string>
+				<string>{{mainfg}}</string>
 				<key>invisibles</key>
-				<string>#D1D1D1</string>
+				<string>{{bg3}}</string>
 				<key>lineHighlight</key>
-				<string>#EFEFEF</string>
+				<string>{{bg2}}</string>
 				<key>selection</key>
-				<string>#D6D6D6</string>
+				<string>{{bg3}}</string>
 			</dict>
 		</dict>
 		<dict>
