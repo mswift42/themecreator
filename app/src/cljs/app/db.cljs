@@ -1,5 +1,6 @@
 (ns app.db
-  (:require [reagent.core :as r]))
+  (:require [reagent.core :as r]
+            [alandipert.storage-atom :refer [local-storage]]))
 
 (def preset
   {:themename "preset"
@@ -122,16 +123,9 @@
 
 
 
-(def storagename "activetheme")
+(def themestorage (local-storage (atom {}) :theme))
 
 (defn save-to-storage
   []
-  (.setItem (.-localStorage js/window) storagename (clj->js white-sand)))
-
-(defn load-from-storage
-  []
-  (switch-theme (js->clj (.getItem (.-localStorage js/window) storagename))))
-
-
-
+  (reset! themestorage @app-db))
 
