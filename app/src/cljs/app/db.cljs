@@ -130,7 +130,7 @@
 
 (defn load-from-storage
   []
-  (switch-theme (.getItem (.-localStorage js/window) storagename)))
+  (switch-theme (js->clj (.getItem (.-localStorage js/window) storagename))))
 
 
 
