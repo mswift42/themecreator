@@ -1,6 +1,5 @@
 (ns app.db
-  (:require [reagent.core :as r]
-            [alandipert.storage-atom :refer [local-storage]]))
+  (:require [reagent.core :as r]))
 
 (def preset
   {:themename "preset"
@@ -122,10 +121,14 @@
   (reset! adjustbg (not @adjustbg)))
 
 
-
-(def themestorage (local-storage (atom {}) :theme))
+(def storagename "themecreator")
 
 (defn save-to-storage
   []
-  (reset! themestorage @app-db))
+  (.setItem js/localStorage storagename (js/JSON.stringify (clj->js @app-db))))
+
+(defn load-from-storage
+  (switch-theme (.)))
+
+
 
