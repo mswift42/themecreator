@@ -32,7 +32,8 @@
 (defn theme-select
   []
   [select-component "themedrop" "Theme Samples"
-   [[#(db/switch-theme db/preset) "preset"]
+   [[#(db/switch-theme db/black) "black"]
+    [#(db/switch-theme db/preset) "preset"]
     [#(db/switch-theme db/warm-night) "warm-night"]
     [#(db/switch-theme db/white-sand) "white-sand"]
     [#(db/switch-theme db/greymatters) "greymatters"]
