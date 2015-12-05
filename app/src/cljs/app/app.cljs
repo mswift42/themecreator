@@ -56,7 +56,7 @@
 
 (defn store-component
   []
-  [comps/button-component "store"
+  [comps/button-component "store theme"
    #(db/save-to-storage)])
 
 
