@@ -127,8 +127,20 @@
   []
   (.setItem js/localStorage storagename (js/JSON.stringify (clj->js @app-db))))
 
+(defn string-to-keyword
+  "convert a map with with strings as keys to a map with keyword keys and string 
+   values."
+  [strmap]
+  (into {} (for [[k v] strmap]
+             [(keyword k) v])))
+
 (defn load-from-storage
-  (switch-theme (.)))
+  []
+  (let [th (.getItem js/localStorage storagename)]
+    (if th
+      (-> (.getItem js/localStorage storagename)
+          (js/JSON.parse)
+          (js->clj)))))
 
 
 
