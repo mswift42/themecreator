@@ -97,12 +97,16 @@
 (defn warm-palette
   "warm-palette returns a vector of 7 random warm colors." 
   []
-  (color-list 0.63 0.78))
+  (color-list 0.77 0.43))
 
 (defn pop-palette
   "pop-palette returns a vector of 7 random 'pop' colors."
   []
   (color-list 0.92 0.23))
+
+(defn soothe-palette
+  []
+  (color-list 0.50 0.69))
 
 (defn muted-palette
   "muted-palette returns a vector of 7 random muted colors."
