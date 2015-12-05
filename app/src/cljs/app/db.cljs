@@ -1,6 +1,21 @@
 (ns app.db
   (:require [reagent.core :as r]))
 
+(def black
+  {:themename "black"
+   :mainbg "#000000"
+   :mainfg "#eaeaea"
+   :builtin "#eaeaea"
+   :keyword "#eaeaea"
+   :string "#eaeaea"
+   :functionname "#eaeaea"
+   :variable "#eaeaea"
+   :type "#eaeaea"
+   :constant "#eaeaea"
+   :comment "#808080"
+   :warning "#ff0000"
+   :warning2 "#ff8800"})
+
 (def preset
   {:themename "preset"
    :mainbg "#ffffff"
@@ -14,8 +29,7 @@
    :constant "#000000"
    :comment "#606060"
    :warning "#ff0000"
-   :warning2 "#ff8800"
-   :name "atc"})
+   :warning2 "#ff8800"})
 
 (def white-sand
   {:themename "white-sand"
