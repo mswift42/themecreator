@@ -144,8 +144,9 @@
 
 (defn set-db-from-storage
   []
-  (switch-theme
-   (string-to-keyword (load-from-storage))))
+  (if (.getItem js/localStorage storagename)
+    (switch-theme
+     (string-to-keyword (load-from-storage)))))
 
 
 
