@@ -54,6 +54,11 @@
                       :download "white-sand.icls"))}
       "IntelliJ" ]]]])
 
+(defn store-component
+  []
+  [comps/button-component "store"
+   #(db/save-to-storage)])
+
 
 (defn color-components []
   [:div.col-md-4.col-lg-3
@@ -84,6 +89,7 @@
       [comps/adjustbg-component]]]
     [comps/random-colors-component]
     [template-select-component]
+    [store-component]
     ]])
 
 (defn preview-component []
@@ -102,6 +108,7 @@
      [comps/language-select]]]])
 
 (defn theme-component []
+  (db/set-db-from-storage)
   [navbar-component]
   [:div.row
    [color-components]
@@ -115,5 +122,6 @@
 (defn init []
   (reagent/render-component [navbar-component]
                             (.getElementById js/document "navcontainer"))
+
   (reagent/render-component [theme-component]
                             (.getElementById js/document "mainapp")))
