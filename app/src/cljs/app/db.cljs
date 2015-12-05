@@ -16,8 +16,9 @@
    :warning "#ff0000"
    :warning2 "#ff8800"})
 
-(def preset
-  {:themename "preset"
+
+(def white
+  {:themename "white"
    :mainbg "#ffffff"
    :mainfg "#303030"
    :builtin "#000000"
