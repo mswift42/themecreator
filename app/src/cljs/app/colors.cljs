@@ -92,7 +92,7 @@
 (defn soft-palette
   "soft-palette returns a vector of 7 random soft colors."
   []
-  (color-list 0.41 0.51))
+  (color-list 0.37 0.71))
 
 (defn warm-palette
   "warm-palette returns a vector of 7 random warm colors." 
