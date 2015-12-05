@@ -87,6 +87,8 @@
     #(colors/set-random-palette (colors/warm-palette))]
    [random-button-component "Soft"
     #(colors/set-random-palette (colors/soft-palette))]
+   [random-button-component "Soothe"
+    #(colors/set-random-palette (colors/soothe-palette))]
    [random-button-component "Pop"
     #(colors/set-random-palette (colors/pop-palette))]
    [random-button-component "Muted"
