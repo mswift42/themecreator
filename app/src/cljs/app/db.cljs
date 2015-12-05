@@ -142,5 +142,10 @@
           (js/JSON.parse)
           (js->clj)))))
 
+(defn set-db-from-storage
+  []
+  (switch-theme
+   (string-to-keyword (load-from-storage))))
+
 
 
