@@ -33,7 +33,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#8E908C</string>
+				<string>{{comment}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -133,7 +133,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>{{BUILTIN}}</string>
+				<string>{{builtin}}</string>
 			</dict>
 		</dict>
 		<dict>
