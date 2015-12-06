@@ -148,7 +148,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#FFFFFF</string>
+				<string>{{mainbg}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -161,7 +161,7 @@
 				<key>background</key>
 				<string>{{functionname}}</string>
 				<key>foreground</key>
-				<string>#FFFFFF</string>
+				<string>{{mainbg}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -176,7 +176,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#FFFFFF</string>
+				<string>{{mainbg}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -187,7 +187,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#FFFFFF</string>
+				<string>{{mainbg}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -220,7 +220,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#FFFFFF</string>
+				<string>{{mainbg}}</string>
 				<key>background</key>
 				<string>{{functionname}}</string>
 			</dict>
