@@ -133,7 +133,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>{{builtin}}</string>
+				<string>{{keyword}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -240,7 +240,7 @@
 		</dict>
 	</array>
 	<key>uuid</key>
-	<string>82CCD69C-F1B1-4529-B39E-780F91F07604</string>
+	<string></string>
   <key>colorSpaceName</key>
   <string>sRGB</string>
 </dict>
