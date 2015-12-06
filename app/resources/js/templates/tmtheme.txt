@@ -70,7 +70,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#F5871F</string>
+				<string>{{constant}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -133,7 +133,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#8959A8</string>
+				<string>{{BUILTIN}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -172,7 +172,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#8959A8</string>
+				<string>{{builtin}}</string>
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
