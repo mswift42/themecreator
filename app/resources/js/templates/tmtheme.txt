@@ -57,7 +57,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#C82829</string>
+				<string>{{variable}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -144,7 +144,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#C82829</string>
+				<string>{{variable}}</string>
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
@@ -209,7 +209,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#c82829</string>
+				<string>{{variable}}</string>
 			</dict>
 		</dict>
 		<dict>
