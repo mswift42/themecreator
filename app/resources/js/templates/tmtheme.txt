@@ -83,7 +83,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#C99E00</string>
+				<string>{{type}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -96,7 +96,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>{{STRING}}</string>
+				<string>{{string}}</string>
 			</dict>
 		</dict>
 		<dict>
