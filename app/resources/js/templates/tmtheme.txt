@@ -46,7 +46,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#666969</string>
+				<string>{{fg3}}</string>
 			</dict>
 		</dict>
 		<dict>
