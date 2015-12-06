@@ -120,7 +120,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#4271AE</string>
+				<string>{{functionname}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -159,7 +159,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#4271AE</string>
+				<string>{{functionname}}</string>
 				<key>foreground</key>
 				<string>#FFFFFF</string>
 			</dict>
@@ -222,7 +222,7 @@
 				<key>foreground</key>
 				<string>#FFFFFF</string>
 				<key>background</key>
-				<string>#4271ae</string>
+				<string>{{functionname}}</string>
 			</dict>
 		</dict>
 		<dict>
