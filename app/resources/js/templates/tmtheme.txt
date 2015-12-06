@@ -96,7 +96,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#718C00</string>
+				<string>{{STRING}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -198,7 +198,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#718c00</string>
+				<string>{{string}}</string>
 			</dict>
 		</dict>
 		<dict>
