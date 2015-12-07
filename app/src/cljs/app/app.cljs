@@ -36,6 +36,10 @@
     (compile-template @texttemplate
                       (derive-colors-from-theme @app-db))))
 
+(defn window-url
+  []
+  (or (.-URL js/window)
+      (.-webkitURL js/window)))
 
 
 (defn template-select-component
