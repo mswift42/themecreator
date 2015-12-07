@@ -26,14 +26,15 @@
   [url]
   (xhr/send url
             (fn [event]
-              (reset! texttemplate   (.getResponse (.-target event))))))
+              (reset! texttemplate
+                      (.getResponse (.-target event))))))
 
 (defn generate-template
   [url]
   (do
     (GET url)
-    (compile-template @texttemplate (derive-colors-from-theme @app-db))
-    ))
+    (compile-template @texttemplate
+                      (derive-colors-from-theme @app-db))))
 
 
 
@@ -52,7 +53,13 @@
                      (js/encodeURIComponent
                       (generate-template "js/templates/intelli.txt")
                       :download "white-sand.icls"))}
-      "IntelliJ" ]]]])
+      "IntelliJ" ]]
+    [:li
+     [:a {:href (str "data:text/plain,"
+                     (js/encodeURIComponent
+                      (generate-template "js/templates/tmtheme.txt")
+                      :download (str (:themename @app-db) ".txt")))}
+      "Textmate"]]]])
 
 (defn store-component
   []
