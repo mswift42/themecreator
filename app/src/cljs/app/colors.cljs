@@ -117,7 +117,6 @@
     (color-list 0.22 0.60)
     (color-list 0.22 0.4)))
 
-
 (defn set-random-palette
   "set :keyword :builtin :string :functionname :variable
    :type and constant colors in app-db to colors of a
