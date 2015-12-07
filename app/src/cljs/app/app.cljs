@@ -72,6 +72,7 @@
    [:div.colorcomponents
     [:br]
     [comps/name-component]
+    [comps/author-component]
     [:br]
     [:br]
     [comps/color-component :mainbg]
