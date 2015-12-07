@@ -59,10 +59,8 @@
                       :download "white-sand.icls"))}
       "IntelliJ" ]]
     [:li
-     [:a {:href (str "data:text/plain,"
-                     (js/encodeURIComponent
-                      (generate-template "js/templates/tmtheme.txt")
-                      :download (str (:themename @app-db) ".txt")))}
+     [:a {:href (let [url (window-url)]
+                  (.createObjectURL url (js/Blob. #js [(generate-template "js/templates/tmtheme.txt")])))}
       "Textmate"]]]])
 
 (defn store-component
