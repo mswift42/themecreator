@@ -107,8 +107,8 @@
   "pop-palette returns a vector of 7 random 'pop' colors."
   []
   (if (dark-bg? (:mainbg @db/app-db))
-    (color-list 0.92 0.23)
-    (color-list 0.92 0.5)))
+    (color-list 0.82 0.41)
+    (color-list 0.82 0.39)))
 
 (defn muted-palette
   "muted-palette returns a vector of 7 random muted colors."
