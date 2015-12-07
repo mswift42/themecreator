@@ -53,14 +53,16 @@
     [:span.sr-only]]
    [:ul.dropdown-menu {:aria-labelledby "templatedrop"}
     [:li
-     [:a {:href (str "data:application/xml,"
-                     (js/encodeURIComponent
-                      (generate-template "js/templates/intelli.txt")
-                      :download "white-sand.icls"))}
+     [:a {:download (str (:themename @app-db) ".icls") :href (str "data:application/xml,"
+                                                                  (js/encodeURIComponent
+                                                                   (generate-template "js/templates/intelli.txt")
+                                                                   ))}
       "IntelliJ" ]]
     [:li
-     [:a {:href (let [url (window-url)]
-                  (.createObjectURL url (js/Blob. #js [(generate-template "js/templates/tmtheme.txt")])))}
+     [:a {:download (str (:themename @app-db) ".tmtheme") :href
+          (str "data:text/plain,"
+               (js/encodeURIComponent
+                (generate-template "js/templates/tmtheme.txt")))}
       "Textmate"]]]])
 
 (defn store-component
