@@ -92,26 +92,30 @@
 (defn soft-palette
   "soft-palette returns a vector of 7 random soft colors."
   []
-  (color-list 0.37 0.71))
+  (if (dark-bg? (:mainbg @db/app-db))
+    (color-list 0.37 0.71)
+    (color-list 0.37 0.44)))
 
 (defn warm-palette
   "warm-palette returns a vector of 7 random warm colors." 
   []
-  (color-list 0.77 0.43))
+  (if (dark-bg? (:mainbg @db/app-db))
+    (color-list 0.77 0.43)
+    (color-list 0.77 0.6)))
 
 (defn pop-palette
   "pop-palette returns a vector of 7 random 'pop' colors."
   []
-  (color-list 0.92 0.23))
-
-(defn soothe-palette
-  []
-  (color-list 0.50 0.69))
+  (if (dark-bg? (:mainbg @db/app-db))
+    (color-list 0.92 0.23)
+    (color-list 0.92 0.5)))
 
 (defn muted-palette
   "muted-palette returns a vector of 7 random muted colors."
   []
-  (color-list 0.22 0.60))
+  (if (dark-bg? (:mainbg @db/app-db))
+    (color-list 0.22 0.60)
+    (color-list 0.22 0.4)))
 
 
 (defn set-random-palette
