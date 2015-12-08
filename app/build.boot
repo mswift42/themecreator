@@ -11,7 +11,7 @@
                  [org.clojure/tools.nrepl "0.2.12" :scope "test"]
                  [crisptrutski/boot-cljs-test "0.2.0-SNAPSHOT" :scope "test"]
                  [reagent "0.5.0"]
-                 [alandipert/storage-atom "1.2.4"]
+                 [org.clojure/core.async "0.2.374"]
                  [cljsjs/mustache "1.1.0-0"]])
 
 (require
