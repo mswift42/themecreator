@@ -36,3 +36,7 @@ func saveThemeHandler(w http.ResponseWriter, r *http.Request, tmplfile, tmplname
 func intellijThemeHandler(w http.ResponseWriter, r *http.Request) {
 	saveThemeHandler(w, r, "intellij.text", "intellij")
 }
+
+func textmateThemeHandler(w http.ResponseWriter, r *http.Request) {
+	saveThemeHandler(w, r, "tmtheme.txt", "textmate")
+}
