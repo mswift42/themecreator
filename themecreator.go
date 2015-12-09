@@ -10,5 +10,8 @@ func selectedColors(r *http.Request) map[string]string {
 		"bg2", "bg3", "keyword", "string", "functionname",
 		"variable", "type", "constant", "comment", "warning",
 		"warning2", "themename", "author"}
-
+	for _, i := range themevariables {
+		facesmap[i] = r.FormValue(i)
+	}
+	return facesmap
 }
