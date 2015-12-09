@@ -1,7 +1,9 @@
 package themecreator
 
 import (
+	"bytes"
 	"net/http"
+	"text/template"
 )
 
 func selectedColors(r *http.Request) map[string]string {
@@ -14,4 +16,23 @@ func selectedColors(r *http.Request) map[string]string {
 		facesmap[i] = r.FormValue(i)
 	}
 	return facesmap
+}
+func init() {
+	http.HandleFunc("/intellij", intellijThemeHandler)
+	http.HandleFunc("/tmtheme", textmateThemeHandler)
+}
+
+func saveThemeHandler(w http.ResponseWriter, r *http.Request, tmplfile, tmplname string) {
+	fmap := selectedColors(r)
+	var res bytes.Buffer
+	themetemplate := template.Must(template.New(tmplname).ParseFiles(tmplfile))
+	if err := themetemplate.ExecuteTemplate(&res, tmplname, fmap); err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
+	w.Write(res.Bytes())
+
+}
+
+func intellijThemeHandler(w http.ResponseWriter, r *http.Request) {
+	saveThemeHandler(w, r, "intellij.text", "intellij")
 }
