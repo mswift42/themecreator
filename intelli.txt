@@ -9,19 +9,19 @@
     <option name="ANNOTATIONS_MERGED_COLOR" value="{{fg3}}" />
     <option name="CARET_COLOR" value="{{fg4}}" />
     <option name="CARET_ROW_COLOR" value="{{bg2}}" />
-    <option name="CONSOLE_BACKGROUND_KEY" value="{{mainbg}}" />
+    <option name="CONSOLE_BACKGROUND_KEY" value="{{.mainbg}}" />
     <option name="GUTTER_BACKGROUND" value="{{bg2}}" />
     <option name="INDENT_GUIDE" value="{{bg2}}" />
     <option name="LINE_NUMBERS_COLOR" value="{{fg2}}" />
     <option name="METHOD_SEPARATORS_COLOR" value="{{bg2}}" />
     <option name="MODIFIED_LINES_COLOR" value="bccff9" />
-    <option name="NOTIFICATION_BACKGROUND" value="{{mainbg}}" />
+    <option name="NOTIFICATION_BACKGROUND" value="{{.mainbg}}" />
     <option name="READONLY_FRAGMENT_BACKGROUND" value="" />
     <option name="RIGHT_MARGIN_COLOR" value="{{bg2}}" />
     <option name="SELECTED_INDENT_GUIDE" value="{{fg2}}" />
     <option name="SELECTED_TEARLINE_COLOR" value="" />
-    <option name="SELECTION_BACKGROUND" value="{{mainfg}}" />
-    <option name="SELECTION_FOREGROUND" value="{{mainbg}}" />
+    <option name="SELECTION_BACKGROUND" value="{{.mainfg}}" />
+    <option name="SELECTION_FOREGROUND" value="{{.mainbg}}" />
     <option name="TEARLINE_COLOR" value="{{fg2}}" />
     <option name="WHITESPACES" value="{{fg2}}" />
   </colors>
@@ -363,7 +363,7 @@
     </option>
     <option name="CONDITIONALLY_NOT_COMPILED">
       <value>
-        <option name="FOREGROUND" value="{{mainfg}}" />
+        <option name="FOREGROUND" value="{{.mainfg}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
@@ -843,7 +843,7 @@
     </option>
     <option name="DELETED_TEXT_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="{{mainfg}}" />
+        <option name="FOREGROUND" value="{{.mainfg}}" />
         <option name="BACKGROUND" value="{{bg2}}" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
@@ -1030,7 +1030,7 @@
     </option>
     <option name="EXECUTIONPOINT_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="{{mainbg}}" />
+        <option name="FOREGROUND" value="{{.mainbg}}" />
         <option name="BACKGROUND" value="{{fg3}}" />
       </value>
     </option>
@@ -1209,7 +1209,7 @@
     </option>
     <option name="HTML_ATTRIBUTE_NAME">
       <value>
-        <option name="FOREGROUND" value="{{mainfg}}" />
+        <option name="FOREGROUND" value="{{.mainfg}}" />
       </value>
     </option>
     <option name="HTML_ATTRIBUTE_VALUE">
@@ -1224,7 +1224,7 @@
     </option>
     <option name="HTML_ENTITY_REFERENCE">
       <value>
-        <option name="FOREGROUND" value="{{mainfg}}" />
+        <option name="FOREGROUND" value="{{.mainfg}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -1590,7 +1590,7 @@
     </option>
     <option name="JSP_ATTRIBUTE_NAME">
       <value>
-        <option name="FOREGROUND" value="{{mainfg}}" />
+        <option name="FOREGROUND" value="{{.mainfg}}" />
       </value>
     </option>
     <option name="JSP_ATTRIBUTE_VALUE">
@@ -2115,7 +2115,7 @@
     </option>
     <option name="MATCHED_BRACE_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="{{mainbg}}" />
+        <option name="FOREGROUND" value="{{.mainbg}}" />
         <option name="BACKGROUND" value="{{keyword}}" />
       </value>
     </option>
@@ -2643,7 +2643,7 @@
     <option name="REST.FIXED">
       <value>
         <option name="FOREGROUND" value="{{fg3}}" />
-        <option name="BACKGROUND" value="{{mainfg}}" />
+        <option name="BACKGROUND" value="{{.mainfg}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
@@ -2919,7 +2919,7 @@
     </option>
     <option name="SOY.NAMESPACE_ID">
       <value>
-        <option name="EFFECT_COLOR" value="{{mainbg}}" />
+        <option name="EFFECT_COLOR" value="{{.mainbg}}" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -2942,7 +2942,7 @@
     </option>
     <option name="SOY.TEMPLATE_ID">
       <value>
-        <option name="EFFECT_COLOR" value="{{mainbg}}" />
+        <option name="EFFECT_COLOR" value="{{.mainbg}}" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -3328,7 +3328,7 @@
     <option name="TEXT">
       <value>
         <option name="FOREGROUND" value="{{fg3}}" />
-        <option name="BACKGROUND" value="{{mainbg}}" />
+        <option name="BACKGROUND" value="{{.mainbg}}" />
       </value>
     </option>
     <option name="TEXT_SEARCH_RESULT_ATTRIBUTES">
@@ -3439,7 +3439,7 @@
     </option>
     <option name="UNMATCHED_BRACE_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="{{mainbg}}" />
+        <option name="FOREGROUND" value="{{.mainbg}}" />
         <option name="BACKGROUND" value="{{warning2}}" />
       </value>
     </option>
