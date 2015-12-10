@@ -33,7 +33,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{comment}}</string>
+				<string>{{.comment}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -57,7 +57,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{variable}}</string>
+				<string>{{.variable}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -70,7 +70,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>{{constant}}</string>
+				<string>{{.constant}}/string>
 			</dict>
 		</dict>
 		<dict>
@@ -83,7 +83,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>{{type}}</string>
+				<string>{{.type}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -96,7 +96,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>{{string}}</string>
+				<string>{{.string}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -107,7 +107,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{keyword}}</string>
+				<string>{{.keyword}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -120,7 +120,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>{{functionname}}</string>
+				<string>{{.functionname}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -133,7 +133,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>{{keyword}}</string>
+				<string>{{.keyword}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -144,7 +144,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>{{variable}}</string>
+				<string>{{.variable}}</string>
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
@@ -159,7 +159,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>{{functionname}}</string>
+				<string>{{.functionname}}</string>
 				<key>foreground</key>
 				<string>{{.mainbg}}</string>
 			</dict>
@@ -172,7 +172,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>{{builtin}}</string>
+				<string>{{.builtin}}</string>
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
@@ -198,7 +198,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>{{string}}</string>
+				<string>{{.string}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -209,7 +209,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>{{variable}}</string>
+				<string>{{.variable}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -222,7 +222,7 @@
 				<key>foreground</key>
 				<string>{{.mainbg}}</string>
 				<key>background</key>
-				<string>{{functionname}}</string>
+				<string>{{.functionname}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -235,7 +235,7 @@
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>{{keyword}}</string>
+				<string>{{.keyword}}</string>
 			</dict>
 		</dict>
 	</array>
