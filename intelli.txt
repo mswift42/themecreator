@@ -45,7 +45,7 @@
     </option>
     <option name="APACHE_CONFIG.IDENTIFIER">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="Abstract class">
@@ -62,13 +62,13 @@
     </option>
     <option name="Annotation name">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{.builtin}}" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
     <option name="Atom">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="BAD_CHARACTER">
@@ -94,12 +94,12 @@
     </option>
     <option name="BASH.HERE_DOC_END">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="BASH.HERE_DOC_START">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="BASH.INTERNAL_COMMAND">
@@ -136,12 +136,12 @@
     </option>
     <option name="BASHSTRING">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="BASHSTRING2">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="BASH.SUBSHELL_COMMAND">
@@ -151,7 +151,7 @@
     </option>
     <option name="BASH.VAR_DEF">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="BASH.VAR_USE">
@@ -176,7 +176,7 @@
     </option>
     <option name="BUILDOUT.KEY">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -226,17 +226,17 @@
     </option>
     <option name="COFFEESCRIPT.BOOLEAN">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="COFFEESCRIPT.BRACE">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="COFFEESCRIPT.BRACKET">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="COFFEESCRIPT.ESCAPE_SEQUENCE">
@@ -251,28 +251,28 @@
     </option>
     <option name="COFFEESCRIPT.FUNCTION">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="COFFEESCRIPT.FUNCTION_BINDING">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="COFFEESCRIPT.FUNCTION_NAME">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="COFFEESCRIPT.HEREDOC_CONTENT">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="COFFEESCRIPT.HEREDOC_ID">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -301,7 +301,7 @@
     </option>
     <option name="COFFEESCRIPTKEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="COFFEESCRIPT.LINE_COMMENT">
@@ -328,18 +328,18 @@
     </option>
     <option name="COFFEESCRIPT.REGULAR_EXPRESSION_CONTENT">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="COFFEESCRIPT.REGULAR_EXPRESSION_FLAG">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="COFFEESCRIPT.REGULAR_EXPRESSION_ID">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="COFFEESCRIPT.SEMICOLON">
@@ -349,12 +349,12 @@
     </option>
     <option name="COFFEESCRIPTSTRING">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="COFFEESCRIPTSTRING_LITERAL">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -369,24 +369,24 @@
     </option>
     <option name="CONSOLE_BLUE_BRIGHT_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="CONSOLE_BLUE_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="CONSOLE_CYAN_BRIGHT_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="CONSOLE_CYAN_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="CONSOLE_DARKGRAY_OUTPUT">
@@ -494,7 +494,7 @@
     </option>
     <option name="CSS.NUMBER">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="CSS.PROPERTY_NAME">
@@ -504,12 +504,12 @@
     </option>
     <option name="CSS.PROPERTY_VALUE">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="CSSSTRING">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="CSS.TAG_NAME">
@@ -519,13 +519,13 @@
     </option>
     <option name="CSS.URL">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="CTRL_CLICKABLE">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
-        <option name="EFFECT_COLOR" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
+        <option name="EFFECT_COLOR" value="{{.type}}" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -541,7 +541,7 @@
     </option>
     <option name="CUSTOM_KEYWORD2_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{.builtin}}" />
       </value>
     </option>
     <option name="CUSTOM_KEYWORD3_ATTRIBUTES">
@@ -573,7 +573,7 @@
     </option>
     <option name="CUSTOM_STRING_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="CUSTOM_VALID_STRING_ESCAPE_ATTRIBUTES">
@@ -594,7 +594,7 @@
     </option>
     <option name="Clojure Keyword">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{.builtin}}" />
         <option name="FONT_TYPE" value="3" />
       </value>
     </option>
@@ -636,20 +636,20 @@
     </option>
     <option name="Cmd.ENVIRONMENT_VARIABLE_DEFINITION">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{.builtin}}" />
         <option name="FONT_TYPE" value="1" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
     <option name="Cmd.EXPRESSION">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
     <option name="CmdKEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -679,7 +679,7 @@
     </option>
     <option name="DARTBUILTIN_TYPES">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -691,13 +691,13 @@
     </option>
     <option name="DARTKEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="DART.NUMBER">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="DARTSTRING">
@@ -708,7 +708,7 @@
     </option>
     <option name="DART.UNRESERVED_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -766,7 +766,7 @@
     </option>
     <option name="DEFAULT_INSTANCE_FIELD">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{.builtin}}" />
       </value>
     </option>
     <option name="DEFAULT_INVALID_STRING_ESCAPE">
@@ -825,7 +825,7 @@
     </option>
     <option name="DEFAULT_STRING">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="DEFAULT_TAG">
@@ -862,13 +862,13 @@
     </option>
     <option name="DJANGO_ID">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="DJANGO_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -879,19 +879,19 @@
     </option>
     <option name="DJANGO_STRING_LITERAL">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="DJANGO_TAG_NAME">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="DOC_COMMENT_TAG_VALUE">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="DUPLICATE_FROM_SERVER">
@@ -917,7 +917,7 @@
     </option>
     <option name="ECMAL4CONSTANT_MARKUP">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
         <option name="EFFECT_TYPE" value="0" />
       </value>
     </option>
@@ -955,7 +955,7 @@
     </option>
     <option name="ECMAL4.NUMBER">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
         <option name="EFFECT_TYPE" value="0" />
       </value>
     </option>
@@ -1006,7 +1006,7 @@
     </option>
     <option name="ELSTRING">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -1043,8 +1043,8 @@
     </option>
     <option name="FOLLOWED_HYPERLINK_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
-        <option name="EFFECT_COLOR" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{.builtin}}" />
+        <option name="EFFECT_COLOR" value="{{.builtin}}" />
       </value>
     </option>
     <option name="First symbol in list">
@@ -1055,7 +1055,7 @@
     </option>
     <option name="Float literal">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="GENERIC_SERVER_ERROR_OR_WARNING">
@@ -1083,12 +1083,12 @@
     </option>
     <option name="GHERKIN_PYSTRING">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="GHERKIN_REGEXP_PARAMETER">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="GHERKIN_TABLE_CELL">
@@ -1122,13 +1122,13 @@
     </option>
     <option name="GQL_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="GQL_STRING_LITERAL">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -1139,7 +1139,7 @@
     </option>
     <option name="GString">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="Groovydoc comment">
@@ -1181,7 +1181,7 @@
     </option>
     <option name="HAML_LINE_CONTINUATION">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="HAML_RUBY_CODE">
@@ -1199,7 +1199,7 @@
     </option>
     <option name="HAML_TEXT">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="HAML_XHTML">
@@ -1214,7 +1214,7 @@
     </option>
     <option name="HTML_ATTRIBUTE_VALUE">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="HTML_COMMENT">
@@ -1235,14 +1235,14 @@
     </option>
     <option name="HTML_TAG_NAME">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="HYPERLINK_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
-        <option name="EFFECT_COLOR" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
+        <option name="EFFECT_COLOR" value="{{.type}}" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -1269,23 +1269,23 @@
     </option>
     <option name="INSTANCE_FIELD_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{.builtin}}" />
       </value>
     </option>
     <option name="IVAR">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
     <option name="Instance field">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{.builtin}}" />
       </value>
     </option>
     <option name="Instance property reference ID">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{.builtin}}" />
       </value>
     </option>
     <option name="Integer literal">
@@ -1302,7 +1302,7 @@
     </option>
     <option name="JADE_ATTRIBUTE_NAME">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="JADE_FILE_PATH">
@@ -1312,7 +1312,7 @@
     </option>
     <option name="JADE_JS_BLOCK">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="JADE_STATEMENTS">
@@ -1322,7 +1322,7 @@
     </option>
     <option name="JADE_TAG_ID">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{.builtin}}" />
       </value>
     </option>
     <option name="JADE_TEXT">
@@ -1371,7 +1371,7 @@
     </option>
     <option name="JAVA_STRING">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="JAVA_VALID_STRING_ESCAPE">
@@ -1387,7 +1387,7 @@
     </option>
     <option name="JFLEX.OPTION_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
         <option name="FONT_TYPE" value="1" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
@@ -1452,13 +1452,13 @@
     </option>
     <option name="JFLEX_REGEXP_SYMBOL">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
     <option name="JFLEX_STATE_REF">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{.builtin}}" />
         <option name="FONT_TYPE" value="1" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
@@ -1477,12 +1477,12 @@
     </option>
     <option name="JS.BRACES">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="JS.BRACKETS">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="JSCONSTANT_COMMENT">
@@ -1532,7 +1532,7 @@
     </option>
     <option name="JSKEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="JS.LINE_COMMENT">
@@ -1563,7 +1563,7 @@
     </option>
     <option name="JS.REGEXP">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
@@ -1574,13 +1574,13 @@
     </option>
     <option name="JS.STATIC_MEMBER_VARIABLE">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="3" />
       </value>
     </option>
     <option name="JSSTRING">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="JS.VALID_STRING_ESCAPE">
@@ -1595,7 +1595,7 @@
     </option>
     <option name="JSP_ATTRIBUTE_VALUE">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="JSP_COMMENT">
@@ -1609,7 +1609,7 @@
     </option>
     <option name="JSP_DIRECTIVE_NAME">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{.builtin}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -1662,12 +1662,12 @@
     </option>
     <option name="KOTLIN_INSTANCE_PROPERTY">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{.builtin}}" />
       </value>
     </option>
     <option name="KOTLIN_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -1685,19 +1685,19 @@
     </option>
     <option name="KOTLIN_MUTABLE_VARIABLE">
       <value>
-        <option name="EFFECT_COLOR" value="{{builtin}}" />
+        <option name="EFFECT_COLOR" value="{{.builtin}}" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
     <option name="KOTLIN_NAMESPACE_PROPERTY">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{.builtin}}" />
         <option name="FONT_TYPE" value="3" />
       </value>
     </option>
     <option name="KOTLIN_NUMBER">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="KOTLIN_PARAMETER">
@@ -1707,7 +1707,7 @@
     </option>
     <option name="KOTLIN_PROPERTY_WITH_BACKING_FIELD">
       <value>
-        <option name="EFFECT_COLOR" value="{{type}}" />
+        <option name="EFFECT_COLOR" value="{{.type}}" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -1718,7 +1718,7 @@
     </option>
     <option name="KOTLIN_STRING">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="KOTLIN_STRING_ESCAPE">
@@ -1729,7 +1729,7 @@
     </option>
     <option name="KOTLIN_WRAPPED_INTO_REF">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{.builtin}}" />
       </value>
     </option>
     <option name="LABEL">
@@ -1741,7 +1741,7 @@
     </option>
     <option name="LESS_INJECTED_CODE">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
         <option name="BACKGROUND" value="{{.bg2}}" />
       </value>
     </option>
@@ -1764,32 +1764,32 @@
     </option>
     <option name="LOCALE.MSGCTXT_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="LOCALE.MSGID_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="LOCALE.MSGID_PLURAL_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="LOCALE.MSGSTR_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="LOCALE.MSGSTR_PLURAL_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="LOCALESTRING_LITERAL">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="LOGCAT_ASSERT_OUTPUT">
@@ -1799,7 +1799,7 @@
     </option>
     <option name="LOGCAT_DEBUG_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{.builtin}}" />
       </value>
     </option>
     <option name="LOGCAT_ERROR_OUTPUT">
@@ -1809,7 +1809,7 @@
     </option>
     <option name="LOGCAT_INFO_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="LOGCAT_VERBOSE_OUTPUT">
@@ -1853,7 +1853,7 @@
     </option>
     <option name="LUA_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="LUA_LOCAL_VAR">
@@ -1889,7 +1889,7 @@
     </option>
     <option name="LUA_LUADOC_TAG">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{.builtin}}" />
         <option name="FONT_TYPE" value="1" />
         <option name="EFFECT_COLOR" value="{{.fg3}}" />
         <option name="EFFECT_TYPE" value="1" />
@@ -1897,7 +1897,7 @@
     </option>
     <option name="LUA_LUADOC_VALUE">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{.builtin}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -1908,34 +1908,34 @@
     </option>
     <option name="LUA_PARAMETER">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{.builtin}}" />
       </value>
     </option>
     <option name="LUA_STRING">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="List/map to object conversion">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="Local lazy val/var">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="Local value">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="Local variable">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -1953,13 +1953,13 @@
     </option>
     <option name="MAKO.ATTRIBUTE_NAME">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="MAKO.CONTROL_STRUCTURE_ID">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -1982,13 +1982,13 @@
     </option>
     <option name="MAKO.TAG_ID">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="MARKDOWN.AUTO_LINK">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
@@ -2018,7 +2018,7 @@
     </option>
     <option name="MARKDOWN.EXPLICIT_LINK">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
@@ -2079,13 +2079,13 @@
     </option>
     <option name="MARKDOWN.LINK">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
     <option name="MARKDOWN.MAIL_LINK">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
@@ -2097,7 +2097,7 @@
     </option>
     <option name="MARKDOWN.REFERENCE_LINK">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
@@ -2184,7 +2184,7 @@
     </option>
     <option name="OC.NUMBER">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="OC.OPERATION_SIGN">
@@ -2200,18 +2200,18 @@
     </option>
     <option name="OC.PROPERTY">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
     <option name="OCSTRING">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="OC.STRUCT_FIELD">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
@@ -2246,7 +2246,7 @@
     </option>
     <option name="PHP_CONSTANT">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -2276,7 +2276,7 @@
     </option>
     <option name="PHP_HEREDOC_CONTENT">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="PHP_KEYWORD">
@@ -2286,7 +2286,7 @@
     </option>
     <option name="PHP_NUMBER">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="PHP_OPERATION_SIGN">
@@ -2304,7 +2304,7 @@
     </option>
     <option name="PHP_STRING">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="PHP_TAG">
@@ -2325,7 +2325,7 @@
     </option>
     <option name="PROPERTIES.KEY">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="PROPERTIES.LINE_COMMENT">
@@ -2351,7 +2351,7 @@
     </option>
     <option name="PROPS.KEY">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -2363,28 +2363,28 @@
     </option>
     <option name="PROPS.MACRO">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
     <option name="PROPS.PROFILE">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
     <option name="PROPS.SECTION">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{.builtin}}" />
         <option name="FONT_TYPE" value="1" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
     <option name="PROPS.VALID_STRING_ESCAPE">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -2403,19 +2403,19 @@
     </option>
     <option name="PYBUILTIN_NAME">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
     <option name="PY.CLASS_DEFINITION">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
     <option name="PY.DECORATOR">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
@@ -2427,7 +2427,7 @@
     </option>
     <option name="PY.FUNC_DEFINITION">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
@@ -2451,18 +2451,18 @@
     </option>
     <option name="PY.NUMBER">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="PY.PREDEFINED_DEFINITION">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
     <option name="PY.PREDEFINED_USAGE">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
@@ -2473,7 +2473,7 @@
     </option>
     <option name="PYSTRING">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="PYSTRING.B">
@@ -2518,12 +2518,12 @@
     </option>
     <option name="QL_ENTITY">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="QL_FUNCTION">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -2550,7 +2550,7 @@
     </option>
     <option name="QL_STRING">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -2568,22 +2568,22 @@
     </option>
     <option name="REGEXP.BRACES">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="REGEXP.BRACKETS">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="REGEXP.CHAR_CLASS">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{.builtin}}" />
       </value>
     </option>
     <option name="REGEXP.COMMA">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="REGEXPCOMMENT">
@@ -2604,12 +2604,12 @@
     </option>
     <option name="REGEXP.META">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="REGEXP.PARENTHS">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="REGEXP.QUOTE_CHARACTER">
@@ -2630,13 +2630,13 @@
     </option>
     <option name="REST.EXPLICIT">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="REST.FIELD">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -2679,7 +2679,7 @@
     </option>
     <option name="REST.SECTION.HEADER">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="RUBY_BAD_CHARACTER">
@@ -2720,12 +2720,12 @@
     </option>
     <option name="RUBY_GVAR">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="RUBY_HASH_ASSOC">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="RUBY_HEREDOC_ID">
@@ -2757,7 +2757,7 @@
     </option>
     <option name="RUBY_METHOD_NAME">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="RUBY_NTH_REF">
@@ -2803,7 +2803,7 @@
     </option>
     <option name="Regular expression">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -2819,7 +2819,7 @@
     </option>
     <option name="SASS_CONSTANT">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{.builtin}}" />
       </value>
     </option>
     <option name="SASS_DIRECTIVE">
@@ -2835,7 +2835,7 @@
     </option>
     <option name="SASS_NUMBER">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="SASS_RULE">
@@ -2888,7 +2888,7 @@
     </option>
     <option name="SOY.COMMAND">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -2900,7 +2900,7 @@
     </option>
     <option name="SOYCONSTANT_COMMENT_IDENTIFIER">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{.builtin}}" />
         <option name="FONT_TYPE" value="1" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
@@ -2913,7 +2913,7 @@
     </option>
     <option name="SOYKEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -2930,7 +2930,7 @@
     </option>
     <option name="SOY.SPECIAL_CHAR">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -2948,7 +2948,7 @@
     </option>
     <option name="SOY.TEMPLATE_PARAMETER">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{.builtin}}" />
         <option name="FONT_TYPE" value="1" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
@@ -3039,18 +3039,18 @@
     </option>
     <option name="SQL_PROCEDURE">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="SQL_SCHEMA">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="SQL_STRING">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -3059,7 +3059,7 @@
     </option>
     <option name="SQL_TABLE">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="SQL_VARIABLE">
@@ -3110,7 +3110,7 @@
     </option>
     <option name="Scala Class method call">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="Scala Invalid escape in string">
@@ -3137,12 +3137,12 @@
     </option>
     <option name="Scala Method declaration">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="Scala Number">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="Scala Object method call">
@@ -3153,7 +3153,7 @@
     </option>
     <option name="Scala Parameter">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{.builtin}}" />
       </value>
     </option>
     <option name="Scala Pattern value">
@@ -3173,7 +3173,7 @@
     </option>
     <option name="Scala String">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="Scala Template lazy val/var">
@@ -3206,18 +3206,18 @@
     </option>
     <option name="Scala Type parameter">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="Scala Valid escape in string">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{.builtin}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="Scala XML Text">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -3258,7 +3258,7 @@
     </option>
     <option name="String">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="TEA.BADCHARACTER">
@@ -3281,7 +3281,7 @@
     </option>
     <option name="TEAKEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -3293,7 +3293,7 @@
     </option>
     <option name="TEA.NUMBER">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{.builtin}}" />
       </value>
     </option>
     <option name="TEA.SCRIPTING_BACKGROUND">
@@ -3303,7 +3303,7 @@
     </option>
     <option name="TEA.SCRIPTING_FOREGROUND">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -3315,7 +3315,7 @@
     </option>
     <option name="TEA.VALID_STRING_ESCAPE">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -3340,8 +3340,8 @@
     </option>
     <option name="TODO_DEFAULT_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
-        <option name="ERROR_STRIPE_COLOR" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
+        <option name="ERROR_STRIPE_COLOR" value="{{.type}}" />
       </value>
     </option>
     <option name="TWIG_BACKGROUND">
@@ -3366,7 +3366,7 @@
     </option>
     <option name="TWIG_IDENTIFIER">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="TWIG_KEYWORD">
@@ -3376,7 +3376,7 @@
     </option>
     <option name="TWIG_NUMBER">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="TWIG_OPERATION_SIGN">
@@ -3386,7 +3386,7 @@
     </option>
     <option name="TWIG_STRING">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="TYPEDEF">
@@ -3397,7 +3397,7 @@
     </option>
     <option name="TYPE_PARAMETER_NAME_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="TYPO">
@@ -3418,7 +3418,7 @@
     </option>
     <option name="Template var">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -3507,7 +3507,7 @@
     </option>
     <option name="XML_ATTRIBUTE_VALUE">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="XML_COMMENT">
@@ -3533,7 +3533,7 @@
     </option>
     <option name="XML_TAG_NAME">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -3545,7 +3545,7 @@
     </option>
     <option name="XPATHKEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
       </value>
     </option>
     <option name="XPATH.NUMBER">
@@ -3560,7 +3560,7 @@
     </option>
     <option name="XPATH.XPATH_NAME">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
       </value>
     </option>
     <option name="XPATH.XPATH_VARIABLE">
@@ -3582,7 +3582,7 @@
     </option>
     <option name="YAML_SCALAR_KEY">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -3593,7 +3593,7 @@
     </option>
     <option name="YAML_SCALAR_STRING">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -3638,14 +3638,14 @@
     </option>
     <option name="bemhtmlkeyword.entity">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
     <option name="bemhtmlkeyword.mod">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{.type}}" />
         <option name="FONT_TYPE" value="1" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
@@ -3674,7 +3674,7 @@
     </option>
     <option name="go.identifier">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{.builtin}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
@@ -3698,7 +3698,7 @@
     </option>
     <option name="gostring">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{.string}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
