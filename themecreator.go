@@ -29,6 +29,8 @@ func saveThemeHandler(w http.ResponseWriter, r *http.Request, tmplfile, tmplname
 	if err := themetemplate.ExecuteTemplate(&res, tmplname, fmap); err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 	}
+	w.Header().Add("Access-Control-Allow-Origin", "*")
+	w.Header().Add("Content-Type", "text/plain")
 	w.Write(res.Bytes())
 
 }
