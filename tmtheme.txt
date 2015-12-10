@@ -3,26 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>comment</key>
-	<string>{{themeauthor}}</string>
+	<string>{{.author}}</string>
 	<key>name</key>
-	<string>{{themename}}</string>
+	<string>{{.themename}}</string>
 	<key>settings</key>
 	<array>
 		<dict>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>{{mainbg}}</string>
+				<string>{{.mainbg}}</string>
 				<key>caret</key>
-				<string>{{bg3}}</string>
+				<string>{{.bg3}}</string>
 				<key>foreground</key>
-				<string>{{mainfg}}</string>
+				<string>{{.mainfg}}</string>
 				<key>invisibles</key>
-				<string>{{bg3}}</string>
+				<string>{{.bg3}}</string>
 				<key>lineHighlight</key>
-				<string>{{bg2}}</string>
+				<string>{{.bg2}}</string>
 				<key>selection</key>
-				<string>{{bg3}}</string>
+				<string>{{.bg3}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -46,7 +46,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>{{fg3}}</string>
+				<string>{{.fg3}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -148,7 +148,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>{{mainbg}}</string>
+				<string>{{.mainbg}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -161,7 +161,7 @@
 				<key>background</key>
 				<string>{{functionname}}</string>
 				<key>foreground</key>
-				<string>{{mainbg}}</string>
+				<string>{{.mainbg}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -176,7 +176,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>{{mainbg}}</string>
+				<string>{{.mainbg}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -187,7 +187,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{mainbg}}</string>
+				<string>{{.mainbg}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -220,7 +220,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{mainbg}}</string>
+				<string>{{.mainbg}}</string>
 				<key>background</key>
 				<string>{{functionname}}</string>
 			</dict>
