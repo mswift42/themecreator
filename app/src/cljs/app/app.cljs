@@ -23,7 +23,8 @@
   [templ]
   (.parse js/Mustache templ))
 
-(def texttemplate (atom ""))
+(def intellitemplate (atom ""))
+(def tmthemetemplate (atom ""))
 
 
 (defn compile-template
@@ -37,13 +38,15 @@
    (derive-colors-from-theme @app-db)))
 
 (defn GET
-  [url]
-  (xhr/send url callback "POST" (clj->js @app-db)))
+  [url template]
+  (xhr/send url (fn [event]
+                  (reset! template
+                          (.getResponse (.-target event))))))
 
 
 (defn generate-template
-  [url]
-  (GET url))
+  [template]
+  (compile-template template (derive-colors-from-theme @app-db)))
 
 (defn window-url
   []
@@ -74,11 +77,13 @@
     [:span.sr-only]]
    [:ul.dropdown-menu {:aria-labelledby "templatedrop"}
     [:li
-     [:a {:href "#"  :id "intellilink" :on-click #(create-blob (generate-template "http://localhost:8080/intellij") "intellilink" (str (:themename @app-db) ".icls"))}
+     [:a {:href "#"  :id "intellilink" :on-click #(create-blob (generate-template @intellitemplate) "intellilink" (str (:themename @app-db) ".icls"))}
       "Intellij"]]
     [:li
-     [:a {:href "#" :id "tmthemelink" :on-click #(create-blob (generate-template
-                                                               "http://localhost:8080/tmtheme") "tmthemelink" (str (:themename @app-db) ".tmtheme"))}
+     [:a {:href "#" :id "tmthemelink" :on-click
+          #(create-blob
+            (generate-template @tmthemetemplate)
+            "tmthemelink" (str (:themename @app-db) ".tmtheme"))}
       "Textmate"]]]])
 
 (defn store-component
@@ -137,6 +142,8 @@
 
 (defn theme-component []
   (db/set-db-from-storage)
+  (GET "js/templates/intelli.txt" intellitemplate)
+  (GET "js/templates/tmtheme.txt" tmthemetemplate)
   [navbar-component]
   [:div.row
    [color-components]
