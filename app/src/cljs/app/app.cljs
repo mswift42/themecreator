@@ -3,9 +3,16 @@
             [app.db :refer [app-db white-sand]]
             [app.db :as db]
             [app.components  :as comps]
+            [app.templates :as tmpl]
             [app.colors :refer [derive-colors-from-theme]]
             [cljsjs.mustache]
-            [goog.net.XhrIo :as xhr]))
+            [goog.net.XhrIo :as xhr]
+            [goog.events :as events]
+            [goog.Uri :as uri]
+            [cljs-http.client :as http]
+            [cljs.core.async :refer [<! chan put! take!]])
+  (:require-macros
+   [cljs.core.async.macros :as m :refer [go]]))
 
 
 (defn log
@@ -18,28 +25,42 @@
 
 (def texttemplate (atom ""))
 
+
 (defn compile-template
   [templ varmap]
   (.render js/Mustache templ (clj->js varmap)))
 
+(defn callback
+  [reply]
+  (compile-template 
+   (.getResponse (.-target reply))
+   (derive-colors-from-theme @app-db)))
+
 (defn GET
   [url]
-  (xhr/send url
-            (fn [event]
-              (reset! texttemplate
-                      (.getResponse (.-target event))))))
+  (xhr/send url callback "POST" (clj->js @app-db)))
+
 
 (defn generate-template
   [url]
-  (do
-    (GET url)
-    (compile-template @texttemplate
-                      (derive-colors-from-theme @app-db))))
+  (GET url))
 
 (defn window-url
   []
   (or (.-URL js/window)
       (.-webkitURL js/window)))
+
+(def show-template-url (atom false))
+
+(defn create-blob
+  [data]
+  (let [wu (window-url)
+        blob (js/Blob. #js [data])
+        templink (.createElement js/document "a")]
+    (set! (.-href templink) (.createObjectURL js/URL blob))
+    (doto templink
+      (.setAttribute "download" "somefilename")
+      (.click))))
 
 
 (defn template-select-component
@@ -52,17 +73,20 @@
     [:span.caret]
     [:span.sr-only]]
    [:ul.dropdown-menu {:aria-labelledby "templatedrop"}
-    [:li
-     [:a {:download (str (:themename @app-db) ".icls") :href (str "data:application/xml,"
-                                                                  (js/encodeURIComponent
-                                                                   (generate-template "js/templates/intelli.txt")
-                                                                   ))}
-      "IntelliJ" ]]
+    (if @show-template-url
+      [:li
+       [:a {:download (str (:themename @app-db) ".icls")
+            :href (str "data:text/plain,"
+                       (js/encodeURIComponent (generate-template "http://localhost:8080/intellij.txt")))}
+        "Intellij"]]
+      [:li
+       [:a {:href "#" :on-click #(reset! show-template-url (not @show-template-url))}
+        "Intellij"]])
     [:li
      [:a {:download (str (:themename @app-db) ".tmtheme") :href
           (str "data:text/plain,"
                (js/encodeURIComponent
-                (generate-template "js/templates/tmtheme.txt")))}
+                (generate-template "http://localhost:8080/tmtheme")))}
       "Textmate"]]]])
 
 (defn store-component
