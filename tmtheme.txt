@@ -70,7 +70,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>{{.constant}}/string>
+				<string>{{.constant}}</string>
 			</dict>
 		</dict>
 		<dict>
