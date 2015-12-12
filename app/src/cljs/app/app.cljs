@@ -53,13 +53,13 @@
 (def show-template-url (atom false))
 
 (defn create-blob
-  [data]
+  [data id filename]
   (let [wu (window-url)
         blob (js/Blob. #js [data])
-        templink (.createElement js/document "a")]
+        templink (.getElementById js/document id)]
     (set! (.-href templink) (.createObjectURL js/URL blob))
     (doto templink
-      (.setAttribute "download" "somefilename")
+      (.setAttribute "download" filename)
       (.click))))
 
 
@@ -73,20 +73,12 @@
     [:span.caret]
     [:span.sr-only]]
    [:ul.dropdown-menu {:aria-labelledby "templatedrop"}
-    (if @show-template-url
-      [:li
-       [:a {:download (str (:themename @app-db) ".icls")
-            :href (str "data:text/plain,"
-                       (js/encodeURIComponent (generate-template "http://localhost:8080/intellij.txt")))}
-        "Intellij"]]
-      [:li
-       [:a {:href "#" :on-click #(reset! show-template-url (not @show-template-url))}
-        "Intellij"]])
     [:li
-     [:a {:download (str (:themename @app-db) ".tmtheme") :href
-          (str "data:text/plain,"
-               (js/encodeURIComponent
-                (generate-template "http://localhost:8080/tmtheme")))}
+     [:a {:href "#"  :id "intellilink" :on-click #(create-blob (generate-template "http://localhost:8080/intellij") "intellilink" (str (:themename @app-db) ".icls"))}
+      "Intellij"]]
+    [:li
+     [:a {:href "#" :id "tmthemelink" :on-click #(create-blob (generate-template
+                                                               "http://localhost:8080/tmtheme") "tmthemelink" (str (:themename @app-db) ".tmtheme"))}
       "Textmate"]]]])
 
 (defn store-component
