@@ -62,8 +62,7 @@
         templink (.getElementById js/document id)]
     (set! (.-href templink) (.createObjectURL js/URL blob))
     (doto templink
-      (.setAttribute "download" filename)
-      (.click))))
+      (.setAttribute "download" filename))))
 
 
 (defn template-select-component
