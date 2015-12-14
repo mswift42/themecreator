@@ -48,7 +48,7 @@
   (let [wu (window-url)
         blob (js/Blob. #js [data])
         templink (.getElementById js/document id)]
-    (set! (.-href templink) (.createObjectURL js/URL blob))
+    (set! (.-href templink) (.createObjectURL wu blob))
     (doto templink
       (.setAttribute "download" filename))))
 
