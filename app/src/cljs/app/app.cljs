@@ -3,7 +3,6 @@
             [app.db :refer [app-db white-sand]]
             [app.db :as db]
             [app.components  :as comps]
-            [app.templates :as tmpl]
             [app.colors :refer [derive-colors-from-theme]]
             [cljsjs.mustache]
             [goog.net.XhrIo :as xhr]
@@ -25,6 +24,7 @@
 
 (def intellitemplate (atom ""))
 (def tmthemetemplate (atom ""))
+(def atomtemplate (atom ""))
 
 
 (defn compile-template
@@ -83,7 +83,12 @@
           #(create-blob
             (generate-template @tmthemetemplate)
             "tmthemelink" (str (:themename @app-db) ".tmtheme"))}
-      "Textmate"]]]])
+      "Textmate"]]
+    [:li
+     [:a {:href "#" :id "atomlink" :on-click
+          #(create-blob
+            (generate-template @atomtemplate)
+            "atomlink" (str (:themename @app-db) ".less"))}]]]])
 
 (defn store-component
   []
