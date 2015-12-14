@@ -8,13 +8,13 @@
 @fg2: {{fg2}};
 @mainfg: {{mainfg}};
 
-@comment: #a9a9a9;
-@builtin: #1a8591; 
-@keyword: #4a858c;
-@type: #8c4a79;
-@const: #697024;
-@func: #bd745e;
-@string: #b3534b;
-@var: #476238;
-@warning: #ff1276;
-@warning2: #de935f;
+@comment: {{comment}};
+@builtin: {{builtin}}; 
+@keyword: {{keyword}};
+@type: {{type}};
+@const: {{const}};
+@func: {{func}};
+@string: {{string}};
+@var: {{variable}};
+@warning: {{warning}};
+@warning2: {{warning2}};
