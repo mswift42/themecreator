@@ -1,12 +1,12 @@
 // These colors are specific to the theme. Do not use in a package!
 
-@mainbg: #f5ebe1;
-@bg2: #dfd6cd;
-@bg3: #c9c1b9;
-@bg4: #b4ada6;
-@fg3: #707070;
-@fg2: #646464;
-@mainfg: #585858;
+@mainbg: {{mainbg}};
+@bg2: {{bg2}};
+@bg3: {{bg3}};
+@bg4: {{fg4}};
+@fg3: {{fg3}};
+@fg2: {{fg2}};
+@mainfg: {{mainfg}};
 
 @comment: #a9a9a9;
 @builtin: #1a8591; 
