@@ -146,9 +146,10 @@
 
 (defn theme-component []
   (db/set-db-from-storage)
+  [navbar-component]
   (GET "js/templates/intelli.txt" intellitemplate)
   (GET "js/templates/tmtheme.txt" tmthemetemplate)
-  [navbar-component]
+  (GET "js/templates/atom/colors.txt" atomtemplate)
   [:div.row
    [color-components]
    [preview-component]])
