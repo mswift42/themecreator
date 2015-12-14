@@ -11,7 +11,9 @@
   ([text color textdecoration]
    [:span {:style {:color (color @app-db)
                    :text-decoration "underline"
+                   :text-decoration-style "wavy"
                    :-webkit-text-decoration "underline"
+                   :-webkit-text-decoration-style "wavy"
                    :text-decoration-color (textdecoration @app-db)
                    :-webkit-text-decoration-color (textdecoration @app-db)}}
     (str text)]))
