@@ -6,12 +6,7 @@
             [app.colors :refer [derive-colors-from-theme]]
             [cljsjs.mustache]
             [goog.net.XhrIo :as xhr]
-            [goog.events :as events]
-            [goog.Uri :as uri]
-            [cljs-http.client :as http]
-            [cljs.core.async :refer [<! chan put! take!]])
-  (:require-macros
-   [cljs.core.async.macros :as m :refer [go]]))
+            [goog.Uri :as uri]))
 
 
 (defn log
@@ -147,10 +142,6 @@
   [:div.row
    [color-components]
    [preview-component]])
-
-
-
-
 
 
 (defn init []
