@@ -88,7 +88,8 @@
      [:a {:href "#" :id "atomlink" :on-click
           #(create-blob
             (generate-template @atomtemplate)
-            "atomlink" (str (:themename @app-db) ".less"))}]]]])
+            "atomlink" (str "colors.less"))}
+      "Atom"]]]])
 
 (defn store-component
   []
