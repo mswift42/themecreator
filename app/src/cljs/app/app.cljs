@@ -31,11 +31,6 @@
   [templ varmap]
   (.render js/Mustache templ (clj->js varmap)))
 
-(defn callback
-  [reply]
-  (compile-template 
-   (.getResponse (.-target reply))
-   (derive-colors-from-theme @app-db)))
 
 (defn GET
   [url template]
@@ -52,8 +47,6 @@
   []
   (or (.-URL js/window)
       (.-webkitURL js/window)))
-
-(def show-template-url (atom false))
 
 (defn create-blob
   [data id filename]
