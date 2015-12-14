@@ -12,8 +12,8 @@
 @builtin: {{builtin}}; 
 @keyword: {{keyword}};
 @type: {{type}};
-@const: {{const}};
-@func: {{func}};
+@const: {{constant}};
+@func: {{functionname}};
 @string: {{string}};
 @var: {{variable}};
 @warning: {{warning}};
