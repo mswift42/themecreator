@@ -20,6 +20,7 @@
 (def intellitemplate (atom ""))
 (def tmthemetemplate (atom ""))
 (def atomtemplate (atom ""))
+(def emacstemplate (atom ""))
 
 
 (defn compile-template
@@ -52,6 +53,12 @@
     (doto templink
       (.setAttribute "download" filename))))
 
+(defn template-download
+  [id title filename template]
+  [:li
+   [:a {:href "#" :id id :on-click
+        #(create-blob (generate-template template) id filename)}
+    title]])
 
 (defn template-select-component
   []
@@ -63,21 +70,14 @@
     [:span.caret]
     [:span.sr-only]]
    [:ul.dropdown-menu {:aria-labelledby "templatedrop"}
-    [:li
-     [:a {:href "#"  :id "intellilink" :on-click #(create-blob (generate-template @intellitemplate) "intellilink" (str (:themename @app-db) ".icls"))}
-      "Intellij"]]
-    [:li
-     [:a {:href "#" :id "tmthemelink" :on-click
-          #(create-blob
-            (generate-template @tmthemetemplate)
-            "tmthemelink" (str (:themename @app-db) ".tmtheme"))}
-      "Textmate"]]
-    [:li
-     [:a {:href "#" :id "atomlink" :on-click
-          #(create-blob
-            (generate-template @atomtemplate)
-            "atomlink" (str "colors.less"))}
-      "Atom"]]]])
+    [template-download "intellilink" "IntelliJ"
+     (str (:themename @app-db) ".icls") @intellitemplate]
+    [template-download "tmthemelink" "Textmate"
+     (str (:themename @app-db) ".tmtheme") @tmthemetemplate]
+    [template-download "atomlink" "Atom"
+     "colors.less" @atomtemplate]
+    [template-download "emacslink" "Emacs"
+     (str (:themename @app-db) ".el") @emacstemplate ]]])
 
 (defn store-component
   []
@@ -134,11 +134,12 @@
      [comps/language-select]]]])
 
 (defn theme-component []
-  (db/set-db-from-storage)
   [navbar-component]
   (GET "js/templates/intelli.txt" intellitemplate)
   (GET "js/templates/tmtheme.txt" tmthemetemplate)
   (GET "js/templates/atom/colors.txt" atomtemplate)
+  (GET "js/templates/emacs.txt" emacstemplate)
+  (db/set-db-from-storage)
   [:div.row
    [color-components]
    [preview-component]])
