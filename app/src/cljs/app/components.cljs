@@ -48,8 +48,6 @@
 
 
 
-
-
 (defn button-component
   "button-component returns the markup for a bootstrap default button"
   [text handler]

@@ -5,8 +5,7 @@
             [app.components  :as comps]
             [app.colors :refer [derive-colors-from-theme]]
             [cljsjs.mustache]
-            [goog.net.XhrIo :as xhr]
-            [goog.Uri :as uri]))
+            [goog.net.XhrIo :as xhr]))
 
 
 (defn log
