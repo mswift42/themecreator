@@ -1,4 +1,4 @@
-{{define "theme"}};;; {{.themename}}-theme.el --- Emacs theme with a {{.background}} background.
+;;; {{themename}}-theme.el --- Emacs theme 
 
 ;; Copyright (C) 2014 , {{.author}}
 
@@ -28,7 +28,7 @@
 
 ;;; Code:
 
- (deftheme {{.themename}})
+ (deftheme {{themename}})
  (let ((class '((class color) (min-colors 89)))
        (fg1 {{.deffacefg}})
        (fg2 {{.fore2}})
@@ -50,7 +50,7 @@
        (var     {{.variableface}})
        (warning {{.warningface}}))
    (custom-theme-set-faces
-   '{{.themename}}
+   '{{themename}}
         `(default ((,class (:background ,bg1 :foreground ,fg1))))
         `(font-lock-builtin-face ((,class (:foreground ,builtin))))
         `(font-lock-comment-face ((,class (:foreground ,comment))))
@@ -246,11 +246,10 @@
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme '{{.themename}})
+(provide-theme '{{themename}})
 
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; End:
 
-;;; {{.themename}}-theme.el ends here
-{{end}}
+;;; {{themename}}-theme.el ends here
