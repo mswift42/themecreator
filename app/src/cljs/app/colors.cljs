@@ -2,6 +2,19 @@
   (:require [goog.color :as color]
             [app.db :as db]))
 
+(defn hexToRgb
+  [hexcolor]
+  (color/hexToRgb hexcolor))
+
+(defn rgbToXyz
+  [rgbcolor]
+  (let [[r g b] (mapv #(if (> % 0.04045)
+                         (js/Math.pow (/ (+ % 0.055) 1.055) 2.4)
+                         (/ % 12.92)) (mapv #(/ % 255.0) rgbcolor))]
+    [(+ (* r 0.4124) (* g 0.3576) (* b 0.1805))
+     (+ (* r 0.2126) (* g 0.7152) (* b 0.0722))
+     (+ (* r 0.0193) (* g 0.1192) (* b 0.9505))]))
+
 (defn darken
   "darken darkens a rgb color by a given factor.
    if no factor is provided, the color will be darkened 
