@@ -100,8 +100,8 @@
   "warm-palette returns a vector of 7 random warm colors." 
   []
   (if (dark-bg? (:mainbg @db/app-db))
-    (color-list 0.58 0.43)
-    (color-list 0.58 0.522)))
+    (color-list 0.40 0.57)
+    (color-list 0.40 0.522)))
 
 (defn pop-palette
   "pop-palette returns a vector of 7 random 'pop' colors."
