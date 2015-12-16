@@ -124,10 +124,6 @@
   (r/atom
    false))
 
-(def intellij "js/templates/intelli.txt")
-
-
-
 (defn switch-theme
   [theme]
   (reset! app-db theme ))
