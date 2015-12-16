@@ -29,6 +29,23 @@
      (* 500 (- x y)) 
      (* 200 (- y z))]))
 
+(defn radToDegrees
+  [h]
+  (if (> h 0)
+    (* 180 (/ h (.-PI js/Math)))
+    (- 360 (* 180 (/ (js/Math.abs h) (.-PI js/Math))))))
+
+(defn labToLch
+  [labcolor]
+  (let [[l a b] labcolor
+        h (radToDegrees (js/Math.atan2 b a))]
+    [l
+     (js/Math.sqrt (+ (* a a) (* b b)))
+     (cond
+       (< h 0) (+ h 360)
+       (>= h 360) (- h 360)
+       :else h)]))
+
 (defn darken
   "darken darkens a rgb color by a given factor.
    if no factor is provided, the color will be darkened 
