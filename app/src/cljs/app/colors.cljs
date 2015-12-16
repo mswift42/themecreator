@@ -3,14 +3,16 @@
             [app.db :as db]))
 
 (defn hexToRgb
+  "convert hex color to rgb in values 0..1"
   [hexcolor]
-  (color/hexToRgb hexcolor))
+  (mapv #(/ % 255.0) (color/hexToRgb hexcolor)))
 
 (defn rgbToXyz
   [rgbcolor]
-  (let [[r g b] (mapv #(if (> % 0.04045)
-                         (js/Math.pow (/ (+ % 0.055) 1.055) 2.4)
-                         (/ % 12.92)) (mapv #(/ % 255.0) rgbcolor))]
+  (let [[r g b] (mapv #(* % 100) (mapv 
+                                  #(if (> % 0.04045)
+                                     (js/Math.pow (/ (+ % 0.055) 1.055) 2.4)
+                                     (/ % 12.92)) rgbcolor))]
     [(+ (* r 0.4124) (* g 0.3576) (* b 0.1805))
      (+ (* r 0.2126) (* g 0.7152) (* b 0.0722))
      (+ (* r 0.0193) (* g 0.1192) (* b 0.9505))]))
