@@ -26,8 +26,8 @@
                          (+ (* % 7.787) (/ 16 116)))
                       (mapv / xyzcolor xyzreferencewhite))]
     [(- (* 116 y) 16)
-     (- (* 500 x) y)
-     (- (* 200 y) z)]))
+     (* 500 (- x y)) 
+     (* 200 (- y z))]))
 
 (defn darken
   "darken darkens a rgb color by a given factor.
