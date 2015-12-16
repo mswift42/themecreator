@@ -17,6 +17,15 @@
      (+ (* r 0.2126) (* g 0.7152) (* b 0.0722))
      (+ (* r 0.0193) (* g 0.1192) (* b 0.9505))]))
 
+(def xzyreferencewhite [95.047 100 108.883])
+
+(defn xyzToLab
+  [xyzcolor]
+  (let [[x y z] (mapv #(if (> % 0.008856)
+                         (js/Math.pow % (/ 1 3))
+                         (+ (* % 7.787) (/ 16 116)))
+                      (mapv / xyzcolor xzyreferencewhite))]))
+
 (defn darken
   "darken darkens a rgb color by a given factor.
    if no factor is provided, the color will be darkened 
