@@ -46,6 +46,10 @@
        (>= h 360) (- h 360)
        :else h)]))
 
+(defn hexToLch
+  [hexcolor]
+  (labToLch (xyzToLab (rgbToXyz (hexToRgb hexcolor)))))
+
 (defn darken
   "darken darkens a rgb color by a given factor.
    if no factor is provided, the color will be darkened 
