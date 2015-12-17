@@ -92,11 +92,7 @@
 
 (defn lchToHex
   [lchcolor]
-  (-> lchcolor
-      lchToLab
-      labToXyz
-      xyzToRgb
-      rgbToHex))
+  (rgbToHex (xyzToRgb (labToXyz (lchToLab lchcolor)))))
 
 (defn darken
   "darken darkens a rgb color by a given factor.
