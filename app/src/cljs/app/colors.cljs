@@ -46,6 +46,14 @@
        (>= h 360) (- h 360)
        :else h)]))
 
+(defn lchToLab
+  [lchcolor]
+  (let [[l c h] lchcolor
+        hrad (/ (* h (.-PI js/Math)) 180)]
+    [l
+     (* (js/Math.cos hrad) c)
+     (* (js/Math.sin hrad) c)]))
+
 (defn hexToLch
   [hexcolor]
   (labToLch (xyzToLab (rgbToXyz (hexToRgb hexcolor)))))
