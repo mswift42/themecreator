@@ -69,6 +69,18 @@
                        (/ (- i (/ 16 116)) 116))))
            xyz))))
 
+(defn xyzToRgb
+  [xyzcolor]
+  (let [[x y z] (mapv #(/ % 100) xyzcolor)
+        r (+ (* x 3.2406) (* y -1.5372) (* z -0.4986))
+        g (+ (* x -0.9689) (* y 1.8758) (* z 0.0415))
+        b (+ (* x 0.0557) (* y -0.2040) (* z 1.0570))
+        rgb [r g b]]
+    (mapv #(* % 255) (mapv #(if (> % 0.0031308)
+                              (- (* 1.055 (js/Math.pow % (/ 1 2.4))) 0.055)
+                              (* % 12.92)) rgb))))
+
+
 (defn hexToLch
   [hexcolor]
   (labToLch (xyzToLab (rgbToXyz (hexToRgb hexcolor)))))
