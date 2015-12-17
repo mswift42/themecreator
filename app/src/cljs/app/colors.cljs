@@ -54,6 +54,21 @@
      (* (js/Math.cos hrad) c)
      (* (js/Math.sin hrad) c)]))
 
+(defn labToXyz
+  [labcolor]
+  (let [[l a b] labcolor
+        x (+ (/ a 500) (/ (+ l 16) 116))
+        y (/ (+ l 16) 116)
+        z (- (/ (+ l 16) 116) (/ b 200))
+        xyz [x y z]]
+    (mapv * xyzreferencewhite
+          (mapv
+           (fn [i] (let [cube (js/Math.pow i 3)]
+                     (if (> cube 0.008856)
+                       cube
+                       (/ (- i (/ 16 116)) 116))))
+           xyz))))
+
 (defn hexToLch
   [hexcolor]
   (labToLch (xyzToLab (rgbToXyz (hexToRgb hexcolor)))))
