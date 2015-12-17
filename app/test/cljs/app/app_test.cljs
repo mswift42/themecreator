@@ -66,12 +66,18 @@
             (>= (colors/random-hue) 0))
            true))))
 
+(deftest test-hue-range []
+  (dotimes [_ 1000]
+    (let [hr (colors/hue-range 7 (colors/random-hue))]
+      (is (= (every? #(>= % 0)) true))
+      (is (= (every? #(< % 360)) true)))))
+
 (deftest test-color-list []
   (dotimes [_ 1000]
     (is (= (count (colors/color-list 0 0)) 7))))
 
 (deftest test-derive-colors []
-  (let [theme (colors/derive-colors-from-theme db/preset)]
+  (let [theme (colors/derive-colors-from-theme db/white)]
     (is (= (:warning theme) "#ff0000"))
     (is (= (:mainfg theme) "#303030"))
     (is (= (:fg2 theme) "#414141"))
