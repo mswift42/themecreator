@@ -67,7 +67,7 @@
            true))))
 
 (deftest test-hue-range []
-  (dotimes [_ 1000]
+  (dotimes [_ 10000]
     (let [hr (colors/hue-range 7 (colors/random-hue))]
       (is (= (every? #(>= % 0)) true))
       (is (= (every? #(< % 360)) true)))))
@@ -85,4 +85,15 @@
     (is (= (:fg4 theme) "#626262"))
     (is (= (:bg2 theme) "#ebebeb"))
     (is (= (:bg3 theme) "#d6d6d6"))))
+
+(deftest test-hexToRgb
+  []
+  (dotimes [_ 1000]
+    (let [r (rand-int 256)
+          g (rand-int 256)
+          b (rand-int 256)
+          hex (colors/rgbToHex [r g b])]
+      (is (= hex (colors/rgbToHex (color/hexToRgb hex))) true))))
+
+
 
