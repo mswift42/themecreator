@@ -14,10 +14,12 @@
 
 (defn rgbToXyz
   [rgbcolor]
-  (let [[r g b] (mapv #(* % 100) (mapv 
-                                  #(if (> % 0.04045)
-                                     (js/Math.pow (/ (+ % 0.055) 1.055) 2.4)
-                                     (/ % 12.92)) rgbcolor))]
+  (let [[r g b]
+        (mapv #(* % 100)
+              (mapv 
+               #(if (> % 0.04045)
+                  (js/Math.pow (/ (+ % 0.055) 1.055) 2.4)
+                  (/ % 12.92)) rgbcolor))]
     [(+ (* r 0.4124) (* g 0.3576) (* b 0.1805))
      (+ (* r 0.2126) (* g 0.7152) (* b 0.0722))
      (+ (* r 0.0193) (* g 0.1192) (* b 0.9505))]))
@@ -62,9 +64,9 @@
 (defn labToXyz
   [labcolor]
   (let [[l a b] labcolor
-        x (+ (/ a 500) (/ (+ l 16) 116))
         y (/ (+ l 16) 116)
-        z (- (/ (+ l 16) 116) (/ b 200))
+        x (+  (/ a 500) y)
+        z (- y (/ b 200))
         xyz [x y z]]
     (mapv * xyzreferencewhite
           (mapv
