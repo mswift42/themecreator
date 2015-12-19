@@ -86,6 +86,10 @@
     (is (= (:bg2 theme) "#ebebeb"))
     (is (= (:bg3 theme) "#d6d6d6"))))
 
+(def hexrgbtable
+  [[[128 0 0] "#800000"]
+   [ [139 0 0] "#8b0000"]])
+
 (deftest test-hexToRgb
   []
   (dotimes [_ 1000]
@@ -94,6 +98,11 @@
           b (rand-int 256)
           hex (colors/rgbToHex [r g b])]
       (is (= hex (colors/rgbToHex (color/hexToRgb hex))) true))))
+
+(deftest test-rgbtoHex
+  []
+  (doseq [[rgb hex] hexrgbtable]
+    (is (= hex (colors/rgbToHex rgb)))))
 
 
 
