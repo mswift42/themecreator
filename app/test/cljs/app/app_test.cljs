@@ -67,7 +67,7 @@
            true))))
 
 (deftest test-hue-range []
-  (dotimes [_ 10000]
+  (dotimes [_ 1000]
     (let [hr (colors/hue-range 7 (colors/random-hue))]
       (is (= (every? #(>= % 0)) true))
       (is (= (every? #(< % 360)) true)))))
@@ -88,7 +88,12 @@
 
 (def hexrgbtable
   [[[128 0 0] "#800000"]
-   [ [139 0 0] "#8b0000"]])
+   [ [139 0 0] "#8b0000"]
+   [[165 42 42] "#a52a2a"]
+   [[178 34 34] "#b22222"]
+   [[220 20 60] "#dc143c"]
+   [[255 99 71] "#ff6347"]
+   [[233 150 122] "#e9967a"]])
 
 (deftest test-hexToRgb
   []
