@@ -98,10 +98,10 @@
    [[72 209 204] "#48d1cc"]])
 
 (def xyzrgbtable
-  [[[1.19 1.21 1.43] [34 34 34]]
-   [[1.62 1.21 1.63] [47 28 37]]
-   [[1.96 1.21 1.83] [55 22 39]]
-   [[ 2.32 1.21 2.05] [62 14 41]]])
+  [[[1.52 1.6 1.742] [34 34 34]]
+   [[1.921 1.569 1.952] [47 28 37]]
+   [[2.229 1.533 2.098] [55 22 39]]
+   [[2.544 1.499 2.253] [62 14 41]]])
 
 (deftest test-hexToRgb
   []
@@ -117,6 +117,10 @@
   (doseq [[rgb hex] hexrgbtable]
     (is (= hex (colors/rgbToHex rgb)))))
 
+(defn within-limit?
+  [limit result target]
+  (<= (js/Math.abs (- target result)) limit))
+
 (deftest test-rgbtoxyz
   []
   (doseq [[xyz rgb] xyzrgbtable]
@@ -124,7 +128,7 @@
 
 (deftest test-xyzToRgb
   []
-  (doseq [[rgb xyz] xyzrgbtable]
+  (doseq [[xyz rgb] xyzrgbtable]
     (is (= (colors/xyzToRgb xyz) rgb))))
 
 
