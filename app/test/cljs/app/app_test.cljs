@@ -117,5 +117,15 @@
   (doseq [[rgb hex] hexrgbtable]
     (is (= hex (colors/rgbToHex rgb)))))
 
+(deftest test-rgbtoxyz
+  []
+  (doseq [[xyz rgb] xyzrgbtable]
+    (is (= (colors/rgbToXyz (mapv #(/ % 255) rgb)) xyz))))
+
+(deftest test-xyzToRgb
+  []
+  (doseq [[rgb xyz] xyzrgbtable]
+    (is (= (colors/xyzToRgb xyz) rgb))))
+
 
 
