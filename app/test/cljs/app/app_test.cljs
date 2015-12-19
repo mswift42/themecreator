@@ -121,10 +121,14 @@
   [limit result target]
   (<= (js/Math.abs (- target result)) limit))
 
+(defn test-whitin-limit
+  []
+  (is (= (within-limit? 0.001 1.999 2.000) true)))
+
 (deftest test-rgbtoxyz
   []
   (doseq [[xyz rgb] xyzrgbtable]
-    (is (= (colors/rgbToXyz (mapv #(/ % 255) rgb)) xyz))))
+    (is (= (within-limit? 0.001 (colors/rgbToXyz rgb) xyz)))))
 
 (deftest test-xyzToRgb
   []
