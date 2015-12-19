@@ -24,14 +24,14 @@
      (+ (* r 0.2126) (* g 0.7152) (* b 0.0722))
      (+ (* r 0.0193) (* g 0.1192) (* b 0.9505))]))
 
-(def xyzreferencewhite [95.047 100 108.883])
+(def xyzreferencewhited65 [95.047 100 108.883])
 
 (defn xyzToLab
   [xyzcolor]
   (let [[x y z] (mapv #(if (> % 0.008856)
                          (js/Math.pow % (/ 1 3))
                          (+ (* % 7.787) (/ 16 116)))
-                      (mapv / xyzcolor xyzreferencewhite))]
+                      (mapv / xyzcolor xyzreferencewhited65))]
     [(- (* 116 y) 16)
      (* 500 (- x y)) 
      (* 200 (- y z))]))
@@ -68,7 +68,7 @@
         x (+  (/ a 500) y)
         z (- y (/ b 200))
         xyz [x y z]]
-    (mapv * xyzreferencewhite
+    (mapv * xyzreferencewhited65
           (mapv
            (fn [i] (let [cube (js/Math.pow i 3)]
                      (if (> cube 0.008856)
