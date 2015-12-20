@@ -121,9 +121,12 @@
   [limit result target]
   (<= (js/Math.abs (- target result)) limit))
 
-(defn test-whitin-limit
+(deftest test-whitin-limit
   []
-  (is (= (within-limit? 0.001 1.999 2.000) true)))
+  (is (= (within-limit? 0.001 1.999 2.000) true))
+  (is (= (within-limit? 0.001 2.000 2) true))
+  (is (= (within-limit? 0.001 2.001 2) true))
+  (is (= (within-limit? 0.001 1.99 2.0) false)))
 
 (deftest test-rgbtoxyz
   []
