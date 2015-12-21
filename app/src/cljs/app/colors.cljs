@@ -94,6 +94,10 @@
   [hexcolor]
   (labToLch (xyzToLab (rgbToXyz (hexToRgb hexcolor)))))
 
+(defn lchToRgb
+  [lchcolor]
+  (xyzToRgb (labToXyz (lchToLab lchcolor))))
+
 (defn lchToHex
   [lchcolor]
   (rgbToHex (xyzToRgb (labToXyz (lchToLab lchcolor)))))
@@ -187,8 +191,11 @@
 
 (defn color-list-2
   [lightness saturation]
-  (let [hr (hue-range (count db/randomcolors) (random-hue))]
-    (mapv #(lchToHex [lightness saturation %]) hr)))
+  (loop [hr (hue-range (count db/randomcolors) (random-hue))]
+    (let [rgblist (mapv #(lchToRgb [lightness saturation %]) hr)]
+      (if (every? #(valid-rgb? %) rgblist)
+        (mapv #(rgbToHex %) rgblist)
+        (recur (hue-range (count db/randomcolors) (random-hue)))))))
 
 (defn soft-palette
   "soft-palette returns a vector of 7 random soft colors."
