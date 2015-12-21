@@ -7,6 +7,11 @@
   [hexcolor]
   (mapv #(/ % 255.0) (color/hexToRgb hexcolor)))
 
+(defn valid-rgb?
+  [rgbcolor]
+  (not-any? #(or (< % 0)
+                 (> % 255)) rgbcolor))
+
 (defn rgbToHex
   [rgbcolor]
   (let [[r g b] rgbcolor]
@@ -48,10 +53,7 @@
         h (radToDegrees (js/Math.atan2 b a))]
     [l
      (js/Math.sqrt (+ (* a a) (* b b)))
-     (cond
-       (< h 0) (+ h 360)
-       (>= h 360) (- h 360)
-       :else h)]))
+     h]))
 
 (defn lchToLab
   [lchcolor]
@@ -199,8 +201,8 @@
   "warm-palette returns a vector of 7 random warm colors." 
   []
   (if (dark-bg? (:mainbg @db/app-db))
-    (color-list 0.40 0.57)
-    (color-list 0.40 0.38)))
+    (color-list-2  60.39 33.84)
+    (color-list-2  34.358 22.637)))
 
 (defn pop-palette
   "pop-palette returns a vector of 7 random 'pop' colors."
@@ -246,3 +248,10 @@
            :bg3 (darken (:mainbg theme) 0.16)
            :bg4 (darken (:mainbg theme) 0.24)
            :vsui "vs")))
+
+
+
+(defn within-limit?
+  [limit resultlist targetlist]
+  (doseq [[r t] (interleave resultlist targetlist)]
+    (print (<= (js/Math.abs (- t r)) limit))))
