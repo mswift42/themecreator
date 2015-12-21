@@ -216,15 +216,15 @@
   "soft-palette returns a vector of 7 random soft colors."
   []
   (if (dark-bg? (:mainbg @db/app-db))
-    (color-list 0.37 0.49)
-    (color-list 0.37 0.44)))
+    (color-list-3 57.292 25.738)
+    (color-list-3 44.921 25.738)))
 
 (defn warm-palette
   "warm-palette returns a vector of 7 random warm colors." 
   []
   (if (dark-bg? (:mainbg @db/app-db))
-    (color-list-2  60.39 33.84)
-    (color-list-2  34.358 22.637)))
+    (color-list-3  60.39 33.84)
+    (color-list-3  34.358 22.637)))
 
 (defn pop-palette
   "pop-palette returns a vector of 7 random 'pop' colors."
