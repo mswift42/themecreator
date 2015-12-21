@@ -148,7 +148,8 @@
    [[61.254 75.855 141.83] "#11ab39"]
    [[60.39 33.84 329] "#b680b1"]
    [[50.731 28.193 211] "#1a8591"]
-   [[62.921 57.373 115] "#8aa234"]])
+   [[62.921 57.373 115] "#8aa234"]
+   [[66.919 17.343 259] "#8aa6c1"]])
 
 (deftest test-labtolch
   []
@@ -161,5 +162,13 @@
   (doseq [[lch hex] lchhextable]
     (is (= hex (colors/lchToHex lch)))))
 
+(deftest test-valid-rgb?
+  []
+  (is (= true (colors/valid-rgb? [255 255 255])))
+  (is (= true (colors/valid-rgb? [0 0 0])))
+  (is (= true (colors/valid-rgb? [0 255 0])))
+  (is (= false (colors/valid-rgb? [255 255 256])))
+  (is (= false (colors/valid-rgb? [255 255 -1])))
+  (is (= false (colors/valid-rgb? [1000 255 255]))))
 
 
