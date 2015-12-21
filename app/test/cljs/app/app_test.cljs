@@ -104,7 +104,7 @@
    [[2.544 1.499 2.253] [62 14 41]]])
 
 (def lablchtable
-  [[[68.659 38.841 74.891] [68.659 84.444 62.615]]])
+  [[[68.659 38.851 74.990] [68.656 84.456 62.612]]])
 
 (deftest test-hexToRgb
   []
@@ -140,6 +140,21 @@
   []
   (doseq [[xyz rgb] xyzrgbtable]
     (is (= (colors/xyzToRgb xyz) rgb))))
+
+(def lchhextable
+  [[[68.659 84.444 62.615] "#ff8800"]
+   [[52.299 78.733 288.079] "#0077ff"]])
+
+(deftest test-labtolch
+  []
+  (let [[lab lch] lablchtable]
+    (doseq [[r t] (map vector (colors/labToLch lab) lch)]
+      (is (= (within-limit? 0.01 r t) false)))))
+
+(deftest test-lchToHex
+  []
+  (doseq [[lch hex] lchhextable]
+    (is (= hex (colors/lchToHex lch)))))
 
 
 
