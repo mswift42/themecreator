@@ -191,11 +191,12 @@
 
 (defn color-list-2
   [lightness saturation]
-  (loop [hr (hue-range (count db/randomcolors) (random-hue))]
-    (let [rgblist (mapv #(lchToRgb [lightness saturation %]) hr)]
+  (loop []
+    (let [hr (hue-range (count db/randomcolors) (random-hue))
+          rgblist (mapv #(lchToRgb [lightness saturation %]) hr)]
       (if (every? #(valid-rgb? %) rgblist)
         (mapv #(rgbToHex %) rgblist)
-        (recur (hue-range (count db/randomcolors) (random-hue)))))))
+        (recur)))))
 
 (defn soft-palette
   "soft-palette returns a vector of 7 random soft colors."
