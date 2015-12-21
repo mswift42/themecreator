@@ -12,6 +12,14 @@
   (not-any? #(or (< % 0)
                  (> % 255)) rgbcolor))
 
+(defn clamp
+  [val]
+  (max (min val 255) 0))
+
+(defn clamped-rgb-vec
+  [rgbvector]
+  (mapv #(clamp %) rgbvector))
+
 (defn rgbToHex
   [rgbcolor]
   (let [[r g b] rgbcolor]
@@ -198,11 +206,17 @@
         (mapv #(rgbToHex %) rgblist)
         (recur)))))
 
+(defn color-list-3
+  [lightness saturation]
+  (let [hr (hue-range (count db/randomcolors) (random-hue))]
+    (mapv #(rgbToHex %) (mapv #(clamped-rgb-vec %)
+                              (mapv #(lchToRgb [lightness saturation %]) hr)))))
+
 (defn soft-palette
   "soft-palette returns a vector of 7 random soft colors."
   []
   (if (dark-bg? (:mainbg @db/app-db))
-    (color-list 0.37 0.71)
+    (color-list 0.37 0.49)
     (color-list 0.37 0.44)))
 
 (defn warm-palette
