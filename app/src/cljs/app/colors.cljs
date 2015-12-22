@@ -224,7 +224,7 @@
   []
   (if (dark-bg? (:mainbg @db/app-db))
     (color-list-3  60.39 33.84)
-    (color-list-3  34.358 22.637)))
+    (color-list-3  18.358 33.84)))
 
 (defn pop-palette
   "pop-palette returns a vector of 7 random 'pop' colors."
