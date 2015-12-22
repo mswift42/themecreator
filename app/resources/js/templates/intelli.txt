@@ -2115,8 +2115,8 @@
     </option>
     <option name="MATCHED_BRACE_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="{{mainbg}}" />
-        <option name="BACKGROUND" value="{{keyword}}" />
+        <option name="FOREGROUND" value="{{fg2}}" />
+        <option name="BACKGROUND" value="{{bg2}}" />
       </value>
     </option>
     <option name="MESSAGE_ARGUMENT">
