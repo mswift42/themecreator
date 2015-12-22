@@ -11,11 +11,12 @@ import (
 func TestIntellijThemeHandler(t *testing.T) {
 	resp := httptest.NewRecorder()
 	uri := "/intellij"
-	req, err := http.NewRequest("GET", uri, nil)
+	body := strings.NewReader(`{"themename" : "abc", "mainbg": "#123456"}`)
+	req, err := http.NewRequest("POST", uri, body)
 	if err != nil {
 		t.Fatal(err)
 	}
-	bodystrings := []string{"option", "LINE_SPACING"}
+	bodystrings := []string{"option", "LINE_SPACING", "#123456", "abc"}
 	http.DefaultServeMux.ServeHTTP(resp, req)
 	if p, err := ioutil.ReadAll(resp.Body); err != nil {
 		t.Fail()
