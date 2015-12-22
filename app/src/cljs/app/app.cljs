@@ -115,7 +115,7 @@
     [comps/random-colors-component]
     [template-select-component]
     [store-component]
-    ]])
+    [:br]]])
 
 (defn preview-component []
   [:div.col-md-6.col-lg-8.col-lg-offset-1
