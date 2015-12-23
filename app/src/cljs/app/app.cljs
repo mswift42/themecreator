@@ -113,6 +113,7 @@
      [:div.col-xs-5
       [comps/adjustbg-component]]]
     [comps/random-colors-component]
+    [comps/custom-colors-component]
     [template-select-component]
     [store-component]
     [:br]]])
