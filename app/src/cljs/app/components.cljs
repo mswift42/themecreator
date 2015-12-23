@@ -91,13 +91,24 @@
    [random-button-component "Muted"
     #(colors/set-random-palette (colors/muted-palette))]])
 
+(defn custom-color-input-component
+  [value title]
+  [:label.custominputlabel title]
+  [:input.custominput {:type "text" :value (value @db/custom-palette-db)
+                       :on-change #(let [new-val (.. % -target -value)]
+                                     (if (and (>= new-val 0)
+                                              (<= new-val 100))
+                                       (swap! db/custom-palette-db assoc value new-val)))}])
+
 (defn custom-colors-component
   []
   [:div.randbuttons.row
    [random-button-component "Custom"
     #(colors/set-random-palette (colors/custom-palette
                                  (:lightness @db/custom-palette-db)
-                                 (:saturation @db/custom-palette-db)))]])
+                                 (:saturation @db/custom-palette-db)))]
+   [custom-color-input-component :lightness "L"]
+   [custom-color-input-component :saturation "S"]])
 
 (defn color-component [facename]
   [:div.colorcomponent 
