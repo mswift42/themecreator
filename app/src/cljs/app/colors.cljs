@@ -192,7 +192,7 @@
 
 
 
-(defn color-list-3
+(defn color-list
   [lightness saturation]
   (let [hr (hue-range (count db/randomcolors) (random-hue))]
     (mapv #(rgbToHex %) (mapv #(clamped-rgb-vec %)
@@ -202,29 +202,29 @@
   "soft-palette returns a vector of 7 random soft colors."
   []
   (if (dark-bg? (:mainbg @db/app-db))
-    (color-list-3 57.292 25.738)
-    (color-list-3 44.921 25.738)))
+    (color-list 57.292 25.738)
+    (color-list 44.921 25.738)))
 
 (defn warm-palette
   "warm-palette returns a vector of 7 random warm colors." 
   []
   (if (dark-bg? (:mainbg @db/app-db))
-    (color-list-3  60.39 33.84)
-    (color-list-3  18.358 33.84)))
+    (color-list  60.39 33.84)
+    (color-list  18.358 33.84)))
 
 (defn pop-palette
   "pop-palette returns a vector of 7 random 'pop' colors."
   []
   (if (dark-bg? (:mainbg @db/app-db))
-    (color-list-3 77.02 58.10)
-    (color-list-3 30.12 58.10)))
+    (color-list 77.02 58.10)
+    (color-list 30.12 58.10)))
 
 (defn muted-palette
   "muted-palette returns a vector of 7 random muted colors."
   []
   (if (dark-bg? (:mainbg @db/app-db))
-    (color-list-3 82.11 11.712)
-    (color-list-3 44.02 17.712)))
+    (color-list 82.11 11.712)
+    (color-list 44.02 17.712)))
 
 (defn set-random-palette
   "set :keyword :builtin :string :functionname :variable
