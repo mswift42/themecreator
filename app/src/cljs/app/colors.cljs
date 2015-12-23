@@ -224,7 +224,7 @@
   []
   (if (dark-bg? (:mainbg @db/app-db))
     (color-list 82.11 11.712)
-    (color-list 44.02 17.712)))
+    (color-list 44.02 14.712)))
 
 (defn set-random-palette
   "set :keyword :builtin :string :functionname :variable
