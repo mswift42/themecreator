@@ -190,21 +190,7 @@
   (let [distance (Math/floor (/ 360 length))]
     (take length (iterate #(mod (+ distance %) 360) startvalue))))
 
-(defn color-list
-  "color-list returns a vector of 7 hex-colors with the same 
-   saturation and lightness values and equidistant hue values."
-  [saturation lightness]
-  (let [hr (hue-range (count db/randomcolors) (random-hue))]
-    (mapv #(color/hslToHex % saturation lightness) hr)))
 
-(defn color-list-2
-  [lightness saturation]
-  (loop []
-    (let [hr (hue-range (count db/randomcolors) (random-hue))
-          rgblist (mapv #(lchToRgb [lightness saturation %]) hr)]
-      (if (every? #(valid-rgb? %) rgblist)
-        (mapv #(rgbToHex %) rgblist)
-        (recur)))))
 
 (defn color-list-3
   [lightness saturation]
