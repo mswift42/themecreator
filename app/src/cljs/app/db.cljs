@@ -124,12 +124,21 @@
   (r/atom
    false))
 
+(def custom-palette-db
+  (r/atom
+   {:saturation 0 :lightness 0}))
+
 (defn switch-theme
   [theme]
   (reset! app-db theme ))
 
 (defn toggle-adjust []
   (reset! adjustbg (not @adjustbg)))
+
+(defn set-custom-palette
+  [lightness saturation]
+  (reset! custom-palette-db {:saturation saturation
+                             :lightness lightness}))
 
 
 (def storagename "themecreator")
