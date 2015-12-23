@@ -91,6 +91,14 @@
    [random-button-component "Muted"
     #(colors/set-random-palette (colors/muted-palette))]])
 
+(defn custom-colors-component
+  []
+  [:div.randbuttons.row
+   [random-button-component "Custom"
+    #(colors/set-random-palette (colors/custom-palette
+                                 (:lightness @db/custom-palette-db)
+                                 (:saturation @db/custom-palette-db)))]])
+
 (defn color-component [facename]
   [:div.colorcomponent 
    [:div.row
