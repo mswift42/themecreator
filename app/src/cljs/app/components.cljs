@@ -93,7 +93,7 @@
 
 (defn custom-color-input-component
   [value title]
-  [:label.custominputlabel title]
+  [:label.custominputlabel (str title)]
   [:input.custominput {:type "text" :value (value @db/custom-palette-db)
                        :on-change #(let [new-val (.. % -target -value)]
                                      (if (and (>= new-val 0)
