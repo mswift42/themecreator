@@ -226,6 +226,13 @@
     (color-list 82.11 11.712)
     (color-list 44.02 14.712)))
 
+(defn custom-palette
+  "custom-palette returns a vector of 7 random colors,
+   with the values for lightness and saturation set to
+   its given values."
+  [lightness saturation]
+  (color-list lightness saturation))
+
 (defn set-random-palette
   "set :keyword :builtin :string :functionname :variable
    :type and constant colors in app-db to colors of a
