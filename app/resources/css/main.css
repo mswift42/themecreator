@@ -172,7 +172,11 @@ input[type="checkbox"] + label {
     margin-left:0.3em;
 }
 
+.custominputlabel {
+    margin-left:1em;
+    margin-right:0.5em;
+}
+
 .custominput {
     max-width:8vw;
-    margin-right:1em;
 }
