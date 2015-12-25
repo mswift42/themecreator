@@ -171,3 +171,8 @@ input[type="checkbox"] + label {
 .adgbgcheckbox > label {
     margin-left:0.3em;
 }
+
+.custominput {
+    max-width:8vw;
+    margin-right:1em;
+}
