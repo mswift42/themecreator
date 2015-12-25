@@ -102,13 +102,13 @@
 
 (defn custom-colors-component
   []
-  [:div.randbuttons.row
+  [:div#custombutton.randbuttons.row.custombutton
    [random-button-component "Custom"
     #(colors/set-random-palette (colors/custom-palette
                                  (:lightness @db/custom-palette-db)
                                  (:saturation @db/custom-palette-db)))]
-   [custom-color-input-component :lightness "L:"]
-   [custom-color-input-component :saturation "S:"]])
+   [custom-color-input-component :lightness "L: "]
+   [custom-color-input-component :saturation "S: "]])
 
 (defn color-component [facename]
   [:div.colorcomponent 
