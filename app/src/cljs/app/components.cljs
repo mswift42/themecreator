@@ -94,11 +94,12 @@
 (defn custom-color-input-component
   [value title]
   [:span.custominputlabel (str title)
-   [:input.custominput {:type "text" :value (value @db/custom-palette-db)
+   [:input.custominput {:type "number" :step "0.1" :value (value @db/custom-palette-db)
                         :on-change #(let [new-val (.. % -target -value)]
                                       (if (and (>= new-val 0)
                                                (<= new-val 100))
-                                        (swap! db/custom-palette-db assoc value new-val)))}]])
+                                        (swap! db/custom-palette-db assoc value
+                                               (js/parseFloat new-val))))}]])
 
 (defn custom-colors-component
   []
