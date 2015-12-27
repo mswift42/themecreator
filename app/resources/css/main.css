@@ -23,7 +23,7 @@ body {
     border:1px solid;
     borger-color:#d1d1d1;
 }
-@media (min-width:768px) {
+@media (min-device-width:768px) {
     .previewcomponent {
         margin-right:5vw;
     }
@@ -172,11 +172,23 @@ input[type="checkbox"] + label {
     margin-left:0.3em;
 }
 
-.custominputlabel {
-    margin-left:1em;
-    margin-right:0.5em;
-}
+@media screen and (min-width: 768px) {
+    .custominputlabel {
+        margin-left:1em;
+        margin-right:0.5em;
+        max-width:5vw;
+    }
 
-.custominput {
-    max-width:8vw;
+    .custominput {
+        max-width:4vw;
+    }
 }
+@media screen and (max-device-width: 480px) {
+    .custominputlabel {
+        margin-left:1em;
+        margin-right: 0.5em;
+        max-width:8vw;
+    }
+    .custominput {
+        max-width:6vw;
+    }
