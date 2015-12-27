@@ -102,7 +102,7 @@
 
 (defn custom-colors-component
   []
-  [:div#custombutton.randbuttons.row.custombutton
+  [:div.randbuttons.row.custombutton
    [random-button-component "Custom"
     #(colors/set-random-palette (colors/custom-palette
                                  (:lightness @db/custom-palette-db)
@@ -118,12 +118,12 @@
      {:type "color"  :value (facename @db/app-db)
       :on-change
       #(swap! db/app-db assoc facename (->
-                                     % .-target .-value))}]
+                                        % .-target .-value))}]
     [:input.col-xs-3.textinput
      {:type "text" :value (facename @db/app-db)
       :on-change
       #(swap! db/app-db assoc facename (->
-                                     % .-target .-value))}]]])
+                                        % .-target .-value))}]]])
 
 (defn name-component []
   [:div.themename
