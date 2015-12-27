@@ -114,6 +114,7 @@
       [comps/adjustbg-component]]]
     [comps/random-colors-component]
     [comps/custom-colors-component]
+    [:br]
     [template-select-component]
     [store-component]
     [:br]]])
