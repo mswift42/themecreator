@@ -1,9 +1,0 @@
-mainfg: {{mainfg}}
-mainbg: {{mainbg}}
-keyword: {{keyword}}
-fg2: {{fg2}}
-fg3: {{fg3}}
-fg4: {{fg4}}
-bg2: {{bg2}}
-bg3: {{bg3}}
-functionname: {{functionname}}
