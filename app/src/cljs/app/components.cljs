@@ -94,20 +94,24 @@
 (defn custom-color-input-component
   [value title]
   [:span.custominputlabel (str title)
-   [:input.custominput {:type "number" :step "0.1" :value (.toFixed (value @db/custom-palette-db) 2)
-                        :on-change #(let [new-val (js/parseFloat (.. % -target -value)) ]
-                                      (if (and (>= new-val 0)
-                                               (<= new-val 100))
-                                        (swap! db/custom-palette-db assoc value
-                                               new-val)))}]])
+   [:input.custominput {:id (str (name value) "id") :type "number" :step "0.1" :min "0" :max "100" :default-value (.toFixed (value @db/custom-palette-db) 2)
+                        ;; :on-change #(let [new-val (js/parseFloat (.. % -target -value)) ]
+                        ;;               (swap! db/custom-palette-db assoc value
+                        ;;                      new-val))
+                        }]])
 
 (defn custom-colors-component
   []
   [:div.randbuttons.row.custombutton
    [random-button-component "Custom"
-    #(colors/set-random-palette (colors/custom-palette
-                                 (:lightness @db/custom-palette-db)
-                                 (:saturation @db/custom-palette-db)))]
+    #(do
+       (let [sat (.-value (.getElementById js/document "saturationid"))
+             light (.-value (.getElementById js/document "lightnessid"))]
+         (reset! db/custom-palette-db {:saturation (js/parseFloat sat)
+                                       :lightness (js/parseFloat light)}))
+       (colors/set-random-palette (colors/custom-palette
+                                   (:lightness @db/custom-palette-db)
+                                   (:saturation @db/custom-palette-db))))]
    [custom-color-input-component :lightness "L: "]
    [custom-color-input-component :saturation "S: "]])
 
