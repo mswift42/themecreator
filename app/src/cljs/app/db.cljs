@@ -145,10 +145,12 @@
 
 (defn save-to-storage
   []
-  (.setItem js/localStorage storagename (js/JSON.stringify (clj->js @app-db))))
+  (.setItem js/localStorage storagename
+            (js/JSON.stringify (clj->js (assoc @app-db :lightness (:lightness @custom-palette-db)
+                                               :saturation (:saturation @custom-palette-db))))))
 
 (defn string-to-keyword
-  "convert a map with with strings as keys to a map with keyword keys and string 
+  "convert a map with strings as keys to a map with keyword keys and string 
    values."
   [strmap]
   (into {} (for [[k v] strmap]
@@ -165,8 +167,11 @@
 (defn set-db-from-storage
   []
   (if (.getItem js/localStorage storagename)
-    (switch-theme
-     (string-to-keyword (load-from-storage)))))
+    (let [storedtheme (string-to-keyword (load-from-storage))]
+      (do
+        (switch-theme storedtheme)
+        (reset! custom-palette-db {:saturation (:saturation storedtheme)
+                                   :lightness (:lightness storedtheme)})))))
 
 
 
