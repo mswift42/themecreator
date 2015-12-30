@@ -72,7 +72,7 @@
     [template-download "intellilink" "IntelliJ"
      (str (:themename @app-db) ".icls") @intellitemplate]
     [template-download "tmthemelink" "Textmate"
-     (str (:themename @app-db) ".tmtheme") @tmthemetemplate]
+     (str (:themename @app-db) ".tmTheme") @tmthemetemplate]
     [template-download "atomlink" "Atom"
      "colors.less" @atomtemplate]
     [template-download "emacslink" "Emacs"
