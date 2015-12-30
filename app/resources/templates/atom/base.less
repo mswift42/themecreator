@@ -66,16 +66,6 @@ atom-text-editor .search-results .marker.current-result .region,
     color: @comment;
 }
 
-.entity {
-    &.name.type {
-        color: @type;
-    }
-
-    &.other.inherited-class {
-        color: @const;
-    }
-}
-
 .keyword {
     color: @keyword;
     font-weight: bold;
@@ -210,6 +200,13 @@ atom-text-editor .search-results .marker.current-result .region,
         font-weight: bold;
     }
 
+    &.name.type {
+        color: @type;
+    }
+
+    &.other.inherited-class {
+        color: @const;
+    }
     &.name.class, &.name.type.class {
         color: @builtin;
     }
