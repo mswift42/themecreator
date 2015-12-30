@@ -146,8 +146,9 @@
 (defn save-to-storage
   []
   (.setItem js/localStorage storagename
-            (js/JSON.stringify (clj->js (assoc @app-db :lightness (:lightness @custom-palette-db)
-                                               :saturation (:saturation @custom-palette-db))))))
+            (js/JSON.stringify
+             (clj->js (assoc @app-db :lightness (:lightness @custom-palette-db)
+                             :saturation (:saturation @custom-palette-db))))))
 
 (defn string-to-keyword
   "convert a map with strings as keys to a map with keyword keys and string 
