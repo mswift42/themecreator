@@ -36,6 +36,7 @@
     [#(db/switch-theme db/white) "white"]
     [#(db/switch-theme db/warm-night) "warm-night"]
     [#(db/switch-theme db/white-sand) "white-sand"]
+    [#(db/switch-theme db/munich) "munich"]
     [#(db/switch-theme db/greymatters) "greymatters"]
     [#(db/switch-theme db/oldlace) "oldlace"]
     [#(db/switch-theme db/soft-charcoal) "soft-charcoal"]]])
