@@ -2919,13 +2919,13 @@
     </option>
     <option name="SOY.NAMESPACE_ID">
       <value>
-        <option name="EFFECT_COLOR" value="{{mainbg}}" />
+        <option name="EFFECT_COLOR" value="{{builtin}}" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
     <option name="SOY.NUMBER">
       <value>
-        <option name="FOREGROUND" value="{{warning2}}" />
+        <option name="FOREGROUND" value="{{mainfg}}" />
       </value>
     </option>
     <option name="SOY.SPECIAL_CHAR">
@@ -2936,13 +2936,13 @@
     </option>
     <option name="SOYSTRING">
       <value>
-        <option name="FOREGROUND" value="{{keyword}}" />
+        <option name="FOREGROUND" value="{{string}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="SOY.TEMPLATE_ID">
       <value>
-        <option name="EFFECT_COLOR" value="{{mainbg}}" />
+        <option name="EFFECT_COLOR" value="{{constant}}" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -2996,7 +2996,7 @@
     </option>
     <option name="SQL_COLUMN">
       <value>
-        <option name="FOREGROUND" value="{{keyword}}" />
+        <option name="FOREGROUND" value="{{variable}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -3013,7 +3013,7 @@
     </option>
     <option name="SQL_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{functionname}}" />
+        <option name="FOREGROUND" value="{{keyword}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -3024,33 +3024,33 @@
     </option>
     <option name="SQL_LOCAL_ALIAS">
       <value>
-        <option name="FOREGROUND" value="{{keyword}}" />
+        <option name="FOREGROUND" value="{{variable}}" />
       </value>
     </option>
     <option name="SQL_NUMBER">
       <value>
-        <option name="FOREGROUND" value="{{warning2}}" />
+        <option name="FOREGROUND" value="{{mainfg}}" />
       </value>
     </option>
     <option name="SQL_PARAMETER">
       <value>
-        <option name="FOREGROUND" value="{{warning}}" />
+        <option name="FOREGROUND" value="{{type}}" />
       </value>
     </option>
     <option name="SQL_PROCEDURE">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{builtin}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="SQL_SCHEMA">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{variable}}" />
       </value>
     </option>
     <option name="SQL_STRING">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{string}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -3069,7 +3069,7 @@
     </option>
     <option name="STATIC_FIELD_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="{{constant}}" />
+        <option name="FOREGROUND" value="{{type}}" />
       </value>
     </option>
     <option name="STATIC_METHOD_ATTRIBUTES">
@@ -3083,18 +3083,18 @@
     </option>
     <option name="Scala Abstract class">
       <value>
-        <option name="FOREGROUND" value="{{functionname}}" />
+        <option name="FOREGROUND" value="{{type}}" />
       </value>
     </option>
     <option name="Scala Annotation name">
       <value>
-        <option name="FOREGROUND" value="{{keyword}}" />
+        <option name="FOREGROUND" value="{{variable}}" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
     <option name="Scala Bad character">
       <value>
-        <option name="FOREGROUND" value="{{constant}}" />
+        <option name="FOREGROUND" value="{{warning2}}" />
       </value>
     </option>
     <option name="Scala Block comment">
@@ -3105,7 +3105,7 @@
     </option>
     <option name="Scala Class">
       <value>
-        <option name="FOREGROUND" value="{{functionname}}" />
+        <option name="FOREGROUND" value="{{keyword}}" />
       </value>
     </option>
     <option name="Scala Class method call">
@@ -3115,12 +3115,12 @@
     </option>
     <option name="Scala Invalid escape in string">
       <value>
-        <option name="FOREGROUND" value="{{constant}}" />
+        <option name="FOREGROUND" value="{{warning}}" />
       </value>
     </option>
     <option name="Scala Keyword">
       <value>
-        <option name="FOREGROUND" value="{{fg2}}" />
+        <option name="FOREGROUND" value="{{keyword}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -3137,38 +3137,38 @@
     </option>
     <option name="Scala Method declaration">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
     <option name="Scala Number">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{mainfg}}" />
       </value>
     </option>
     <option name="Scala Object method call">
       <value>
-        <option name="FOREGROUND" value="{{fg3}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="Scala Parameter">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{mainfg}}" />
       </value>
     </option>
     <option name="Scala Pattern value">
       <value>
-        <option name="FOREGROUND" value="{{constant}}" />
+        <option name="FOREGROUND" value="{{mainfg}}" />
       </value>
     </option>
     <option name="Scala Predefined types">
       <value>
-        <option name="FOREGROUND" value="{{warning}}" />
+        <option name="FOREGROUND" value="{{builtin}}" />
       </value>
     </option>
     <option name="Scala Semicolon">
       <value>
-        <option name="FOREGROUND" value="{{functionname}}" />
+        <option name="FOREGROUND" value="{{mainfg}}" />
       </value>
     </option>
     <option name="Scala String">
@@ -3184,13 +3184,13 @@
     </option>
     <option name="Scala Template val">
       <value>
-        <option name="FOREGROUND" value="{{fg3}}" />
+        <option name="FOREGROUND" value="{{variable}}" />
         <option name="FONT_TYPE" value="3" />
       </value>
     </option>
     <option name="Scala Template var">
       <value>
-        <option name="FOREGROUND" value="{{variable}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
         <option name="FONT_TYPE" value="3" />
       </value>
     </option>
@@ -3201,7 +3201,7 @@
     </option>
     <option name="Scala Type Alias">
       <value>
-        <option name="FOREGROUND" value="{{warning}}" />
+        <option name="FOREGROUND" value="{{type}}" />
       </value>
     </option>
     <option name="Scala Type parameter">
@@ -3211,7 +3211,7 @@
     </option>
     <option name="Scala Valid escape in string">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{fg2}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -3236,7 +3236,7 @@
     </option>
     <option name="Special symbol">
       <value>
-        <option name="FOREGROUND" value="{{keyword2}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -3248,7 +3248,7 @@
     </option>
     <option name="Static field">
       <value>
-        <option name="FOREGROUND" value="{{constant}}" />
+        <option name="FOREGROUND" value="{{type}}" />
       </value>
     </option>
     <option name="Static property reference ID">
