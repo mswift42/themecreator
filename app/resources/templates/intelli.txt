@@ -2568,12 +2568,12 @@
     </option>
     <option name="REGEXP.BRACES">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{fg2}}" />
       </value>
     </option>
     <option name="REGEXP.BRACKETS">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{fg2}}" />
       </value>
     </option>
     <option name="REGEXP.CHAR_CLASS">
@@ -2583,7 +2583,7 @@
     </option>
     <option name="REGEXP.COMMA">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="REGEXPCOMMENT">
@@ -2604,12 +2604,12 @@
     </option>
     <option name="REGEXP.META">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{type}}" />
       </value>
     </option>
     <option name="REGEXP.PARENTHS">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{fg2}}" />
       </value>
     </option>
     <option name="REGEXP.QUOTE_CHARACTER">
@@ -2674,7 +2674,7 @@
     </option>
     <option name="REST.REF.NAME">
       <value>
-        <option name="FOREGROUND" value="{{keyword}}" />
+        <option name="FOREGROUND" value="{{variable}}" />
       </value>
     </option>
     <option name="REST.SECTION.HEADER">
@@ -2695,12 +2695,12 @@
     </option>
     <option name="RUBY_CONSTANT">
       <value>
-        <option name="FOREGROUND" value="{{functionname}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="RUBY_CONSTANT_DECLARATION">
       <value>
-        <option name="FOREGROUND" value="{{functionname}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="RUBY_CVAR">
@@ -2710,12 +2710,12 @@
     </option>
     <option name="RUBY_ESCAPE_SEQUENCE">
       <value>
-        <option name="FOREGROUND" value="{{warning2}}" />
+        <option name="FOREGROUND" value="{{fg2}}" />
       </value>
     </option>
     <option name="RUBY_EXPR_IN_STRING">
       <value>
-        <option name="FOREGROUND" value="{{warning2}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="RUBY_GVAR">
@@ -2767,12 +2767,12 @@
     </option>
     <option name="RUBY_NUMBER">
       <value>
-        <option name="FOREGROUND" value="{{warning}}" />
+        <option name="FOREGROUND" value="{{mainfg}}" />
       </value>
     </option>
     <option name="RUBY_PARAMDEF_CALL">
       <value>
-        <option name="FOREGROUND" value="b58916" />
+        <option name="FOREGROUND" value="{{builtin}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -2782,18 +2782,18 @@
     </option>
     <option name="RUBY_REGEXP">
       <value>
-        <option name="FOREGROUND" value="{{warning2}}" />
+        <option name="FOREGROUND" value="{{fg2}}" />
         <option name="EFFECT_TYPE" value="5" />
       </value>
     </option>
     <option name="RUBY_SPECIFIC_CALL">
       <value>
-        <option name="FOREGROUND" value="{{warning}}" />
+        <option name="FOREGROUND" value="{{builtin}}" />
       </value>
     </option>
     <option name="RUBY_SYMBOL">
       <value>
-        <option name="FOREGROUND" value="{{warning2}}" />
+        <option name="FOREGROUND" value="{{fg2}}" />
       </value>
     </option>
     <option name="RUBY_WORDS">
@@ -2824,13 +2824,13 @@
     </option>
     <option name="SASS_DIRECTIVE">
       <value>
-        <option name="FOREGROUND" value="{{warning2}}" />
+        <option name="FOREGROUND" value="{{keyword}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="SASS_MIXIN">
       <value>
-        <option name="FOREGROUND" value="{{warning2}}" />
+        <option name="FOREGROUND" value="{{variable}}" />
       </value>
     </option>
     <option name="SASS_NUMBER">
@@ -2871,7 +2871,7 @@
     </option>
     <option name="SEARCH_RESULT_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="{{keyword3}}" />
+        <option name="BACKGROUND" value="{{fg2}}" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -2913,7 +2913,7 @@
     </option>
     <option name="SOYKEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{keyword}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
