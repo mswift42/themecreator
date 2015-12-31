@@ -301,7 +301,7 @@
     </option>
     <option name="COFFEESCRIPTKEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{keyword}}" />
       </value>
     </option>
     <option name="COFFEESCRIPT.LINE_COMMENT">
