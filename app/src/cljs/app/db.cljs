@@ -110,7 +110,7 @@
 (def munich
   {:themename "munich"
    :mainfg "#b1b1b1"
-   :mainbg "281123"
+   :mainbg "#281123"
    :keyword "#b39b5f"
    :builtin "#7aa975"
    :string "#36aea8"
