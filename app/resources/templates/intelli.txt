@@ -1072,7 +1072,7 @@
     </option>
     <option name="GHERKIN_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{functionname}}" />
+        <option name="FOREGROUND" value="{{keyword}}" />
       </value>
     </option>
     <option name="GHERKIN_OUTLINE_PARAMETER_SUBSTITUTION">
