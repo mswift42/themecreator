@@ -3281,7 +3281,7 @@
     </option>
     <option name="TEAKEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{keyword}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -3293,7 +3293,7 @@
     </option>
     <option name="TEA.NUMBER">
       <value>
-        <option name="FOREGROUND" value="{{builtin}}" />
+        <option name="FOREGROUND" value="{{mainfg}}" />
       </value>
     </option>
     <option name="TEA.SCRIPTING_BACKGROUND">
@@ -3309,19 +3309,19 @@
     </option>
     <option name="TEASTRING">
       <value>
-        <option name="FOREGROUND" value="{{keyword}}" />
+        <option name="FOREGROUND" value="{{string}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="TEA.VALID_STRING_ESCAPE">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{fg2}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="TEMPLATE_VARIABLE_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="{{functionname}}" />
+        <option name="FOREGROUND" value="{{variable}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -3424,17 +3424,17 @@
     </option>
     <option name="Trait">
       <value>
-        <option name="FOREGROUND" value="{{keyword2}}" />
+        <option name="FOREGROUND" value="{{keyword}}" />
       </value>
     </option>
     <option name="Type Alias">
       <value>
-        <option name="FOREGROUND" value="{{keyword2}}" />
+        <option name="FOREGROUND" value="{{type}}" />
       </value>
     </option>
     <option name="Type parameter">
       <value>
-        <option name="FOREGROUND" value="{{keyword2}}" />
+        <option name="FOREGROUND" value="{{type}}" />
       </value>
     </option>
     <option name="UNMATCHED_BRACE_ATTRIBUTES">
@@ -3451,13 +3451,13 @@
     </option>
     <option name="Valid escape in string">
       <value>
-        <option name="FOREGROUND" value="{{warning}}" />
+        <option name="FOREGROUND" value="{{fg2}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="Valid string escape">
       <value>
-        <option name="FOREGROUND" value="{{keyword2}}" />
+        <option name="FOREGROUND" value="{{fg2}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -3477,7 +3477,7 @@
     </option>
     <option name="WRITE_SEARCH_RESULT_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="{{keyword3}}" />
+        <option name="BACKGROUND" value="{{fg2}}" />
       </value>
     </option>
     <option name="WRONG_REFERENCES_ATTRIBUTES">
@@ -3507,7 +3507,7 @@
     </option>
     <option name="XML_ATTRIBUTE_VALUE">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{variable}}" />
       </value>
     </option>
     <option name="XML_COMMENT">
@@ -3533,7 +3533,7 @@
     </option>
     <option name="XML_TAG_NAME">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
