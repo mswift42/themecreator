@@ -107,6 +107,21 @@
    :warning "#ff6523"
    :warning2 "#ff2370"})
 
+(def munich
+  {:themename "munich"
+   :mainfg "#b1b1b1"
+   :mainbg "281123"
+   :keyword "#b39b5f"
+   :builtin "#7aa975"
+   :string "#36aea8"
+   :functionname "#40a8d3"
+   :variable "#9798d6"
+   :type "#cf88af"
+   :constant "#d7897c"
+   :comment "#5d5d5d"
+   :warning "#e81050"
+   :warning2 "#e86310"})
+
 
 (def contrastcolors
   [:mainfg :keyword :builtin :string :functionname :variable :type
