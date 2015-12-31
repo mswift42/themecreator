@@ -3545,7 +3545,7 @@
     </option>
     <option name="XPATHKEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{keyword}}" />
       </value>
     </option>
     <option name="XPATH.NUMBER">
@@ -3555,12 +3555,12 @@
     </option>
     <option name="XPATHSTRING">
       <value>
-        <option name="FOREGROUND" value="{{keyword}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="XPATH.XPATH_NAME">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{builtin}}" />
       </value>
     </option>
     <option name="XPATH.XPATH_VARIABLE">
@@ -3576,13 +3576,13 @@
     </option>
     <option name="YAML_SCALAR_DSTRING">
       <value>
-        <option name="FOREGROUND" value="{{keyword}}" />
+        <option name="FOREGROUND" value="{{string}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="YAML_SCALAR_KEY">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{keyword}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -3619,7 +3619,7 @@
     </option>
     <option name="bemhtml.bem.value">
       <value>
-        <option name="FOREGROUND" value="{{keyword}}" />
+        <option name="FOREGROUND" value="{{variable}}" />
         <option name="FONT_TYPE" value="1" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
@@ -3631,7 +3631,7 @@
     </option>
     <option name="bemhtml.json.property">
       <value>
-        <option name="FOREGROUND" value="{{keyword}}" />
+        <option name="FOREGROUND" value="{{type}}" />
         <option name="FONT_TYPE" value="1" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
@@ -3645,7 +3645,7 @@
     </option>
     <option name="bemhtmlkeyword.mod">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{builtin}}" />
         <option name="FONT_TYPE" value="1" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
@@ -3680,7 +3680,7 @@
     </option>
     <option name="gokeyword">
       <value>
-        <option name="FOREGROUND" value="{{functionname}}" />
+        <option name="FOREGROUND" value="{{keyword}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
@@ -3704,7 +3704,7 @@
     </option>
     <option name="go.type.name">
       <value>
-        <option name="FOREGROUND" value="{{constant}}" />
+        <option name="FOREGROUND" value="{{type}}" />
         <option name="FONT_TYPE" value="2" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
