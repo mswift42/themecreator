@@ -1394,13 +1394,13 @@
     </option>
     <option name="JFLEX.OPTION_PARAMETER">
       <value>
-        <option name="FOREGROUND" value="{{keyword2}}" />
+        <option name="FOREGROUND" value="{{type}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
     <option name="JFLEX.OPTION_SIGN">
       <value>
-        <option name="FOREGROUND" value="{{keyword2}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
@@ -1414,20 +1414,20 @@
     </option>
     <option name="JFLEXSTRING">
       <value>
-        <option name="FOREGROUND" value="{{keyword}}" />
+        <option name="FOREGROUND" value="{{string}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="JFLEX_MACROS">
       <value>
-        <option name="FOREGROUND" value="{{keyword2}}" />
+        <option name="FOREGROUND" value="{{variable}}" />
         <option name="FONT_TYPE" value="1" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
     <option name="JFLEX_MACROS_REF">
       <value>
-        <option name="FOREGROUND" value="{{keyword2}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
@@ -1445,7 +1445,7 @@
     </option>
     <option name="JFLEX_REGEXP_CLASS_SYMBOL">
       <value>
-        <option name="FOREGROUND" value="{{keyword2}}" />
+        <option name="FOREGROUND" value="{{keyword}}" />
         <option name="FONT_TYPE" value="1" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
@@ -1477,12 +1477,12 @@
     </option>
     <option name="JS.BRACES">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{fg2}}" />
       </value>
     </option>
     <option name="JS.BRACKETS">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{fg2}}" />
       </value>
     </option>
     <option name="JSCONSTANT_COMMENT">
