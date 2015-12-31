@@ -2291,12 +2291,12 @@
     </option>
     <option name="PHP_OPERATION_SIGN">
       <value>
-        <option name="FOREGROUND" value="{{keyword}}" />
+        <option name="FOREGROUND" value="{{fg2}}" />
       </value>
     </option>
     <option name="PHP_PREDEFINED SYMBOL">
       <value>
-        <option name="FOREGROUND" value="{{warning2}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="PHP_SCRIPTING_BACKGROUND">
@@ -2309,7 +2309,7 @@
     </option>
     <option name="PHP_TAG">
       <value>
-        <option name="FOREGROUND" value="{{warning2}}" />
+        <option name="FOREGROUND" value="{{type}}" />
       </value>
     </option>
     <option name="PHP_VAR">
@@ -2325,7 +2325,7 @@
     </option>
     <option name="PROPERTIES.KEY">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{keyword}}" />
       </value>
     </option>
     <option name="PROPERTIES.LINE_COMMENT">
@@ -2335,18 +2335,18 @@
     </option>
     <option name="PROPERTIES.VALID_STRING_ESCAPE">
       <value>
-        <option name="FOREGROUND" value="{{constant}}" />
+        <option name="FOREGROUND" value="{{fg2}}" />
       </value>
     </option>
     <option name="PROPERTIES.VALUE">
       <value>
-        <option name="FOREGROUND" value="{{keyword}}" />
+        <option name="FOREGROUND" value="{{builtin}}" />
       </value>
     </option>
     <option name="PROPS.INVALID_STRING_ESCAPE">
       <value>
-        <option name="FOREGROUND" value="{{bg2}}" />
-        <option name="BACKGROUND" value="{{constant}}" />
+        <option name="FOREGROUND" value="{{bg1}}" />
+        <option name="BACKGROUND" value="{{warning}}" />
       </value>
     </option>
     <option name="PROPS.KEY">
@@ -2370,7 +2370,7 @@
     </option>
     <option name="PROPS.PROFILE">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{variable}}" />
         <option name="FONT_TYPE" value="1" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
@@ -2384,7 +2384,7 @@
     </option>
     <option name="PROPS.VALID_STRING_ESCAPE">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{fg2}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -2403,7 +2403,7 @@
     </option>
     <option name="PYBUILTIN_NAME">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{builtin}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
@@ -2427,7 +2427,7 @@
     </option>
     <option name="PY.FUNC_DEFINITION">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
@@ -2451,12 +2451,12 @@
     </option>
     <option name="PY.NUMBER">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{mainfg}}" />
       </value>
     </option>
     <option name="PY.PREDEFINED_DEFINITION">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{builtin}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
@@ -2495,7 +2495,7 @@
     </option>
     <option name="Predefined types">
       <value>
-        <option name="FOREGROUND" value="{{keyword2}}" />
+        <option name="FOREGROUND" value="{{type}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -2523,7 +2523,7 @@
     </option>
     <option name="QL_FUNCTION">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -2534,23 +2534,23 @@
     </option>
     <option name="QL_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{functionname}}" />
+        <option name="FOREGROUND" value="{{keyword}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="QL_NUMBER">
       <value>
-        <option name="FOREGROUND" value="{{warning2}}" />
+        <option name="FOREGROUND" value="{{mainfg}}" />
       </value>
     </option>
     <option name="QL_PARAMETER">
       <value>
-        <option name="FOREGROUND" value="{{warning}}" />
+        <option name="FOREGROUND" value="{{fg2}}" />
       </value>
     </option>
     <option name="QL_STRING">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{string}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
