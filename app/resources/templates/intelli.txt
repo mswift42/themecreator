@@ -1903,7 +1903,7 @@
     </option>
     <option name="LUA_NUMBER">
       <value>
-        <option name="FOREGROUND" value="{{warning2}}" />
+        <option name="FOREGROUND" value="{{mainfg}}" />
       </value>
     </option>
     <option name="LUA_PARAMETER">
@@ -1925,23 +1925,23 @@
     </option>
     <option name="Local lazy val/var">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="Local value">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{variable}}" />
       </value>
     </option>
     <option name="Local variable">
       <value>
-        <option name="FOREGROUND" value="{{string}}" />
+        <option name="FOREGROUND" value="{{variable}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="MACRONAME">
       <value>
-        <option name="FOREGROUND" value="{{warning}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
@@ -1959,7 +1959,7 @@
     </option>
     <option name="MAKO.CONTROL_STRUCTURE_ID">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{variable}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -2012,7 +2012,7 @@
     </option>
     <option name="MARKDOWN.CODE_BLOCK">
       <value>
-        <option name="FOREGROUND" value="{{warning}}" />
+        <option name="FOREGROUND" value="{{fg3}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
@@ -2153,7 +2153,7 @@
     </option>
     <option name="OC.DIRECTIVE">
       <value>
-        <option name="FOREGROUND" value="{{warning}}" />
+        <option name="FOREGROUND" value="{{builtin}}" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
@@ -2184,12 +2184,12 @@
     </option>
     <option name="OC.NUMBER">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{mainfg}}" />
       </value>
     </option>
     <option name="OC.OPERATION_SIGN">
       <value>
-        <option name="FOREGROUND" value="{{keyword}}" />
+        <option name="FOREGROUND" value="{{fg2}}" />
       </value>
     </option>
     <option name="OC.PARAMETER">
