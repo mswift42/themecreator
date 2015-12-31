@@ -1077,13 +1077,13 @@
     </option>
     <option name="GHERKIN_OUTLINE_PARAMETER_SUBSTITUTION">
       <value>
-        <option name="FOREGROUND" value="{{keyword}}" />
+        <option name="FOREGROUND" value="{{builtin}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="GHERKIN_PYSTRING">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{string}}" />
       </value>
     </option>
     <option name="GHERKIN_REGEXP_PARAMETER">
@@ -1093,12 +1093,12 @@
     </option>
     <option name="GHERKIN_TABLE_CELL">
       <value>
-        <option name="FOREGROUND" value="{{keyword2}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
       </value>
     </option>
     <option name="GHERKIN_TABLE_HEADER_CELL">
       <value>
-        <option name="FOREGROUND" value="{{keyword}}" />
+        <option name="FOREGROUND" value="{{functionname}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -1117,12 +1117,12 @@
     </option>
     <option name="GQL_INT_LITERAL">
       <value>
-        <option name="FOREGROUND" value="{{warning2}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="GQL_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{type}}" />
+        <option name="FOREGROUND" value="{{keyword}}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -1134,7 +1134,7 @@
     </option>
     <option name="GROOVY_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="{{functionname}}" />
+        <option name="FOREGROUND" value="{{keyword}}" />
       </value>
     </option>
     <option name="GString">
