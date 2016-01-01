@@ -8,23 +8,23 @@ goog.require('app.db');
  * 'color'
  */
 app.previews.span_component = (function app$previews$span_component(var_args){
-var args11098 = [];
-var len__6044__auto___11105 = arguments.length;
-var i__6045__auto___11106 = (0);
+var args11423 = [];
+var len__6044__auto___11430 = arguments.length;
+var i__6045__auto___11431 = (0);
 while(true){
-if((i__6045__auto___11106 < len__6044__auto___11105)){
-args11098.push((arguments[i__6045__auto___11106]));
+if((i__6045__auto___11431 < len__6044__auto___11430)){
+args11423.push((arguments[i__6045__auto___11431]));
 
-var G__11107 = (i__6045__auto___11106 + (1));
-i__6045__auto___11106 = G__11107;
+var G__11432 = (i__6045__auto___11431 + (1));
+i__6045__auto___11431 = G__11432;
 continue;
 } else {
 }
 break;
 }
 
-var G__11100 = args11098.length;
-switch (G__11100) {
+var G__11425 = args11423.length;
+switch (G__11425) {
 case 2:
 return app.previews.span_component.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -34,24 +34,24 @@ return app.previews.span_component.cljs$core$IFn$_invoke$arity$3((arguments[(0)]
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args11098.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args11423.length)].join('')));
 
 }
 });
 
 app.previews.span_component.cljs$core$IFn$_invoke$arity$2 = (function (text,color){
-return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$span,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$style,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$color,(function (){var G__11101 = (cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.db.app_db) : cljs.core.deref.call(null,app.db.app_db));
-return (color.cljs$core$IFn$_invoke$arity$1 ? color.cljs$core$IFn$_invoke$arity$1(G__11101) : color.call(null,G__11101));
+return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$span,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$style,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$color,(function (){var G__11426 = (cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.db.app_db) : cljs.core.deref.call(null,app.db.app_db));
+return (color.cljs$core$IFn$_invoke$arity$1 ? color.cljs$core$IFn$_invoke$arity$1(G__11426) : color.call(null,G__11426));
 })()], null)], null),[cljs.core.str(text)].join('')], null);
 });
 
 app.previews.span_component.cljs$core$IFn$_invoke$arity$3 = (function (text,color,textdecoration){
-return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$span,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$style,new cljs.core.PersistentArrayMap(null, 7, [cljs.core.cst$kw$color,(function (){var G__11102 = (cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.db.app_db) : cljs.core.deref.call(null,app.db.app_db));
-return (color.cljs$core$IFn$_invoke$arity$1 ? color.cljs$core$IFn$_invoke$arity$1(G__11102) : color.call(null,G__11102));
-})(),cljs.core.cst$kw$text_DASH_decoration,"underline",cljs.core.cst$kw$text_DASH_decoration_DASH_style,"wavy",cljs.core.cst$kw$_DASH_webkit_DASH_text_DASH_decoration,"underline",cljs.core.cst$kw$_DASH_webkit_DASH_text_DASH_decoration_DASH_style,"wavy",cljs.core.cst$kw$text_DASH_decoration_DASH_color,(function (){var G__11103 = (cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.db.app_db) : cljs.core.deref.call(null,app.db.app_db));
-return (textdecoration.cljs$core$IFn$_invoke$arity$1 ? textdecoration.cljs$core$IFn$_invoke$arity$1(G__11103) : textdecoration.call(null,G__11103));
-})(),cljs.core.cst$kw$_DASH_webkit_DASH_text_DASH_decoration_DASH_color,(function (){var G__11104 = (cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.db.app_db) : cljs.core.deref.call(null,app.db.app_db));
-return (textdecoration.cljs$core$IFn$_invoke$arity$1 ? textdecoration.cljs$core$IFn$_invoke$arity$1(G__11104) : textdecoration.call(null,G__11104));
+return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$span,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$style,new cljs.core.PersistentArrayMap(null, 7, [cljs.core.cst$kw$color,(function (){var G__11427 = (cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.db.app_db) : cljs.core.deref.call(null,app.db.app_db));
+return (color.cljs$core$IFn$_invoke$arity$1 ? color.cljs$core$IFn$_invoke$arity$1(G__11427) : color.call(null,G__11427));
+})(),cljs.core.cst$kw$text_DASH_decoration,"underline",cljs.core.cst$kw$text_DASH_decoration_DASH_style,"wavy",cljs.core.cst$kw$_DASH_webkit_DASH_text_DASH_decoration,"underline",cljs.core.cst$kw$_DASH_webkit_DASH_text_DASH_decoration_DASH_style,"wavy",cljs.core.cst$kw$text_DASH_decoration_DASH_color,(function (){var G__11428 = (cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.db.app_db) : cljs.core.deref.call(null,app.db.app_db));
+return (textdecoration.cljs$core$IFn$_invoke$arity$1 ? textdecoration.cljs$core$IFn$_invoke$arity$1(G__11428) : textdecoration.call(null,G__11428));
+})(),cljs.core.cst$kw$_DASH_webkit_DASH_text_DASH_decoration_DASH_color,(function (){var G__11429 = (cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.db.app_db) : cljs.core.deref.call(null,app.db.app_db));
+return (textdecoration.cljs$core$IFn$_invoke$arity$1 ? textdecoration.cljs$core$IFn$_invoke$arity$1(G__11429) : textdecoration.call(null,G__11429));
 })()], null)], null),[cljs.core.str(text)].join('')], null);
 });
 
