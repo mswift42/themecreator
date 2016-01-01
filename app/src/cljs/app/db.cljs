@@ -133,7 +133,7 @@
 
 (def app-db
   (r/atom
-   warm-night))
+   black))
 
 (def adjustbg
   (r/atom
