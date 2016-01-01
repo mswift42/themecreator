@@ -1,6 +1,7 @@
 body {
     /* margin-top:80px; */
     background-color:#f2f2f2;
+    overflow-x:hidden;
 }
 
 .colorcomponent {
@@ -118,6 +119,7 @@ pre {
 .navbar-default .navbar-link:hover {
     color: #ecdbff;
 }
+
 
 @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
