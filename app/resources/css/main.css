@@ -207,9 +207,9 @@ input[type="checkbox"] + label {
 footer {
     text-align:right;
     position: absolute;
-    bottom:0;
     right:2em;
     height:20px;
+    margin-top:2em;
     width:100%;
     font-size:0.8em;
     clear:both;
