@@ -44,8 +44,8 @@
 (defn language-select
   []
   [select-component "langdrop" "Languages"
-   [[#(toggle-preview prev/preview-typescript) "Typescript"]
-    [#(toggle-preview prev/preview-javascript) "Javascript"]]])
+   [[#(toggle-preview prev/preview-javascript) "Javascript"]
+    [#(toggle-preview prev/preview-typescript) "Typescript"]]])
 
 
 
