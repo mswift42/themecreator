@@ -792,9 +792,9 @@ return app.colors.color_list(30.12,58.1);
  */
 app.colors.muted_palette = (function app$colors$muted_palette(){
 if(cljs.core.truth_(app.colors.dark_bg_QMARK_(cljs.core.cst$kw$mainbg.cljs$core$IFn$_invoke$arity$1((cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.db.app_db) : cljs.core.deref.call(null,app.db.app_db)))))){
-return app.colors.color_list(82.11,14.712);
+return app.colors.color_list(82.11,18.712);
 } else {
-return app.colors.color_list(44.02,14.712);
+return app.colors.color_list(40.02,18.712);
 }
 });
 /**
