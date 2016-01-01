@@ -136,10 +136,10 @@
 
 (defn theme-component []
   [navbar-component]
-  (GET "templates/intelli.txt" intellitemplate)
-  (GET "templates/tmtheme.txt" tmthemetemplate)
-  (GET "templates/atom/colors.txt" atomtemplate)
-  (GET "templates/emacs.txt" emacstemplate)
+  (GET "app/target/templates/intelli.txt" intellitemplate)
+  (GET "app/target/templates/tmtheme.txt" tmthemetemplate)
+  (GET "app/target/templates/atom/colors.txt" atomtemplate)
+  (GET "app/target/templates/emacs.txt" emacstemplate)
   (db/set-db-from-storage)
   [:div.row
    [color-components]
