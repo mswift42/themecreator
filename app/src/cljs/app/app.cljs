@@ -128,7 +128,8 @@
 
 (defn navbar-component []
   [:div.container-fluid
-   [:a.navbar-brand {:href "#"} "ITC"]
+   [:a.navbar-brand {:href "#"}
+    (if (< (.-width js/screen) 1000) "TC" "ThemeCreator")]
    [:div.navbar.navbar-collapse
     [:div
      [comps/theme-select]

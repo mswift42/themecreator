@@ -132,7 +132,9 @@ pre {
                                                                                                                                           }
 }
 
-
+.themedrop {
+    margin-right:1em;
+}
 
 .themedrop > .btn-default {
     background-color:#584b5f;
@@ -140,6 +142,12 @@ pre {
     color:#ecf0f1;
     margin-top:20px;
     padding:1em;
+}
+
+@media screen and (max-width: 768px) {
+    .themedrop > .btn-default {
+        font-size:80%;
+    }
 }
 
 .conticons > i {
