@@ -145,6 +145,11 @@ pre {
     padding:1em;
     
 }
+@media screen and (max-width: 768px) {
+    .themedrop > .btn-default {
+        font-size:80%;
+    }
+}
 
 .conticons > i {
     margin-left:0.4em;
