@@ -223,8 +223,8 @@
   "muted-palette returns a vector of 7 random muted colors."
   []
   (if (dark-bg? (:mainbg @db/app-db))
-    (color-list 82.11 14.712)
-    (color-list 44.02 14.712)))
+    (color-list 82.11 18.712)
+    (color-list 40.02 18.712)))
 
 (defn custom-palette
   "custom-palette returns a vector of 7 random colors,
