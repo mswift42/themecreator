@@ -12,6 +12,7 @@
   (not-any? #(or (< % 0)
                  (> % 255)) rgbcolor))
 
+
 (defn clamp
   [val]
   (max (min val 255) 0))
@@ -193,10 +194,15 @@
 
 
 (defn color-list
+  "color-list takes a lightness and saturation value from the Cie-lch Color Space
+   and returns a vector of size length of db/randomcolors. Hue values for each color
+   are of equidistant value. Every lch color is converted to rgb, then clamped if 
+   necessary and finally converted to Hex format."
   [lightness saturation]
   (let [hr (hue-range (count db/randomcolors) (random-hue))]
     (mapv #(rgbToHex %) (mapv #(clamped-rgb-vec %)
                               (mapv #(lchToRgb [lightness saturation %]) hr)))))
+
 
 (defn soft-palette
   "soft-palette returns a vector of 7 random soft colors."
