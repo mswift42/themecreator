@@ -33,6 +33,28 @@ Random Colors:
 --------------
 
 ThemeCreator supports random colors from 4 different color palettes, or you can generate random colors from a custom color palette by providing [CIE Lch](http://www.colourphil.co.uk/lab_lch_colour_space.shtml) Lightness and Saturation values for your theme colors. Hue values will be assigned randomly. Lightness values range from 0 (black) to 100 (white), Saturation from 0 (grey) to 100 (full saturation).
+
 The used values for the warm, soft, pop and muted palettes can be found in [colors.cljs](https://github.com/mswift42/themecreator/master/colors.cljs). For example the soft palette uses 57.292 and 25.738 Lightness and saturation values for a dark background, and 44.921 and 25.738 for a light background.
+
+Storage:
+--------
+
+By pressing the `store theme` button, you can store your theme to local Storage.
+
+
+Implementation:
+---------------
+
+ThemeCreator is a Clojurescript app, in particular it uses the wonderful [reagent](http://reagent-project.github.io/) library.
+
+TODO:
+-----
+
+- add more preview languages.
+
+Donate:
+-------
+
+[![PayPayl donate button](http://img.shields.io/paypal/donate.png?color=yellow)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5823VL6B3XM86 "Donate once-off to this project using Paypal")
 
 
