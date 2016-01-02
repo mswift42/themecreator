@@ -5,7 +5,29 @@
 
 Create Color Themes for IntelliJ Editors, Atom, Emacs and Textmate.
 
+
 Installation Instructions:
 --------------------------
 
-No installation necessary. [ThemeCreator](http://mswift42.github.io/themecreator/) is hosted on gh-pages.
+No installation necessary. [ThemeCreator](http://mswift42.github.io/themecreator/) is hosted on gh-pages. ThemeCreator supports Firefox, Chrome and Opera, as these are so far the only ones to support [input-color](http://caniuse.com/#feat=input-color).
+
+Usage:
+------
+
+Add themename and themeauthor, pick or enter the desired colors, then download the theme for the editor of your choice.
+
+### JetBrains Editors:
+Download the Intellij theme and copy it to the editors color folder. For Linux and Webstorm 11 this would be `~/.Webstorm11/config/colors`.
+
+### Textmate:
+Download the textmate theme, then follow your editors instructions. For Visual Studio Code you can use the [yeoman code](https://code.visualstudio.com/docs/tools/yocode) generator. 
+
+### Atom:
+[Generate](https://atom.io/docs/latest/hacking-atom-creating-a-theme) from within atom. Then Download the atom theme you made with ThemeCreator, and download [base.less](https://github.com/mswift42/themecreator/raw/master/base.less) and [syntax-variables.less](https://github.com/mswift42/themecreator/raw/master/syntax-variables.less). Now copy the 3 files, `colors.less`, `base.less` and `syntax-variables.less` into the `styles/` folder of the Atom generated theme.
+
+### Emacs:
+Download the emacs file. You can try it by visiting your new theme with `C-x C-f <filename.el>`. You can install your new theme with: `M-x package-install-file <filename.el>`.
+
+
+
+
