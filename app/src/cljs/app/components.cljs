@@ -142,5 +142,5 @@
    [:div.row
     [:label.colortitle.col-xs-5 (str "Author")]
     [:input.col-xs-4.textinput.col-xs-offset-1.nameinput
-     {:type "text" :value (:author @db/app-db)
-      :on-change #(swap! db/app-db assoc :author (-> % .-target .-value))}]]])
+     {:type "text" :value (:themeauthor @db/app-db)
+      :on-change #(swap! db/app-db assoc :themeauthor (-> % .-target .-value))}]]])
