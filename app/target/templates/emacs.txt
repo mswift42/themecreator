@@ -1,11 +1,11 @@
 ;;; {{themename}}-theme.el --- Emacs theme 
 
-;; Copyright (C) 2014 , {{themeauthor}}
+;; Copyright (C) 2016 , {{themeauthor}}
 
 ;; Author: {{themeauthor}}
 ;; Version: 0.1
 ;; Package-Requires: ((emacs "24"))
-;; Created with themecreator, https://github.com/mswift42/themecreator.
+;; Created with ThemeCreator, https://github.com/mswift42/themecreator.
 
 
 ;; This program is free software: you can redistribute it and/or modify

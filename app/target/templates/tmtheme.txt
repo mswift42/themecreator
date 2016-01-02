@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Created with ThemeCreator, https://github.com/mswift42/themecreator -->
 <plist version="1.0">
 <dict>
-	<key>comment</key>
+	<key>author</key>
 	<string>{{themeauthor}}</string>
 	<key>name</key>
 	<string>{{themename}}</string>
