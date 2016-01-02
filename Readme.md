@@ -32,18 +32,7 @@ Download the emacs file. You can try it by visiting your new theme with `C-x C-f
 Random Colors:
 --------------
 
-ThemeCreator supports random colors from 4 different color palettes, or you can generate random colors from a custom color palette by providing [CIE Lch](http://www.colourphil.co.uk/lab_lch_colour_space.shtml) Lightness and Saturation values for your theme colors. Hue values will be assigned randomly.
-
-Reference values for the provided palettes:
-
-                   | Warm Palette | Soft Palette | Pop Palette | Muted Palette |
-                   |-------------:|-------------:|------------:|--------------:|
-Dark Background:   |60.39  33.84  |57.292 25.738 | 77.02 58.10 | 82.11 18.712  |
-Light Background:  |18.358 33.84  |44.921 25.738 | 30.12 58.10 | 40.02 18.712  |
-
-
-
-
-
+ThemeCreator supports random colors from 4 different color palettes, or you can generate random colors from a custom color palette by providing [CIE Lch](http://www.colourphil.co.uk/lab_lch_colour_space.shtml) Lightness and Saturation values for your theme colors. Hue values will be assigned randomly. Lightness values range from 0 (black) to 100 (white), Saturation from 0 (grey) to 100 (full saturation).
+The used values for the warm, soft, pop and muted palettes can be found in [colors.cljs](https://github.com/mswift42/themecreator/master/colors.cljs). For example the soft palette uses 57.292 and 25.738 Lightness and saturation values for a dark background, and 44.921 and 25.738 for a light background.
 
 
