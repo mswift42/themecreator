@@ -78,9 +78,11 @@ return app.db.switch_theme(app.db.soft_charcoal);
 }),"soft-charcoal"], null)], null)], null);
 });
 app.components.language_select = (function app$components$language_select(){
-return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [app.components.select_component,"langdrop","Languages",new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(function (){
+return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [app.components.select_component,"langdrop","Languages",new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(function (){
 return app.components.toggle_preview(app.previews.preview_javascript);
 }),"Javascript"], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(function (){
+return app.components.toggle_preview(app.previews.preview_ruby);
+}),"Ruby"], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(function (){
 return app.components.toggle_preview(app.previews.preview_typescript);
 }),"Typescript"], null)], null)], null);
 });
