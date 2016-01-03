@@ -45,12 +45,14 @@ By pressing the `store theme` button, you can store your theme to local Storage.
 Implementation:
 ---------------
 
-ThemeCreator is a Clojurescript app, in particular it uses the wonderful [reagent](http://reagent-project.github.io/) library.
+ThemeCreator is a Clojurescript app, in particular it uses the wonderful [reagent](http://reagent-project.github.io/) framework. The themetemplates are compiled and rendered using [mustache](https://github.com/janl/mustache.js/), [goog.net.XhrIo](https://developers.google.com/closure/library/docs/xhrio?hl=en) is used to load the templates, and [goog.color](https://google.github.io/closure-library/api/namespace_goog_color.html) was helpful for some color conversions.
+
 
 TODO:
 -----
 
 - add more preview languages.
+- Vim support?
 
 Donate:
 -------
