@@ -302,3 +302,23 @@
    [:br]
    [span-component "}" :mainfg]])
 
+(defn preview-ruby
+  []
+  [:div
+   [span-component "# The Greeter class" :comment]
+   [:br]
+   [span-component "class " :keyword]
+   [span-component "Greeter" :type]
+   [:br]
+   [span-component "  def " :keyword]
+   [span-component "initialize" :functionname]
+   [span-component "(name)" :mainfg]
+   [:br]
+   [span-component "    @name " :variable]
+   [span-component "= name.capitalize" :mainfg]
+   [:br]
+   [span-component "  end" :keyword]
+   [:br]
+   [:br]
+   [span-component "  def " :keyword]
+   [span-component "salute" :functionname]])
