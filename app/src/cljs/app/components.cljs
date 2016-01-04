@@ -117,7 +117,7 @@
 
 (defn color-component [facename]
   [:div.colorcomponent 
-   [:div.row
+   [:div.row.themeface
     [:label.colortitle.col-xs-4 (name facename)]
     [:input.col-xs-3.colorinput.col-xs-offset-1
      {:type "color"  :value (facename @db/app-db)
