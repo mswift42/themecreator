@@ -122,6 +122,20 @@
    :warning "#e81050"
    :warning2 "#e86310"})
 
+(def reykjavik
+  {:themename "reykjavik"
+   :mainfg "#b1b1b1"
+   :mainbg "#112328"
+   :keyword "#a3d4e8"
+   :builtin "#c4cbee"
+   :string "#e6c2db"
+   :functionname "#f1c1bd"
+   :variable "#e1c9aa"
+   :type "#c1d2b1"
+   :constant "#a3d6cc"
+   :comment "#5d5d5d"
+   :warning "#e81050"
+   :warning2 "#e86310"})
 
 (def contrastcolors
   [:mainfg :keyword :builtin :string :functionname :variable :type

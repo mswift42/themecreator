@@ -38,6 +38,7 @@
     [#(db/switch-theme db/white-sand) "white-sand"]
     [#(db/switch-theme db/munich) "munich"]
     [#(db/switch-theme db/greymatters) "greymatters"]
+    [#(db/switch-theme db/reykjavik) "reykjavik"]
     [#(db/switch-theme db/oldlace) "oldlace"]
     [#(db/switch-theme db/soft-charcoal) "soft-charcoal"]]])
 
