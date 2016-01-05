@@ -1,5 +1,4 @@
 body {
-    /* margin-top:80px; */
     background-color:#f2f2f2;
     overflow-x:hidden;
 }
@@ -22,9 +21,6 @@ body {
 }
 .colorpreview {
     padding:0.8em;
-    /* margin-left:3vw; */
-    /* margin-top:2px; */
-    /* margin-right:1vw; */
     border-radius:1em;
     border:1px solid;
     borger-color:#d1d1d1;
@@ -63,8 +59,8 @@ pre {
     font-family: Ubuntu Mono, Monospace;
 }
 .navbar-default {
-    background-color: #584b5f;
-    border-color: #49414d;
+    background-color: #000000;
+    border-color: #101010;
 }
 .navbar-default .navbar-brand {
     color: #ecf0f1;
@@ -84,7 +80,7 @@ pre {
                                                 color: #ecdbff;
                                             }
 .navbar-default .navbar-nav > li > .dropdown-menu {
-    background-color: #584b5f;
+    background-color: #000000;
 }
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a {
     color: #ecf0f1;
@@ -92,24 +88,24 @@ pre {
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
     color: #ecdbff;
-    background-color: #49414d;
+    background-color: #101010;
 }
 .navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
-    background-color: #584b5f;
+    background-color: #000000;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
                                                                                                 color: #ecdbff;
-                                                                                                background-color: #49414d;
+                                                                                                background-color: #101010;
                                                                                             }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
                                                                                             color: #ecdbff;
-                                                                                            background-color: #49414d;
+                                                                                            background-color: #101010;
                                                                                         }
 .navbar-default .navbar-toggle {
-    border-color: #49414d;
+    border-color: #101010;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-                                          background-color: #49414d;
+                                          background-color: #101010;
                                       }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #ecf0f1;
@@ -136,7 +132,7 @@ pre {
                                                                      }
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
                                                                                                                                               color: #ecdbff;
-                                                                                                                                              background-color: #49414d;
+                                                                                                                                              background-color: #101010;
                                                                                                                                           }
 }
 
@@ -145,8 +141,8 @@ pre {
 }
 
 .themedrop > .btn-default {
-    background-color:#584b5f;
-    border:1px solid #49414d;
+    background-color:#000000;
+    border:1px solid #101010;
     color:#ecf0f1;
     margin-top:20px;
     padding:1em;
