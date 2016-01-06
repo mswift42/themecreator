@@ -16,6 +16,10 @@ return cljs.core.not_any_QMARK_((function (p1__11112_SHARP_){
 return ((p1__11112_SHARP_ < (0))) || ((p1__11112_SHARP_ > (255)));
 }),rgbcolor);
 });
+/**
+ * clamp 'normalizes' rgb values. if the given value is > 255,
+ * clamp returns 255, if it is < 0, it returns 0.
+ */
 app.colors.clamp = (function app$colors$clamp(val){
 var x__5317__auto__ = (function (){var x__5324__auto__ = val;
 var y__5325__auto__ = (255);
@@ -24,6 +28,9 @@ return ((x__5324__auto__ < y__5325__auto__) ? x__5324__auto__ : y__5325__auto__)
 var y__5318__auto__ = (0);
 return ((x__5317__auto__ > y__5318__auto__) ? x__5317__auto__ : y__5318__auto__);
 });
+/**
+ * clamped-rgb-vec returns a vector of clamped rgb values.
+ */
 app.colors.clamped_rgb_vec = (function app$colors$clamped_rgb_vec(rgbvector){
 return cljs.core.mapv.cljs$core$IFn$_invoke$arity$2((function (p1__11113_SHARP_){
 return app.colors.clamp(p1__11113_SHARP_);
@@ -881,71 +888,8 @@ break;
  */
 app.colors.derive_colors_from_theme = (function app$colors$derive_colors_from_theme(theme){
 if(cljs.core.truth_(app.colors.dark_bg_QMARK_(cljs.core.cst$kw$mainbg.cljs$core$IFn$_invoke$arity$1(theme)))){
-return cljs.core.assoc.cljs$core$IFn$_invoke$arity$variadic(theme,cljs.core.cst$kw$fg2,app.colors.darken.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$mainfg.cljs$core$IFn$_invoke$arity$1(theme),0.08),cljs.core.array_seq([cljs.core.cst$kw$fg3,app.colors.darken.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$mainfg.cljs$core$IFn$_invoke$arity$1(theme),0.16),cljs.core.cst$kw$fg4,app.colors.darken.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$mainfg.cljs$core$IFn$_invoke$arity$1(theme),0.24),cljs.core.cst$kw$bg2,app.colors.lighten.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$mainbg.cljs$core$IFn$_invoke$arity$1(theme),0.08),cljs.core.cst$kw$bg3,app.colors.lighten.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$mainbg.cljs$core$IFn$_invoke$arity$1(theme),0.16),cljs.core.cst$kw$bg4,app.colors.lighten.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$mainbg.cljs$core$IFn$_invoke$arity$1(theme),0.24),cljs.core.cst$kw$vsui,"vs-dark"], 0));
+return cljs.core.assoc.cljs$core$IFn$_invoke$arity$variadic(theme,cljs.core.cst$kw$fg2,app.colors.darken.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$mainfg.cljs$core$IFn$_invoke$arity$1(theme),0.08),cljs.core.array_seq([cljs.core.cst$kw$fg3,app.colors.darken.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$mainfg.cljs$core$IFn$_invoke$arity$1(theme),0.16),cljs.core.cst$kw$fg4,app.colors.darken.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$mainfg.cljs$core$IFn$_invoke$arity$1(theme),0.24),cljs.core.cst$kw$bg2,app.colors.lighten.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$mainbg.cljs$core$IFn$_invoke$arity$1(theme),0.08),cljs.core.cst$kw$bg3,app.colors.lighten.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$mainbg.cljs$core$IFn$_invoke$arity$1(theme),0.16),cljs.core.cst$kw$bg4,app.colors.lighten.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$mainbg.cljs$core$IFn$_invoke$arity$1(theme),0.24)], 0));
 } else {
-return cljs.core.assoc.cljs$core$IFn$_invoke$arity$variadic(theme,cljs.core.cst$kw$fg2,app.colors.lighten.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$mainfg.cljs$core$IFn$_invoke$arity$1(theme),0.08),cljs.core.array_seq([cljs.core.cst$kw$fg3,app.colors.lighten.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$mainfg.cljs$core$IFn$_invoke$arity$1(theme),0.16),cljs.core.cst$kw$fg4,app.colors.lighten.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$mainfg.cljs$core$IFn$_invoke$arity$1(theme),0.24),cljs.core.cst$kw$bg2,app.colors.darken.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$mainbg.cljs$core$IFn$_invoke$arity$1(theme),0.08),cljs.core.cst$kw$bg3,app.colors.darken.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$mainbg.cljs$core$IFn$_invoke$arity$1(theme),0.16),cljs.core.cst$kw$bg4,app.colors.darken.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$mainbg.cljs$core$IFn$_invoke$arity$1(theme),0.24),cljs.core.cst$kw$vsui,"vs"], 0));
-}
-});
-app.colors.within_limit_QMARK_ = (function app$colors$within_limit_QMARK_(limit,resultlist,targetlist){
-var seq__11414 = cljs.core.seq(cljs.core.interleave.cljs$core$IFn$_invoke$arity$2(resultlist,targetlist));
-var chunk__11415 = null;
-var count__11416 = (0);
-var i__11417 = (0);
-while(true){
-if((i__11417 < count__11416)){
-var vec__11418 = chunk__11415.cljs$core$IIndexed$_nth$arity$2(null,i__11417);
-var r = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__11418,(0),null);
-var t = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__11418,(1),null);
-cljs.core.print.cljs$core$IFn$_invoke$arity$variadic(cljs.core.array_seq([((function (){var G__11419 = (t - r);
-return Math.abs(G__11419);
-})() <= limit)], 0));
-
-var G__11422 = seq__11414;
-var G__11423 = chunk__11415;
-var G__11424 = count__11416;
-var G__11425 = (i__11417 + (1));
-seq__11414 = G__11422;
-chunk__11415 = G__11423;
-count__11416 = G__11424;
-i__11417 = G__11425;
-continue;
-} else {
-var temp__4425__auto__ = cljs.core.seq(seq__11414);
-if(temp__4425__auto__){
-var seq__11414__$1 = temp__4425__auto__;
-if(cljs.core.chunked_seq_QMARK_(seq__11414__$1)){
-var c__5789__auto__ = cljs.core.chunk_first(seq__11414__$1);
-var G__11426 = cljs.core.chunk_rest(seq__11414__$1);
-var G__11427 = c__5789__auto__;
-var G__11428 = cljs.core.count(c__5789__auto__);
-var G__11429 = (0);
-seq__11414 = G__11426;
-chunk__11415 = G__11427;
-count__11416 = G__11428;
-i__11417 = G__11429;
-continue;
-} else {
-var vec__11420 = cljs.core.first(seq__11414__$1);
-var r = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__11420,(0),null);
-var t = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__11420,(1),null);
-cljs.core.print.cljs$core$IFn$_invoke$arity$variadic(cljs.core.array_seq([((function (){var G__11421 = (t - r);
-return Math.abs(G__11421);
-})() <= limit)], 0));
-
-var G__11430 = cljs.core.next(seq__11414__$1);
-var G__11431 = null;
-var G__11432 = (0);
-var G__11433 = (0);
-seq__11414 = G__11430;
-chunk__11415 = G__11431;
-count__11416 = G__11432;
-i__11417 = G__11433;
-continue;
-}
-} else {
-return null;
-}
-}
-break;
+return cljs.core.assoc.cljs$core$IFn$_invoke$arity$variadic(theme,cljs.core.cst$kw$fg2,app.colors.lighten.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$mainfg.cljs$core$IFn$_invoke$arity$1(theme),0.08),cljs.core.array_seq([cljs.core.cst$kw$fg3,app.colors.lighten.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$mainfg.cljs$core$IFn$_invoke$arity$1(theme),0.16),cljs.core.cst$kw$fg4,app.colors.lighten.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$mainfg.cljs$core$IFn$_invoke$arity$1(theme),0.24),cljs.core.cst$kw$bg2,app.colors.darken.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$mainbg.cljs$core$IFn$_invoke$arity$1(theme),0.08),cljs.core.cst$kw$bg3,app.colors.darken.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$mainbg.cljs$core$IFn$_invoke$arity$1(theme),0.16),cljs.core.cst$kw$bg4,app.colors.darken.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$mainbg.cljs$core$IFn$_invoke$arity$1(theme),0.24)], 0));
 }
 });
