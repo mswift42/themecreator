@@ -2801,6 +2801,11 @@
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
+    <option name="RUBY_LOCAL_VARIABLE">
+      <value>
+        <option name="FOREGROUND" value="{{variable}}" />
+      </value>
+    </option
     <option name="Regular expression">
       <value>
         <option name="FOREGROUND" value="{{string}}" />
