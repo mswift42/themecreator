@@ -14,10 +14,13 @@
 
 
 (defn clamp
+  "clamp 'normalizes' rgb values. if the given value is > 255,
+   clamp returns 255, if it is < 0, it returns 0."
   [val]
   (max (min val 255) 0))
 
 (defn clamped-rgb-vec
+  "clamped-rgb-vec returns a vector of clamped rgb values."
   [rgbvector]
   (mapv #(clamp %) rgbvector))
 
@@ -259,20 +262,15 @@
            :fg4 (darken (:mainfg theme) 0.24)
            :bg2 (lighten (:mainbg theme) 0.08)
            :bg3 (lighten (:mainbg theme) 0.16)
-           :bg4 (lighten (:mainbg theme) 0.24)
-           :vsui "vs-dark")
+           :bg4 (lighten (:mainbg theme) 0.24))
     (assoc theme
            :fg2 (lighten (:mainfg theme) 0.08)
            :fg3 (lighten (:mainfg theme) 0.16)
            :fg4 (lighten (:mainfg theme) 0.24)
            :bg2 (darken (:mainbg theme) 0.08)
            :bg3 (darken (:mainbg theme) 0.16)
-           :bg4 (darken (:mainbg theme) 0.24)
-           :vsui "vs")))
+           :bg4 (darken (:mainbg theme) 0.24))))
 
 
 
-(defn within-limit?
-  [limit resultlist targetlist]
-  (doseq [[r t] (interleave resultlist targetlist)]
-    (print (<= (js/Math.abs (- t r)) limit))))
+
