@@ -151,11 +151,7 @@
    [[62.921 57.373 115] "#8aa234"]
    [[66.919 17.343 259] "#8aa6c1"]])
 
-(deftest test-labtolch
-  []
-  (let [[lab lch] lablchtable]
-    (doseq [[r t] (map vector (colors/labToLch lab) lch)]
-      (is (= (within-limit? 0.01 r t) false)))))
+
 
 (deftest test-lchToHex
   []
