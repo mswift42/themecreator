@@ -41,6 +41,12 @@ Storage:
 
 By pressing the `store theme` button, you can store your theme to local Storage.
 
+Screenshots:
+------------
+
+Custom Palette:
+![Screenshot ](https://github.com/mswift42/themecreator/raw/master/screenshots/tc1reykjavik2.png)
+
 
 Implementation:
 ---------------
