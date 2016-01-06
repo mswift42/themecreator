@@ -2708,6 +2708,11 @@
         <option name="FOREGROUND" value="{{variable}}" />
       </value>
     </option>
+    <option name="RUBY_LVAR">
+      <value>
+        <option name="FOREGROUND" value="{{variable}}" />
+      </value>
+    </option>
     <option name="RUBY_ESCAPE_SEQUENCE">
       <value>
         <option name="FOREGROUND" value="{{fg2}}" />
@@ -2805,7 +2810,7 @@
       <value>
         <option name="FOREGROUND" value="{{variable}}" />
       </value>
-    </option
+    </option>
     <option name="Regular expression">
       <value>
         <option name="FOREGROUND" value="{{string}}" />
