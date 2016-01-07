@@ -47,6 +47,9 @@ Screenshots:
 Custom Palette:
 ![Screenshot ](https://github.com/mswift42/themecreator/raw/master/screenshots/tc1reykjavik2.png)
 
+Download Theme (Firefox):
+![Screenshot ](https://github.com/mswift42/themecreator/raw/master/screenshots/tc1firefoxdownload.png)
+
 
 Implementation:
 ---------------
