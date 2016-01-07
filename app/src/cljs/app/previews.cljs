@@ -375,3 +375,27 @@
    [span-component "  nums.compact" :mainfg]
    [:br]
    [span-component "end" :keyword]])
+
+(defn preview-python
+  []
+  [:div
+   [span-component "\"\"\"Project Euler\"\"\"" :string]
+   [:br]
+   [span-component "class" :keyword]
+   [span-component " Euler" :type]
+   [span-component ":" :mainfg]
+   [:br]
+   [span-component "    def " :keyword]
+   [span-component "__init__" :functionname]
+   [span-component "(" :mainfg]
+   [span-component "self" :keyword]
+   [span-component "):" :mainfg]
+   [:br]
+   [span-component "        self" :keyword]
+   [span-component ".data = []" :mainfg]
+   [:br]
+   [:br]
+   [span-component "e " :variable]
+   [span-component "= Euler()" :mainfg]
+   [:br]
+   [:br]])
