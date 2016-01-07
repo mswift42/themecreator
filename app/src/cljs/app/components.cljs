@@ -47,7 +47,8 @@
   [select-component "langdrop" "Languages"
    [[#(toggle-preview prev/preview-javascript) "Javascript"]
     [#(toggle-preview prev/preview-ruby) "Ruby"]
-    [#(toggle-preview prev/preview-typescript) "Typescript"]]])
+    [#(toggle-preview prev/preview-typescript) "Typescript"]
+    [#(toggle-preview prev/preview-python) "Python"]]])
 
 
 
