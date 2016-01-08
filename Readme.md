@@ -50,6 +50,11 @@ Custom Palette:
 Download Theme (Firefox):
 ![Screenshot ](https://github.com/mswift42/themecreator/raw/master/screenshots/tc1firefoxdownload.png)
 
+Editor Comparisons:
+-------------------
+
+You can find screenshots of the same theme with different Editors in the [Wiki](https://github.com/mswift42/themecreator/wiki).
+
 
 Implementation:
 ---------------
