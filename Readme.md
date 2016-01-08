@@ -62,7 +62,6 @@ TODO:
 
 - add more preview languages.
 - Vim support?
-- Zsh support?
 
 Donate:
 -------
