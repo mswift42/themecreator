@@ -2759,6 +2759,7 @@
     <option name="RUBY_KEYWORD">
       <value>
         <option name="FOREGROUND" value="{{keyword}}" />
+        <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="RUBY_LINE_CONTINUATION">
