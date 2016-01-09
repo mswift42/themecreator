@@ -6,7 +6,10 @@
    with a text content 'text' of background-color 
    'color'"
   ([text color ]
-   [:span  {:style {:color (color @app-db)}}
+   [:span (if (= color :keyword)
+            {:style {:color (color @app-db)
+                     :font-weight "bold"}}
+            {:style {:color (color @app-db)}})
     (str text)])
   ([text color textdecoration]
    [:span {:style {:color (color @app-db)
