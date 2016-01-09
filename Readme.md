@@ -1,7 +1,7 @@
 [ThemeCreator](http://mswift42.github.io/themecreator/)
 ==============
 
-![Screenshot](https://github.com/mswift42/themecreator/raw/master/screenshots/tc1munich.png)
+![Screenshot](https://github.com/mswift42/themecreator/raw/master/screenshots/tc1chromehamburg.png)
 
 Create Color Themes for IntelliJ Editors, Atom, Emacs and Textmate.
 
