@@ -8,8 +8,7 @@
 
 
 
-(deftest test-name-component []
-  (is (= (:mainbg @db/app-db) "#292424")))
+
 
 (deftest test-darken []
   (is (= (colors/darken "#222222") "#1b1b1b"))
@@ -124,12 +123,32 @@
   [limit result target]
   (<= (js/Math.abs (- target result)) limit))
 
+(defn every-within-limit?
+  "every-within-limit? return true if every number in vec2
+   is within a given limit of the number in vec1 at the respective
+   index position.
+   (every-within-limit? 0.01 [2.00 2.99 2.01] [1.99 3 2.02]) -> true
+   (every-within-limit? 0.01 [2.00 2.99 2.01] [1.99 3 1.99]) -> false"
+  [limit vec1 vec2]
+  (doseq [[n1 n2] (map list vec1 vec2)]
+    (is (= (within-limit? limit n1 n2) true))))
+
 (deftest test-whitin-limit
   []
   (is (= (within-limit? 0.001 1.999 2.000) true))
   (is (= (within-limit? 0.001 2.000 2) true))
   (is (= (within-limit? 0.001 2.001 2) true))
   (is (= (within-limit? 0.001 1.99 2.0) false)))
+
+(deftest test-labtolch
+  []
+  (doseq [[lab lch] lablchtable]
+    (is (= (every-within-limit? 0.01 (colors/labToLch lab) lch)))))
+
+(deftest test-lchToLab
+  []
+  (doseq [[lab lch] lablchtable]
+    (is (= (every-within-limit? 0.01 (colors/lchToLab lch) lab)))))
 
 (deftest test-rgbtoxyz
   []
