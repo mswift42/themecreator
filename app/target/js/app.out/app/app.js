@@ -20,15 +20,15 @@ app.app.compile_template = (function app$app$compile_template(templ,varmap){
 return Mustache.render(templ,cljs.core.clj__GT_js(varmap));
 });
 app.app.GET = (function app$app$GET(url,template){
-var G__11457 = url;
-var G__11458 = ((function (G__11457){
+var G__11458 = url;
+var G__11459 = ((function (G__11458){
 return (function (event){
-var G__11459 = template;
-var G__11460 = event.target.getResponse();
-return (cljs.core.reset_BANG_.cljs$core$IFn$_invoke$arity$2 ? cljs.core.reset_BANG_.cljs$core$IFn$_invoke$arity$2(G__11459,G__11460) : cljs.core.reset_BANG_.call(null,G__11459,G__11460));
-});})(G__11457))
+var G__11460 = template;
+var G__11461 = event.target.getResponse();
+return (cljs.core.reset_BANG_.cljs$core$IFn$_invoke$arity$2 ? cljs.core.reset_BANG_.cljs$core$IFn$_invoke$arity$2(G__11460,G__11461) : cljs.core.reset_BANG_.call(null,G__11460,G__11461));
+});})(G__11458))
 ;
-return goog.net.XhrIo.send(G__11457,G__11458);
+return goog.net.XhrIo.send(G__11458,G__11459);
 });
 app.app.generate_template = (function app$app$generate_template(template){
 return app.app.compile_template(template,app.colors.derive_colors_from_theme((cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.db.app_db) : cljs.core.deref.call(null,app.db.app_db))));
@@ -47,10 +47,10 @@ var blob = (new Blob([data]));
 var templink = document.getElementById(id);
 templink.href = wu.createObjectURL(blob);
 
-var G__11462 = templink;
-G__11462.setAttribute("download",filename);
+var G__11463 = templink;
+G__11463.setAttribute("download",filename);
 
-return G__11462;
+return G__11463;
 });
 app.app.template_download = (function app$app$template_download(id,title,filename,template){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$li,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$a,new cljs.core.PersistentArrayMap(null, 3, [cljs.core.cst$kw$href,"#",cljs.core.cst$kw$id,id,cljs.core.cst$kw$on_DASH_click,(function (){
@@ -90,11 +90,11 @@ app.db.set_db_from_storage();
 return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div$row,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [app.app.color_components], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [app.app.preview_component], null)], null);
 });
 app.app.init = (function app$app$init(){
-var G__11467_11471 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [app.app.navbar_component], null);
-var G__11468_11472 = document.getElementById("navcontainer");
-(reagent.core.render_component.cljs$core$IFn$_invoke$arity$2 ? reagent.core.render_component.cljs$core$IFn$_invoke$arity$2(G__11467_11471,G__11468_11472) : reagent.core.render_component.call(null,G__11467_11471,G__11468_11472));
+var G__11468_11472 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [app.app.navbar_component], null);
+var G__11469_11473 = document.getElementById("navcontainer");
+(reagent.core.render_component.cljs$core$IFn$_invoke$arity$2 ? reagent.core.render_component.cljs$core$IFn$_invoke$arity$2(G__11468_11472,G__11469_11473) : reagent.core.render_component.call(null,G__11468_11472,G__11469_11473));
 
-var G__11469 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [app.app.theme_component], null);
-var G__11470 = document.getElementById("mainapp");
-return (reagent.core.render_component.cljs$core$IFn$_invoke$arity$2 ? reagent.core.render_component.cljs$core$IFn$_invoke$arity$2(G__11469,G__11470) : reagent.core.render_component.call(null,G__11469,G__11470));
+var G__11470 = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [app.app.theme_component], null);
+var G__11471 = document.getElementById("mainapp");
+return (reagent.core.render_component.cljs$core$IFn$_invoke$arity$2 ? reagent.core.render_component.cljs$core$IFn$_invoke$arity$2(G__11470,G__11471) : reagent.core.render_component.call(null,G__11470,G__11471));
 });
