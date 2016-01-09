@@ -44,7 +44,10 @@ By pressing the `store theme` button, you can store your theme to local Storage.
 Screenshots:
 ------------
 
-Custom Palette (Firefox):
+Custom Palette (Chrome):
+![Screenshot ](https://github.com/mswift42/themecreator/raw/master/screenshots/tc1customchrome.png)
+
+Light Theme (Firefox):
 ![Screenshot ](https://github.com/mswift42/themecreator/raw/master/screenshots/tc1white-sandfirefox.png)
 
 Download Theme (Firefox):
