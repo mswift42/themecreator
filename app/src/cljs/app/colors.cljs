@@ -189,10 +189,13 @@
   (rand-int 360))
 
 (defn hue-range
-  "hue-range returns a vecor of equidistant huevalues."
+  "hue-range returns a vecor of equidistant huevalues, but instead of
+   returning only int values, randomize the hue value by adding or subtracting
+   floating point values 0 <= val < 1."
   [length startvalue]
   (let [distance (Math/floor (/ 360 length))]
-    (take length (iterate #(mod (+ distance %) 360) startvalue))))
+    (take length (iterate #(mod (+ distance (rand-nth [(rand) (rand -1)]) %) 360)
+                          startvalue))))
 
 
 
