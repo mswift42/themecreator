@@ -68,7 +68,6 @@ ThemeCreator is a Clojurescript app, in particular it uses the wonderful [reagen
 TODO:
 -----
 
-- add more preview languages.
 - Vim support?
 
 Donate:
