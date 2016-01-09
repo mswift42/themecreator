@@ -1,4 +1,4 @@
-;;; {{themename}}-theme.el --- Emacs theme 
+;;; {{themename}}-theme.el --- Theme 
 
 ;; Copyright (C) 2016 , {{themeauthor}}
 
