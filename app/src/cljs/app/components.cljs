@@ -16,10 +16,9 @@
 (defn select-component
   [compid title linklist]
   [:div.btn-group.themedrop {:id compid}
-   [:button.btn.btn-default {:type "button"}
-    title]
    [:button.btn.btn-default.dropdown-toggle
     {:type "button" :data-toggle "dropdown"}
+    (str title "    ")
     [:span.caret]
     [:span.sr-only]]
    [:ul.dropdown-menu {:aria-labelledby compid}

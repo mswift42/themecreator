@@ -62,10 +62,9 @@
 (defn template-select-component
   []
   [:div.btn-group.templatedrop {:id "templatedrop"}
-   [:button.btn.btn-default {:type "button"}
-    "Theme Download"]
    [:button.btn.btn-default.dropdown-toggle
     {:type "button" :data-toggle "dropdown"}
+    "Theme Download    "
     [:span.caret]
     [:span.sr-only]]
    [:ul.dropdown-menu {:aria-labelledby "templatedrop"}
