@@ -39,7 +39,7 @@ The used values for the warm, soft, pop and muted palettes can be found in [colo
 Storage:
 --------
 
-By pressing the `store theme` button, you can store your theme to local Storage.
+By pressing the `store theme` button, you can store your theme and custom Lightness and Saturation values to local Storage.
 
 Screenshots:
 ------------
