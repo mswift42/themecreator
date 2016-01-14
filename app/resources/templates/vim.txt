@@ -18,4 +18,23 @@ set t_Co=256
 let g:colors_name = "{{themename}}"
 
 
+" Define reusable colorvariables.
+let s:bg="{{mainbg}}"
+let s:fg="{{mainfg}}"
+let s:fg2="{{fg2}}"
+let s:fg3="{{fg3}}"
+let s:fg4="{{fg4}}"
+let s:bg2="{{bg2}}"
+let s:bg3="{{bg3}}"
+let s:bg4="{{bg4}}"
+let s:keyword="{{keyword}}"
+let s:builtin="{{builtin}}"
+let s:const= "{{constant}}"
+let s:comment="{{comment}}"
+let s:func="{{functionname}}"
+let s:str="{{string}}"
+let s:type="{{type}}"
+let s:var="{{variable}}"
+let s:warning="{{warning}}"
+let s:warning2="{{warning2}}"
 
