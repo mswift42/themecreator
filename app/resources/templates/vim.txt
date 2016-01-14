@@ -1,0 +1,21 @@
+" Vim color file
+* {{themename}}
+* Created by {{themeauthor}} with ThemeCreator (https://github.com/mswift42/themecreator)
+
+{{#darkbg}}
+set background=dark
+{{/darkbg}}
+{{^darkbg}}
+set background=light
+{{/darkbg}}
+hi clear
+
+if exists("syntax on")
+    syntax reset
+endif
+
+set t_Co=256
+let g:colors_name = "{{themename}}"
+
+
+
