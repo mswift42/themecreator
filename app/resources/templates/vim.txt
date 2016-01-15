@@ -38,52 +38,52 @@ let s:var="{{variable}}"
 let s:warning="{{warning}}"
 let s:warning2="{{warning2}}"
 
-exe 'hi Normal guifg=s:fg guibg=s:bg gui=NONE
-exe 'hi Cursor guifg=s:bg guibg=s:fg gui=NONE
-exe 'hi Cursorline  guibg=s:bg2 gui=NONE
-exe 'hi CursorColumn  guibg=s:bg2 gui=NONE
-exe 'hi ColorColumn  guibg=s:bg2 gui=NONE
-exe 'hi LineNr guifg=s:fg2 guibg=s:bg2 gui=NONE
-exe 'hi VertSplit guifg=s:fg3 guibg=s:bg3 gui=NONE
+exe 'hi Normal guifg=s:fg guibg=s:bg 
+exe 'hi Cursor guifg=s:bg guibg=s:fg 
+exe 'hi Cursorline  guibg=s:bg2 
+exe 'hi CursorColumn  guibg=s:bg2 
+exe 'hi ColorColumn  guibg=s:bg2 
+exe 'hi LineNr guifg=s:fg2 guibg=s:bg2 
+exe 'hi VertSplit guifg=s:fg3 guibg=s:bg3 
 exe 'hi MatchParen guifg=s:warning2  gui=underline
 exe 'hi StatusLine guifg=s:fg2 guibg=:s:bg3 gui=bold
-exe 'hi Pmenu   gui=NONE
-exe 'hi PmenuSel  guibg=s:bg3 gui=NONE
-exe 'hi IncSearch guifg=s:bg guibg=s:keyword gui=NONE
+exe 'hi Pmenu   
+exe 'hi PmenuSel  guibg=s:bg3 
+exe 'hi IncSearch guifg=s:bg guibg=s:keyword 
 exe 'hi Search   gui=underline
-exe 'hi Directory guifg=s:const  gui=NONE
-exe 'hi Folded guifg=s:fg4 guibg=s:bg gui=NONE
+exe 'hi Directory guifg=s:const  
+exe 'hi Folded guifg=s:fg4 guibg=s:bg 
 
-exe 'hi Boolean guifg=s:const  gui=NONE
-exe 'hi Character guifg=s:const  gui=NONE
-exe 'hi Comment guifg=s:comment  gui=NONE
-exe 'hi Conditional guifg=s:keyword  gui=NONE
-exe 'hi Constant guifg=s:const  gui=NONE
-exe 'hi Define guifg=s:keyword  gui=NONE
+exe 'hi Boolean guifg=s:const  
+exe 'hi Character guifg=s:const  
+exe 'hi Comment guifg=s:comment  
+exe 'hi Conditional guifg=s:keyword  
+exe 'hi Constant guifg=s:const  
+exe 'hi Define guifg=s:keyword  
 exe 'hi DiffAdd guifg=s:#f8f8f8 guibg="#46830c" gui=bold
-exe 'hi DiffDelete guifg="#ff0000"  gui=NONE
-exe 'hi DiffChange guifg=s:fg guibg=s:var gui=NONE
+exe 'hi DiffDelete guifg="#ff0000"  
+exe 'hi DiffChange guifg=s:fg guibg=s:var 
 exe 'hi DiffText guifg=s:fg guibg=s:builtin gui=bold
-exe 'hi ErrorMsg guifg=s:fg guibg=s:warning gui=NONE
-exe 'hi WarningMsg guifg=s:fg guibg=s:warning2 gui=NONE
-exe 'hi Float guifg=s:const  gui=NONE
-exe 'hi Function guifg=s:func  gui=NONE
+exe 'hi ErrorMsg guifg=s:fg guibg=s:warning 
+exe 'hi WarningMsg guifg=s:fg guibg=s:warning2 
+exe 'hi Float guifg=s:const  
+exe 'hi Function guifg=s:func  
 exe 'hi Identifier guifg=s:type  gui=italic
 exe 'hi Keyword guifg=s:keyword  gui=bold
-exe 'hi Label guifg=s:variable  gui=NONE
-exe 'hi NonText guifg=s:bg4 guibg=s:bg2 gui=NONE
-exe 'hi Number guifg=s:const  gui=NONE
-exe 'hi Operater guifg=s:keyword  gui=NONE
-exe 'hi PreProc guifg=s:keyword  gui=NONE
-exe 'hi Special guifg=s:fg  gui=NONE
-exe 'hi SpecialKey guifg=s:fg2 guibg=s:bg2 gui=NONE
-exe 'hi Statement guifg=s:keyword  gui=NONE
+exe 'hi Label guifg=s:variable  
+exe 'hi NonText guifg=s:bg4 guibg=s:bg2 
+exe 'hi Number guifg=s:const  
+exe 'hi Operater guifg=s:keyword  
+exe 'hi PreProc guifg=s:keyword  
+exe 'hi Special guifg=s:fg  
+exe 'hi SpecialKey guifg=s:fg2 guibg=s:bg2 
+exe 'hi Statement guifg=s:keyword  
 exe 'hi StorageClass guifg=s:type  gui=italic
-exe 'hi String guifg=s:str  gui=NONE
-exe 'hi Tag guifg=s:keyword  gui=NONE
+exe 'hi String guifg=s:str  
+exe 'hi Tag guifg=s:keyword  
 exe 'hi Title guifg=s:fg  gui=bold
 exe 'hi Todo guifg=s:fg2  gui=inverse, bold
-exe 'hi Type   gui=NONE
+exe 'hi Type guifg='s:type 
 exe 'hi Underlined   gui=underline
 
 
