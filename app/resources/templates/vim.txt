@@ -38,3 +38,16 @@ let s:var="{{variable}}"
 let s:warning="{{warning}}"
 let s:warning2="{{warning2}}"
 
+hi Normal guifg=s:fg guibg=s:bg gui=NONE
+hi Cursor guifg=s:bg guibg=s:fg gui=NONE
+hi Cursorline guifg=NONE guibg=s:bg2 gui=NONE
+hi CursorColumn guifg=NONE guibg=s:bg2 gui=NONE
+hi ColorColumn guifg=NONE guibg=s:bg2 gui=NONE
+hi LineNr guifg=s:fg2 guibg=s:bg2 gui=NONE
+hi VertSplit guifg=s:fg3 guibg=s:bg3 gui=NONE
+hi MatchParen guifg=s:warning2 guibg=NONE gui=underline
+hi StatusLine guifg=s:fg2 guibg=:s:bg3 gui=bold
+hi Pmenu guifg=NONE guibg=NONE gui=NONE
+hi PmenuSel guifg=NONE guibg=s:bg3 gui=NONE
+hi IncSearch guifg=s:bg guibg=s:keyword gui=NONE
+
