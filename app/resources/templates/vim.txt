@@ -40,17 +40,17 @@ let s:warning2="{{warning2}}"
 
 exe 'hi Normal guifg=s:fg guibg=s:bg gui=NONE
 exe 'hi Cursor guifg=s:bg guibg=s:fg gui=NONE
-exe 'hi Cursorline guifg=NONE guibg=s:bg2 gui=NONE
-exe 'hi CursorColumn guifg=NONE guibg=s:bg2 gui=NONE
-exe 'hi ColorColumn guifg=NONE guibg=s:bg2 gui=NONE
+exe 'hi Cursorline  guibg=s:bg2 gui=NONE
+exe 'hi CursorColumn  guibg=s:bg2 gui=NONE
+exe 'hi ColorColumn  guibg=s:bg2 gui=NONE
 exe 'hi LineNr guifg=s:fg2 guibg=s:bg2 gui=NONE
 exe 'hi VertSplit guifg=s:fg3 guibg=s:bg3 gui=NONE
 exe 'hi MatchParen guifg=s:warning2 guibg=NONE gui=underline
 exe 'hi StatusLine guifg=s:fg2 guibg=:s:bg3 gui=bold
-exe 'hi Pmenu guifg=NONE guibg=NONE gui=NONE
-exe 'hi PmenuSel guifg=NONE guibg=s:bg3 gui=NONE
+exe 'hi Pmenu  guibg=NONE gui=NONE
+exe 'hi PmenuSel  guibg=s:bg3 gui=NONE
 exe 'hi IncSearch guifg=s:bg guibg=s:keyword gui=NONE
-exe 'hi Search guifg=NONE guibg=NONE gui=underline
+exe 'hi Search  guibg=NONE gui=underline
 exe 'hi Directory guifg=s:const guibg=NONE gui=NONE
 exe 'hi Folded guifg=s:fg4 guibg=s:bg gui=NONE
 
@@ -83,8 +83,8 @@ exe 'hi String guifg=s:str guibg=NONE gui=NONE
 exe 'hi Tag guifg=s:keyword guibg=NONE gui=NONE
 exe 'hi Title guifg=s:fg guibg=NONE gui=bold
 exe 'hi Todo guifg=s:fg2 guibg=NONE gui=inverse, bold
-exe 'hi Type guifg=NONE guifg=NONE gui=NONE
-exe 'hi Underlined guifg=NONE guibg=NONE gui=underline
+exe 'hi Type   gui=NONE
+exe 'hi Underlined  guibg=NONE gui=underline
 
 
 
