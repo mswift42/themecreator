@@ -50,4 +50,22 @@ hi StatusLine guifg=s:fg2 guibg=:s:bg3 gui=bold
 hi Pmenu guifg=NONE guibg=NONE gui=NONE
 hi PmenuSel guifg=NONE guibg=s:bg3 gui=NONE
 hi IncSearch guifg=s:bg guibg=s:keyword gui=NONE
+hi Search guifg=NONE guibg=NONE gui=underline
+hi Directory guifg=s:const guibg=NONE gui=NONE
+hi Folded guifg=s:fg4 guibg=s:bg gui=NONE
+
+hi Boolean guifg=s:const guibg=NONE gui=NONE
+hi Character guifg=s:const guibg=NONE gui=NONE
+hi Comment guifg=s:comment guibg=NONE gui=NONE
+hi Conditional guifg=s:keyword guibg=NONE gui=NONE
+hi Constant guifg=s:const guibg=NONE gui=NONE
+hi Define guifg=s:keyword guibg=NONE gui=NONE
+hi DiffAdd guifg=s:#f8f8f8 guibg="#46830c" gui=bold
+hi DiffDelete guifg="#ff0000" guibg=NONE gui=NONE
+hi DiffChange guifg=s:fg guibg=s:var gui=NONE
+hi DiffText guifg=s:fg guibg=s:builtin gui=bold
+
+
+
+
 
