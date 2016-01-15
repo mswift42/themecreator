@@ -64,6 +64,27 @@ hi DiffAdd guifg=s:#f8f8f8 guibg="#46830c" gui=bold
 hi DiffDelete guifg="#ff0000" guibg=NONE gui=NONE
 hi DiffChange guifg=s:fg guibg=s:var gui=NONE
 hi DiffText guifg=s:fg guibg=s:builtin gui=bold
+hi ErrorMsg guifg=s:fg guibg=s:warning gui=NONE
+hi WarningMsg guifg=s:fg guibg=s:warning2 gui=NONE
+hi Float guifg=s:const guibg=NONE gui=NONE
+hi Function guifg=s:func guibg=NONE gui=NONE
+hi Identifier guifg=s:type guibg=NONE gui=italic
+hi Keyword guifg=s:keyword guibg=NONE gui=bold
+hi Label guifg=s:variable guibg=NONE gui=NONE
+hi NonText guifg=s:bg4 guibg=s:bg2 gui=NONE
+hi Number guifg=s:const guibg=NONE gui=NONE
+hi Operater guifg=s:keyword guibg=NONE gui=NONE
+hi PreProc guifg=s:keyword guibg=NONE gui=NONE
+hi Special guifg=s:fg guibg=NONE gui=NONE
+hi SpecialKey guifg=s:fg2 guibg=s:bg2 gui=NONE
+hi Statement guifg=s:keyword guibg=NONE gui=NONE
+hi StorageClass guifg=s:type guibg=NONE gui=italic
+hi String guifg=s:str guibg=NONE gui=NONE
+hi Tag guifg=s:keyword guibg=NONE gui=NONE
+hi Title guifg=s:fg guibg=NONE gui=bold
+hi Todo guifg=s:fg2 guibg=NONE gui=inverse, bold
+hi Type guifg=NONE guifg=NONE gui=NONE
+hi Underlined guifg=NONE guibg=NONE gui=underline
 
 
 
