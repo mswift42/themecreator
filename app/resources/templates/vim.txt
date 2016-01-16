@@ -89,6 +89,7 @@ exe 'hi rubyKeyword guifg='s:keyword
 exe 'hi rubyKeywordAsMethod guifg='s:keyword' gui=bold'
 exe 'hi rubyClassDeclaration guifg='s:keyword' gui=bold'
 exe 'hi rubyClass guifg='s:keyword' gui=bold'
+exe 'hi rubyNumber guifg='s:const
 
 " Python Highlighting
 exe 'hi pythonBuiltinFunc guifg='s:builtin
