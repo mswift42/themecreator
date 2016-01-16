@@ -3,7 +3,7 @@
 
 ![Screenshot](https://github.com/mswift42/themecreator/raw/master/screenshots/tc1chromehamburg.png)
 
-Create Color Themes for IntelliJ Editors, Atom, Emacs and Textmate.
+Create Color Themes for IntelliJ Editors, Atom, Emacs, Textmate and Vim.
 
 
 Installation Instructions:
@@ -27,6 +27,9 @@ Download the textmate theme, then follow your editors instructions. For Visual S
 
 ### Emacs:
 Download the emacs file. Add a fitting package description to the first line. You can try your new theme by visiting your new theme with `C-x C-f <filename.el>`. You can install your new theme with: `M-x package-install-file <filename.el>`.
+
+### Vim:
+Download the vim theme and copy it to your `colors` folder. For Vim that's usually '~/.vim/colors`, for Neovim it's `~/.config/nvim/colors` .
 
 
 Random Colors:
@@ -65,10 +68,6 @@ Implementation:
 ThemeCreator is a Clojurescript app, in particular it uses the wonderful [reagent](http://reagent-project.github.io/) framework. The themetemplates are compiled and rendered using [mustache](https://github.com/janl/mustache.js/), [goog.net.XhrIo](https://developers.google.com/closure/library/docs/xhrio?hl=en) is used to load the templates, and [goog.color](https://google.github.io/closure-library/api/namespace_goog_color.html) was helpful for some color conversions.
 
 
-TODO:
------
-
-- Vim support?
 
 Donate:
 -------
