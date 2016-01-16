@@ -84,6 +84,10 @@ exe 'hi rubyAttribute guifg='s:builtin
 exe 'hi rubyLocalVariableOrMethod guifg='s:var
 exe 'hi rubyGlobalVariable guifg='s:var' gui=italic'
 exe 'hi rubyInstanceVariable guifg='s:var
+exe 'hi rubyKeyword guifg='s:keyword
+exe 'hi rubyKeywordAsMethod guifg='s:keyword' gui=bold'
+exe 'hi rubyClassDeclaration guifg='s:keyword' gui=bold'
+exe 'hi rubyClass guifg='s:keyword' gui=bold'
 
 " Python Highlighting
 exe 'hi pythonBuiltinFunc guifg='s:builtin
