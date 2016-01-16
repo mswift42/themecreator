@@ -53,6 +53,11 @@
     (doto templink
       (.setAttribute "download" filename))))
 
+(defn scroll-to-bottom
+  []
+  (let [wb (.-scrollHeight (.-body js/document))]
+    (.scrollTo js/window 0 wb)))
+
 (defn template-download
   [id title filename template]
   [:li
@@ -64,7 +69,7 @@
   []
   [:div.btn-group.templatedrop {:id "templatedrop"}
    [:button.btn.btn-default.dropdown-toggle
-    {:type "button" :data-toggle "dropdown"}
+    {:type "button" :data-toggle "dropdown" :on-click #(scroll-to-bottom)}
     "Theme Download    "
     [:span.caret]
     [:span.sr-only]]
