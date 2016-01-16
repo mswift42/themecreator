@@ -102,6 +102,12 @@ exe 'hi jsFunction guifg='s:keyword' gui=bold'
 exe 'hi jsGlobalObjects guifg='s:type
 exe 'hi jsAssignmentExps guifg='s:var
 
+" Html Highlighting
+exe 'hi htmlLink guifg='s:var' gui=underline'
+exe 'hi htmlStatement guifg='s:keyword
+exe 'hi htmlSpecialTagName guifg='s:keyword
 
+" Markdown Highlighting
+exe 'hi mkdCode guifg='s:builtin
 
 
