@@ -79,6 +79,15 @@ exe 'hi Todo guifg='s:fg2'  gui=inverse,bold'
 exe 'hi Type guifg='s:type 
 exe 'hi Underlined   gui=underline'
 
+" Ruby Highlighting
+exe 'hi rubyAttribute guifg='s:builtin
+exe 'hi rubyLocalVariableOrMethod guifg='s:var
+exe 'hi rubyGlobalVariable guifg='s:var' gui=italic'
+exe 'hi rubyInstanceVariable guifg='s:var
+
+" Python Highlighting
+exe 'hi pythonBuiltinFunc guifg='s:builtin
+
 
 
 
