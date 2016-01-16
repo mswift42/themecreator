@@ -92,6 +92,14 @@ exe 'hi rubyClass guifg='s:keyword' gui=bold'
 " Python Highlighting
 exe 'hi pythonBuiltinFunc guifg='s:builtin
 
+" Go Highlighting
+exe 'hi goBuiltins guifg='s:builtin
+
+" Javascript Highlighting
+exe 'hi jsBuiltins guifg='s:builtin
+exe 'hi jsFunction guifg='s:keyword' gui=bold'
+exe 'hi jsGlobalObjects guifg='s:type
+exe 'hi jsAssignmentExps guifg='s:var
 
 
 
