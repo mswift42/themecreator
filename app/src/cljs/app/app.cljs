@@ -69,11 +69,12 @@
   []
   [:div.btn-group.templatedrop {:id "templatedrop"}
    [:button.btn.btn-default.dropdown-toggle
-    {:type "button" :data-toggle "dropdown" :on-click #(scroll-to-bottom)}
+    {:type "button" :data-toggle "dropdown"
+     :on-click #(scroll-to-bottom)}
     "Theme Download    "
     [:span.caret]
     [:span.sr-only]]
-   [:ul.dropdown-menu {:aria-labelledby "templatedrop"}
+   [:ul.dropdown-menu {:aria-labelledby "templatedrop" }
     [template-download "intellilink" "IntelliJ"
      (str (:themename @app-db) ".icls") @intellitemplate]
     [template-download "tmthemelink" "Textmate"
