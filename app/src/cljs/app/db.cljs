@@ -175,7 +175,7 @@
    :builtin "#727170"
    :string "#3450a2"
    :functionname "#a82e4d"
-   :variabale "#f03f3f"
+   :variable "#f03f3f"
    :type "#727170"
    :constant "#f03f3f"
    :comment "#808080"
