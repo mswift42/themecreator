@@ -40,6 +40,7 @@
     [#(db/switch-theme db/reykjavik) "reykjavik"]
     [#(db/switch-theme db/oldlace) "oldlace"]
     [#(db/switch-theme db/soft-charcoal) "soft-charcoal"]
+    [#(db/switch-theme db/bergen) "bergen"]
     [#(db/switch-theme db/madrid) "madrid"]]])
 
 (defn language-select

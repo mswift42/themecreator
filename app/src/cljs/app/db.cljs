@@ -137,6 +137,21 @@
    :warning "#e81050"
    :warning2 "#e86310"})
 
+(def bergen
+  {:themename "bergen"
+   :mainfg "#585858"
+   :mainbg "#eae7e9"
+   :keyword "#5c71b3"
+   :builtin "#a35c8e"
+   :string "#b15a56"
+   :functionname "#926e31"
+   :variable "#6d3e7e"
+   :type "#00847a"
+   :constant "#0081a6"
+   :comment "#a9a9a9"
+   :warning "#ff1276"
+   :warning2 "#ff4d12"})
+
 (def madrid
   {:themename "madrid"
    :mainfg "#b1b1b1"
