@@ -56,7 +56,8 @@
 (defn scroll-to-bottom
   []
   (let [wb (.-scrollHeight (.-body js/document))]
-    (.scrollTo js/window 0 wb)))
+    (if (>= (.-innerWidth js/window) 700)
+      (.scrollTo js/window 0 wb))))
 
 (defn template-download
   [id title filename template]
