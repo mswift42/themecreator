@@ -233,3 +233,10 @@ footer {
         width:200px;position:absolute;top:60px;right:-60px;transform:rotate(45deg);-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);box-shadow:4px 4px 10px rgba(0,0,0,0.8);
     }
 }
+
+@media screen and (max-width:768px) {
+    #downloadsel{
+        position:relative;
+        z-index:1000;
+    }
+}
