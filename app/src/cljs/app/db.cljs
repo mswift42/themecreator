@@ -137,6 +137,21 @@
    :warning "#e81050"
    :warning2 "#e86310"})
 
+(def madrid
+  {:themename "madrid"
+   :mainfg "#b1b1b1"
+   :mainbg "#1b1b1b"
+   :keyword "#b7797d"
+   :builtin "#a78360"
+   :string "#818f62"
+   :functionname "#96546c"
+   :variable "#4394a7"
+   :type "#718bb6"
+   :constant "#a27ea4"
+   :comment "#5d5d5d"
+   :warning "#e81050"
+   :warning2 "#e86310"})
+
 (def contrastcolors
   [:mainfg :keyword :builtin :string :functionname :variable :type
    :constant :comment])
