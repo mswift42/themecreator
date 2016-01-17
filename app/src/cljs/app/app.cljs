@@ -74,7 +74,7 @@
     "Theme Download    "
     [:span.caret]
     [:span.sr-only]]
-   [:ul.dropdown-menu {:aria-labelledby "templatedrop"}
+   [:ul#downloadsel.dropdown-menu {:aria-labelledby "templatedrop"}
     [template-download "intellilink" "IntelliJ"
      (str (:themename @app-db) ".icls") @intellitemplate]
     [template-download "tmthemelink" "Textmate"
