@@ -167,6 +167,21 @@
    :warning "#e81050"
    :warning2 "#e86310"})
 
+(def soft-morning
+  {:themename "soft-morning"
+   :mainfg "#282828"
+   :mainbg "#f2f1f0"
+   :keyword "#8aa234"
+   :builtin "#727170"
+   :string "#3450a2"
+   :functionname "#a82e4d"
+   :variabale "#f03f3f"
+   :type "#727170"
+   :constant "#f03f3f"
+   :comment "#808080"
+   :warning "#ff6523"
+   :warning2 "#e80f29"})
+
 (def contrastcolors
   [:mainfg :keyword :builtin :string :functionname :variable :type
    :constant :comment])
