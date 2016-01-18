@@ -199,4 +199,15 @@
   (is (= "#ff0000" (:warning db/black)))
   (is (= "#ff8800" (:warning2 db/black))))
 
+(deftest test-white-theme
+  []
+  (is (= (:mainbg db/white) "#ffffff"))
+  (is (= (:mainfg db/white) "#303030"))
+  (doseq [col [ :keyword :builtin :string :functionname :variable
+               :type :constant]]
+    (is (= "#000000" (col db/white))))
+  (is (= "#606060" (:comment db/white)))
+  (is (= "#ff0000" (:warning db/white)))
+  (is (= "#ff8800" (:warning2 db/white))))
+
 
