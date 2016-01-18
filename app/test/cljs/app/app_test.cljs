@@ -210,4 +210,19 @@
   (is (= "#ff0000" (:warning db/white)))
   (is (= "#ff8800" (:warning2 db/white))))
 
+(deftest test-warm-night-theme
+  []
+  (is (= (:mainfg db/warm-night) "#b1b1b1"))
+  (is (= (:mainbg db/warm-night) "#292424"))
+  (is (= (:keyword db/warm-night) "#96905f"))
+  (is (= (:builtin db/warm-night) "#71a46c"))
+  (is (= (:constant db/warm-night) "#bd845f"))
+  (is (= (:string db/warm-night) "#71a19f"))
+  (is (= (:functionname db/warm-night) "#b680b1"))
+  (is (= (:variable db/warm-night) "#c27d7b"))
+  (is (= (:type db/warm-night) "#8b8fc6"))
+  (is (= (:comment db/warm-night) "#5d5a58"))
+  (is (= (:warning db/warm-night) "#e81050"))
+  (is (= (:warning2 db/warm-night) "#e86310" )))
+
 
