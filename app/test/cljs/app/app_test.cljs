@@ -59,20 +59,20 @@
   (is (= @db/adjustbg true)))
 
 (deftest test-random-hue []
-  (dotimes [_ 1000]
+  (dotimes [_ 100]
     (is (= (and
             (< (colors/random-hue) 360)
             (>= (colors/random-hue) 0))
            true))))
 
 (deftest test-hue-range []
-  (dotimes [_ 1000]
+  (dotimes [_ 100]
     (let [hr (colors/hue-range 7 (colors/random-hue))]
       (is (= (every? #(>= % 0)) true))
       (is (= (every? #(< % 360)) true)))))
 
 (deftest test-color-list []
-  (dotimes [_ 1000]
+  (dotimes [_ 100]
     (is (= (count (colors/color-list 0 0)) 7))))
 
 (deftest test-derive-colors []
@@ -110,7 +110,7 @@
 
 (deftest test-hexToRgb
   []
-  (dotimes [_ 1000]
+  (dotimes [_ 100]
     (let [r (rand-int 256)
           g (rand-int 256)
           b (rand-int 256)
@@ -188,5 +188,15 @@
   (is (= false (colors/valid-rgb? [255 255 256])))
   (is (= false (colors/valid-rgb? [255 255 -1])))
   (is (= false (colors/valid-rgb? [1000 255 255]))))
+
+(deftest test-black-theme
+  []
+  (is (= (:mainbg db/black) "#000000"))
+  (doseq [col [:mainfg :keyword :builtin :string :functionname :variable :type
+               :constant]]
+    (is (= "#d4d4d4" (col db/black))))
+  (is (= "#808080" (:comment db/black)))
+  (is (= "#ff0000" (:warning db/black)))
+  (is (= "#ff8800" (:warning2 db/black))))
 
 
