@@ -42,7 +42,8 @@
     [#(db/switch-theme db/soft-charcoal) "soft-charcoal"]
     [#(db/switch-theme db/bergen) "bergen"]
     [#(db/switch-theme db/madrid) "madrid"]
-    [#(db/switch-theme db/soft-morning) "soft-morning"]]])
+    [#(db/switch-theme db/soft-morning) "soft-morning"]
+    [#(db/switch-theme db/magonyx) "magonyx"]]])
 
 (defn language-select
   []

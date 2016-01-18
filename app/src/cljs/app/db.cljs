@@ -182,6 +182,21 @@
    :warning "#ff6523"
    :warning2 "#e80f29"})
 
+(def magonyx
+  {:themename "magonyx"
+   :mainfg "#c7c7c7"
+   :mainbg "#353839"
+   :keyword "#9ec065"
+   :builtin "#cbb021"
+   :string "#5ba2b1"
+   :functionname "#75b7ff"
+   :variable "#e69ae8"
+   :type "#ff909d"
+   :constant "#eca661"
+   :comment "#5d5d5d"
+   :warning "#e81050"
+   :warning2 "#e86310"})
+
 (def contrastcolors
   [:mainfg :keyword :builtin :string :functionname :variable :type
    :constant :comment])
