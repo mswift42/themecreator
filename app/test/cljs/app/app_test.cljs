@@ -225,4 +225,19 @@
   (is (= (:warning db/warm-night) "#e81050"))
   (is (= (:warning2 db/warm-night) "#e86310" )))
 
+(deftest test-white-sand-theme
+  []
+  (is (= (:mainfg db/white-sand) "#585858"))
+  (is (= (:mainbg db/white-sand) "#f5ebe1"))
+  (is (= (:keyword db/white-sand) "#4a858c"))
+  (is (= (:builtin db/white-sand) "#1a8591"))
+  (is (= (:constant db/white-sand) "#697024"))
+  (is (= (:string db/white-sand) "#b3534b"))
+  (is (= (:functionname db/white-sand) "#bd745e"))
+  (is (= (:variable db/white-sand) "#476238"))
+  (is (= (:type db/white-sand) "#8c4a79"))
+  (is (= (:comment db/white-sand "#a9a9a9")))
+  (is (= (:warning db/white-sand "#ff1276")))
+  (is (= (:warning2 db/white-sand "#ff4d12"))))
+
 
