@@ -241,5 +241,18 @@
   (is (= (:warning2 db/white-sand "#ff4d12"))))
 
 
+(deftest test-string-to-keyword
+  []
+  (let [sm {"a" 1 "b" 2}
+        km (db/string-to-keyword sm)]
+    (is (= (:a km) 1))
+    (is (= (:b km) 2))))
 
+(deftest test-set-custom-palette
+  []
+  (is (= (:saturation @db/custom-palette-db) 0))
+  (is (= (:saturation @db/custom-palette-db) 0))
+  (db/set-custom-palette 0.2 1.0)
+  (is (= (:saturation @db/custom-palette-db) 1.0))
+  (is (= (:lightness @db/custom-palette-db) 0.2)))
 
