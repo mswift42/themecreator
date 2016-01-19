@@ -197,6 +197,21 @@
    :warning "#e81050"
    :warning2 "#e86310"})
 
+(def light-kiss
+  {:themename "light-kiss"
+   :mainfg "#303030"
+   :mainbg "#efe6e6"
+   :keyword "#c87758"
+   :builtin "#2a55a8"
+   :string "#2a55a8"
+   :functionname "#2a55a8"
+   :variable "#337d92"
+   :type "#337d92"
+   :constant "#337d92"
+   :comment "#909090"
+   :warning "#ff0000"
+   :warning2 "#ff8800"})
+
 (def contrastcolors
   [:mainfg :keyword :builtin :string :functionname :variable :type
    :constant :comment])
