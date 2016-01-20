@@ -240,6 +240,21 @@
   (is (= (:warning db/white-sand "#ff1276")))
   (is (= (:warning2 db/white-sand "#ff4d12"))))
 
+(deftest test-oldlace-theme
+  []
+  (is (= (:mainfg db/oldlace) "#525252"))
+  (is (= (:mainbg db/oldlace) "#fdf5e6"))
+  (is (= (:keyword db/oldlace) "#3f567b"))
+  (is (= (:builtin db/oldlace) "#7b4135"))
+  (is (= (:constant db/oldlace) "#64502f"))
+  (is (= (:string db/oldlace) "#305f5e"))
+  (is (= (:functionname db/oldlace) "#714355"))
+  (is (= (:variable db/oldlace) "#3f5b32"))
+  (is (= (:type db/oldlace) "#634575"))
+  (is (= (:comment db/oldlace) "#949494"))
+  (is (= (:warning db/oldlace) "#fa0c0c"))
+  (is (= (:warning2 db/oldlace) "#fa7b0c")))
+
 
 (deftest test-string-to-keyword
   []
