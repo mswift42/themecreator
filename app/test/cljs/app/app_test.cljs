@@ -255,6 +255,21 @@
   (is (= (:warning db/oldlace) "#fa0c0c"))
   (is (= (:warning2 db/oldlace) "#fa7b0c")))
 
+(deftest test-greymatters-theme
+  []
+  (is (= (:mainfg db/greymatters) "#2f2f2f"))
+  (is (= (:mainbg db/greymatters) "#f9fbfd"))
+  (is (= (:keyword db/greymatters) "#3f567b"))
+  (is (= (:builtin db/greymatters) "#7b4135"))
+  (is (= (:constant db/greymatters) "#64502f"))
+  (is (= (:string db/greymatters) "#305f5e"))
+  (is (= (:functionname db/greymatters) "#714355"))
+  (is (= (:variable db/greymatters) "#3f5b32"))
+  (is (= (:type db/greymatters) "#634575"))
+  (is (= (:comment db/greymatters) "#949494"))
+  (is (= (:warning db/greymatters) "#fa0c0c"))
+  (is (= (:warning2 db/greymatters) "#fa7b0c")))
+
 
 (deftest test-string-to-keyword
   []
