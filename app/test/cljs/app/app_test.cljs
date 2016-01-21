@@ -270,6 +270,21 @@
   (is (= (:warning db/greymatters) "#fa0c0c"))
   (is (= (:warning2 db/greymatters) "#fa7b0c")))
 
+(deftest test-reykjavik-theme
+  []
+  (is (= (:mainfg db/reykjavik) "#b1b1b1"))
+  (is (= (:mainbg db/reykjavik) "#112328"))
+  (is (= (:keyword db/reykjavik) "#a3d4e8"))
+  (is (= (:builtin db/reykjavik) "#c4cbee"))
+  (is (= (:constant db/reykjavik) "#a3d6cc"))
+  (is (= (:string db/reykjavik) "#e6c2db"))
+  (is (= (:functionname db/reykjavik) "#f1c1bd"))
+  (is (= (:variable db/reykjavik) "#e1c9aa"))
+  (is (= (:type db/reykjavik) "#c1d2b1"))
+  (is (= (:comment db/reykjavik) "#5d5d5d"))
+  (is (= (:warning db/reykjavik) "#e81050"))
+  (is (= (:warning2 db/reykjavik) "#e86310")))
+
 
 (deftest test-string-to-keyword
   []
