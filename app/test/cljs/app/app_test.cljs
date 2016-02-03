@@ -285,6 +285,21 @@
   (is (= (:warning db/reykjavik) "#e81050"))
   (is (= (:warning2 db/reykjavik) "#e86310")))
 
+(deftest test-madrid-theme
+  []
+  (is (= (:mainfg db/madrid) "#b1b1b1"))
+  (is (= (:mainbg db/madrid) "#1b1b1b"))
+  (is (= (:keyword db/madrid) "#b7797d"))
+  (is (= (:builtin db/madrid) "#a78360"))
+  (is (= (:constant db/madrid) "#a27ea4"))
+  (is (= (:string db/madrid) "#818f62"))
+  (is (= (:functionname db/madrid) "#96546c"))
+  (is (= (:variable db/madrid) "#4394a7"))
+  (is (= (:type db/madrid) "#718bb6"))
+  (is (= (:comment db/madrid) "#5d5d5d"))
+  (is (= (:warning db/madrid) "#e81050"))
+  (is (= (:warning2 db/madrid) "#e86310")))
+
 
 (deftest test-string-to-keyword
   []
