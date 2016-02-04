@@ -315,6 +315,19 @@
   (is (= (:warning db/bergen) "#ff1276"))
   (is (= (:warning2 db/bergen) "#ff4d12")))
 
+(deftest test-light-kiss-theme
+  []
+  (is (= (:mainfg db/light-kiss) "#303030"))
+  (is (= (:mainbg db/light-kiss) "#efe6e6"))
+  (doseq [col [:builtin :string :functionname]]
+    (is (= (col db/light-kiss) "#2a55a8")))
+  (is (= (:keyword db/light-kiss) "#c87758"))
+  (doseq [col [:variable :type :constant]]
+    (is (= (col db/light-kiss) "#337d92")))
+  (is (= (:comment db/light-kiss) "#909090"))
+  (is (= (:warning db/light-kiss) "#ff0000"))
+  (is (= (:warning2 db/light-kiss) "#ff8800")))
+
 (deftest test-string-to-keyword
   []
   (let [sm {"a" 1 "b" 2}
