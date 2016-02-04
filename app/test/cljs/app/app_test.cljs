@@ -300,6 +300,20 @@
   (is (= (:warning db/madrid) "#e81050"))
   (is (= (:warning2 db/madrid) "#e86310")))
 
+(deftest test-bergen-theme
+  []
+  (is (= (:mainfg db/bergen) "#585858"))
+  (is (= (:mainbg db/bergen) "#eae7e9"))
+  (is (= (:keyword db/bergen) "#5c71b3"))
+  (is (= (:builtin db/bergen) "#a35c8e"))
+  (is (= (:constant db/bergen) "#0081a6"))
+  (is (= (:string db/bergen) "#b15a56"))
+  (is (= (:functionname db/bergen) "#926e31"))
+  (is (= (:variable db/bergen) "#6d3e7e"))
+  (is (= (:type db/bergen) "#00847a"))
+  (is (= (:comment db/bergen) "#a9a9a9"))
+  (is (= (:warning db/bergen) "#ff1276"))
+  (is (= (:warning2 db/bergen) "#ff4d12")))
 
 (deftest test-string-to-keyword
   []
