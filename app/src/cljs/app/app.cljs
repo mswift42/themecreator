@@ -39,6 +39,18 @@
   [template]
   (compile-template template (derive-colors-from-theme @app-db)))
 
+(defn strip-hash
+  "strip '#' hash symbol of color string."
+  [color]
+  (clojure.string/replace color "#" ""))
+
+(defn generate-template-intelli
+  [template]
+  (compile-template template
+                    (into {}
+                          (for [[k v] (derive-colors-from-theme @app-db)]
+                            {k (strip-hash v)}))))
+
 (defn window-url
   []
   (or (.-URL js/window)
@@ -66,6 +78,14 @@
         #(create-blob (generate-template template) id filename)}
     title]])
 
+(defn template-download-intelli
+  []
+  [:li
+   [:a {:href "#" :id "intellilink" :on-click
+        #(create-blob (generate-template-intelli @intellitemplate) "intellilink"
+                      (str (:themename @app-db) ".icls"))}
+    "IntelliJ"]])
+
 (defn template-select-component
   []
   [:div.btn-group.templatedrop {:id "templatedrop"}
@@ -75,8 +95,7 @@
     [:span.caret]
     [:span.sr-only]]
    [:ul#downloadsel.dropdown-menu {:aria-labelledby "templatedrop"}
-    [template-download "intellilink" "IntelliJ"
-     (str (:themename @app-db) ".icls") @intellitemplate]
+    [template-download-intelli]
     [template-download "tmthemelink" "Textmate"
      (str (:themename @app-db) ".tmTheme") @tmthemetemplate]
     [template-download "atomlink" "Atom"
