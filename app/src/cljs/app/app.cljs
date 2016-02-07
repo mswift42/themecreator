@@ -5,8 +5,7 @@
             [app.components  :as comps]
             [app.colors :refer [derive-colors-from-theme]]
             [cljsjs.mustache]
-            [goog.net.XhrIo :as xhr]
-            [clojure.string :as string]))
+            [goog.net.XhrIo :as xhr]))
 
 
 (defn log
@@ -96,6 +95,7 @@
     [:span.caret]
     [:span.sr-only]]
    [:ul#downloadsel.dropdown-menu {:aria-labelledby "templatedrop"}
+    [template-download-intelli]
     [template-download "intellilink" "IntelliJ"
      (str (:themename @app-db) ".icls") @intellitemplate]
     [template-download "tmthemelink" "Textmate"
