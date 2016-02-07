@@ -5,6 +5,7 @@ goog.require('app.components');
 goog.require('reagent.core');
 goog.require('goog.net.XhrIo');
 goog.require('app.db');
+goog.require('clojure.string');
 goog.require('app.colors');
 app.app.log = (function app$app$log(s){
 return console.log([cljs.core.str(s)].join(''));
