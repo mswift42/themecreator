@@ -43,7 +43,7 @@
 (defn strip-hash
   "strip '#' hash symbol of color string."
   [color]
-  (color.substring 1))
+  (.substring (str color) 1))
 
 (defn generate-template-intelli
   [template]
