@@ -41,7 +41,7 @@ app.app.strip_hash = (function app$app$strip_hash(color){
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2("#",color.toString().substring((0),(1)))){
 return color.toString().substring((1));
 } else {
-return null;
+return color;
 }
 });
 app.app.generate_template_intelli = (function app$app$generate_template_intelli(template){

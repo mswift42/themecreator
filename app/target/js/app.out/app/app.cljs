@@ -43,7 +43,8 @@
   "strip '#' hash symbol of color string."
   [color]
   (if (= "#" (.substring (.toString color) 0 1))
-    (.substring (.toString color) 1)))
+    (.substring (.toString color) 1)
+    color))
 
 (defn generate-template-intelli
   [template]
