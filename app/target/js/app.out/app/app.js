@@ -39,7 +39,7 @@ return app.app.compile_template(template,app.colors.derive_colors_from_theme((cl
  * strip '#' hash symbol of color string.
  */
 app.app.strip_hash = (function app$app$strip_hash(color){
-return clojure.string.replace(color,"#","");
+return color.substr((1));
 });
 app.app.generate_template_intelli = (function app$app$generate_template_intelli(template){
 return app.app.compile_template(template,cljs.core.into.cljs$core$IFn$_invoke$arity$2(cljs.core.PersistentArrayMap.EMPTY,(function (){var iter__5760__auto__ = (function app$app$generate_template_intelli_$_iter__11474(s__11475){
