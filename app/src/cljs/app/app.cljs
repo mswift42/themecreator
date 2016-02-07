@@ -5,7 +5,8 @@
             [app.components  :as comps]
             [app.colors :refer [derive-colors-from-theme]]
             [cljsjs.mustache]
-            [goog.net.XhrIo :as xhr]))
+            [goog.net.XhrIo :as xhr]
+            [clojure.string :as string]))
 
 
 (defn log
@@ -42,7 +43,7 @@
 (defn strip-hash
   "strip '#' hash symbol of color string."
   [color]
-  (clojure.string/replace color "#" ""))
+  (string/replace color "#" ""))
 
 (defn generate-template-intelli
   [template]
