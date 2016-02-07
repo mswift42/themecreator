@@ -96,8 +96,6 @@
     [:span.sr-only]]
    [:ul#downloadsel.dropdown-menu {:aria-labelledby "templatedrop"}
     [template-download-intelli]
-    ;; [template-download "intellilink" "IntelliJ"
-    ;;  (str (:themename @app-db) ".icls") @intellitemplate]
     [template-download "tmthemelink" "Textmate"
      (str (:themename @app-db) ".tmTheme") @tmthemetemplate]
     [template-download "atomlink" "Atom"
