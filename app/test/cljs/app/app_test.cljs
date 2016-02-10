@@ -328,6 +328,21 @@
   (is (= (:warning db/light-kiss) "#ff0000"))
   (is (= (:warning2 db/light-kiss) "#ff8800")))
 
+(deftest test-magonyx-theme
+  []
+  (is (= (:mainfg db/magonyx) "#c7c7c7"))
+  (is (= (:mainbg db/magonyx) "#353839"))
+  (is (= (:keyword db/magonyx) "#9ec065"))
+  (is (= (:builtin db/magonyx) "#cbb021"))
+  (is (= (:constant db/magonyx) "#eca661"))
+  (is (= (:string db/magonyx) "#5ba2b1"))
+  (is (= (:functionname db/magonyx) "#75b7ff"))
+  (is (= (:variable db/magonyx) "#e69ae8"))
+  (is (= (:type db/magonyx) "#ff909d"))
+  (is (= (:comment db/magonyx) "#5d5d5d"))
+  (is (= (:warning db/magonyx) "#e81050"))
+  (is (= (:warning2 db/magonyx) "#e86310")))
+
 (deftest test-string-to-keyword
   []
   (let [sm {"a" 1 "b" 2}
