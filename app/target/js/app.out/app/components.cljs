@@ -44,7 +44,8 @@
     [#(db/switch-theme db/madrid) "madrid"]
     [#(db/switch-theme db/soft-morning) "soft-morning"]
     [#(db/switch-theme db/magonyx) "magonyx"]
-    [#(db/switch-theme db/light-kiss) "light-kiss"]]])
+    [#(db/switch-theme db/light-kiss) "light-kiss"]
+    [#(db/switch-theme db/foggy-night) "foggy-night"]]])
 
 (defn language-select
   []
