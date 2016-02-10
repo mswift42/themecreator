@@ -343,6 +343,21 @@
   (is (= (:warning db/magonyx) "#e81050"))
   (is (= (:warning2 db/magonyx) "#e86310")))
 
+(deftest test-foggy-theme
+  []
+  (is (= (:mainfg db/foggy-night) "#8f8f8f"))
+  (is (= (:mainbg db/foggy-night) "#292929"))
+  (is (= (:keyword db/foggy-night) "#6b83ac"))
+  (is (= (:builtin db/foggy-night) "#997599"))
+  (is (= (:constant db/foggy-night) "#3e8c9d"))
+  (is (= (:string db/foggy-night) "#ad7176"))
+  (is (= (:functionname db/foggy-night) "#9e7a5a"))
+  (is (= (:variable db/foggy-night) "#7b875b"))
+  (is (= (:type db/foggy-night) "#8d5351"))
+  (is (= (:comment db/foggy-night) "#626262"))
+  (is (= (:warning db/foggy-night) "#e81050"))
+  (is (= (:warning2 db/foggy-night) "#e86310")))
+
 (deftest test-string-to-keyword
   []
   (let [sm {"a" 1 "b" 2}
