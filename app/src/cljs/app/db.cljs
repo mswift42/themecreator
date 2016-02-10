@@ -212,6 +212,21 @@
    :warning "#ff0000"
    :warning2 "#ff8800"})
 
+(def foggy-night
+  {:themename "foggy-night"
+   :mainfg "#8f8f8f"
+   :mainbg "#292929"
+   :keyword "#6b83ac"
+   :builtin "#997599"
+   :string "#ad7176"
+   :functionname "#9e7a5a"
+   :variable "#7b875b"
+   :type "#8d5351"
+   :constant "#3e8c9d"
+   :comment "#626262"
+   :warning "#e81050"
+   :warning2 "#e86310"})
+
 (def contrastcolors
   [:mainfg :keyword :builtin :string :functionname :variable :type
    :constant :comment])
