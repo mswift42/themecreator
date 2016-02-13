@@ -358,6 +358,38 @@
   (is (= (:warning db/foggy-night) "#e81050"))
   (is (= (:warning2 db/foggy-night) "#e86310")))
 
+(deftest test-soft-morning-theme
+  []
+  (is (= (:mainfg db/soft-morning) "#282828"))
+  (is (= (:mainbg db/soft-morning) "#f2f1f0"))
+  (is (= (:keyword db/soft-morning) "#8aa234"))
+  (is (= (:builtin db/soft-morning) "#727170"))
+  (is (= (:string db/soft-morning) "#3450a2"))
+  (is (= (:functionname db/soft-morning) "#a82e4d"))
+  (is (= (:variable db/soft-morning) "#f03f3f"))
+  (is (= (:type db/soft-morning)  "#727170"))
+  (is (= (:constant db/soft-morning) "#f03f3f"))
+  (is (= (:comment db/soft-morning) "#808080"))
+  (is (= (:warning db/soft-morning) "#ff6523"))
+  (is (= (:warning2 db/soft-morning) "#e80f29")))
+
+
+(deftest test-soft-charcoal-theme
+  []
+  (is (= (:mainfg db/soft-charcoal) "#c2c2c2"))
+  (is (= (:mainbg db/soft-charcoal) "#191919"))
+  (is (= (:keyword db/soft-charcoal) "#8aa234"))
+  (is (= (:builtin db/soft-charcoal) "#54686d"))
+  (is (= (:string db/soft-charcoal) "#5d90cd"))
+  (is (= (:functionname db/soft-charcoal) "#7a8bbd"))
+  (is (= (:variable db/soft-charcoal) "#8885b2"))
+  (is (= (:type db/soft-charcoal)  "#8aa6c1"))
+  (is (= (:constant db/soft-charcoal) "#8aa6c1"))
+  (is (= (:comment db/soft-charcoal) "#808080"))
+  (is (= (:warning db/soft-charcoal) "#ff6523"))
+  (is (= (:warning2 db/soft-charcoal) "#ff2370")))
+
+
 (deftest test-string-to-keyword
   []
   (let [sm {"a" 1 "b" 2}
