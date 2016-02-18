@@ -107,7 +107,7 @@
     [template-download "atomlink" "Atom"
      "colors.less" @atomtemplate]
     [template-download "emacslink" "Emacs"
-     (str (:themename @app-db) ".el") @emacstemplate ]
+     (str (:themename @app-db) "-theme.el") @emacstemplate ]
     [template-download "vimlink" "Vim"
      (str (:themename @app-db) ".vim") @vimtemplate]]])
 
