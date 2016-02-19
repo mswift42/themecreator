@@ -227,6 +227,21 @@
    :warning "#e81050"
    :warning2 "#e86310"})
 
+(def silkworm
+  {:themename "silkworm"
+   :mainfg "#585858"
+   :mainbg "#ece3db"
+   :keyword "#367a7f"
+   :builtin "#0073b5"
+   :string "#3b4bab"
+   :functionname "#ad4271"
+   :variable "#a74f31"
+   :type "#76690b"
+   :constant "#a74f31"
+   :comment "#a9a9a9"
+   :warning "#ff1276"
+   :warning2 "#ff4d12"})
+
 (def contrastcolors
   [:mainfg :keyword :builtin :string :functionname :variable :type
    :constant :comment])
