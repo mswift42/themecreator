@@ -358,6 +358,21 @@
   (is (= (:warning db/foggy-night) "#e81050"))
   (is (= (:warning2 db/foggy-night) "#e86310")))
 
+(deftest test-silkworm-theme
+  []
+  (is (= (:mainfg db/silkworm) "#585858"))
+  (is (= (:mainbg db/silkworm) "#ece3db"))
+  (is (= (:keyword db/silkworm) "#367a7f"))
+  (is (= (:builtin db/silkworm) "#0073b5"))
+  (is (= (:constant db/silkworm) "#a74f31"))
+  (is (= (:string db/silkworm) "#3b4bab"))
+  (is (= (:functionname db/silkworm) "#ad4271"))
+  (is (= (:variable db/silkworm) "#a74f31"))
+  (is (= (:type db/silkworm) "#76690b"))
+  (is (= (:comment db/silkworm) "#a9a9a9"))
+  (is (= (:warning db/silkworm) "#ff1276"))
+  (is (= (:warning2 db/silkworm) "#ff4d12")))
+
 (deftest test-soft-morning-theme
   []
   (is (= (:mainfg db/soft-morning) "#282828"))
