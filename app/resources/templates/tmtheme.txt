@@ -161,9 +161,9 @@ Created with ThemeCreator, https://github.com/mswift42/themecreator -->
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>{{functionname}}</string>
-				<key>foreground</key>
 				<string>{{mainbg}}</string>
+				<key>foreground</key>
+				<string>{{mainfg}}</string>
 			</dict>
 		</dict>
 		<dict>
