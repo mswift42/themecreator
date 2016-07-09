@@ -160,10 +160,8 @@ Created with ThemeCreator, https://github.com/mswift42/themecreator -->
 			<string>meta.separator</string>
 			<key>settings</key>
 			<dict>
-				<key>background</key>
-				<string>{{functionname}}</string>
 				<key>foreground</key>
-				<string>{{mainbg}}</string>
+				<string>{{mainfg}}</string>
 			</dict>
 		</dict>
 		<dict>
