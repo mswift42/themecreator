@@ -150,7 +150,7 @@ Created with ThemeCreator, https://github.com/mswift42/themecreator -->
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>{{mainbg}}</string>
+				<string>{{mainfg}}</string>
 			</dict>
 		</dict>
 		<dict>
