@@ -46,7 +46,8 @@
     [#(db/switch-theme db/magonyx) "magonyx"]
     [#(db/switch-theme db/light-kiss) "light-kiss"]
     [#(db/switch-theme db/foggy-night) "foggy-night"]
-    [#(db/switch-theme db/silkworm) "silkworm"]]])
+    [#(db/switch-theme db/silkworm) "silkworm"]
+    [#(db/switch-theme db/metalheart) "metalheart"]]])
 
 (defn language-select
   []
