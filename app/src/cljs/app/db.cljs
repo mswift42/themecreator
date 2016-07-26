@@ -242,6 +242,21 @@
    :warning "#ff1276"
    :warning2 "#ff4d12"})
 
+(def metalheart
+  {:themename "metalheart"
+   :mainfg "#8693ae"
+   :mainbg "#1d272a"
+   :keyword "#6e94ad"
+   :builtin "#9a91b8"
+   :string "#ba899c"
+   :functionname "#937aba"
+   :variable "#638f81"
+   :type "#7a9f81"
+   :constant "#5980a3"
+   :comment "#727272"
+   :warning "#ff0000"
+   :warning2 "#ff8800"})
+
 (def contrastcolors
   [:mainfg :keyword :builtin :string :functionname :variable :type
    :constant :comment])

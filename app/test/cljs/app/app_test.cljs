@@ -404,6 +404,21 @@
   (is (= (:warning db/soft-charcoal) "#ff6523"))
   (is (= (:warning2 db/soft-charcoal) "#ff2370")))
 
+(deftest test-metalheart-theme
+  []
+  (is (= (:mainfg db/metalheart) "#8693ae"))
+  (is (= (:mainbg db/metalheart) "#1d272a"))
+  (is (= (:keyword db/metalheart) "#6e94ad"))
+  (is (= (:builtin db/metalheart) "#9a91b8"))
+  (is (= (:string db/metalheart) "#ba899c"))
+  (is (= (:functionname db/metalheart) "#937aba"))
+  (is (= (:variable db/metalheart) "#638f81"))
+  (is (= (:type db/metalheart) "#7a9f81"))
+  (is (= (:constant db/metalheart) "#5980a3"))
+  (is (= (:comment db/metalheart) "#727272"))
+  (is (= (:warning db/metalheart) "#ff0000"))
+  (is (= (:warning2 db/metalheart) "#ff8800")))
+
 
 (deftest test-string-to-keyword
   []
