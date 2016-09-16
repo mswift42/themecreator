@@ -712,6 +712,12 @@
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
+    <option name="DEFAULT_FUNCTION_DECLARATION">
+      <value>
+        <option name="FOREGROUND" value="{{functionname}}" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
     <option name="DEFAULT_BLOCK_COMMENT">
       <value>
         <option name="FOREGROUND" value="{{comment}}" />
@@ -1685,10 +1691,10 @@
       </value>
     </option>
     <option name="KOTLIN_MODIFIER">
-     <value>
-       <option name="FOREGROUND" value="{{keyword}}" />
-       <option name="FONT_TYPE" value="1" />
-     </value>
+      <value>
+        <option name="FOREGROUND" value="{{keyword}}" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
     </option>
     <option name="KOTLIN_MUTABLE_VARIABLE">
       <value>
