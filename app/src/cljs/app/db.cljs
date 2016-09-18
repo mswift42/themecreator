@@ -257,6 +257,20 @@
    :warning "#ff0000"
    :warning2 "#ff8800"})
 
+(def breezy-fall
+  {:themename "breezy-fall"
+   :mainfg "#78693c"
+   :mainbg "#f6f3cf"
+   :keyword "#0073a3"
+   :builtin "#3b61b1"
+   :string "#994485"
+   :functionname "#a94142"
+   :variable "#922f8c"
+   :type "#454b7a"
+   :constant "#844c41"
+   :warning "#ff1276"
+   :warning2 "#ff4d12"})
+
 (def contrastcolors
   [:mainfg :keyword :builtin :string :functionname :variable :type
    :constant :comment])
