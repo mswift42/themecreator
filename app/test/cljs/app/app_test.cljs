@@ -426,7 +426,7 @@
   (is (= (:keyword db/breezy-fall) "#0073a3"))
   (is (= (:builtin db/breezy-fall) "#3b61b1"))
   (is (= (:string db/breezy-fall) "#994485"))
-  (is (= (:functionname db/breezy-fall) "#a941142"))
+  (is (= (:functionname db/breezy-fall) "#a94142"))
   (is (= (:variable db/breezy-fall) "#922f8c"))
   (is (= (:type db/breezy-fall) "#454b7a"))
   (is (= (:constant db/breezy-fall) "#844c41"))
