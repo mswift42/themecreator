@@ -430,8 +430,7 @@
   (is (= (:variable db/breezy-fall) "#922f8c"))
   (is (= (:type db/breezy-fall) "#454b7a"))
   (is (= (:constant db/breezy-fall) "#844c41"))
-  (is (= (:comment db/breezy-fall) "#906e86"))
-  )
+  (is (= (:comment db/breezy-fall) "#906e86")))
 
 
 (deftest test-string-to-keyword
