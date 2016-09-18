@@ -268,6 +268,7 @@
    :variable "#922f8c"
    :type "#454b7a"
    :constant "#844c41"
+   :comment "#906e86"
    :warning "#ff1276"
    :warning2 "#ff4d12"})
 
