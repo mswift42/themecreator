@@ -419,6 +419,20 @@
   (is (= (:warning db/metalheart) "#ff0000"))
   (is (= (:warning2 db/metalheart) "#ff8800")))
 
+(deftest test-breezy-fall-theme
+  []
+  (is (= (:mainfg db/breezy-fall) "#78693c"))
+  (is (= (:mainbg db/breezy-fall) "#f6f3cf"))
+  (is (= (:keyword db/breezy-fall) "#0073a3"))
+  (is (= (:builtin db/breezy-fall) "#3b61b1"))
+  (is (= (:string db/breezy-fall) "#994485"))
+  (is (= (:functionname db/breezy-fall) "#a941142"))
+  (is (= (:variable db/breezy-fall) "#922f8c"))
+  (is (= (:type db/breezy-fall) "#454b7a"))
+  (is (= (:constant db/breezy-fall) "#844c41"))
+  (is (= (:comment db/breezy-fall) "#906e86"))
+  )
+
 
 (deftest test-string-to-keyword
   []
