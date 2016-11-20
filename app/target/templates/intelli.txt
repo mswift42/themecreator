@@ -3357,7 +3357,7 @@
     </option>
     <option name="TEXT">
       <value>
-        <option name="FOREGROUND" value="{{fg3}}" />
+        <option name="FOREGROUND" value="{{mainfg}}" />
         <option name="BACKGROUND" value="{{mainbg}}" />
       </value>
     </option>
