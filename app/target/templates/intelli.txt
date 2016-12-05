@@ -206,11 +206,6 @@
     <option name="Brackets">
       <value />
     </option>
-    <option name="CLASS_REFERENCE">
-      <value>
-        <option name="FOREGROUND" value="{{type}}" />
-      </value>
-    </option>
     <option name="COFFEESCRIPT.BAD_CHARACTER">
       <value>
         <option name="FOREGROUND" value="{{bg2}}" />
@@ -735,6 +730,11 @@
     <option name="DEFAULT_CONSTANT">
       <value>
         <option name="FOREGROUND" value="{{constant}}" />
+      </value>
+    </option>
+    <option name="DEFAULT_CLASS_REFERENCE">
+      <value>
+        <option name="FOREGROUND" value="{{type}}" />
       </value>
     </option>
     <option name="DEFAULT_DOC_COMMENT">
