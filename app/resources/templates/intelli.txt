@@ -2246,6 +2246,12 @@
         <option name="FOREGROUND" value="{{keyword}}" />
       </value>
     </option>
+    <option namme="PARAMETER_HINT">
+      <value>
+        <option name="BACKGROUND" value="{{bg3}}" />
+        <option name="FOREGROUND" value="{{fg2}}" />
+      </value>
+    </option>
     <option name="PHP_BRACKETS">
       <value>
         <option name="FOREGROUND" value="{{fg2}}" />
