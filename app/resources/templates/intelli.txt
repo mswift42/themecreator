@@ -20,8 +20,8 @@
     <option name="RIGHT_MARGIN_COLOR" value="{{bg2}}" />
     <option name="SELECTED_INDENT_GUIDE" value="{{fg2}}" />
     <option name="SELECTED_TEARLINE_COLOR" value="" />
-    <option name="SELECTION_BACKGROUND" value="{{mainfg}}" />
-    <option name="SELECTION_FOREGROUND" value="{{mainbg}}" />
+    <option name="SELECTION_BACKGROUND" value="{{bg2}}" />
+    <option name="SELECTION_FOREGROUND" value="{{fg2}}" />
     <option name="TEARLINE_COLOR" value="{{fg2}}" />
     <option name="WHITESPACES" value="{{fg2}}" />
   </colors>
