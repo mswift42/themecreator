@@ -56,9 +56,9 @@ exe 'hi Conditional guifg='s:keyword
 exe 'hi Constant guifg='s:const  
 exe 'hi Define guifg='s:keyword  
 exe 'hi DiffAdd guifg=#f8f8f8 guibg=#46830c gui=bold'
-exe 'hi DiffDelete guifg=#ff0000'  
+exe 'hi DiffDelete guifg=#f8f8f8  guibg=#ff0000'
 exe 'hi DiffChange guifg='s:fg' guibg='s:var 
-exe 'hi DiffText guifg='s:fg' guibg='s:builtin' gui=bold'
+exe 'hi DiffText guifg=#f8f8f8 guibg=#080808 gui=bold'
 exe 'hi ErrorMsg guifg='s:warning' guibg='s:bg2' gui=bold'
 exe 'hi WarningMsg guifg='s:fg' guibg='s:warning2 
 exe 'hi Float guifg='s:const  
