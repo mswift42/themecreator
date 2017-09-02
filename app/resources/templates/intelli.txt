@@ -1278,6 +1278,12 @@
         <option name="BACKGROUND" value="{{bg2}}" />
       </value>
     </option>
+    <option name="INLINE_PARAMETER_HINT">
+      <value>
+        <option name="FOREGROUND" value="{{mainfg}}" />
+        <option name="BACKGROUND" value="{{bg4}}" />
+      </value>
+    </option>
     <option name="INSTANCE_FIELD_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="{{builtin}}" />
