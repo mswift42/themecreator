@@ -68,6 +68,12 @@ Implementation:
 ThemeCreator is a Clojurescript app, in particular it uses the wonderful [reagent](http://reagent-project.github.io/) framework. The themetemplates are compiled and rendered using [mustache](https://github.com/janl/mustache.js/), [goog.net.XhrIo](https://developers.google.com/closure/library/docs/xhrio?hl=en) is used to load the templates, and [goog.color](https://google.github.io/closure-library/api/namespace_goog_color.html) was helpful for some color conversions.
 
 
+Thanks:
+-------
+
+ThemeCreator's maintenance has been made a lot easier with the support of ![Logo](https://github.com/mswift42/themecreator/raw/master/jetbrains.png)(https://www.jetbrains.com/).
+
+
 
 Donate:
 -------
