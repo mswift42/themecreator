@@ -73,7 +73,7 @@ Thanks:
 
 ThemeCreator's maintenance has been made a lot easier with the support of
 
-<a href="https://www.jetbrains.com"> <img src="https://github.com/mswift42/themecreator/raw/master/jetbrains.png" width="100" height = "100" alt="JetBrains" /> </a>
+<a href="https://www.jetbrains.com"> <img src="https://github.com/mswift42/themecreator/raw/master/jetbrains.png" width="200" height = "200" alt="JetBrains" /> </a>
 
 Thank you JetBrains.
 
