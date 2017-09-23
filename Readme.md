@@ -71,7 +71,7 @@ ThemeCreator is a Clojurescript app, in particular it uses the wonderful [reagen
 Thanks:
 -------
 
-ThemeCreator's maintenance has been made a lot easier with the support of ![Logo](https://github.com/mswift42/themecreator/raw/master/jetbrains.png)(https://www.jetbrains.com/).
+ThemeCreator's maintenance has been made a lot easier with the support of <img src="https://github.com/mswift42/themecreator/raw/master/jetbrains.png" width="50" height = "50" alt="JetBrains" />
 
 
 
