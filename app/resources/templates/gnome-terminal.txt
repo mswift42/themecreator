@@ -1,13 +1,13 @@
-!/usr/bin/env bash
+#!/usr/bin/env bash
 
 # Gnome Terminal color theme install script.
 # Adapted from chriskempson's base16-gnome-termianl
 # https://github.com/chriskempson/base16-gnome-terminal/blob/master/base16-3024.dark.sh
 
-[[ -z "$PROFILE_NAME" ]] && PROFILE_NAME="{{themename}}"
-[[ -z "$PROFILE_SLUG" ]] && PROFILE_SLUG="{{themename}}"
-[[ -z "$DCONF" ]] && DCONF=dconf
-[[ -z "$UUIDGEN" ]] && UUIDGEN=uuidgen
+[[ -z "$PROFILE_NAME" ]] && PROFILE_NAME="{{themename}}" 
+[[ -z "$PROFILE_SLUG" ]] && PROFILE_SLUG="{{themename}}" 
+[[ -z "$DCONF" ]] && DCONF=dconf 
+[[ -z "$UUIDGEN" ]] && UUIDGEN=uuidgen 
 
 dset() {
     local key="$1"; shift
