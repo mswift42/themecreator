@@ -5,7 +5,7 @@
 # https://github.com/chriskempson/base16-gnome-terminal/blob/master/base16-3024.dark.sh
 
 [[ -z "$PROFILE_NAME" ]] && PROFILE_NAME="{{themename}}"
-[[ -z "$PROFILE_SLUG" ]] && PROFILE_SLUG="{{base-16-3024-256"
+[[ -z "$PROFILE_SLUG" ]] && PROFILE_SLUG="{{themename}}"
 [[ -z "$DCONF" ]] && DCONF=dconf
 [[ -z "$UUIDGEN" ]] && UUIDGEN=uuidgen
 
@@ -65,13 +65,13 @@ if which "$DCONF" > /dev/null 2>&1; then
         # Update profile values with theme options
         dset visible-name "'$PROFILE_NAME'"
         dset palette "['{{mainbg}}', '{{bg2}}','{{builtin}}', '{{keyword}}', '{{functionname}}', '{{string}}', '{{type}}', '{{variable}}', '{{warning}}', '{{constant}}',  '{{bg3}}', '{{comment}}','{{warning2}}', '{{fg4}}', '{{fg2}}', '{{mainfg}}']"
-        dset background-color "'#090300'"
-        dset foreground-color "'#a5a2a2'"
-        dset bold-color "'#a5a2a2'"
+        dset background-color "'{{mainbg}}'"
+        dset foreground-color "'{{mainfg}}'"
+        dset bold-color "'{{mainfg}}'"
         dset bold-color-same-as-fg "true"
         dset cursor-colors-set "true"
-        dset cursor-background-color "'#a5a2a2'"
-        dset cursor-foreground-color "'#090300'"
+        dset cursor-background-color "'mainfg'"
+        dset cursor-foreground-color "'mainbg'"
         dset use-theme-colors "false"
         dset use-theme-background "false"
 
