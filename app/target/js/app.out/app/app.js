@@ -17,6 +17,7 @@ app.app.tmthemetemplate = reagent.core.atom.cljs$core$IFn$_invoke$arity$1("");
 app.app.atomtemplate = reagent.core.atom.cljs$core$IFn$_invoke$arity$1("");
 app.app.emacstemplate = reagent.core.atom.cljs$core$IFn$_invoke$arity$1("");
 app.app.vimtemplate = reagent.core.atom.cljs$core$IFn$_invoke$arity$1("");
+app.app.gnometerminaltemplate = reagent.core.atom.cljs$core$IFn$_invoke$arity$1("");
 app.app.compile_template = (function app$app$compile_template(templ,varmap){
 return Mustache.render(templ,cljs.core.clj__GT_js(varmap));
 });
@@ -45,21 +46,21 @@ return color;
 }
 });
 app.app.generate_template_intelli = (function app$app$generate_template_intelli(template){
-return app.app.compile_template(template,cljs.core.into.cljs$core$IFn$_invoke$arity$2(cljs.core.PersistentArrayMap.EMPTY,(function (){var iter__5760__auto__ = (function app$app$generate_template_intelli_$_iter__11474(s__11475){
+return app.app.compile_template(template,cljs.core.into.cljs$core$IFn$_invoke$arity$2(cljs.core.PersistentArrayMap.EMPTY,(function (){var iter__5762__auto__ = (function app$app$generate_template_intelli_$_iter__11474(s__11475){
 return (new cljs.core.LazySeq(null,(function (){
 var s__11475__$1 = s__11475;
 while(true){
-var temp__4425__auto__ = cljs.core.seq(s__11475__$1);
-if(temp__4425__auto__){
-var s__11475__$2 = temp__4425__auto__;
+var temp__4657__auto__ = cljs.core.seq(s__11475__$1);
+if(temp__4657__auto__){
+var s__11475__$2 = temp__4657__auto__;
 if(cljs.core.chunked_seq_QMARK_(s__11475__$2)){
-var c__5758__auto__ = cljs.core.chunk_first(s__11475__$2);
-var size__5759__auto__ = cljs.core.count(c__5758__auto__);
-var b__11477 = cljs.core.chunk_buffer(size__5759__auto__);
+var c__5760__auto__ = cljs.core.chunk_first(s__11475__$2);
+var size__5761__auto__ = cljs.core.count(c__5760__auto__);
+var b__11477 = cljs.core.chunk_buffer(size__5761__auto__);
 if((function (){var i__11476 = (0);
 while(true){
-if((i__11476 < size__5759__auto__)){
-var vec__11482 = cljs.core._nth.cljs$core$IFn$_invoke$arity$2(c__5758__auto__,i__11476);
+if((i__11476 < size__5761__auto__)){
+var vec__11482 = cljs.core._nth.cljs$core$IFn$_invoke$arity$2(c__5760__auto__,i__11476);
 var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__11482,(0),null);
 var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__11482,(1),null);
 cljs.core.chunk_append(b__11477,cljs.core.PersistentArrayMap.fromArray([k,app.app.strip_hash(v)], true, false));
@@ -90,13 +91,13 @@ break;
 }
 }),null,null));
 });
-return iter__5760__auto__(app.colors.derive_colors_from_theme((cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.db.app_db) : cljs.core.deref.call(null,app.db.app_db))));
+return iter__5762__auto__(app.colors.derive_colors_from_theme((cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.db.app_db) : cljs.core.deref.call(null,app.db.app_db))));
 })()));
 });
 app.app.window_url = (function app$app$window_url(){
-var or__4988__auto__ = window.URL;
-if(cljs.core.truth_(or__4988__auto__)){
-return or__4988__auto__;
+var or__4990__auto__ = window.URL;
+if(cljs.core.truth_(or__4990__auto__)){
+return or__4990__auto__;
 } else {
 return window.webkitURL;
 }
@@ -133,7 +134,7 @@ return app.app.create_blob(app.app.generate_template_intelli((cljs.core.deref.cl
 app.app.template_select_component = (function app$app$template_select_component(){
 return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$div$btn_DASH_group$templatedrop,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$id,"templatedrop"], null),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$button$btn$btn_DASH_default$dropdown_DASH_toggle,new cljs.core.PersistentArrayMap(null, 3, [cljs.core.cst$kw$type,"button",cljs.core.cst$kw$data_DASH_toggle,"dropdown",cljs.core.cst$kw$on_DASH_click,(function (){
 return app.app.scroll_to_bottom();
-})], null),"Theme Download    ",new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$span$caret], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$span$sr_DASH_only], null)], null),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$ul_SHARP_downloadsel$dropdown_DASH_menu,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$aria_DASH_labelledby,"templatedrop"], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [app.app.template_download_intelli], null),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [app.app.template_download,"tmthemelink","Textmate",[cljs.core.str(cljs.core.cst$kw$themename.cljs$core$IFn$_invoke$arity$1((cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.db.app_db) : cljs.core.deref.call(null,app.db.app_db)))),cljs.core.str(".tmTheme")].join(''),(cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.app.tmthemetemplate) : cljs.core.deref.call(null,app.app.tmthemetemplate))], null),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [app.app.template_download,"atomlink","Atom","colors.less",(cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.app.atomtemplate) : cljs.core.deref.call(null,app.app.atomtemplate))], null),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [app.app.template_download,"emacslink","Emacs",[cljs.core.str(cljs.core.cst$kw$themename.cljs$core$IFn$_invoke$arity$1((cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.db.app_db) : cljs.core.deref.call(null,app.db.app_db)))),cljs.core.str("-theme.el")].join(''),(cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.app.emacstemplate) : cljs.core.deref.call(null,app.app.emacstemplate))], null),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [app.app.template_download,"vimlink","Vim",[cljs.core.str(cljs.core.cst$kw$themename.cljs$core$IFn$_invoke$arity$1((cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.db.app_db) : cljs.core.deref.call(null,app.db.app_db)))),cljs.core.str(".vim")].join(''),(cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.app.vimtemplate) : cljs.core.deref.call(null,app.app.vimtemplate))], null)], null)], null);
+})], null),"Theme Download    ",new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$span$caret], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$span$sr_DASH_only], null)], null),new cljs.core.PersistentVector(null, 8, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$ul_SHARP_downloadsel$dropdown_DASH_menu,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$aria_DASH_labelledby,"templatedrop"], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [app.app.template_download_intelli], null),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [app.app.template_download,"tmthemelink","Textmate",[cljs.core.str(cljs.core.cst$kw$themename.cljs$core$IFn$_invoke$arity$1((cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.db.app_db) : cljs.core.deref.call(null,app.db.app_db)))),cljs.core.str(".tmTheme")].join(''),(cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.app.tmthemetemplate) : cljs.core.deref.call(null,app.app.tmthemetemplate))], null),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [app.app.template_download,"atomlink","Atom","colors.less",(cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.app.atomtemplate) : cljs.core.deref.call(null,app.app.atomtemplate))], null),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [app.app.template_download,"emacslink","Emacs",[cljs.core.str(cljs.core.cst$kw$themename.cljs$core$IFn$_invoke$arity$1((cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.db.app_db) : cljs.core.deref.call(null,app.db.app_db)))),cljs.core.str("-theme.el")].join(''),(cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.app.emacstemplate) : cljs.core.deref.call(null,app.app.emacstemplate))], null),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [app.app.template_download,"vimlink","Vim",[cljs.core.str(cljs.core.cst$kw$themename.cljs$core$IFn$_invoke$arity$1((cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.db.app_db) : cljs.core.deref.call(null,app.db.app_db)))),cljs.core.str(".vim")].join(''),(cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.app.vimtemplate) : cljs.core.deref.call(null,app.app.vimtemplate))], null),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [app.app.template_download,"gnometerminallink","Gnome Terminal",[cljs.core.str(cljs.core.cst$kw$themename.cljs$core$IFn$_invoke$arity$1((cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.db.app_db) : cljs.core.deref.call(null,app.db.app_db)))),cljs.core.str(".sh")].join(''),(cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.app.gnometerminaltemplate) : cljs.core.deref.call(null,app.app.gnometerminaltemplate))], null)], null)], null);
 });
 app.app.store_component = (function app$app$store_component(){
 return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [app.components.button_component,"store theme",(function (){
@@ -152,15 +153,17 @@ return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMP
 app.app.theme_component = (function app$app$theme_component(){
 new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [app.app.navbar_component], null);
 
-app.app.GET("app/target/templates/intelli.txt",app.app.intellitemplate);
+app.app.GET("templates/intelli.txt",app.app.intellitemplate);
 
-app.app.GET("app/target/templates/tmtheme.txt",app.app.tmthemetemplate);
+app.app.GET("templates/tmtheme.txt",app.app.tmthemetemplate);
 
-app.app.GET("app/target/templates/atom/colors.txt",app.app.atomtemplate);
+app.app.GET("templates/atom/colors.txt",app.app.atomtemplate);
 
-app.app.GET("app/target/templates/emacs.txt",app.app.emacstemplate);
+app.app.GET("templates/emacs.txt",app.app.emacstemplate);
 
-app.app.GET("app/target/templates/vim.txt",app.app.vimtemplate);
+app.app.GET("templates/vim.txt",app.app.vimtemplate);
+
+app.app.GET("templates/gnome-terminal.txt",app.app.gnometerminaltemplate);
 
 app.db.set_db_from_storage();
 

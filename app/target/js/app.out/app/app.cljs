@@ -21,6 +21,7 @@
 (def atomtemplate (atom ""))
 (def emacstemplate (atom ""))
 (def vimtemplate (atom ""))
+(def gnometerminaltemplate (atom ""))
 
 
 (defn compile-template
@@ -105,7 +106,9 @@
     [template-download "emacslink" "Emacs"
      (str (:themename @app-db) "-theme.el") @emacstemplate ]
     [template-download "vimlink" "Vim"
-     (str (:themename @app-db) ".vim") @vimtemplate]]])
+     (str (:themename @app-db) ".vim") @vimtemplate]
+    [template-download "gnometerminallink" "Gnome Terminal"
+     (str (:themename @app-db) ".sh") @gnometerminaltemplate]]])
 
 (defn store-component
   []
@@ -166,11 +169,12 @@
 
 (defn theme-component []
   [navbar-component]
-  (GET "app/target/templates/intelli.txt" intellitemplate)
-  (GET "app/target/templates/tmtheme.txt" tmthemetemplate)
-  (GET "app/target/templates/atom/colors.txt" atomtemplate)
-  (GET "app/target/templates/emacs.txt" emacstemplate)
-  (GET "app/target/templates/vim.txt" vimtemplate)
+  (GET "templates/intelli.txt" intellitemplate)
+  (GET "templates/tmtheme.txt" tmthemetemplate)
+  (GET "templates/atom/colors.txt" atomtemplate)
+  (GET "templates/emacs.txt" emacstemplate)
+  (GET "templates/vim.txt" vimtemplate)
+  (GET "templates/gnome-terminal.txt" gnometerminaltemplate)
   (db/set-db-from-storage)
   [:div.row
    [color-components]

@@ -49,21 +49,21 @@ return JSON.stringify(G__11070);
  * values.
  */
 app.db.string_to_keyword = (function app$db$string_to_keyword(strmap){
-return cljs.core.into.cljs$core$IFn$_invoke$arity$2(cljs.core.PersistentArrayMap.EMPTY,(function (){var iter__5760__auto__ = (function app$db$string_to_keyword_$_iter__11081(s__11082){
+return cljs.core.into.cljs$core$IFn$_invoke$arity$2(cljs.core.PersistentArrayMap.EMPTY,(function (){var iter__5762__auto__ = (function app$db$string_to_keyword_$_iter__11081(s__11082){
 return (new cljs.core.LazySeq(null,(function (){
 var s__11082__$1 = s__11082;
 while(true){
-var temp__4425__auto__ = cljs.core.seq(s__11082__$1);
-if(temp__4425__auto__){
-var s__11082__$2 = temp__4425__auto__;
+var temp__4657__auto__ = cljs.core.seq(s__11082__$1);
+if(temp__4657__auto__){
+var s__11082__$2 = temp__4657__auto__;
 if(cljs.core.chunked_seq_QMARK_(s__11082__$2)){
-var c__5758__auto__ = cljs.core.chunk_first(s__11082__$2);
-var size__5759__auto__ = cljs.core.count(c__5758__auto__);
-var b__11084 = cljs.core.chunk_buffer(size__5759__auto__);
+var c__5760__auto__ = cljs.core.chunk_first(s__11082__$2);
+var size__5761__auto__ = cljs.core.count(c__5760__auto__);
+var b__11084 = cljs.core.chunk_buffer(size__5761__auto__);
 if((function (){var i__11083 = (0);
 while(true){
-if((i__11083 < size__5759__auto__)){
-var vec__11089 = cljs.core._nth.cljs$core$IFn$_invoke$arity$2(c__5758__auto__,i__11083);
+if((i__11083 < size__5761__auto__)){
+var vec__11089 = cljs.core._nth.cljs$core$IFn$_invoke$arity$2(c__5760__auto__,i__11083);
 var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__11089,(0),null);
 var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__11089,(1),null);
 cljs.core.chunk_append(b__11084,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.keyword.cljs$core$IFn$_invoke$arity$1(k),v], null));
@@ -94,7 +94,7 @@ break;
 }
 }),null,null));
 });
-return iter__5760__auto__(strmap);
+return iter__5762__auto__(strmap);
 })());
 });
 app.db.load_from_storage = (function app$db$load_from_storage(){

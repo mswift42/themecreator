@@ -9,14 +9,14 @@ goog.require('app.db');
  */
 app.previews.span_component = (function app$previews$span_component(var_args){
 var args11100 = [];
-var len__6046__auto___11108 = arguments.length;
-var i__6047__auto___11109 = (0);
+var len__6048__auto___11108 = arguments.length;
+var i__6049__auto___11109 = (0);
 while(true){
-if((i__6047__auto___11109 < len__6046__auto___11108)){
-args11100.push((arguments[i__6047__auto___11109]));
+if((i__6049__auto___11109 < len__6048__auto___11108)){
+args11100.push((arguments[i__6049__auto___11109]));
 
-var G__11110 = (i__6047__auto___11109 + (1));
-i__6047__auto___11109 = G__11110;
+var G__11110 = (i__6049__auto___11109 + (1));
+i__6049__auto___11109 = G__11110;
 continue;
 } else {
 }
