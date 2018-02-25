@@ -43,9 +43,7 @@
 (defn strip-hash
   "strip '#' hash symbol of color string."
   [color]
-  (if (= "#" (.substring (.toString color) 0 1))
-    (.substring (.toString color) 1)
-    color))
+  (.substring color 1))
 
 (defn generate-template-intelli
   [template]
@@ -53,6 +51,9 @@
                     (into {}
                           (for [[k v] (derive-colors-from-theme @app-db)]
                             {k (strip-hash v)}))))
+
+
+
 
 (defn window-url
   []
@@ -93,11 +94,14 @@
   []
   [:div.btn-group.templatedrop {:id "templatedrop"}
    [:button.btn.btn-default.dropdown-toggle
-    {:type "button" :data-toggle "dropdown" :on-click #(scroll-to-bottom)}
+    {:type "button" :data-toggle "dropdown"
+     :on-click #(scroll-to-bottom)}
     "Theme Download    "
     [:span.caret]
     [:span.sr-only]]
-   [:ul#downloadsel.dropdown-menu {:aria-labelledby "templatedrop"}
+   [:ul#downloadsel.dropdown-menu {:aria-labelledby "templatedrop" }
+    ;; [template-download "intellilink" "IntelliJ"
+    ;;  (str (:themename @app-db) ".icls") @intellitemplate]
     [template-download-intelli]
     [template-download "tmthemelink" "Textmate"
      (str (:themename @app-db) ".tmTheme") @tmthemetemplate]
@@ -160,8 +164,7 @@
 
 (defn navbar-component []
   [:div.container-fluid
-   [:a.navbar-brand {:href "#"}
-    (if (< (.-width js/screen) 1000) "TC" "ThemeCreator")]
+   [:a.navbar-brand {:href "#"} (if (< (.-width js/screen) 1000) "TC" "ThemeCreator") ]
    [:div.navbar.navbar-collapse
     [:div
      [comps/theme-select]
@@ -169,12 +172,12 @@
 
 (defn theme-component []
   [navbar-component]
-  (GET "templates/intelli.txt" intellitemplate)
-  (GET "templates/tmtheme.txt" tmthemetemplate)
-  (GET "templates/atom/colors.txt" atomtemplate)
-  (GET "templates/emacs.txt" emacstemplate)
-  (GET "templates/vim.txt" vimtemplate)
-  (GET "templates/gnome-terminal.txt" gnometerminaltemplate)
+  (GET "app/target/templates/intelli.txt" intellitemplate)
+  (GET "app/target/templates/tmtheme.txt" tmthemetemplate)
+  (GET "app/target/templates/atom/colors.txt" atomtemplate)
+  (GET "app/target/templates/emacs.txt" emacstemplate)
+  (GET "app/target/templates/vim.txt" vimtemplate)
+  (GET "app/target/templates/gnome-terminal.txt" gnometerminaltemplate)
   (db/set-db-from-storage)
   [:div.row
    [color-components]
