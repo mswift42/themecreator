@@ -39,11 +39,7 @@ return app.app.compile_template(template,app.colors.derive_colors_from_theme((cl
  * strip '#' hash symbol of color string.
  */
 app.app.strip_hash = (function app$app$strip_hash(color){
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2("#",color.toString().substring((0),(1)))){
-return color.toString().substring((1));
-} else {
-return color;
-}
+return color.substring((1));
 });
 app.app.generate_template_intelli = (function app$app$generate_template_intelli(template){
 return app.app.compile_template(template,cljs.core.into.cljs$core$IFn$_invoke$arity$2(cljs.core.PersistentArrayMap.EMPTY,(function (){var iter__5762__auto__ = (function app$app$generate_template_intelli_$_iter__11474(s__11475){
@@ -153,17 +149,17 @@ return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMP
 app.app.theme_component = (function app$app$theme_component(){
 new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [app.app.navbar_component], null);
 
-app.app.GET("templates/intelli.txt",app.app.intellitemplate);
+app.app.GET("app/target/templates/intelli.txt",app.app.intellitemplate);
 
-app.app.GET("templates/tmtheme.txt",app.app.tmthemetemplate);
+app.app.GET("app/target/templates/tmtheme.txt",app.app.tmthemetemplate);
 
-app.app.GET("templates/atom/colors.txt",app.app.atomtemplate);
+app.app.GET("app/target/templates/atom/colors.txt",app.app.atomtemplate);
 
-app.app.GET("templates/emacs.txt",app.app.emacstemplate);
+app.app.GET("app/target/templates/emacs.txt",app.app.emacstemplate);
 
-app.app.GET("templates/vim.txt",app.app.vimtemplate);
+app.app.GET("app/target/templates/vim.txt",app.app.vimtemplate);
 
-app.app.GET("templates/gnome-terminal.txt",app.app.gnometerminaltemplate);
+app.app.GET("app/target/templates/gnome-terminal.txt",app.app.gnometerminaltemplate);
 
 app.db.set_db_from_storage();
 
