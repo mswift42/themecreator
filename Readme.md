@@ -3,7 +3,7 @@
 
 ![Screenshot](https://github.com/mswift42/themecreator/raw/master/screenshots/tc1chromehamburg.png)
 
-Create Color Themes for IntelliJ Editors, Atom, Emacs, Textmate and Vim.
+Create Color Themes for IntelliJ Editors, Atom, Emacs, Textmate, Vim and Gnome Terminal.
 
 
 Installation Instructions:
@@ -30,6 +30,9 @@ Download the emacs file. Add a fitting package description to the first line. Yo
 
 ### Vim:
 Download the vim theme and copy it to your `colors` folder. For Vim that's usually '~/.vim/colors`, for Neovim it's `~/.config/nvim/colors` .
+
+### Gnome Terminal:
+Download the gnome terminal file. Make the script executable with `chmod +x <file>`. Run the script: </folder/to/script/themefile.sh> .
 
 
 Random Colors:
