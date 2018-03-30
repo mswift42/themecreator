@@ -29,7 +29,7 @@ Download the textmate theme, then follow your editors instructions. For Visual S
 Download the emacs file. Add a fitting package description to the first line. You can try your new theme by visiting your new theme with `C-x C-f <filename.el>`. You can install your new theme with: `M-x package-install-file <filename.el>`.
 
 ### Vim:
-Download the vim theme and copy it to your `colors` folder. For Vim that's usually '~/.vim/colors`, for Neovim it's `~/.config/nvim/colors` .
+Download the vim theme and copy it to your `colors` folder. For Vim that's usually `~/.vim/colors`, for Neovim it's `~/.config/nvim/colors` .
 
 ### Gnome Terminal:
 Download the gnome terminal file. Make the script executable with `chmod +x <file>`. Run the script: </folder/to/script/themefile.sh> .
