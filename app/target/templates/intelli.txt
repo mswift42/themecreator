@@ -1273,8 +1273,7 @@
     </option>
     <option name="INLINE_PARAMETER_HINT">
       <value>
-        <option name="FOREGROUND" value="{{mainfg}}" />
-        <option name="BACKGROUND" value="{{bg4}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="INSTANCE_FIELD_ATTRIBUTES">
@@ -2251,8 +2250,7 @@
     </option>
     <option namme="PARAMETER_HINT">
       <value>
-        <option name="BACKGROUND" value="{{bg3}}" />
-        <option name="FOREGROUND" value="{{fg2}}" />
+        <option name="FOREGROUND" value="{{constant}}" />
       </value>
     </option>
     <option name="PHP_BRACKETS">
