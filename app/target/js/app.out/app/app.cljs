@@ -43,7 +43,8 @@
 (defn strip-hash
   "strip '#' hash symbol of color string."
   [color]
-  (.substring color 1))
+  (if (clojure.string/starts-with? color "#")
+    (.substring color 1)))
 
 (defn generate-template-intelli
   [template]
