@@ -42,7 +42,7 @@ app.app.strip_hash = (function app$app$strip_hash(color){
 if(cljs.core.truth_(goog.string.startsWith(color,"#"))){
 return color.substring((1));
 } else {
-return null;
+return color;
 }
 });
 app.app.generate_template_intelli = (function app$app$generate_template_intelli(template){

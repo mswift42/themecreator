@@ -44,7 +44,8 @@
   "strip '#' hash symbol of color string."
   [color]
   (if (goog.string/startsWith color "#")
-    (.substring color 1)))
+    (.substring color 1)
+    color))
 
 (defn generate-template-intelli
   [template]
