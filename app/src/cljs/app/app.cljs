@@ -45,7 +45,7 @@
   [color]
   (if (goog.string/startsWith color "#")
     (.substring color 1)
-    (color)))
+    color))
 
 (defn generate-template-intelli
   [template]
