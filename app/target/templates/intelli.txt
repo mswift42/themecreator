@@ -3704,7 +3704,6 @@
       </value>
     </option>
     <option name="go.brackets">
-      </value>
     </option>
     <option name="go.identifier">
       <value>
