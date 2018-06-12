@@ -5,7 +5,8 @@
             [app.components  :as comps]
             [app.colors :refer [derive-colors-from-theme]]
             [cljsjs.mustache]
-            [goog.net.XhrIo :as xhr]))
+            [goog.net.XhrIo :as xhr]
+            [goog.string :as str]))
 
 
 (defn log
@@ -43,9 +44,9 @@
 (defn strip-hash
   "strip '#' hash symbol of color string."
   [color]
-  (if (goog.string/startsWith color "#")
+  (if (str/startsWith color "#")
     (.substring color 1)
-    (color)))
+    color))
 
 (defn generate-template-intelli
   [template]
