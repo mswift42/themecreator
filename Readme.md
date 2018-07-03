@@ -19,6 +19,8 @@ Add themename and themeauthor, pick or enter the desired colors, then download t
 ### JetBrains Editors:
 Download the Intellij theme and copy it to the editors color folder. For Linux and Webstorm 11 this would be `~/.Webstorm11/config/colors`.
 
+Or, Download Intellij theme and go to `File > Settings > Editor > Color Scheme` click on the Gear Icon and Import the downloaded icls file.
+
 ### Textmate:
 Download the textmate theme, then follow your editors instructions. For Visual Studio Code you can use the [yeoman code](https://code.visualstudio.com/docs/tools/yocode) generator. 
 
