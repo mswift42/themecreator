@@ -34,7 +34,7 @@ let s:warning2="{{warning2}}"
 
 exe 'hi Normal guifg='s:fg' guibg='s:bg 
 exe 'hi Cursor guifg='s:bg' guibg='s:fg 
-exe 'hi Cursorline  guibg='s:bg2 
+exe 'hi CursorLine  guibg='s:bg2 
 exe 'hi CursorColumn  guibg='s:bg2 
 exe 'hi ColorColumn  guibg='s:bg2 
 exe 'hi LineNr guifg='s:fg2' guibg='s:bg2 
@@ -54,10 +54,10 @@ exe 'hi Comment guifg='s:comment
 exe 'hi Conditional guifg='s:keyword  
 exe 'hi Constant guifg='s:const  
 exe 'hi Define guifg='s:keyword  
-exe 'hi DiffAdd guifg=#f8f8f8 guibg=#46830c gui=bold'
+exe 'hi DiffAdd guifg=#000000 guibg=#ddffdd gui=bold'
 exe 'hi DiffDelete guifg=#ff0000'  
-exe 'hi DiffChange guifg='s:fg' guibg='s:var 
-exe 'hi DiffText guifg='s:fg' guibg='s:builtin' gui=bold'
+exe 'hi DiffChange  guibg='s:bg2
+exe 'hi DiffText guifg=#000000 guibg=#ddddff gui=bold'
 exe 'hi ErrorMsg guifg='s:warning' guibg='s:bg2' gui=bold'
 exe 'hi WarningMsg guifg='s:fg' guibg='s:warning2 
 exe 'hi Float guifg='s:const  
