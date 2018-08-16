@@ -49,6 +49,19 @@ Storage:
 
 By pressing the `store theme` button, you can store your theme and custom Lightness and Saturation values to local Storage.
 
+
+Contributing:
+-------------
+
+To run ThemeCreator locally, you need to install [boot](https://github.com/boot-clj/boot).
+
+Then go to the app/ folder and run
+
+`boot dev`
+
+to start the development server on localhost:3000.
+
+
 Screenshots:
 ------------
 
