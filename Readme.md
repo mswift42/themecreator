@@ -33,6 +33,12 @@ Download the emacs file. Add a fitting package description to the first line. Yo
 ### Vim:
 Download the vim theme and copy it to your `colors` folder. For Vim that's usually `~/.vim/colors`, for Neovim it's `~/.config/nvim/colors` .
 
+Make sure `termguicolors` is enabled by adding
+
+`set termguicolors`
+
+to your `.vimrc` / `init.vim`.
+
 ### Gnome Terminal:
 Download the gnome terminal file. Make the script executable with `chmod +x <file>`. Run the script: </folder/to/script/themefile.sh> .
 
