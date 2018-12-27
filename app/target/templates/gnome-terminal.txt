@@ -67,7 +67,7 @@ if which "$DCONF" > /dev/null 2>&1; then
 
         # Update profile values with theme options
         dset visible-name "'$PROFILE_NAME'"
-        dset palette "['{{mainbg}}', '{{fg2}}','{{string}}', '{{fg3}}', '{{fg4}}', '{{functionname}}', '{{type}}', '{{keyword}}', '{{constant}}', '{{variable}}', '{{type}}',  '{{warning}}', '{{functionname}}', '{{fg4}}', '{{fg2}}', '{{mainfg}}']"
+        dset palette "['{{mainbg}}', '{{fg2}}','{{fg2}}', '{{fg3}}', '{{fg4}}', '{{functionname}}', '{{type}}', '{{keyword}}', '{{constant}}', '{{variable}}', '{{type}}',  '{{warning}}', '{{functionname}}', '{{fg4}}', '{{fg2}}', '{{mainfg}}']"
         dset background-color "'{{mainbg}}'"
         dset foreground-color "'{{mainfg}}'"
         dset bold-color "'{{mainfg}}'"
@@ -120,7 +120,7 @@ glist_append() {
 glist_append string /apps/gnome-terminal/global/profile_list "$PROFILE_SLUG"
 
 gset string visible_name "$PROFILE_NAME"
-gset string palette "{{mainbg}}:{{fg2}}:{{string}}:{{fg3}}:{{fg4}}:{{functionname}}:{{type}}:{{variable}}:{{constant}}:{{functionname}}:{{keyword}}:{{warning}}:{{variable}}:{{fg4}}:{{fg2}}:{{mainfg}}"
+gset string palette "{{mainbg}}:{{fg2}}:{{fg2}}:{{fg3}}:{{fg4}}:{{functionname}}:{{type}}:{{variable}}:{{constant}}:{{functionname}}:{{keyword}}:{{warning}}:{{variable}}:{{fg4}}:{{fg2}}:{{mainfg}}"
 gset string background_color "{{mainbg}}"
 gset string foreground_color "{{mainfg}}"
 gset string bold_color "{{mainfg}}"
