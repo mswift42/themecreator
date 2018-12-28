@@ -98,6 +98,7 @@ cljs.core.cst$sym$nil_DASH_val = new cljs.core.Symbol(null,"nil-val","nil-val",-
 cljs.core.cst$kw$constant = new cljs.core.Keyword(null,"constant","constant",-379609303);
 cljs.core.cst$kw$value = new cljs.core.Keyword(null,"value","value",305978217);
 cljs.core.cst$kw$i$fa$fa_DASH_adjust = new cljs.core.Keyword(null,"i.fa.fa-adjust","i.fa.fa-adjust",-32951383);
+cljs.core.cst$kw$fg5 = new cljs.core.Keyword(null,"fg5","fg5",908678474);
 cljs.core.cst$kw$background_DASH_color = new cljs.core.Keyword(null,"background-color","background-color",570434026);
 cljs.core.cst$kw$default_DASH_value = new cljs.core.Keyword(null,"default-value","default-value",232220170);
 cljs.core.cst$sym$v = new cljs.core.Symbol(null,"v","v",1661996586,null);
