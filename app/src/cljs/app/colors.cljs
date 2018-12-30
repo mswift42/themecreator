@@ -260,10 +260,10 @@
   [theme]
   (if (dark-bg? (:mainbg theme))
     (assoc theme
-           :fg2 (darken (:mainfg theme)0.08)
+           :fg2 (darken (:mainfg theme) 0.08)
            :fg3 (darken (:mainfg theme) 0.16)
            :fg4 (darken (:mainfg theme) 0.24)
-           :fg5 (lighten (:mainfg theme) 0.08)
+           :fg5 (lighten (:mainfg theme) 0.12)
            :bg2 (lighten (:mainbg theme) 0.08)
            :bg3 (lighten (:mainbg theme) 0.16)
            :bg4 (lighten (:mainbg theme) 0.24))
