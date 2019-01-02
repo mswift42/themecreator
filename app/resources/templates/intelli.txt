@@ -438,7 +438,7 @@
     </option>
     <option name="CONSOLE_SYSTEM_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="{{fg3}}" />
+        <option name="FOREGROUND" value="{{fg5}}" />
       </value>
     </option>
     <option name="CONSOLE_USER_INPUT">
