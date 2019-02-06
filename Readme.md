@@ -1,4 +1,4 @@
-[ThemeCreator](http://mswift42.github.io/themecreator/)
+[ThemeCreator](https://mswift42.github.io/themecreator/)
 ==============
 
 ![Screenshot](https://github.com/mswift42/themecreator/raw/master/screenshots/tc1chromehamburg.png)
@@ -9,7 +9,7 @@ Create Color Themes for IntelliJ Editors, Atom, Emacs, Textmate, Vim and Gnome T
 Installation Instructions:
 --------------------------
 
-No installation necessary. [ThemeCreator](http://mswift42.github.io/themecreator/) is hosted on gh-pages. ThemeCreator supports Firefox, Chrome and Opera, as these are so far the only ones to support [input-color](http://caniuse.com/#feat=input-color).
+No installation necessary. [ThemeCreator](https://mswift42.github.io/themecreator/) is hosted on gh-pages. ThemeCreator supports Firefox, Chrome and Opera, as these are so far the only ones to support [input-color](https://caniuse.com/#feat=input-color).
 
 Usage:
 ------
