@@ -1,5 +1,5 @@
 # README
-## This is the README for your extension "white-sand"
+## This is the README for your extension "{{themename}}"
 You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
 
 * Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
