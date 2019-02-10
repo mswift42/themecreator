@@ -1,5 +1,5 @@
 # Change Log
-All notable changes to the "white-sand" extension will be documented in this file.
+All notable changes to the "{{themename}}" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
