@@ -1,6 +1,6 @@
 {
-    "name": "white-sand",
-    "displayName": "white-sand",
+    "name": "{{themename}}",
+    "displayName": "{{themename}}",
     "description": "light color theme",
     "version": "0.0.1",
     "engines": {
@@ -12,9 +12,9 @@
     "contributes": {
         "themes": [
             {
-                "label": "white-sand",
+                "label": "{{themename}}",
                 "uiTheme": "vs",
-                "path": "./themes/white-sand-color-theme.json"
+                "path": "./themes/{{themename}}-color-theme.json"
             }
         ]
     }
