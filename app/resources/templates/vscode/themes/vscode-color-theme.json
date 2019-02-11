@@ -2,7 +2,7 @@
 	"tokenColors": [
 		{
 			"settings": {
-				"background": "#f5ebe1",
+				"background": "{{mainfg}}",
 				"foreground": "#585858"
 			}
 		},
@@ -145,7 +145,7 @@
 			"settings": {
 				"background": "#1a8591",
 				"fontStyle": "",
-				"foreground": "#f5ebe1"
+				"foreground": "{{mainfg}}"
 			}
 		},
 		{
@@ -157,7 +157,7 @@
 				"meta.diff.header.from-file"
 			],
 			"settings": {
-				"foreground": "#f5ebe1"
+				"foreground": "{{mainfg}}"
 			}
 		},
 		{
@@ -187,7 +187,7 @@
 				"meta.diff.header.to-file"
 			],
 			"settings": {
-				"foreground": "#f5ebe1",
+				"foreground": "{{mainfg}}",
 				"background": "#bd745e"
 			}
 		},
@@ -201,7 +201,7 @@
 		}
 	],
 	"colors": {
-		"editor.background": "#f5ebe1",
+		"editor.background": "{{mainfg}}",
 		"editorCursor.foreground": "#cec5bd",
 		"editor.foreground": "#585858",
 		"editorWhitespace.foreground": "#cec5bd",
