@@ -2,7 +2,7 @@
 	"tokenColors": [
 		{
 			"settings": {
-				"background": "{{mainfg}}",
+				"background": "{{mainbg}}",
 				"foreground": "#585858"
 			}
 		},
@@ -201,7 +201,7 @@
 		}
 	],
 	"colors": {
-		"editor.background": "{{mainfg}}",
+		"editor.background": "{{mainbg}}",
 		"editorCursor.foreground": "#cec5bd",
 		"editor.foreground": "#585858",
 		"editorWhitespace.foreground": "#cec5bd",
