@@ -3,7 +3,7 @@
 		{
 			"settings": {
 				"background": "{{mainbg}}",
-				"foreground": "#585858"
+				"foreground": "{{mainfg}}"
 			}
 		},
 		{
@@ -129,14 +129,14 @@
 			"settings": {
 				"background": "#476238",
 				"fontStyle": "",
-				"foreground": "#585858"
+				"foreground": "{{mainfg}}"
 			}
 		},
 		{
 			"name": "Separator",
 			"scope": "meta.separator",
 			"settings": {
-				"foreground": "#585858"
+				"foreground": "{{mainfg}}"
 			}
 		},
 		{
@@ -203,7 +203,7 @@
 	"colors": {
 		"editor.background": "{{mainbg}}",
 		"editorCursor.foreground": "#cec5bd",
-		"editor.foreground": "#585858",
+		"editor.foreground": "{{mainfg}}",
 		"editorWhitespace.foreground": "#cec5bd",
 		"editor.lineHighlightBackground": "#e1d8cf",
 		"editor.selectionBackground": "#cec5bd"
