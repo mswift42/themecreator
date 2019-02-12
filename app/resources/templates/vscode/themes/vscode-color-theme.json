@@ -39,7 +39,7 @@
 				"markup.deleted.git_gutter"
 			],
 			"settings": {
-				"foreground": "#476238"
+				"foreground": "{{varible}}"
 			}
 		},
 		{
@@ -127,7 +127,7 @@
 			"name": "Invalid",
 			"scope": "invalid",
 			"settings": {
-				"background": "#476238",
+				"background": "{{varible}}",
 				"fontStyle": "",
 				"foreground": "{{mainfg}}"
 			}
@@ -177,7 +177,7 @@
 				"meta.diff.header.from-file"
 			],
 			"settings": {
-				"background": "#476238"
+				"background": "{{varible}}"
 			}
 		},
 		{
