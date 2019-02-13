@@ -108,7 +108,7 @@
 			],
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#bd745e"
+				"foreground": "{{functionname}}"
 			}
 		},
 		{
@@ -188,7 +188,7 @@
 			],
 			"settings": {
 				"foreground": "{{mainfg}}",
-				"background": "#bd745e"
+				"background": "{{functionname}}"
 			}
 		},
 		{
