@@ -83,7 +83,7 @@
 			],
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#b3534b"
+				"foreground": "{{string}}"
 			}
 		},
 		{
@@ -167,7 +167,7 @@
 				"meta.diff.header.to-file"
 			],
 			"settings": {
-				"background": "#b3534b"
+				"background": "{{string}}"
 			}
 		},
 		{
