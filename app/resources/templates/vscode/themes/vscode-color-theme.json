@@ -10,7 +10,7 @@
 			"name": "Comment",
 			"scope": "comment",
 			"settings": {
-				"foreground": "#a9a9a9"
+				"foreground": "{{comment}}"
 			}
 		},
 		{
