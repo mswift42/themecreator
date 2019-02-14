@@ -22,7 +22,7 @@
 			],
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#737373"
+				"foreground": "{{mainfg}}"
 			}
 		},
 		{
