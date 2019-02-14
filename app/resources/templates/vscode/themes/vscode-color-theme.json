@@ -93,7 +93,7 @@
 				"constant.other.color"
 			],
 			"settings": {
-				"foreground": "#4a858c"
+				"foreground": "{{keyword}}"
 			}
 		},
 		{
@@ -120,7 +120,7 @@
 			],
 			"settings": {
 				"fontStyle": "bold",
-				"foreground": "#4a858c"
+				"foreground": "{{keyword}}"
 			}
 		},
 		{
@@ -196,7 +196,7 @@
 			"scope": "meta.diff.range",
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#4a858c"
+				"foreground": "{{keyword}}"
 			}
 		}
 	],
