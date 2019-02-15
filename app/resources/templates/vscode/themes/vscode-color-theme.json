@@ -68,7 +68,7 @@
 			],
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#8c4a79"
+				"foreground": "{{type}}"
 			}
 		},
 		{
