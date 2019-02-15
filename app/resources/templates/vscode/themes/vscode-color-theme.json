@@ -55,7 +55,7 @@
 			],
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#697024"
+				"foreground": "{{constant}}"
 			}
 		},
 		{
