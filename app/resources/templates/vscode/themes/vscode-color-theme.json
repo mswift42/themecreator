@@ -39,7 +39,7 @@
 			"name": "Invalid - Illegal",
 			"scope": "invalid.illegal",
 			"settings": {
-				"foreground": "#660000"
+				"foreground": "{{warning}}"
 			}
 		},
 		{
@@ -56,7 +56,7 @@
 				"storage"
 			],
 			"settings": {
-				"foreground": "#4B83CD"
+				"foreground": "{{KEYWORD}}"
 			}
 		},
 		{
@@ -117,7 +117,7 @@
 			"name": "Exceptions",
 			"scope": "entity.name.exception",
 			"settings": {
-				"foreground": "#660000"
+				"foreground": "{{warning}}"
 			}
 		},
 		{
@@ -156,7 +156,7 @@
 			"name": "Strings: Regular Expressions",
 			"scope": "string.regexp",
 			"settings": {
-				"foreground": "#4B83CD"
+				"foreground": "{{KEYWORD}}"
 			}
 		},
 		{
@@ -201,7 +201,7 @@
 			"name": "HTML: Tag Names",
 			"scope": "entity.name.tag",
 			"settings": {
-				"foreground": "#4B83CD"
+				"foreground": "{{KEYWORD}}"
 			}
 		},
 		{
@@ -290,7 +290,7 @@
 			"name": "Markup: Error",
 			"scope": "markup.error",
 			"settings": {
-				"foreground": "#660000"
+				"foreground": "{{warning}}"
 			}
 		},
 		{
@@ -304,7 +304,7 @@
 			"name": "Markup: Link",
 			"scope": "meta.link",
 			"settings": {
-				"foreground": "#4B83CD"
+				"foreground": "{{KEYWORD}}"
 			}
 		},
 		{
@@ -342,7 +342,7 @@
 			"name": "Markup: Traceback",
 			"scope": "markup.traceback",
 			"settings": {
-				"foreground": "#660000"
+				"foreground": "{{warning}}"
 			}
 		},
 		{
@@ -363,7 +363,7 @@
 			"name": "Markup Lists",
 			"scope": "markup.list",
 			"settings": {
-				"foreground": "#4B83CD"
+				"foreground": "{{KEYWORD}}"
 			}
 		},
 		{
