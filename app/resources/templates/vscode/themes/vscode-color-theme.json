@@ -14,7 +14,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#AAAAAA"
+				"foreground": "{{comment}}"
 			}
 		},
 		{
@@ -22,7 +22,7 @@
 			"scope": "comment.block.preprocessor",
 			"settings": {
 				"fontStyle": "",
-				"foreground": "{{COMMENT}}"
+				"foreground": "{{comment}}"
 			}
 		},
 		{
@@ -32,7 +32,7 @@
 				"comment.block.documentation"
 			],
 			"settings": {
-				"foreground": "#448C27"
+				"foreground": "{{string}}"
 			}
 		},
 		{
@@ -182,7 +182,7 @@
 				"meta.tag.sgml punctuation.definition.tag.html"
 			],
 			"settings": {
-				"foreground": "#AAAAAA"
+				"foreground": "{{comment}}"
 			}
 		},
 		{
