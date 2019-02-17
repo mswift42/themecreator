@@ -66,7 +66,7 @@
 				"support.type"
 			],
 			"settings": {
-				"foreground": "#7A3E9D"
+				"foreground": "{{TYPE}}"
 			}
 		},
 		{
@@ -87,7 +87,7 @@
 				"support.variable"
 			],
 			"settings": {
-				"foreground": "#7A3E9D"
+				"foreground": "{{TYPE}}"
 			}
 		},
 		{
@@ -110,7 +110,7 @@
 			],
 			"settings": {
 				"fontStyle": "bold",
-				"foreground": "#7A3E9D"
+				"foreground": "{{TYPE}}"
 			}
 		},
 		{
@@ -234,7 +234,7 @@
 				"entity.name.tag.css"
 			],
 			"settings": {
-				"foreground": "#7A3E9D"
+				"foreground": "{{TYPE}}"
 			}
 		},
 		{
@@ -356,7 +356,7 @@
 			"name": "Markup Quote",
 			"scope": "markup.quote",
 			"settings": {
-				"foreground": "#7A3E9D"
+				"foreground": "{{TYPE}}"
 			}
 		},
 		{
