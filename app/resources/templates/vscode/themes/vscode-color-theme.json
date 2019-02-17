@@ -46,7 +46,7 @@
 			"name": "Operators",
 			"scope": "keyword.operator",
 			"settings": {
-				"foreground": "#777777"
+				"foreground": "{{mainfg}}"
 			}
 		},
 		{
