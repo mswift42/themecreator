@@ -234,7 +234,7 @@
 				"entity.name.tag.css"
 			],
 			"settings": {
-				"foreground": "{{TYPE}}"
+				"foreground": "{{keyword}}"
 			}
 		},
 		{
@@ -244,7 +244,7 @@
 				"support.type.property-name"
 			],
 			"settings": {
-				"foreground": "#AB6526"
+				"foreground": "{{functionname}}"
 			}
 		},
 		{
@@ -255,7 +255,7 @@
 				"support.constant.property-value"
 			],
 			"settings": {
-				"foreground": "#448C27"
+				"foreground": "{{mainfg}}"
 			}
 		},
 		{
