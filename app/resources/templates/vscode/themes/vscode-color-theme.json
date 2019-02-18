@@ -212,7 +212,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "{{keyword}}"
+				"foreground": "{{variable}}"
 			}
 		},
 		{
@@ -222,7 +222,7 @@
 				"punctuation.definition.entity"
 			],
 			"settings": {
-				"foreground": "#AB6526"
+				"foreground": "{{functionname}}"
 			}
 		},
 		{
