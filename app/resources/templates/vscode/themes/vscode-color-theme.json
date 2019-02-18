@@ -149,7 +149,7 @@
 			"name": "Strings: Escape Sequences",
 			"scope": "constant.character.escape",
 			"settings": {
-				"foreground": "#777777"
+				"foreground": "{{constant}}"
 			}
 		},
 		{
@@ -163,7 +163,7 @@
 			"name": "Strings: Symbols",
 			"scope": "constant.other.symbol",
 			"settings": {
-				"foreground": "#AB6526"
+				"foreground": "{{string}}"
 			}
 		},
 		{
