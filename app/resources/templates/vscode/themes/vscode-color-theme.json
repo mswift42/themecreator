@@ -170,7 +170,7 @@
 			"name": "Punctuation",
 			"scope": "punctuation",
 			"settings": {
-				"foreground": "#777777"
+				"foreground": "{{mainfg}}"
 			}
 		},
 		{
@@ -194,7 +194,7 @@
 				"punctuation.definition.tag.end.html"
 			],
 			"settings": {
-				"foreground": "#91B3E0"
+				"foreground": "{{builtin}}"
 			}
 		},
 		{
@@ -212,7 +212,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#91B3E0"
+				"foreground": "{{keyword}}"
 			}
 		},
 		{
