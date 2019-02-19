@@ -77,7 +77,7 @@
 				"variable.language"
 			],
 			"settings": {
-				"foreground": "#AB6526"
+				"foreground": "{{constant}}"
 			}
 		},
 		{
@@ -98,7 +98,7 @@
 			],
 			"settings": {
 				"fontStyle": "bold",
-				"foreground": "#AA3731"
+				"foreground": "{{functionname}}"
 			}
 		},
 		{
