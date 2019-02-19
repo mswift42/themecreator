@@ -373,7 +373,7 @@
 				"markup.italic"
 			],
 			"settings": {
-				"foreground": "#448C27"
+				"foreground": "{{variable}}"
 			}
 		},
 		{
@@ -381,7 +381,7 @@
 			"scope": "markup.inline.raw",
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#AB6526"
+				"foreground": "{{builtin}}"
 			}
 		},
 		{
