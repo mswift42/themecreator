@@ -269,14 +269,14 @@
 			"name": "Markup: Changed",
 			"scope": "markup.changed",
 			"settings": {
-				"foreground": "#000000"
+				"foreground": "{{fg5}}"
 			}
 		},
 		{
 			"name": "Markup: Deletion",
 			"scope": "markup.deleted",
 			"settings": {
-				"foreground": "#000000"
+				"foreground": "{{fg5}}"
 			}
 		},
 		{
@@ -297,7 +297,7 @@
 			"name": "Markup: Insertion",
 			"scope": "markup.inserted",
 			"settings": {
-				"foreground": "#000000"
+				"foreground": "{{fg5}}"
 			}
 		},
 		{
