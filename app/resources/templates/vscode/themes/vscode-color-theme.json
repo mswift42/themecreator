@@ -328,7 +328,7 @@
 			"name": "Markup: Heading",
 			"scope": "markup.heading",
 			"settings": {
-				"foreground": "#AA3731"
+				"foreground": "{{fg5}}"
 			}
 		},
 		{
