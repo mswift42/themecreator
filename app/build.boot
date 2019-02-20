@@ -11,7 +11,8 @@
                  [org.clojure/tools.nrepl "0.2.12" :scope "test"]
                  [crisptrutski/boot-cljs-test "0.2.0-SNAPSHOT" :scope "test"]
                  [reagent "0.5.0"]
-                 [cljsjs/mustache "1.1.0-0"]])
+                 [cljsjs/mustache "1.1.0-0"]
+                 [cljsjs/jszip "3.1.3-0"]])
 
 (require
  '[adzerk.boot-cljs      :refer [cljs]]
