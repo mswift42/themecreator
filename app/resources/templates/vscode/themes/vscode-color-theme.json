@@ -142,7 +142,7 @@
 			"name": "Strings",
 			"scope": "string",
 			"settings": {
-				"foreground": "#448C27"
+				"foreground": "{{string}}"
 			}
 		},
 		{
