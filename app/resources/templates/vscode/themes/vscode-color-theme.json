@@ -135,7 +135,7 @@
 				"constant"
 			],
 			"settings": {
-				"foreground": "#AB6526"
+				"foreground": "{{mainfg}}"
 			}
 		},
 		{
