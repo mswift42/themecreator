@@ -4,7 +4,7 @@
  :dependencies '[[adzerk/boot-cljs          "1.7.228-2"   :scope "test"]
                  [adzerk/boot-cljs-repl     "0.3.3"      :scope "test"]
                  [adzerk/boot-reload        "0.5.2"      :scope "test"]
-                 [pandeiro/boot-http        "0.7.6"      :scope "test"]
+                 [pandeiro/boot-http        "0.8.3"      :scope "test"]
                  [org.clojure/clojurescript "1.7.228"]
                  [com.cemerick/piggieback "0.2.1" :scope "test"]
                  [weasel "0.7.0" :scope "test"]
