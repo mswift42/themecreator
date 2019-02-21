@@ -24,6 +24,10 @@
 (def emacstemplate (atom ""))
 (def vimtemplate (atom ""))
 (def gnometerminaltemplate (atom ""))
+(def vscodetemplate (atom ""))
+(def vscodepackagejsontemplate (atom ""))
+(def vscodequickstarttemplate (atom ""))
+(def vscodereadmetemplate (atom ""))
 
 
 (defn compile-template
