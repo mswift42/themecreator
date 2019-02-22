@@ -1,16 +1,15 @@
 (set-env!
  :source-paths    #{"src/cljs"}
  :resource-paths  #{"resources"}
- :dependencies '[[adzerk/boot-cljs          "2.1.5"   :scope "test"]
-                 [adzerk/boot-cljs-repl     "0.4.0"      :scope "test"]
-                 [adzerk/boot-reload        "0.6.0"      :scope "test"]
-                 [nrepl "0.6.0" :scope "test"]
+ :dependencies '[[adzerk/boot-cljs          "2.0.0"   :scope "test"]
+                 [adzerk/boot-cljs-repl     "0.3.3"      :scope "test"]
+                 [adzerk/boot-reload        "0.5.1"      :scope "test"]
                  [pandeiro/boot-http        "0.8.3"      :scope "test"]
-                 [org.clojure/clojurescript "1.10.520"]
-                 [cider/piggieback "0.4.0" :scope "test"]
+                 [org.clojure/clojurescript "1.9.562"]
+                 [com.cemerick/piggieback "0.2.1" :scope "test"]
+                 [org.clojure/tools.nrepl "0.2.13" :scope "test"]
                  [weasel "0.7.0" :scope "test"]
-                 [org.clojure/tools.nrepl "0.2.12" :scope "test"]
-                 [crisptrutski/boot-cljs-test "0.2.0-SNAPSHOT" :scope "test"]
+                 [crisptrutski/boot-cljs-test "0.3.0" :scope "test"]
                  [reagent "0.5.0"]
                  [cljsjs/mustache "1.1.0-0"]
                  [cljsjs/jszip "3.1.3-0"]])
