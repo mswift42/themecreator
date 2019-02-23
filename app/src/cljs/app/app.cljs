@@ -186,6 +186,10 @@
   (GET "templates/emacs.txt" emacstemplate)
   (GET "templates/vim.txt" vimtemplate)
   (GET "templates/gnome-terminal.txt" gnometerminaltemplate)
+  (GET "templates/vscode/package.json" vscodepackagejsontemplate)
+  (GET "templates/vscode/vsc-extension-quickstart.md" vscodequickstarttemplate)
+  (GET "templates/vscode/README.md" vscodereadmetemplate)
+  (GET "templates/vscode/themes/vscode-color-theme.json" vscodetemplate)
   (db/set-db-from-storage)
   [:div.row
    [color-components]
