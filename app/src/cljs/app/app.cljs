@@ -98,6 +98,13 @@
                       (str (:themename @app-db) ".icls"))}
     "IntelliJ"]])
 
+(defn template-download-vscode
+  []
+  [:li
+   [:a {:href "#" :id "vscodelink" :on-click
+        #(create-blob generate-template-vscode "vscodelink"
+                      (str (:themename @app-db) ".zip"))}]])
+
 (defn template-select-component
   []
   [:div.btn-group.templatedrop {:id "templatedrop"}
