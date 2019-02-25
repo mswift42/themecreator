@@ -61,6 +61,8 @@
                             {k (strip-hash v)}))))
 
 
+(defn generate-template-vscode
+  [])
 
 
 (defn window-url
@@ -90,6 +92,7 @@
         #(create-blob (generate-template template) id filename)}
     title]])
 
+
 (defn template-download-intelli
   []
   [:li
@@ -104,6 +107,7 @@
    [:a {:href "#" :id "vscodelink" :on-click
         #(create-blob generate-template-vscode "vscodelink"
                       (str (:themename @app-db) ".zip"))}]])
+
 
 (defn template-select-component
   []
