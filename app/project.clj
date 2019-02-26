@@ -18,7 +18,7 @@
    [:cljsbuild :builds :app :compiler :output-dir]
    [:cljsbuild :builds :app :compiler :output-to]]
 
-  :resource-paths ["public"]
+  :resource-paths ["resources"]
 
   :figwheel {:http-server-root "."
              :nrepl-port 7002
@@ -29,8 +29,8 @@
                        {:source-paths ["src" "env/dev/cljs"]
                         :compiler
                         {:main "app.dev"
-                         :output-to "public/js/app.js"
-                         :output-dir "public/js/out"
+                         :output-to "target/js/app.js"
+                         :output-dir "target/js/out"
                          :asset-path   "js/out"
                          :source-map true
                          :optimizations :none
@@ -41,8 +41,8 @@
                        :release
                        {:source-paths ["src" "env/prod/cljs"]
                         :compiler
-                        {:output-to "public/js/app.js"
-                         :output-dir "public/js/release"
+                        {:output-to "target/js/app.js"
+                         :output-dir "target/js/release"
                          :optimizations :advanced
                          :infer-externs true
                          :pretty-print false}}}}
