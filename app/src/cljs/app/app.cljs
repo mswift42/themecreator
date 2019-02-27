@@ -61,8 +61,10 @@
                             {k (strip-hash v)}))))
 
 
-(defn generate-template-vscode
-  [])
+(defn generate-templates-vscode
+  [templates]
+  (doseq [i template]
+    (compile-template template (derive-colors-from-theme @app-db))))
 
 
 (defn window-url
