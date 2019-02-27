@@ -63,8 +63,8 @@
 
 (defn generate-templates-vscode
   [templates]
-  (doseq [i template]
-    (compile-template template (derive-colors-from-theme @app-db))))
+  (doseq [i templates]
+    (compile-template i (derive-colors-from-theme @app-db))))
 
 
 (defn window-url
@@ -107,7 +107,7 @@
   []
   [:li
    [:a {:href "#" :id "vscodelink" :on-click
-        #(create-blob generate-template-vscode "vscodelink"
+        #(create-blob generate-templates-vscode "vscodelink"
                       (str (:themename @app-db) ".zip"))}]])
 
 
