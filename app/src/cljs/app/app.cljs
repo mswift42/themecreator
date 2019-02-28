@@ -60,11 +60,14 @@
                           (for [[k v] (derive-colors-from-theme @app-db)]
                             {k (strip-hash v)}))))
 
+(def zip (js/JSZip.))
 
 (defn generate-templates-vscode
   [templates]
-  (doseq [i templates]
-    (compile-template i (derive-colors-from-theme @app-db))))
+  (do
+    (doseq [i templates]
+      (compile-template i (derive-colors-from-theme @app-db)))
+    ()))
 
 
 (defn window-url
