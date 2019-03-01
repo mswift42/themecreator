@@ -26,7 +26,7 @@
              :css-dirs ["resources/css"]}
 
   :cljsbuild {:builds {:app
-                       {:source-paths ["src" "env/dev/cljs"]
+                       {:source-paths ["src" "src/cljs/app"]
                         :compiler
                         {:main "app.app"
                          :output-to "target/js/app.js"
@@ -49,7 +49,7 @@
 
   :aliases {"package" ["do" "clean" ["cljsbuild" "once" "release"]]}
 
-  :profiles {:dev {:source-paths ["src" "env/dev/clj"]
+  :profiles {:dev {:source-paths ["src" "src/cljs/app"]
                    :dependencies [[binaryage/devtools "0.9.10"]
                                   [figwheel-sidecar "0.5.18"]
                                   [nrepl "0.6.0"]
