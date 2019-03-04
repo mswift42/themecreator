@@ -67,7 +67,8 @@
   (do
     (doseq [i templates]
       (compile-template i (derive-colors-from-theme @app-db)))
-    (.folder zip "resources/vscode")))
+    (.folder zip "resources/templates/vscode")
+    (.folder zip "resources/vscode/")))
 
 
 (defn window-url
