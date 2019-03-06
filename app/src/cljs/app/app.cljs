@@ -130,8 +130,6 @@
     [:span.caret]
     [:span.sr-only]]
    [:ul#downloadsel.dropdown-menu {:aria-labelledby "templatedrop" }
-    ;; [template-download "intellilink" "IntelliJ"
-    ;;  (str (:themename @app-db) ".icls") @intellitemplate]
     [template-download-intelli]
     [template-download "tmthemelink" "Textmate"
      (str (:themename @app-db) ".tmTheme") @tmthemetemplate]
