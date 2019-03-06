@@ -115,7 +115,9 @@
   [:li
    [:a {:href "#" :id "vscodelink" :on-click
         #(create-blob generate-templates-vscode "vscodelink"
-                      (str (:themename @app-db) ".zip"))}]])
+                      (str (:themename @app-db) ".zip"))}
+
+    "VSCode"]])
 
 
 (defn template-select-component
@@ -140,7 +142,9 @@
     [template-download "vimlink" "Vim"
      (str (:themename @app-db) ".vim") @vimtemplate]
     [template-download "gnometerminallink" "Gnome Terminal"
-     (str (:themename @app-db) ".sh") @gnometerminaltemplate]]])
+     (str (:themename @app-db) ".sh") @gnometerminaltemplate]
+    [template-download-vscode]
+     ]])
 
 (defn store-component
   []
