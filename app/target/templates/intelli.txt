@@ -188,7 +188,7 @@
     <option name="BREADCRUMBS_HOVERED">
       <value>
         <option name="FOREGROUND" value="{{fg1}}" />
-        <option name="BACKGROUND" value="{{bg2}}" />
+        <option name="BACKGROUND" value="{{bg4}}" />
       </value>
     </option>
     <option name="BREADCRUMBS_INACTIVE">
