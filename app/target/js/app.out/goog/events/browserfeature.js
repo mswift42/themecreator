@@ -21,6 +21,8 @@
 goog.provide('goog.events.BrowserFeature');
 
 goog.require('goog.userAgent');
+goog.scope(function() {
+
 
 
 /**
@@ -32,27 +34,27 @@ goog.events.BrowserFeature = {
    * Whether the button attribute of the event is W3C compliant.  False in
    * Internet Explorer prior to version 9; document-version dependent.
    */
-  HAS_W3C_BUTTON: !goog.userAgent.IE ||
-      goog.userAgent.isDocumentModeOrHigher(9),
+  HAS_W3C_BUTTON:
+      !goog.userAgent.IE || goog.userAgent.isDocumentModeOrHigher(9),
 
   /**
    * Whether the browser supports full W3C event model.
    */
-  HAS_W3C_EVENT_SUPPORT: !goog.userAgent.IE ||
-      goog.userAgent.isDocumentModeOrHigher(9),
+  HAS_W3C_EVENT_SUPPORT:
+      !goog.userAgent.IE || goog.userAgent.isDocumentModeOrHigher(9),
 
   /**
    * To prevent default in IE7-8 for certain keydown events we need set the
    * keyCode to -1.
    */
-  SET_KEY_CODE_TO_PREVENT_DEFAULT: goog.userAgent.IE &&
-      !goog.userAgent.isVersionOrHigher('9'),
+  SET_KEY_CODE_TO_PREVENT_DEFAULT:
+      goog.userAgent.IE && !goog.userAgent.isVersionOrHigher('9'),
 
   /**
    * Whether the {@code navigator.onLine} property is supported.
    */
-  HAS_NAVIGATOR_ONLINE_PROPERTY: !goog.userAgent.WEBKIT ||
-      goog.userAgent.isVersionOrHigher('528'),
+  HAS_NAVIGATOR_ONLINE_PROPERTY:
+      !goog.userAgent.WEBKIT || goog.userAgent.isVersionOrHigher('528'),
 
   /**
    * Whether HTML5 network online/offline events are supported.
@@ -76,10 +78,45 @@ goog.events.BrowserFeature = {
    */
   TOUCH_ENABLED:
       ('ontouchstart' in goog.global ||
-          !!(goog.global['document'] &&
-             document.documentElement &&
-             'ontouchstart' in document.documentElement) ||
-          // IE10 uses non-standard touch events, so it has a different check.
-          !!(goog.global['navigator'] &&
-              goog.global['navigator']['msMaxTouchPoints']))
+       !!(goog.global['document'] && document.documentElement &&
+          'ontouchstart' in document.documentElement) ||
+       // IE10 uses non-standard touch events, so it has a different check.
+       !!(goog.global['navigator'] &&
+          goog.global['navigator']['msMaxTouchPoints'])),
+
+  /**
+   * Whether addEventListener supports {passive: true}.
+   * https://developers.google.com/web/updates/2016/06/passive-event-listeners
+   */
+  PASSIVE_EVENTS: purify(function() {
+    // If we're in a web worker or other custom environment, we can't tell.
+    if (!goog.global.addEventListener || !Object.defineProperty) {  // IE 8
+      return false;
+    }
+
+    var passive = false;
+    var options = Object.defineProperty({}, 'passive', {
+      get: function() {
+        passive = true;
+      }
+    });
+    goog.global.addEventListener('test', goog.nullFunction, options);
+    goog.global.removeEventListener('test', goog.nullFunction, options);
+
+    return passive;
+  })
 };
+
+
+/**
+ * Tricks Closure Compiler into believing that a function is pure.  The compiler
+ * assumes that any `valueOf` function is pure, without analyzing its contents.
+ *
+ * @param {function(): T} fn
+ * @return {T}
+ * @template T
+ */
+function purify(fn) {
+  return ({valueOf: fn}).valueOf();
+}
+});  // goog.scope

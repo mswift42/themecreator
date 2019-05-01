@@ -1,6 +1,7 @@
-// Compiled by ClojureScript 1.7.170 {:static-fns true, :optimize-constants true}
+// Compiled by ClojureScript 1.10.520 {:static-fns true, :optimize-constants true}
 goog.provide('app.db');
 goog.require('cljs.core');
+goog.require('cljs.core.constants');
 goog.require('reagent.core');
 app.db.black = cljs.core.PersistentHashMap.fromArrays([cljs.core.cst$kw$variable,cljs.core.cst$kw$warning2,cljs.core.cst$kw$constant,cljs.core.cst$kw$type,cljs.core.cst$kw$string,cljs.core.cst$kw$functionname,cljs.core.cst$kw$warning,cljs.core.cst$kw$keyword,cljs.core.cst$kw$mainfg,cljs.core.cst$kw$mainbg,cljs.core.cst$kw$comment,cljs.core.cst$kw$themename,cljs.core.cst$kw$builtin],["#d4d4d4","#ff8800","#d4d4d4","#d4d4d4","#d4d4d4","#d4d4d4","#ff0000","#d4d4d4","#d4d4d4","#000000","#808080","black","#d4d4d4"]);
 app.db.white = cljs.core.PersistentHashMap.fromArrays([cljs.core.cst$kw$variable,cljs.core.cst$kw$warning2,cljs.core.cst$kw$constant,cljs.core.cst$kw$type,cljs.core.cst$kw$string,cljs.core.cst$kw$functionname,cljs.core.cst$kw$warning,cljs.core.cst$kw$keyword,cljs.core.cst$kw$mainfg,cljs.core.cst$kw$mainbg,cljs.core.cst$kw$comment,cljs.core.cst$kw$themename,cljs.core.cst$kw$builtin],["#000000","#ff8800","#000000","#000000","#000000","#000000","#ff0000","#000000","#303030","#ffffff","#606060","white","#000000"]);
@@ -26,50 +27,44 @@ app.db.app_db = reagent.core.atom.cljs$core$IFn$_invoke$arity$1(app.db.black);
 app.db.adjustbg = reagent.core.atom.cljs$core$IFn$_invoke$arity$1(false);
 app.db.custom_palette_db = reagent.core.atom.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$saturation,(0),cljs.core.cst$kw$lightness,(0)], null));
 app.db.switch_theme = (function app$db$switch_theme(theme){
-return (cljs.core.reset_BANG_.cljs$core$IFn$_invoke$arity$2 ? cljs.core.reset_BANG_.cljs$core$IFn$_invoke$arity$2(app.db.app_db,theme) : cljs.core.reset_BANG_.call(null,app.db.app_db,theme));
+return cljs.core.reset_BANG_(app.db.app_db,theme);
 });
 app.db.toggle_adjust = (function app$db$toggle_adjust(){
-var G__11034 = app.db.adjustbg;
-var G__11035 = cljs.core.not((cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.db.adjustbg) : cljs.core.deref.call(null,app.db.adjustbg)));
-return (cljs.core.reset_BANG_.cljs$core$IFn$_invoke$arity$2 ? cljs.core.reset_BANG_.cljs$core$IFn$_invoke$arity$2(G__11034,G__11035) : cljs.core.reset_BANG_.call(null,G__11034,G__11035));
+return cljs.core.reset_BANG_(app.db.adjustbg,cljs.core.not(cljs.core.deref(app.db.adjustbg)));
 });
 app.db.set_custom_palette = (function app$db$set_custom_palette(lightness,saturation){
-var G__11038 = app.db.custom_palette_db;
-var G__11039 = new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$saturation,saturation,cljs.core.cst$kw$lightness,lightness], null);
-return (cljs.core.reset_BANG_.cljs$core$IFn$_invoke$arity$2 ? cljs.core.reset_BANG_.cljs$core$IFn$_invoke$arity$2(G__11038,G__11039) : cljs.core.reset_BANG_.call(null,G__11038,G__11039));
+return cljs.core.reset_BANG_(app.db.custom_palette_db,new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$saturation,saturation,cljs.core.cst$kw$lightness,lightness], null));
 });
 app.db.storagename = "themecreator";
 app.db.save_to_storage = (function app$db$save_to_storage(){
-return localStorage.setItem(app.db.storagename,(function (){var G__11041 = cljs.core.clj__GT_js(cljs.core.assoc.cljs$core$IFn$_invoke$arity$variadic((cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.db.app_db) : cljs.core.deref.call(null,app.db.app_db)),cljs.core.cst$kw$lightness,cljs.core.cst$kw$lightness.cljs$core$IFn$_invoke$arity$1((cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.db.custom_palette_db) : cljs.core.deref.call(null,app.db.custom_palette_db))),cljs.core.array_seq([cljs.core.cst$kw$saturation,cljs.core.cst$kw$saturation.cljs$core$IFn$_invoke$arity$1((cljs.core.deref.cljs$core$IFn$_invoke$arity$1 ? cljs.core.deref.cljs$core$IFn$_invoke$arity$1(app.db.custom_palette_db) : cljs.core.deref.call(null,app.db.custom_palette_db)))], 0)));
-return JSON.stringify(G__11041);
-})());
+return localStorage.setItem(app.db.storagename,JSON.stringify(cljs.core.clj__GT_js(cljs.core.assoc.cljs$core$IFn$_invoke$arity$variadic(cljs.core.deref(app.db.app_db),cljs.core.cst$kw$lightness,cljs.core.cst$kw$lightness.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(app.db.custom_palette_db)),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cljs.core.cst$kw$saturation,cljs.core.cst$kw$saturation.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(app.db.custom_palette_db))], 0)))));
 });
 /**
  * convert a map with strings as keys to a map with keyword keys and string 
  * values.
  */
 app.db.string_to_keyword = (function app$db$string_to_keyword(strmap){
-return cljs.core.into.cljs$core$IFn$_invoke$arity$2(cljs.core.PersistentArrayMap.EMPTY,(function (){var iter__5731__auto__ = (function app$db$string_to_keyword_$_iter__11052(s__11053){
+return cljs.core.into.cljs$core$IFn$_invoke$arity$2(cljs.core.PersistentArrayMap.EMPTY,(function (){var iter__4523__auto__ = (function app$db$string_to_keyword_$_iter__5764(s__5765){
 return (new cljs.core.LazySeq(null,(function (){
-var s__11053__$1 = s__11053;
+var s__5765__$1 = s__5765;
 while(true){
-var temp__4425__auto__ = cljs.core.seq(s__11053__$1);
-if(temp__4425__auto__){
-var s__11053__$2 = temp__4425__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__11053__$2)){
-var c__5729__auto__ = cljs.core.chunk_first(s__11053__$2);
-var size__5730__auto__ = cljs.core.count(c__5729__auto__);
-var b__11055 = cljs.core.chunk_buffer(size__5730__auto__);
-if((function (){var i__11054 = (0);
+var temp__5457__auto__ = cljs.core.seq(s__5765__$1);
+if(temp__5457__auto__){
+var s__5765__$2 = temp__5457__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__5765__$2)){
+var c__4521__auto__ = cljs.core.chunk_first(s__5765__$2);
+var size__4522__auto__ = cljs.core.count(c__4521__auto__);
+var b__5767 = cljs.core.chunk_buffer(size__4522__auto__);
+if((function (){var i__5766 = (0);
 while(true){
-if((i__11054 < size__5730__auto__)){
-var vec__11060 = cljs.core._nth.cljs$core$IFn$_invoke$arity$2(c__5729__auto__,i__11054);
-var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__11060,(0),null);
-var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__11060,(1),null);
-cljs.core.chunk_append(b__11055,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.keyword.cljs$core$IFn$_invoke$arity$1(k),v], null));
+if((i__5766 < size__4522__auto__)){
+var vec__5768 = cljs.core._nth.cljs$core$IFn$_invoke$arity$2(c__4521__auto__,i__5766);
+var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__5768,(0),null);
+var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__5768,(1),null);
+cljs.core.chunk_append(b__5767,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.keyword.cljs$core$IFn$_invoke$arity$1(k),v], null));
 
-var G__11062 = (i__11054 + (1));
-i__11054 = G__11062;
+var G__5774 = (i__5766 + (1));
+i__5766 = G__5774;
 continue;
 } else {
 return true;
@@ -77,15 +72,15 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__11055),app$db$string_to_keyword_$_iter__11052(cljs.core.chunk_rest(s__11053__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__5767),app$db$string_to_keyword_$_iter__5764(cljs.core.chunk_rest(s__5765__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__11055),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__5767),null);
 }
 } else {
-var vec__11061 = cljs.core.first(s__11053__$2);
-var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__11061,(0),null);
-var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__11061,(1),null);
-return cljs.core.cons(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.keyword.cljs$core$IFn$_invoke$arity$1(k),v], null),app$db$string_to_keyword_$_iter__11052(cljs.core.rest(s__11053__$2)));
+var vec__5771 = cljs.core.first(s__5765__$2);
+var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__5771,(0),null);
+var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__5771,(1),null);
+return cljs.core.cons(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.keyword.cljs$core$IFn$_invoke$arity$1(k),v], null),app$db$string_to_keyword_$_iter__5764(cljs.core.rest(s__5765__$2)));
 }
 } else {
 return null;
@@ -94,15 +89,13 @@ break;
 }
 }),null,null));
 });
-return iter__5731__auto__(strmap);
+return iter__4523__auto__(strmap);
 })());
 });
 app.db.load_from_storage = (function app$db$load_from_storage(){
 var th = localStorage.getItem(app.db.storagename);
 if(cljs.core.truth_(th)){
-return cljs.core.js__GT_clj.cljs$core$IFn$_invoke$arity$1((function (){var G__11064 = localStorage.getItem(app.db.storagename);
-return JSON.parse(G__11064);
-})());
+return cljs.core.js__GT_clj.cljs$core$IFn$_invoke$arity$1(JSON.parse(localStorage.getItem(app.db.storagename)));
 } else {
 return null;
 }
@@ -112,9 +105,7 @@ if(cljs.core.truth_(localStorage.getItem(app.db.storagename))){
 var storedtheme = app.db.string_to_keyword(app.db.load_from_storage());
 app.db.switch_theme(storedtheme);
 
-var G__11067 = app.db.custom_palette_db;
-var G__11068 = new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$saturation,cljs.core.cst$kw$saturation.cljs$core$IFn$_invoke$arity$1(storedtheme),cljs.core.cst$kw$lightness,cljs.core.cst$kw$lightness.cljs$core$IFn$_invoke$arity$1(storedtheme)], null);
-return (cljs.core.reset_BANG_.cljs$core$IFn$_invoke$arity$2 ? cljs.core.reset_BANG_.cljs$core$IFn$_invoke$arity$2(G__11067,G__11068) : cljs.core.reset_BANG_.call(null,G__11067,G__11068));
+return cljs.core.reset_BANG_(app.db.custom_palette_db,new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$saturation,cljs.core.cst$kw$saturation.cljs$core$IFn$_invoke$arity$1(storedtheme),cljs.core.cst$kw$lightness,cljs.core.cst$kw$lightness.cljs$core$IFn$_invoke$arity$1(storedtheme)], null));
 } else {
 return null;
 }
