@@ -28,6 +28,8 @@
     <option name="SELECTED_TEARLINE_COLOR" value="" />
     <option name="SELECTION_BACKGROUND" value="{{bg2}}" />
     <option name="SELECTION_FOREGROUND" value="{{fg2}}" />
+    <option name="SEPARATOR_BELOW_COLOR" value="{{bg2}}"/>
+    <option name="SEPARATOR_ABOVE_COLOR" value="{{bg2}}"/>
     <option name="TEARLINE_COLOR" value="{{fg2}}" />
     <option name="WHITESPACES" value="{{fg2}}" />
   </colors>
@@ -709,6 +711,11 @@
         <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
+    </option>
+    <option name="DART.CONSTRUCTOR">
+     <value>
+    <option name="FOREGROUND" value="{{type}}" />
+    </value> 
     </option>
     <option name="DARTKEYWORD">
       <value>
