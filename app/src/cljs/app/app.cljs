@@ -141,8 +141,7 @@
      (str (:themename @app-db) ".vim") @vimtemplate]
     [template-download "gnometerminallink" "Gnome Terminal"
      (str (:themename @app-db) ".sh") @gnometerminaltemplate]
-    [template-download-vscode]
-     ]])
+    [template-download-vscode]]])
 
 (defn store-component
   []
