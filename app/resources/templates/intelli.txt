@@ -710,6 +710,11 @@
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
+    <option name="DART.CONSTRUCTOR">
+     <value>
+    <option name="FOREGROUND" value="{{type}}" />
+    </value> 
+    </option>
     <option name="DARTKEYWORD">
       <value>
         <option name="FOREGROUND" value="{{keyword}}" />
