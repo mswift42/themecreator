@@ -694,7 +694,7 @@
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
-    <option name="DART.BADCHARACTER">
+    <option name="DART_BADCHARACTER">
       <value>
         <option name="FOREGROUND" value="{{fg3}}" />
         <option name="BACKGROUND" value="{{warning}}" />
@@ -712,7 +712,7 @@
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
-    <option name="DART.CONSTRUCTOR">
+    <option name="DART_CONSTRUCTOR">
      <value>
     <option name="FOREGROUND" value="{{type}}" />
     </value> 
@@ -904,8 +904,8 @@
     </option>
     <option name="DIFF_DELETED">
         <value>
-            <option name="BACKGROUND" value="{{bg1}}"/>
-            <option name="ERROR_STRIPE_COLOR" value="{{bg1}}"/>
+            <option name="BACKGROUND" value="{{bg2}}"/>
+            <option name="ERROR_STRIPE_COLOR" value="{{bg2}}"/>
         </value>
     </option>
     <option name="DIFF_INSERTED">
