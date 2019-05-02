@@ -896,6 +896,30 @@
         <option name="EFFECT_TYPE" value="3" />
       </value>
     </option>
+    <option name="DIFF_CONFLICT">
+        <value>
+            <option name="BACKGROUND" value="{{bg2}}"/>
+            <option name="ERROR_STRIPE_COLOR" value="e86310"/>
+        </value>
+    </option>
+    <option name="DIFF_DELETED">
+        <value>
+            <option name="BACKGROUND" value="{{bg1}}"/>
+            <option name="ERROR_STRIPE_COLOR" value="{{bg1}}"/>
+        </value>
+    </option>
+    <option name="DIFF_INSERTED">
+        <value>
+            <option name="BACKGROUND" value="{{bg2}}"/>
+            <option name="ERROR_STRIPE_COLOR" value="{{warning2}}"/>
+        </value>
+    </option>
+    <option name="DIFF_MODIFIED">
+        <value>
+            <option name="BACKGROUND" value="{{bg3}}"/>
+            <option name="ERROR_STRIPE_COLOR" value="{{warning2}}"/>
+        </value>
+    </option>
     <option name="DJANGO_COMMENT">
       <value>
         <option name="FOREGROUND" value="{{comment}}" />
