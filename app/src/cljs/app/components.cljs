@@ -48,7 +48,8 @@
     [#(db/switch-theme db/foggy-night) "foggy-night"]
     [#(db/switch-theme db/silkworm) "silkworm"]
     [#(db/switch-theme db/metalheart) "metalheart"]
-    [#(db/switch-theme db/breezy-fall) "breezy-fall"]]])
+    [#(db/switch-theme db/breezy-fall) "breezy-fall"]
+    [#(db/switch-theme db/thursday) "thursday"]]])
 
 (defn language-select
   []
