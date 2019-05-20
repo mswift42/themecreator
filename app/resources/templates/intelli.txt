@@ -177,6 +177,27 @@
         <option name="FOREGROUND" value="{{warning}}" />
       </value>
     </option>
+    <option name="BREADCRUMBS_CURRENT">
+      <value>
+        <option name="FOREGROUND" value="{{keyword}}" />
+      </value>
+    </option>
+    <option name="BREADCRUMBS_DEFAULT">
+      <value>
+        <option name="FOREGROUND" value="{{fg2}}" />
+      </value>
+    </option>
+    <option name="BREADCRUMBS_HOVERED">
+      <value>
+        <option name="FOREGROUND" value="{{fg1}}" />
+        <option name="BACKGROUND" value="{{bg4}}" />
+      </value>
+    </option>
+    <option name="BREADCRUMBS_INACTIVE">
+      <value>
+        <option name="FOREGROUND" value="{{comment}}" />
+      </value>
+    </option>
     <option name="BREAKPOINT_ATTRIBUTES">
       <value>
         <option name="BACKGROUND" value="{{bg2}}" />
@@ -673,7 +694,7 @@
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
-    <option name="DART.BADCHARACTER">
+    <option name="DART_BADCHARACTER">
       <value>
         <option name="FOREGROUND" value="{{fg3}}" />
         <option name="BACKGROUND" value="{{warning}}" />
@@ -690,6 +711,11 @@
         <option name="FOREGROUND" value="{{comment}}" />
         <option name="FONT_TYPE" value="2" />
       </value>
+    </option>
+    <option name="DART_CONSTRUCTOR">
+     <value>
+    <option name="FOREGROUND" value="{{type}}" />
+    </value> 
     </option>
     <option name="DARTKEYWORD">
       <value>
@@ -869,6 +895,30 @@
         <option name="EFFECT_COLOR" value="{{fg3}}" />
         <option name="EFFECT_TYPE" value="3" />
       </value>
+    </option>
+    <option name="DIFF_CONFLICT">
+        <value>
+            <option name="BACKGROUND" value="{{bg2}}"/>
+            <option name="ERROR_STRIPE_COLOR" value="e86310"/>
+        </value>
+    </option>
+    <option name="DIFF_DELETED">
+        <value>
+            <option name="BACKGROUND" value="{{bg2}}"/>
+            <option name="ERROR_STRIPE_COLOR" value="{{bg2}}"/>
+        </value>
+    </option>
+    <option name="DIFF_INSERTED">
+        <value>
+            <option name="BACKGROUND" value="{{bg2}}"/>
+            <option name="ERROR_STRIPE_COLOR" value="{{warning2}}"/>
+        </value>
+    </option>
+    <option name="DIFF_MODIFIED">
+        <value>
+            <option name="BACKGROUND" value="{{bg3}}"/>
+            <option name="ERROR_STRIPE_COLOR" value="{{warning2}}"/>
+        </value>
     </option>
     <option name="DJANGO_COMMENT">
       <value>
@@ -1851,7 +1901,7 @@
     </option>
     <option name="LOG_ERROR_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="{{warning2}}" />
+        <option name="FOREGROUND" value="{{warning}}" />
       </value>
     </option>
     <option name="LOG_EXPIRED_ENTRY">
@@ -1861,7 +1911,7 @@
     </option>
     <option name="LOG_WARNING_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="{{functionname}}" />
+        <option name="FOREGROUND" value="{{warning2}}" />
       </value>
     </option>
     <option name="LUA_BAD_CHARACTER">
