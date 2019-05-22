@@ -62,7 +62,7 @@ if((i__6059 < size__4522__auto__)){
 var vec__6061 = cljs.core._nth.cljs$core$IFn$_invoke$arity$2(c__4521__auto__,i__6059);
 var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__6061,(0),null);
 var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__6061,(1),null);
-cljs.core.chunk_append(b__6060,cljs.core.PersistentArrayMap.createAsIfByAssoc([k,app.app.strip_hash(v)]));
+cljs.core.chunk_append(b__6060,cljs.core.PersistentArrayMap.createAsIfByAssoc([k,v]));
 
 var G__6067 = (i__6059 + (1));
 i__6059 = G__6067;
@@ -81,7 +81,7 @@ return cljs.core.chunk_cons(cljs.core.chunk(b__6060),null);
 var vec__6064 = cljs.core.first(s__6058__$2);
 var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__6064,(0),null);
 var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__6064,(1),null);
-return cljs.core.cons(cljs.core.PersistentArrayMap.createAsIfByAssoc([k,app.app.strip_hash(v)]),app$app$generate_template_intelli_$_iter__6057(cljs.core.rest(s__6058__$2)));
+return cljs.core.cons(cljs.core.PersistentArrayMap.createAsIfByAssoc([k,v]),app$app$generate_template_intelli_$_iter__6057(cljs.core.rest(s__6058__$2)));
 }
 } else {
 return null;
