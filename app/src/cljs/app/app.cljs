@@ -52,7 +52,7 @@
   (compile-template template
                     (into {}
                           (for [[k v] (derive-colors-from-theme @app-db)]
-                            {k (strip-hash v)}))))
+                            {k v}))))
 
 
 
