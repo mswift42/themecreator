@@ -46,16 +46,6 @@
   [template]
   (compile-template template (derive-colors-from-theme @app-db)))
 
-;; (defn strip-hash
-;;   "strip '#' hash symbol of color string."
-;;   [color]
-;;   (if (str/startsWith color "#")
-;;     (.substring color 1)
-;;     color))
-
-(defn strip-hash
-  [color]
-  (clojure.string/replace-first color #"#" #""))
 
 (defn generate-template-intelli
   [template]
