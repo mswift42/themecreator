@@ -258,23 +258,26 @@
   "return a theme map with additional lighter/darker 
    variants of the background and foreground colors."
   [theme]
-  (if (dark-bg? (:mainbg theme))
-    (assoc theme
-           :fg2 (darken (:mainfg theme) 0.08)
-           :fg3 (darken (:mainfg theme) 0.16)
-           :fg4 (darken (:mainfg theme) 0.24)
-           :fg5 (lighten (:mainfg theme) 0.12)
-           :bg2 (lighten (:mainbg theme) 0.08)
-           :bg3 (lighten (:mainbg theme) 0.16)
-           :bg4 (lighten (:mainbg theme) 0.24))
-    (assoc theme
-           :fg2 (lighten (:mainfg theme) 0.08)
-           :fg3 (lighten (:mainfg theme) 0.16)
-           :fg4 (lighten (:mainfg theme) 0.24)
-           :fg5 (darken  (:mainfg theme) 0.08)
-           :bg2 (darken (:mainbg theme) 0.08)
-           :bg3 (darken (:mainbg theme) 0.16)
-           :bg4 (darken (:mainbg theme) 0.24))))
+  (let [dbg (dark-bg? (:mainbg theme))]
+    (if dbg
+      (assoc theme
+             :hasdarkbg dbg
+             :fg2 (darken (:mainfg theme) 0.08)
+             :fg3 (darken (:mainfg theme) 0.16)
+             :fg4 (darken (:mainfg theme) 0.24)
+             :fg5 (lighten (:mainfg theme) 0.12)
+             :bg2 (lighten (:mainbg theme) 0.08)
+             :bg3 (lighten (:mainbg theme) 0.16)
+             :bg4 (lighten (:mainbg theme) 0.24))
+      (assoc theme
+             :hasdarkbg dbg
+             :fg2 (lighten (:mainfg theme) 0.08)
+             :fg3 (lighten (:mainfg theme) 0.16)
+             :fg4 (lighten (:mainfg theme) 0.24)
+             :fg5 (darken  (:mainfg theme) 0.08)
+             :bg2 (darken (:mainbg theme) 0.08)
+             :bg3 (darken (:mainbg theme) 0.16)
+             :bg4 (darken (:mainbg theme) 0.24)))))
 
 
 
