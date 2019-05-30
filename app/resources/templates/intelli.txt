@@ -896,30 +896,58 @@
         <option name="EFFECT_TYPE" value="3" />
       </value>
     </option>
+    {{#hasdarkbg}}
     <option name="DIFF_CONFLICT">
         <value>
-            <option name="BACKGROUND" value="{{bg2}}"/>
-            <option name="ERROR_STRIPE_COLOR" value="e86310"/>
+            <option name="BACKGROUND" value="#441720"/>
+            <option name="ERROR_STRIPE_COLOR" value="#e81050"/>
         </value>
     </option>
     <option name="DIFF_DELETED">
         <value>
-            <option name="BACKGROUND" value="{{bg2}}"/>
-            <option name="ERROR_STRIPE_COLOR" value="{{bg2}}"/>
+            <option name="BACKGROUND" value="#525252"/>
+            <option name="ERROR_STRIPE_COLOR" value="#4d1d08"/>
         </value>
     </option>
     <option name="DIFF_INSERTED">
         <value>
-            <option name="BACKGROUND" value="{{bg2}}"/>
-            <option name="ERROR_STRIPE_COLOR" value="{{warning2}}"/>
+            <option name="BACKGROUND" value="#123d0f"/>
+            <option name="ERROR_STRIPE_COLOR" value="#4bc446"/>
         </value>
     </option>
     <option name="DIFF_MODIFIED">
         <value>
-            <option name="BACKGROUND" value="{{bg3}}"/>
-            <option name="ERROR_STRIPE_COLOR" value="{{warning2}}"/>
+            <option name="BACKGROUND" value="#151b3c"/>
+            <option name="ERROR_STRIPE_COLOR" value="#1539e7"/>
         </value>
     </option>
+    {{/hasdarkbg}}
+    {{^hasdarkbg}}
+    <option name="DIFF_CONFLICT">
+        <value>
+            <option name="BACKGROUND" value="#f79e9e"/>
+            <option name="ERROR_STRIPE_COLOR" value="#fa0c0c"/>
+        </value>
+    </option>
+    <option name="DIFF_DELETED">
+        <value>
+            <option name="BACKGROUND" value="#e5e7e9"/>
+            <option name="ERROR_STRIPE_COLOR" value="#e5e7e9"/>
+        </value>
+    </option>
+    <option name="DIFF_INSERTED">
+        <value>
+            <option name="BACKGROUND" value="#bef6dc"/>
+            <option name="ERROR_STRIPE_COLOR" value="#8ff7c7"/>
+        </value>
+    </option>
+    <option name="DIFF_MODIFIED">
+        <value>
+            <option name="BACKGROUND" value="#5b76ef"/>
+            <option name="ERROR_STRIPE_COLOR" value="#0033ff"/>
+        </value>
+    </option>
+    {{/hasdarkbg}}
     <option name="DJANGO_COMMENT">
       <value>
         <option name="FOREGROUND" value="{{comment}}" />
