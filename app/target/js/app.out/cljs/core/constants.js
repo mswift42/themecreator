@@ -3,6 +3,7 @@ goog.require('cljs.core');
 cljs.core.cst$sym$form = new cljs.core.Symbol(null,"form","form",16469056,null);
 cljs.core.cst$sym$tag = new cljs.core.Symbol(null,"tag","tag",350170304,null);
 cljs.core.cst$kw$themeauthor = new cljs.core.Keyword(null,"themeauthor","themeauthor",1913172160);
+cljs.core.cst$kw$hasdarkbg = new cljs.core.Keyword(null,"hasdarkbg","hasdarkbg",-317233792);
 cljs.core.cst$sym$_AMPERSAND_ = new cljs.core.Symbol(null,"&","&",-2144855648,null);
 cljs.core.cst$kw$_DASH_webkit_DASH_text_DASH_decoration = new cljs.core.Keyword(null,"-webkit-text-decoration","-webkit-text-decoration",20787680);
 cljs.core.cst$sym$uuid = new cljs.core.Symbol(null,"uuid","uuid",-504564192,null);
