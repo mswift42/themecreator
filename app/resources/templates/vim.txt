@@ -57,14 +57,14 @@ exe 'hi Define guifg='s:keyword
 {{#dasdarkbg}}
 exe 'hi DiffAdd guifg=#fafafa guibg=#123d0f gui=bold'
 exe 'hi DiffDelete guibg='s:bg2'  
-exe 'hi DiffChange  guibg='s:bg2
-exe 'hi DiffText guifg=#000000 guibg=#ddddff gui=bold'
+exe 'hi DiffChange  guibg=#151b3c guifg=#fafafa'
+exe 'hi DiffText guifg=#ffffff guibg=#ff0000 gui=bold'
 {{/hasdarkbg}}
 {{^hasdarkbg}}
-exe 'hi DiffAdd guifg=#000000 guibg=#ddffdd gui=bold'
-exe 'hi DiffDelete guifg=#ff0000'  
-exe 'hi DiffChange  guibg='s:bg2
-exe 'hi DiffText guifg=#000000 guibg=#ddddff gui=bold'
+exe 'hi DiffAdd guifg=#000000 guibg=#bef6dc gui=bold'
+exe 'hi DiffDelete guifg=s:bg2'  
+exe 'hi DiffChange  guibg=#5b76ef guifg=#ffffff
+exe 'hi DiffText guifg=#ffffff guibg=#ff0000 gui=bold'
 {{/hasdarkbg}}
 exe 'hi ErrorMsg guifg='s:warning' guibg='s:bg2' gui=bold'
 exe 'hi WarningMsg guifg='s:fg' guibg='s:warning2 
