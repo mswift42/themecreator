@@ -283,6 +283,7 @@
    :variable "#7d6740"
    :type "#56724b"
    :constant "#28766e"
+   :comment "#909090"
    :warning "#fa0c0c"
    :warning2 "#fa7b0c"})
 
