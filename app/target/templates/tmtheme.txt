@@ -179,6 +179,7 @@ Created with ThemeCreator, https://github.com/mswift42/themecreator -->
 				<string>{{mainbg}}</string>
 			</dict>
 		</dict>
+                {{#hasdarkbg}}
 		<dict>
 			<key>name</key>
 			<string>Diff foreground</string>
@@ -187,7 +188,7 @@ Created with ThemeCreator, https://github.com/mswift42/themecreator -->
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{mainbg}}</string>
+				<string>#fafafa</string>
 			</dict>
 		</dict>
 		<dict>
@@ -198,7 +199,7 @@ Created with ThemeCreator, https://github.com/mswift42/themecreator -->
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>{{string}}</string>
+				<string>#123d0f</string>
 			</dict>
 		</dict>
 		<dict>
@@ -209,7 +210,7 @@ Created with ThemeCreator, https://github.com/mswift42/themecreator -->
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>{{variable}}</string>
+				<string>{{.Bg3}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -220,9 +221,9 @@ Created with ThemeCreator, https://github.com/mswift42/themecreator -->
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{mainbg}}</string>
+				<string>{{.Fg1}}</string>
 				<key>background</key>
-				<string>{{functionname}}</string>
+				<string>{{.Bg01}}</string>
 			</dict>
 		</dict>
 		<dict>
@@ -238,6 +239,68 @@ Created with ThemeCreator, https://github.com/mswift42/themecreator -->
 				<string>{{keyword}}</string>
 			</dict>
 		</dict>
+                {{/hasdarkbg}}
+                {{^hasdarkbg}}
+		<dict>
+			<key>name</key>
+			<string>Diff foreground</string>
+			<key>scope</key>
+			<string>markup.inserted.diff, markup.deleted.diff, meta.diff.header.to-file, meta.diff.header.from-file</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Diff insertion</string>
+			<key>scope</key>
+			<string>markup.inserted.diff, meta.diff.header.to-file</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#bef6dc</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Diff deletion</string>
+			<key>scope</key>
+			<string>markup.deleted.diff, meta.diff.header.from-file</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>{{.Bg3}}</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Diff header</string>
+			<key>scope</key>
+			<string>meta.diff.header.from-file, meta.diff.header.to-file</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#111111</string>
+				<key>background</key>
+				<string>{{.Bg01}}</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Diff range</string>
+			<key>scope</key>
+			<string>meta.diff.range</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>{{keyword}}</string>
+			</dict>
+		</dict>
+                {{/hasdarkbg}}
 	</array>
 	<key>uuid</key>
 	<string></string>
