@@ -249,7 +249,7 @@ Created with ThemeCreator, https://github.com/mswift42/themecreator -->
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>{{mainbg}}</string>
+				<string>#000000</string>
 			</dict>
 		</dict>
 		<dict>
@@ -260,7 +260,7 @@ Created with ThemeCreator, https://github.com/mswift42/themecreator -->
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>{{string}}</string>
+				<string>#bef6dc</string>
 			</dict>
 		</dict>
 		<dict>
@@ -271,7 +271,7 @@ Created with ThemeCreator, https://github.com/mswift42/themecreator -->
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>{{variable}}</string>
+				<string>{{.Bg3}}</string>
 			</dict>
 		</dict>
 		<dict>
