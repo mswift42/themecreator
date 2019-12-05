@@ -2,11 +2,11 @@
  :source-paths    #{"src/cljs"}
  :resource-paths  #{"resources"}
  :dependencies '[[adzerk/boot-cljs          "2.1.5"   :scope "test"]
-                 [adzerk/boot-cljs-repl     "0.3.0"      :scope "test"]
+                 [adzerk/boot-cljs-repl     "0.4.0"      :scope "test"]
                  [adzerk/boot-reload        "0.4.8"      :scope "test"]
                  [pandeiro/boot-http        "0.6.3"      :scope "test"]
                  [org.clojure/clojurescript "1.10.520"]
-                 [com.cemerick/piggieback "0.2.1" :scope "test"]
+                 [com.cemerick/piggieback "0.3.9" :scope "test"]
                  [weasel "0.7.0" :scope "test"]
                  [org.clojure/tools.nrepl "0.2.12" :scope "test"]
                  [crisptrutski/boot-cljs-test "0.2.0-SNAPSHOT" :scope "test"]
