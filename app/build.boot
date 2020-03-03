@@ -5,12 +5,12 @@
                  [adzerk/boot-cljs-repl     "0.4.0"      :scope "test"]
                  [adzerk/boot-reload        "0.6.0"      :scope "test"]
                  [pandeiro/boot-http        "0.8.3"    :exclusions [org.clojure/clojure]  :scope "test"]
-                 [org.clojure/clojurescript "1.10.520" :exclusions [org.clojure/clojure]]
+                 [org.clojure/clojurescript "1.10.597" ]
                  [cider/piggieback "0.4.2" :scope "test"]
-                 [nrepl "0.6.0"]
-                 [weasel "0.7.0" :scope "test" :exclusions [org.clojure/clojure]]
-                 [crisptrutski/boot-cljs-test "0.3.0" :scope "test"]
-                 [reagent "0.8.1"]
+                 [nrepl "0.7.0-alpha3"]
+                 [weasel "0.7.1" :scope "test" :exclusions [org.clojure/clojure]]
+                 [crisptrutski/boot-cljs-test "0.3.5-SNAPSHOT" :scope "test"]
+                 [reagent "0.9.1"]
                  [cljsjs/mustache "1.1.0-0"]
                  [cljsjs/jszip "3.1.3-0"]])
 
@@ -51,6 +51,12 @@
   []
   (comp (development)
         (run)))
+
+(deftask dev-rep
+  []
+  (comp (watch)
+        (cljs-repl)
+        (cljs)))
 
 
 (deftask testing []
