@@ -1,6 +1,6 @@
 ;;; {{themename}}-theme.el --- Theme 
 
-;; Copyright (C) 2016 , {{themeauthor}}
+;; Copyright (C) {{year}} , {{themeauthor}}
 
 ;; Author: {{themeauthor}}
 ;; Version: 0.1
