@@ -95,6 +95,10 @@
         #(create-blob (generate-template template) id filename)}
     title]])
 
+(defn current-year
+  []
+  (.getFullYear (js/Date.)))
+
 
 (defn template-download-intelli
   []
