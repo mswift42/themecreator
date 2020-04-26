@@ -99,6 +99,10 @@
   []
   (.getFullYear (js/Date.)))
 
+(defn set-year
+  []
+  (swap! db/app-db assoc :year (current-year)))
+
 
 (defn template-download-intelli
   []
@@ -209,6 +213,7 @@
   (GET "templates/vscode/vsc-extension-quickstart.md" vscodequickstarttemplate)
   (GET "templates/vscode/README.md" vscodereadmetemplate)
   (GET "templates/vscode/themes/vscode-color-theme.json" vscodetemplate)
+  (set-year)
   (db/set-db-from-storage)
   [:div.row
    [color-components]
