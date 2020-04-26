@@ -1,5 +1,5 @@
 // Compiled by ClojureScript 1.10.520 {:static-fns true, :optimize-constants true}
-goog.provide('boot.cljs.main4519');
+goog.provide('boot.cljs.main4095');
 goog.require('cljs.core');
 goog.require('cljs.core.constants');
 goog.require('app.app');
