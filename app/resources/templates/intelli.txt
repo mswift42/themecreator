@@ -32,6 +32,7 @@
     <option name="SEPARATOR_ABOVE_COLOR" value="{{bg2}}"/>
     <option name="TEARLINE_COLOR" value="{{fg2}}" />
     <option name="WHITESPACES" value="{{fg2}}" />
+    <option name="DOCUMENTATION_COLOR" value="{{mainbg}}" />
   </colors>
   <attributes>
     <option name="ANNOTATION_NAME_ATTRIBUTES">
