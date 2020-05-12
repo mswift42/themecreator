@@ -6,7 +6,7 @@
                  [adzerk/boot-reload        "0.6.0"      :scope "test"]
                  [pandeiro/boot-http        "0.8.3"    :exclusions [org.clojure/clojure]  :scope "test"]
                  [org.clojure/clojurescript "1.10.597" ]
-                 [cider/piggieback "0.4.2" :scope "test"]
+                 [cider/piggieback "0.4.2"]
                  [nrepl "0.7.0-alpha3"]
                  [weasel "0.7.1" :scope "test" :exclusions [org.clojure/clojure]]
                  [crisptrutski/boot-cljs-test "0.3.5-SNAPSHOT" :scope "test"]
