@@ -97,7 +97,7 @@
 
 (defn current-year
   []
-  (.getFullYear (js/Date.)))
+  (str (.getFullYear (js/Date.))))
 
 (defn set-year
   []
