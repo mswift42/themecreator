@@ -26,14 +26,8 @@
     <option name="RIGHT_MARGIN_COLOR" value="{{bg2}}" />
     <option name="SELECTED_INDENT_GUIDE" value="{{fg2}}" />
     <option name="SELECTED_TEARLINE_COLOR" value="{{keyword}}" />
-    {{#hasdarkbg}}
-    <option name="SELECTION_BACKGROUND" value="#000000" />
-    <option name="SELECTION_FOREGROUND" value="{{keyword}}" />
-    {{/hasdarkbg}}
-    {{^hasdarkbg}}
-    <option name="SELECTION_BACKGROUND" value="#ffffff" />
-    <option name="SELECTION_FOREGROUND" value="{{keyword}}" />
-    {{/hasdarkbg}}
+    <option name="SELECTION_BACKGROUND" value="{{bg2}}" />
+    <option name="SELECTION_FOREGROUND" value="{{fg2}}" />
     <option name="SEPARATOR_BELOW_COLOR" value="{{bg2}}"/>
     <option name="SEPARATOR_ABOVE_COLOR" value="{{bg2}}"/>
     <option name="TEARLINE_COLOR" value="{{fg2}}" />
