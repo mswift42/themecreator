@@ -1,3 +1,0 @@
-{:require  [app.app]
- :init-fns [app.app/init]
- :compiler-options {:asset-path "js/app.out"}}
