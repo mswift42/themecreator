@@ -22,7 +22,7 @@
    [:h3 "Edit this in src/app/core.cljs and watch it change some more!"]])
 
 (defn mount [el]
-  (reagent/render-component [hello-world] el)
+  (app/init)
   )
 
 (defn mount-app-element []
