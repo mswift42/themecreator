@@ -135,8 +135,6 @@
     [template-download-intelli]
     [template-download "tmthemelink" "Textmate"
      (str (:themename @app-db) ".tmTheme") @tmthemetemplate]
-    [template-download "atomlink" "Atom"
-     "colors.less" @atomtemplate]
     [template-download "emacslink" "Emacs"
      (str (:themename @app-db) "-theme.el") @emacstemplate ]
     [template-download "vimlink" "Vim"
@@ -205,7 +203,6 @@
   [navbar-component]
   (GET "templates/intelli.txt" intellitemplate)
   (GET "templates/tmtheme.txt" tmthemetemplate)
-  (GET "templates/atom/colors.txt" atomtemplate)
   (GET "templates/emacs.txt" emacstemplate)
   (GET "templates/vim.txt" vimtemplate)
   (GET "templates/gnome-terminal.txt" gnometerminaltemplate)
