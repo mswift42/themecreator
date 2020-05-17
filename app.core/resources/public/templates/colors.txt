@@ -1,0 +1,20 @@
+// These colors are specific to the theme. Do not use in a package!
+
+@mainbg: {{mainbg}};
+@bg2: {{bg2}};
+@bg3: {{bg3}};
+@bg4: {{fg4}};
+@fg3: {{fg3}};
+@fg2: {{fg2}};
+@mainfg: {{mainfg}};
+
+@comment: {{comment}};
+@builtin: {{builtin}}; 
+@keyword: {{keyword}};
+@type: {{type}};
+@const: {{constant}};
+@func: {{functionname}};
+@string: {{string}};
+@var: {{variable}};
+@warning: {{warning}};
+@warning2: {{warning2}};
