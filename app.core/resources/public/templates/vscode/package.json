@@ -1,0 +1,21 @@
+{
+    "name": "{{themename}}",
+    "displayName": "{{themename}}",
+    "description": "light color theme",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.30.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "{{themename}}",
+                "uiTheme": "vs",
+                "path": "./themes/{{themename}}-color-theme.json"
+            }
+        ]
+    }
+}
