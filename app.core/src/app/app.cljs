@@ -65,7 +65,10 @@
     (.folder zip "templates/vscode/README.md" @vscodereadmetemplate)
     (.folder zip "templates/vscode/package.json" @vscodepackagejsontemplate)
     (.folder zip "templates/vscode/vsc-extension-quickstart.md", @vscodequickstarttemplate)
-    (.folder zip "templates/vscode/themes/vscode-color-theme.json" @vscodetemplate)))
+    (.folder zip "templates/vscode/themes/vscode-color-theme.json" @vscodetemplate)
+    (-> (.generateAsync zip #js {:type "blob"})
+        (.catch #(println %))
+        (.then #(js/saveAs % "savezip.zip")))))
 
 
 (defn window-url
