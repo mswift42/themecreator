@@ -56,6 +56,12 @@
 
 (def zip (js/JSZip.))
 
+(defn save-zip-as!
+  [zip filename]
+  (-> (.generateAsync zip #js {:type "blob"})
+      (.catch #(println %))
+      (.then #(js/saveAs % filename))))
+
 (defn generate-templates-vscode
   [templates]
   (do
