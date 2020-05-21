@@ -74,6 +74,10 @@
   (.folder zip "templates/vscode/themes/vscode-color-theme.json" @vscodetemplate)
   zip)
 
+(defn download-vscode
+  [filename]
+  (let [zip (generate-templates-vscode [@vscodetemplate])]
+    (save-zip-as! zip filename)))
 
 
 (defn window-url
@@ -124,8 +128,7 @@
   []
   [:li
    [:a {:href "#" :id "vscodelink" :on-click
-        #(create-blob generate-templates-vscode "vscodelink"
-                      (str (:themename @app-db) ".zip"))}
+        #(download-vscode (str (:themename @app-db) ".zip"))}
 
     "VSCode"]])
 
