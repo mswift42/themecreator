@@ -45,27 +45,27 @@ return localStorage.setItem(app.db.storagename,JSON.stringify(cljs.core.clj__GT_
  * values.
  */
 app.db.string_to_keyword = (function app$db$string_to_keyword(strmap){
-return cljs.core.into.cljs$core$IFn$_invoke$arity$2(cljs.core.PersistentArrayMap.EMPTY,(function (){var iter__4523__auto__ = (function app$db$string_to_keyword_$_iter__5594(s__5595){
+return cljs.core.into.cljs$core$IFn$_invoke$arity$2(cljs.core.PersistentArrayMap.EMPTY,(function (){var iter__4523__auto__ = (function app$db$string_to_keyword_$_iter__5891(s__5892){
 return (new cljs.core.LazySeq(null,(function (){
-var s__5595__$1 = s__5595;
+var s__5892__$1 = s__5892;
 while(true){
-var temp__4657__auto__ = cljs.core.seq(s__5595__$1);
+var temp__4657__auto__ = cljs.core.seq(s__5892__$1);
 if(temp__4657__auto__){
-var s__5595__$2 = temp__4657__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__5595__$2)){
-var c__4521__auto__ = cljs.core.chunk_first(s__5595__$2);
+var s__5892__$2 = temp__4657__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__5892__$2)){
+var c__4521__auto__ = cljs.core.chunk_first(s__5892__$2);
 var size__4522__auto__ = cljs.core.count(c__4521__auto__);
-var b__5597 = cljs.core.chunk_buffer(size__4522__auto__);
-if((function (){var i__5596 = (0);
+var b__5894 = cljs.core.chunk_buffer(size__4522__auto__);
+if((function (){var i__5893 = (0);
 while(true){
-if((i__5596 < size__4522__auto__)){
-var vec__5598 = cljs.core._nth.cljs$core$IFn$_invoke$arity$2(c__4521__auto__,i__5596);
-var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__5598,(0),null);
-var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__5598,(1),null);
-cljs.core.chunk_append(b__5597,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.keyword.cljs$core$IFn$_invoke$arity$1(k),v], null));
+if((i__5893 < size__4522__auto__)){
+var vec__5895 = cljs.core._nth.cljs$core$IFn$_invoke$arity$2(c__4521__auto__,i__5893);
+var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__5895,(0),null);
+var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__5895,(1),null);
+cljs.core.chunk_append(b__5894,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.keyword.cljs$core$IFn$_invoke$arity$1(k),v], null));
 
-var G__5604 = (i__5596 + (1));
-i__5596 = G__5604;
+var G__5901 = (i__5893 + (1));
+i__5893 = G__5901;
 continue;
 } else {
 return true;
@@ -73,15 +73,15 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__5597),app$db$string_to_keyword_$_iter__5594(cljs.core.chunk_rest(s__5595__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__5894),app$db$string_to_keyword_$_iter__5891(cljs.core.chunk_rest(s__5892__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__5597),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__5894),null);
 }
 } else {
-var vec__5601 = cljs.core.first(s__5595__$2);
-var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__5601,(0),null);
-var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__5601,(1),null);
-return cljs.core.cons(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.keyword.cljs$core$IFn$_invoke$arity$1(k),v], null),app$db$string_to_keyword_$_iter__5594(cljs.core.rest(s__5595__$2)));
+var vec__5898 = cljs.core.first(s__5892__$2);
+var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__5898,(0),null);
+var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__5898,(1),null);
+return cljs.core.cons(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.keyword.cljs$core$IFn$_invoke$arity$1(k),v], null),app$db$string_to_keyword_$_iter__5891(cljs.core.rest(s__5892__$2)));
 }
 } else {
 return null;
