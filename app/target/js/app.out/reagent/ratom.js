@@ -6,7 +6,6 @@ goog.require('reagent.impl.util');
 goog.require('reagent.debug');
 goog.require('reagent.impl.batching');
 goog.require('clojure.set');
-goog.require('goog.object');
 if((typeof reagent !== 'undefined') && (typeof reagent.ratom !== 'undefined') && (typeof reagent.ratom.debug !== 'undefined')){
 } else {
 reagent.ratom.debug = false;
@@ -57,7 +56,6 @@ return and__4120__auto__;
 }
 });
 reagent.ratom.in_context = (function reagent$ratom$in_context(obj,f){
-
 var _STAR_ratom_context_STAR__orig_val__5463 = reagent.ratom._STAR_ratom_context_STAR_;
 var _STAR_ratom_context_STAR__temp_val__5464 = obj;
 reagent.ratom._STAR_ratom_context_STAR_ = _STAR_ratom_context_STAR__temp_val__5464;
@@ -65,14 +63,6 @@ reagent.ratom._STAR_ratom_context_STAR_ = _STAR_ratom_context_STAR__temp_val__54
 try{return (f.cljs$core$IFn$_invoke$arity$0 ? f.cljs$core$IFn$_invoke$arity$0() : f.call(null));
 }finally {reagent.ratom._STAR_ratom_context_STAR_ = _STAR_ratom_context_STAR__orig_val__5463;
 }});
-/**
- * Returns `(in-context f r)`.  Calls `_update-watching` on r with any
- * `deref`ed atoms captured during `in-context`, if any differ from the
- * `watching` field of r.  Clears the `dirty?` flag on r.
- * 
- * Inside '_update-watching' along with adding the ratoms in 'r.watching' of reaction,
- * the reaction is also added to the list of watches on each ratoms f derefs.
- */
 reagent.ratom.deref_capture = (function reagent$ratom$deref_capture(f,r){
 r.captured = null;
 
@@ -90,11 +80,6 @@ r._update_watching(c);
 
 return res;
 });
-/**
- * Add `derefed` to the `captured` field of `*ratom-context*`.
- * 
- *   See also `in-context`
- */
 reagent.ratom.notify_deref_watcher_BANG_ = (function reagent$ratom$notify_deref_watcher_BANG_(derefed){
 var temp__4661__auto__ = reagent.ratom._STAR_ratom_context_STAR_;
 if((temp__4661__auto__ == null)){
@@ -419,8 +404,9 @@ return self__4717__auto__.cljs$core$IFn$_invoke$arity$variadic(G__5479,seq5478__
 
 reagent.ratom.atom.cljs$lang$maxFixedArity = (1);
 
+reagent.ratom.cache_key = "reagReactionCache";
 reagent.ratom.cached_reaction = (function reagent$ratom$cached_reaction(f,o,k,obj,destroy){
-var m = o.reagReactionCache;
+var m = (o["reagReactionCache"]);
 var m__$1 = (((m == null))?cljs.core.PersistentArrayMap.EMPTY:m);
 var r = (m__$1.cljs$core$IFn$_invoke$arity$2 ? m__$1.cljs$core$IFn$_invoke$arity$2(k,null) : m__$1.call(null,k,null));
 if((!((r == null)))){
@@ -438,9 +424,9 @@ cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$2(reagent.ratom._running,cljs.c
 } else {
 }
 
-var __5491 = o.reagReactionCache;
+var __5491 = (o["reagReactionCache"]);
 var __5492__$1 = cljs.core.dissoc.cljs$core$IFn$_invoke$arity$2(__5491,k);
-o.reagReactionCache = __5492__$1;
+(o["reagReactionCache"] = __5492__$1);
 
 if((!((obj == null)))){
 obj.reaction = null;
@@ -457,7 +443,7 @@ return null;
 return (reagent.ratom.make_reaction.cljs$core$IFn$_invoke$arity$3 ? reagent.ratom.make_reaction.cljs$core$IFn$_invoke$arity$3(G__5488,G__5489,G__5490) : reagent.ratom.make_reaction.call(null,G__5488,G__5489,G__5490));
 })();
 var v = cljs.core._deref(r__$1);
-o.reagReactionCache = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(m__$1,k,r__$1);
+(o["reagReactionCache"] = cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(m__$1,k,r__$1));
 
 if(reagent.ratom.debug){
 cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$2(reagent.ratom._running,cljs.core.inc);
@@ -835,7 +821,7 @@ return ((cljs.core.ifn_QMARK_(src)) && ((!(cljs.core.vector_QMARK_(src)))));
 }
 })()){
 } else {
-throw (new Error(["Assert failed: ",["src must be a reactive atom or a function, not ",cljs.core.pr_str.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([src], 0))," while attempting to get path: ",cljs.core.pr_str.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([path], 0))].join(''),"\n","(or (satisfies? IReactiveAtom src) (and (ifn? src) (not (vector? src))))"].join('')));
+throw (new Error(["Assert failed: ",["src must be a reactive atom or a function, not ",cljs.core.pr_str.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([src], 0))].join(''),"\n","(or (satisfies? IReactiveAtom src) (and (ifn? src) (not (vector? src))))"].join('')));
 }
 
 return reagent.ratom.__GT_RCursor(src,path,null,null,null);
@@ -1498,15 +1484,6 @@ return self__4717__auto__.cljs$core$IFn$_invoke$arity$variadic(G__5604,seq5603__
 });
 
 reagent.ratom.temp_reaction = reagent.ratom.make_reaction(null);
-/**
- * Evaluates `f` and returns the result.  If `f` calls `deref` on any ratoms,
- * creates a new Reaction that watches those atoms and calls `run` whenever
- * any of those watched ratoms change.  Also, the new reaction is added to
- * list of 'watches' of each of the ratoms. The `run` parameter is a function
- * that should expect one argument.  It is passed `obj` when run.  The `opts`
- * are any options accepted by a Reaction and will be set on the newly created
- * Reaction. Sets the newly created Reaction to the `key` on `obj`.
- */
 reagent.ratom.run_in_reaction = (function reagent$ratom$run_in_reaction(f,obj,key,run,opts){
 var r = reagent.ratom.temp_reaction;
 var res = reagent.ratom.deref_capture(f,r);
@@ -1524,7 +1501,7 @@ return (run.cljs$core$IFn$_invoke$arity$1 ? run.cljs$core$IFn$_invoke$arity$1(ob
 });})(r,res))
 ;
 
-goog.object.set(obj,key,r);
+(obj[key] = r);
 }
 
 return res;

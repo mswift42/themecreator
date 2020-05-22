@@ -4,7 +4,8 @@
             [reagent.impl.template :as tmpl]
             [reagent.impl.batching :as batch]
             [reagent.ratom :as ratom]
-            [reagent.debug :refer-macros [dbg]]))
+            [reagent.debug :refer-macros [dbg]]
+            [reagent.interop :refer-macros [$ $!]]))
 
 (defonce ^:private imported nil)
 

@@ -1,9 +1,10 @@
 (ns reagent.impl.util
   (:require [reagent.debug :refer-macros [dbg log warn]]
+            [reagent.interop :refer-macros [$ $!]]
             [clojure.string :as string]))
 
 (def is-client (and (exists? js/window)
-                    (-> (.-document js/window) nil? not)))
+                    (-> js/window ($ :document) nil? not)))
 
 (def ^:dynamic ^boolean *non-reactive* false)
 
@@ -28,7 +29,7 @@
     (string/upper-case s)
     (str (string/upper-case (subs s 0 1)) (subs s 1))))
 
-(defn dash-to-prop-name [dashed]
+(defn dash-to-camel [dashed]
   (if (string? dashed)
     dashed
     (let [name-str (name dashed)
@@ -37,27 +38,18 @@
         name-str
         (apply str start (map capitalize parts))))))
 
-(defn dash-to-method-name [dashed]
-  (if (string? dashed)
-    dashed
-    (let [name-str (name dashed)
-          name-str (string/replace name-str #"(unsafe|UNSAFE)[-_]" "UNSAFE_")
-          [start & parts] (string/split name-str #"-")]
-      (apply str start (map capitalize parts)))))
-
 (defn fun-name [f]
   (let [n (or (and (fn? f)
-                   (or (.-displayName f)
-                       (let [n (.-name f)]
-                         (if (and (string? n) (seq n))
-                           n))))
+                   (or ($ f :displayName)
+                       ($ f :name)))
               (and (implements? INamed f)
                    (name f))
               (let [m (meta f)]
                 (if (map? m)
                   (:name m))))]
-    (if n
-      (string/replace (str n) "$" "."))))
+    (-> n
+        str
+        (clojure.string/replace "$" "."))))
 
 (deftype PartialFn [pfn f args]
   Fn
@@ -107,48 +99,21 @@
   (-invoke [_ a b c d e f g h i j k l m n o p q r s t rest]
     (apply pfn a b c d e f g h i j k l m n o p q r s t rest))
   IEquiv
-  (-equiv [_ ^clj other]
-    (and (instance? PartialFn other)
-         (= f (.-f other))
-         (= args (.-args other))))
+  (-equiv [_ other]
+    (and (= f (.-f other)) (= args (.-args other))))
   IHash
   (-hash [_] (hash [f args])))
 
 (defn make-partial-fn [f args]
   (->PartialFn (apply partial f args) f args))
 
-(defn ^boolean named? [x]
-  (or (keyword? x)
-      (symbol? x)))
-
-(defn class-names
-  ([])
-  ([class]
-   (if (coll? class)
-     (let [classes (keep (fn [c]
-                           (if c
-                             (if (named? c)
-                               (name c)
-                               c)))
-                         class)]
-       (if (seq classes)
-         (string/join " " classes)))
-     (if (named? class)
-       (name class)
-       class)))
-  ([a b]
-   (if a
-     (if b
-       (str (class-names a) " " (class-names b))
-       (class-names a))
-     (class-names b)))
-  ([a b & rst]
-   (reduce class-names
-           (class-names a b)
-           rst)))
-
 (defn- merge-class [p1 p2]
-  (assoc p2 :class (class-names (:class p1) (:class p2))))
+  (let [class (when-let [c1 (:class p1)]
+                (when-let [c2 (:class p2)]
+                  (str c1 " " c2)))]
+    (if (nil? class)
+      p2
+      (assoc p2 :class class))))
 
 (defn- merge-style [p1 p2]
   (let [style (when-let [s1 (:style p1)]
@@ -158,29 +123,19 @@
       p2
       (assoc p2 :style style))))
 
-(defn merge-props
-  ([] nil)
-  ;; Normalize :class even if there are no merging
-  ([p]
-   (if-let [c (:class p)]
-     (assoc p :class (class-names c))
-     p))
-  ([p1 p2]
-   (if (nil? p1)
-     (if-let [c (:class p2)]
-       (assoc p2 :class (class-names c))
-       p2)
-     (do
-       (assert (map? p1)
-               (str "Property must be a map, not " (pr-str p1)))
-       (merge p1 (merge-style p1 (merge-class p1 p2))))))
-  ([p1 p2 & ps]
-   (reduce merge-props (merge-props p1 p2) ps)))
+(defn merge-props [p1 p2]
+  (if (nil? p1)
+    p2
+    (do
+      (assert (map? p1)
+              (str "Property must be a map, not " (pr-str p1)))
+      (merge-style p1 (merge-class p1 (merge p1 p2))))))
+
 
 (def ^:dynamic *always-update* false)
 
-(defn force-update [^js/React.Component comp deep]
+(defn force-update [comp deep]
   (if deep
     (binding [*always-update* true]
-      (.forceUpdate comp))
-    (.forceUpdate comp)))
+      ($ comp forceUpdate))
+    ($ comp forceUpdate)))
