@@ -6,6 +6,7 @@
             [app.colors :refer [derive-colors-from-theme]]
             [cljsjs.mustache]
             [cljsjs.jszip]
+            [cljsjs.filesaverjs]
             [goog.net.XhrIo :as xhr]
             [goog.string :as str]))
 
