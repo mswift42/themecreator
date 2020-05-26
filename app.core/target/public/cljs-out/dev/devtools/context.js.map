@@ -1,0 +1,1 @@
+{"version":3,"file":"\/home\/martin\/github\/themecreator\/app.core\/target\/public\/cljs-out\/dev\/devtools\/context.js","sources":["context.cljs"],"lineCount":11,"mappings":";AAAA;;AAGA,4BAAA,5BAAgBA;AAAhB,AACEC;;AAEF,+BAAA,\/BAAgBC;AAAhB,AACE,OAAW,AAACF","names":["devtools.context\/get-root","goog\/global","devtools.context\/get-console"]}

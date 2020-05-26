@@ -1,0 +1,1 @@
+["^ ","~:rename-macros",["^ "],"~:renames",["^ "],"~:use-macros",["^ "],"~:excludes",["~#set",[]],"~:name","~$figwheel.main.generated.dev-auto-test-runner","~:imports",null,"~:requires",["^ ","~$figwheel.main.testing","^9"],"~:cljs.spec/speced-vars",[],"~:uses",null,"~:defs",["^ "],"~:cljs.spec/registry-ref",[],"~:require-macros",null,"~:doc",null]
