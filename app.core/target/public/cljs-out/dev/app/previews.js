@@ -9,8 +9,8 @@ goog.require('app.db');
  * 'color'
  */
 app.previews.span_component = (function app$previews$span_component(var_args){
-var G__11056 = arguments.length;
-switch (G__11056) {
+var G__14055 = arguments.length;
+switch (G__14055) {
 case 2:
 return app.previews.span_component.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -26,20 +26,20 @@ throw (new Error(["Invalid arity: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(
 });
 
 app.previews.span_component.cljs$core$IFn$_invoke$arity$2 = (function (text,color){
-return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$span,((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(color,cljs.core.cst$kw$keyword))?new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$style,new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$color,(function (){var G__11057 = cljs.core.deref(app.db.app_db);
-return (color.cljs$core$IFn$_invoke$arity$1 ? color.cljs$core$IFn$_invoke$arity$1(G__11057) : color.call(null,G__11057));
-})(),cljs.core.cst$kw$font_DASH_weight,"bold"], null)], null):new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$style,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$color,(function (){var G__11058 = cljs.core.deref(app.db.app_db);
-return (color.cljs$core$IFn$_invoke$arity$1 ? color.cljs$core$IFn$_invoke$arity$1(G__11058) : color.call(null,G__11058));
+return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$span,((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(color,cljs.core.cst$kw$keyword))?new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$style,new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$color,(function (){var G__14056 = cljs.core.deref(app.db.app_db);
+return (color.cljs$core$IFn$_invoke$arity$1 ? color.cljs$core$IFn$_invoke$arity$1(G__14056) : color.call(null,G__14056));
+})(),cljs.core.cst$kw$font_DASH_weight,"bold"], null)], null):new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$style,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$color,(function (){var G__14057 = cljs.core.deref(app.db.app_db);
+return (color.cljs$core$IFn$_invoke$arity$1 ? color.cljs$core$IFn$_invoke$arity$1(G__14057) : color.call(null,G__14057));
 })()], null)], null)),cljs.core.str.cljs$core$IFn$_invoke$arity$1(text)], null);
 });
 
 app.previews.span_component.cljs$core$IFn$_invoke$arity$3 = (function (text,color,textdecoration){
-return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$span,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$style,new cljs.core.PersistentArrayMap(null, 7, [cljs.core.cst$kw$color,(function (){var G__11059 = cljs.core.deref(app.db.app_db);
-return (color.cljs$core$IFn$_invoke$arity$1 ? color.cljs$core$IFn$_invoke$arity$1(G__11059) : color.call(null,G__11059));
-})(),cljs.core.cst$kw$text_DASH_decoration,"underline",cljs.core.cst$kw$text_DASH_decoration_DASH_style,"wavy",cljs.core.cst$kw$_DASH_webkit_DASH_text_DASH_decoration,"underline",cljs.core.cst$kw$_DASH_webkit_DASH_text_DASH_decoration_DASH_style,"wavy",cljs.core.cst$kw$text_DASH_decoration_DASH_color,(function (){var G__11060 = cljs.core.deref(app.db.app_db);
-return (textdecoration.cljs$core$IFn$_invoke$arity$1 ? textdecoration.cljs$core$IFn$_invoke$arity$1(G__11060) : textdecoration.call(null,G__11060));
-})(),cljs.core.cst$kw$_DASH_webkit_DASH_text_DASH_decoration_DASH_color,(function (){var G__11061 = cljs.core.deref(app.db.app_db);
-return (textdecoration.cljs$core$IFn$_invoke$arity$1 ? textdecoration.cljs$core$IFn$_invoke$arity$1(G__11061) : textdecoration.call(null,G__11061));
+return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$span,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$style,new cljs.core.PersistentArrayMap(null, 7, [cljs.core.cst$kw$color,(function (){var G__14058 = cljs.core.deref(app.db.app_db);
+return (color.cljs$core$IFn$_invoke$arity$1 ? color.cljs$core$IFn$_invoke$arity$1(G__14058) : color.call(null,G__14058));
+})(),cljs.core.cst$kw$text_DASH_decoration,"underline",cljs.core.cst$kw$text_DASH_decoration_DASH_style,"wavy",cljs.core.cst$kw$_DASH_webkit_DASH_text_DASH_decoration,"underline",cljs.core.cst$kw$_DASH_webkit_DASH_text_DASH_decoration_DASH_style,"wavy",cljs.core.cst$kw$text_DASH_decoration_DASH_color,(function (){var G__14059 = cljs.core.deref(app.db.app_db);
+return (textdecoration.cljs$core$IFn$_invoke$arity$1 ? textdecoration.cljs$core$IFn$_invoke$arity$1(G__14059) : textdecoration.call(null,G__14059));
+})(),cljs.core.cst$kw$_DASH_webkit_DASH_text_DASH_decoration_DASH_color,(function (){var G__14060 = cljs.core.deref(app.db.app_db);
+return (textdecoration.cljs$core$IFn$_invoke$arity$1 ? textdecoration.cljs$core$IFn$_invoke$arity$1(G__14060) : textdecoration.call(null,G__14060));
 })()], null)], null),cljs.core.str.cljs$core$IFn$_invoke$arity$1(text)], null);
 });
 
