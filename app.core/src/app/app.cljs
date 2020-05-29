@@ -213,6 +213,7 @@
 
 (defn theme-component []
   [navbar-component]
+  (set-year)
   (GET "templates/intelli.txt" intellitemplate)
   (GET "templates/tmtheme.txt" tmthemetemplate)
   (GET "templates/emacs.txt" emacstemplate)
@@ -222,8 +223,8 @@
   (GET "templates/vscode/vsc-extension-quickstart.md" vscodequickstarttemplate)
   (GET "templates/vscode/README.md" vscodereadmetemplate)
   (GET "templates/vscode/themes/vscode-color-theme.json" vscodetemplate)
-  (set-year)
   (db/set-db-from-storage)
+  (set-year)
   [:div.row
    [color-components]
    [preview-component]])
