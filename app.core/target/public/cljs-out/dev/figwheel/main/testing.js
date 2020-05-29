@@ -25,8 +25,8 @@ return cljs.core.reset_BANG_.call(null,figwheel.main.testing.test_result_data,m)
 }));
 
 figwheel.main.testing.system_exit_on_fail = (function figwheel$main$testing$system_exit_on_fail(){
-return figwheel.main.testing.on_finish_listener.call(null,new cljs.core.Keyword("figwheel.main.testing","exit-on-fail","figwheel.main.testing/exit-on-fail",575967680),(function (p1__12978_SHARP_){
-return figwheel.main.async_result.send.call(null,((cljs.test.successful_QMARK_.call(null,p1__12978_SHARP_))?new cljs.core.Keyword("figwheel.main.testing","success","figwheel.main.testing/success",-519224348):figwheel.main.async_result.throw_ex.call(null,cljs.core.ex_info.call(null,"ClojureScript async test run failed",p1__12978_SHARP_))));
+return figwheel.main.testing.on_finish_listener.call(null,new cljs.core.Keyword("figwheel.main.testing","exit-on-fail","figwheel.main.testing/exit-on-fail",575967680),(function (p1__27214_SHARP_){
+return figwheel.main.async_result.send.call(null,((cljs.test.successful_QMARK_.call(null,p1__27214_SHARP_))?new cljs.core.Keyword("figwheel.main.testing","success","figwheel.main.testing/success",-519224348):figwheel.main.async_result.throw_ex.call(null,cljs.core.ex_info.call(null,"ClojureScript async test run failed",p1__27214_SHARP_))));
 }));
 });
 

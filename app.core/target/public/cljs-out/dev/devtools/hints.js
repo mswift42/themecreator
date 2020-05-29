@@ -100,27 +100,27 @@ devtools.hints.error_object_sense = (function devtools$hints$error_object_sense(
 try{var native_stack_trace = error.stack;
 var stack_trace = devtools.hints.parse_stacktrace.call(null,native_stack_trace);
 var top_item = cljs.core.second.call(null,stack_trace);
-var map__18577 = top_item;
-var map__18577__$1 = (((((!((map__18577 == null))))?(((((map__18577.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__18577.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__18577):map__18577);
-var file = cljs.core.get.call(null,map__18577__$1,new cljs.core.Keyword(null,"file","file",-1269645878));
-var line = cljs.core.get.call(null,map__18577__$1,new cljs.core.Keyword(null,"line","line",212345235));
-var column = cljs.core.get.call(null,map__18577__$1,new cljs.core.Keyword(null,"column","column",2078222095));
+var map__27955 = top_item;
+var map__27955__$1 = (((((!((map__27955 == null))))?(((((map__27955.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__27955.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__27955):map__27955);
+var file = cljs.core.get.call(null,map__27955__$1,new cljs.core.Keyword(null,"file","file",-1269645878));
+var line = cljs.core.get.call(null,map__27955__$1,new cljs.core.Keyword(null,"line","line",212345235));
+var column = cljs.core.get.call(null,map__27955__$1,new cljs.core.Keyword(null,"column","column",2078222095));
 return devtools.hints.make_sense_of_the_error.call(null,error.message,file,line,column);
-}catch (e18576){var _e = e18576;
+}catch (e27954){var _e = e27954;
 return false;
 }});
 devtools.hints.type_error_to_string = (function devtools$hints$type_error_to_string(self){
-var temp__5733__auto___18579 = devtools.hints.get_processed_errors_BANG_.call(null);
-if(cljs.core.truth_(temp__5733__auto___18579)){
-var seen_errors_18580 = temp__5733__auto___18579;
-if(cljs.core.truth_(seen_errors_18580.has(self))){
+var temp__5733__auto___27957 = devtools.hints.get_processed_errors_BANG_.call(null);
+if(cljs.core.truth_(temp__5733__auto___27957)){
+var seen_errors_27958 = temp__5733__auto___27957;
+if(cljs.core.truth_(seen_errors_27958.has(self))){
 } else {
-seen_errors_18580.add(self);
+seen_errors_27958.add(self);
 
-var temp__5735__auto___18581 = devtools.hints.error_object_sense.call(null,self);
-if(cljs.core.truth_(temp__5735__auto___18581)){
-var sense_18582 = temp__5735__auto___18581;
-self.message = [cljs.core.str.cljs$core$IFn$_invoke$arity$1(self.message),", a sanity hint:\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(sense_18582)].join('');
+var temp__5735__auto___27959 = devtools.hints.error_object_sense.call(null,self);
+if(cljs.core.truth_(temp__5735__auto___27959)){
+var sense_27960 = temp__5735__auto___27959;
+self.message = [cljs.core.str.cljs$core$IFn$_invoke$arity$1(self.message),", a sanity hint:\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(sense_27960)].join('');
 } else {
 }
 }
