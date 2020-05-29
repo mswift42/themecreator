@@ -35,6 +35,7 @@ let s:warning2="{{warning2}}"
 exe 'hi Normal guifg='s:fg' guibg='s:bg
 exe 'hi Cursor guifg='s:bg' guibg='s:fg
 exe 'hi CursorLine  guibg='s:bg2
+exe 'hi CursorLineNr guifg='s:str' guibg='s:bg
 exe 'hi CursorColumn  guibg='s:bg2
 exe 'hi ColorColumn  guibg='s:bg2
 exe 'hi LineNr guifg='s:fg2' guibg='s:bg2
@@ -54,6 +55,7 @@ exe 'hi Character guifg='s:const
 exe 'hi Comment guifg='s:comment
 exe 'hi Conditional guifg='s:keyword
 exe 'hi Constant guifg='s:const
+exe 'hi Todo guibg='s:bg
 exe 'hi Define guifg='s:keyword
 {{#hasdarkbg}}
 exe 'hi DiffAdd guifg=#fafafa guibg=#123d0f gui=bold'
