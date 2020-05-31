@@ -108,13 +108,6 @@
         #(create-blob (generate-template template) id filename)}
     title]])
 
-(defn current-year
-  []
-  (str (.getFullYear (js/Date.))))
-
-(defn set-year
-  []
-  (swap! db/app-db assoc :year (current-year)))
 
 
 (defn template-download-intelli
@@ -213,7 +206,6 @@
 
 (defn theme-component []
   [navbar-component]
-  (set-year)
   (GET "app.core/resources/public/templates/intelli.txt" intellitemplate)
   (GET "app.core/resources/public/templates/tmtheme.txt" tmthemetemplate)
   (GET "app.core/resources/public/templates/emacs.txt" emacstemplate)
@@ -224,7 +216,6 @@
   (GET "app.core/resources/public/templates/vscode/README.md" vscodereadmetemplate)
   (GET "app.core/resources/public/templates/vscode/themes/vscode-color-theme.json" vscodetemplate)
   (db/set-db-from-storage)
-  (set-year)
   [:div.row
    [color-components]
    [preview-component]])
