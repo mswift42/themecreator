@@ -3,6 +3,7 @@ pom.xml
 /lib/
 /classes/
 /out/
+target/public/cljs-out/dev/app/
 .lein-deps-sum
 .lein-repl-history
 .lein-plugins/
