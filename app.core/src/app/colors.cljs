@@ -254,6 +254,12 @@
     (swap! db/app-db assoc colorname colorstring)))
 
 
+(defn current-year
+  []
+  (str (.getFullYear (js/Date.))))
+
+
+
 (defn derive-colors-from-theme
   "return a theme map with additional lighter/darker 
    variants of the background and foreground colors."
@@ -268,7 +274,8 @@
              :fg5 (lighten (:mainfg theme) 0.12)
              :bg2 (lighten (:mainbg theme) 0.08)
              :bg3 (lighten (:mainbg theme) 0.16)
-             :bg4 (lighten (:mainbg theme) 0.24))
+             :bg4 (lighten (:mainbg theme) 0.24)
+             :year (current-year))
       (assoc theme
              :hasdarkbg dbg
              :fg2 (lighten (:mainfg theme) 0.08)
@@ -277,7 +284,8 @@
              :fg5 (darken  (:mainfg theme) 0.08)
              :bg2 (darken (:mainbg theme) 0.08)
              :bg3 (darken (:mainbg theme) 0.16)
-             :bg4 (darken (:mainbg theme) 0.24)))))
+             :bg4 (darken (:mainbg theme) 0.24)
+             :year (current-year)))))
 
 
 
