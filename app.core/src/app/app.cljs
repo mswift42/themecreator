@@ -66,14 +66,14 @@
 (defn generate-templates-vscode
   [templates]
   (let [zip (js/JSZip.)])
-  (doseq [i templates]
-    (compile-template i (derive-colors-from-theme @app-db)))
-  (.folder zip "templates/vscode")
-  (.folder zip "templates/vscode/README.md" @vscodereadmetemplate)
-  (.folder zip "templates/vscode/package.json" @vscodepackagejsontemplate)
-  (.folder zip "templates/vscode/vsc-extension-quickstart.md", @vscodequickstarttemplate)
-  (.folder zip "templates/vscode/themes/vscode-color-theme.json" @vscodetemplate)
-  zip)
+  (do
+    (doseq [i templates]
+      (compile-template i (derive-colors-from-theme @app-db)))
+    (.folder zip "templates/vscode")
+    (.folder zip "templates/vscode/README.md" @vscodereadmetemplate)
+    (.folder zip "templates/vscode/package.json" @vscodepackagejsontemplate)
+    (.folder zip "templates/vscode/vsc-extension-quickstart.md", @vscodequickstarttemplate)
+    (.folder zip "templates/vscode/themes/vscode-color-theme.json" @vscodetemplate)))
 
 (defn download-vscode
   [filename]
