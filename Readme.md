@@ -61,13 +61,15 @@ By pressing the `store theme` button, you can store your theme and custom Lightn
 Contributing:
 -------------
 
-To run ThemeCreator locally, you need to install [boot](https://github.com/boot-clj/boot).
+*All contributions are welcome*.
 
-Then go to the app/ folder and run
+To run themecreator locally:
 
-`boot dev`
+clone or download this repo.
 
-to start the development server on localhost:3000.
+[install](https://clojure.org/guides/getting_started) clojure und the clojure cli tools.
+
+go into the `app.core` directory and run `clj:A:fig:build`.
 
 
 Screenshots:
