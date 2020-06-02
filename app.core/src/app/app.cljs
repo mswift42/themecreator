@@ -65,15 +65,18 @@
 
 (defn generate-templates-vscode
   [templates]
-  (let [zip (js/JSZip.)])
-  (do
-    (doseq [i templates]
-      (compile-template i (derive-colors-from-theme @app-db)))
-    (.folder zip "templates/vscode")
-    (.folder zip "templates/vscode/README.md" @vscodereadmetemplate)
-    (.folder zip "templates/vscode/package.json" @vscodepackagejsontemplate)
-    (.folder zip "templates/vscode/vsc-extension-quickstart.md", @vscodequickstarttemplate)
-    (.folder zip "templates/vscode/themes/vscode-color-theme.json" @vscodetemplate)))
+  (let [zip (js/JSZip.)
+        folder (.folder zip "templates/vscode")]
+    (do
+      (doseq [i templates]
+        (compile-template i (derive-colors-from-theme @app-db)))
+      (.folder zip "templates/vscode")
+      (.folder zip "templates/vscode/README.md" @vscodereadmetemplate)
+      (.folder zip "templates/vscode/package.json" @vscodepackagejsontemplate)
+      (.folder zip "templates/vscode/vsc-extension-quickstart.md", @vscodequickstarttemplate)
+      (.folder zip "templates/vscode/themes/vscode-color-theme.json" @vscodetemplate)
+      ))
+  zip)
 
 (defn download-vscode
   [filename]
@@ -108,6 +111,13 @@
         #(create-blob (generate-template template) id filename)}
     title]])
 
+(defn current-year
+  []
+  (str (.getFullYear (js/Date.))))
+
+(defn set-year
+  []
+  (swap! db/app-db assoc :year (current-year)))
 
 
 (defn template-download-intelli
