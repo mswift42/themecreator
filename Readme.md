@@ -61,7 +61,7 @@ By pressing the `store theme` button, you can store your theme and custom Lightn
 Contributing:
 -------------
 
-*All contributions are welcome*.
+**All contributions are welcome**.
 
 To run themecreator locally:
 
