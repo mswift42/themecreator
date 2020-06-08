@@ -30,6 +30,10 @@
 (def vscodequickstarttemplate (atom ""))
 (def vscodereadmetemplate (atom ""))
 
+(def vscode-templates
+  [vscodetemplate vscodepackagejsontemplate
+   vscodequickstarttemplate vscodereadmetemplate])
+
 
 (defn compile-template
   [templ varmap]
