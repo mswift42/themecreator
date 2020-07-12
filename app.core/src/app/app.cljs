@@ -67,24 +67,35 @@
       (.catch #(println %))
       (.then #(js/saveAs % filename))))
 
+;; (defn generate-templates-vscode
+;;   [templates]
+;;   (let [zip (js/JSZip.)
+;;         folder (.folder zip "templates/vscode")]
+;;     (do
+;;       (doseq [i templates]
+;;         (compile-template @i (derive-colors-from-theme @app-db)))
+;;       (.folder zip "templates/vscode")
+;;       (.folder zip "templates/vscode/README.md" @vscodereadmetemplate)
+;;       (.folder zip "templates/vscode/package.json" @vscodepackagejsontemplate)
+;;       (.folder zip "templates/vscode/vsc-extension-quickstart.md", @vscodequickstarttemplate)
+;;       (.folder zip "templates/vscode/themes/vscode-color-theme.json" @vscodetemplate)
+;;       ))
+;;   zip)
+
 (defn generate-templates-vscode
   [templates]
   (let [zip (js/JSZip.)
         folder (.folder zip "templates/vscode")]
     (do
       (doseq [i templates]
-        (compile-template i (derive-colors-from-theme @app-db)))
-      (.folder zip "templates/vscode")
-      (.folder zip "templates/vscode/README.md" @vscodereadmetemplate)
-      (.folder zip "templates/vscode/package.json" @vscodepackagejsontemplate)
-      (.folder zip "templates/vscode/vsc-extension-quickstart.md", @vscodequickstarttemplate)
-      (.folder zip "templates/vscode/themes/vscode-color-theme.json" @vscodetemplate)
-      ))
+        (compile-template @i (derive-colors-from-theme @app-db)))
+      (.file folder "README.md" @vscodereadmetemplate)
+      (.file folder "package.json" @vscodepackagejsontemplate)))
   zip)
 
 (defn download-vscode
   [filename]
-  (let [zip (generate-templates-vscode [@vscodetemplate])]
+  (let [zip (generate-templates-vscode vscode-templates)]
     (save-zip-as! zip filename)))
 
 
@@ -114,6 +125,12 @@
    [:a {:href "#" :id id :on-click
         #(create-blob (generate-template template) id filename)}
     title]])
+
+;; (defn template-download
+;;   [id title filename template]
+;;   [:li
+;;    [:a {:href "#" :id id :onclick
+;;         #(js/saveAs (generate-template template) filename)}]])
 
 (defn current-year
   []
