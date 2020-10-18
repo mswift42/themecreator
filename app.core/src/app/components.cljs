@@ -7,7 +7,7 @@
 
 (def active-preview
   (r/atom
-   prev/preview-javascript))
+   prev/preview-c))
 
 (defn toggle-preview
   [lang]
@@ -56,7 +56,8 @@
    [[#(toggle-preview prev/preview-javascript) "Javascript"]
     [#(toggle-preview prev/preview-ruby) "Ruby"]
     [#(toggle-preview prev/preview-typescript) "Typescript"]
-    [#(toggle-preview prev/preview-python) "Python"]]])
+    [#(toggle-preview prev/preview-python) "Python"]
+    [#(toggle-preview prev/preview-c) "C"]]])
 
 
 
