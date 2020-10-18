@@ -453,3 +453,14 @@
    [:br]
    [span-component "print" :keyword]
    [span-component "(sumDigits(fac(100)))" :mainfg]])
+
+(defn preview-c
+  []
+  [:div
+   [span-component "#include " :builtin]
+   [span-component "<stddef.h>" :string]
+   [:br]
+   [:br]
+   [span-component "#define " :builtin]
+   [span-component "EPITECH_ERROR " :variable]
+   [span-component] "84" :mainfg])
