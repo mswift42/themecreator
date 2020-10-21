@@ -457,6 +457,8 @@
 (defn preview-c
   []
   [:div
+   [span-component "/* C example */" :comment]
+   [:br]
    [span-component "#include " :builtin]
    [span-component "<stddef.h>" :string]
    [:br]
@@ -550,4 +552,23 @@
    [span-component "    my_struct_t " :type]
    [span-component "structure " :variable]
    [span-component "= {0};" :mainfg]
-   [:br]])
+   [:br]
+   [:br]
+   [span-component "    structure.str = str;" :mainfg]
+   [:br]
+   [:br]
+   [span-component "    while " :keyword]
+   [span-component "(str[len] != " :mainfg]
+   [span-component "'\0') {" :mainfg]
+   [:br]
+   [span-component "        len++;" :mainfg]
+   [:br]
+   [span-component "    }" :mainfg]
+   [span-component "    structure.len = len;" :mainfg]
+   [:br]
+   [:br]
+   [span-component "    return " :keyword]
+   [span-component "(0):" :mainfg]
+   [:br]
+   [span-component "}" :mainfg]
+   ])
