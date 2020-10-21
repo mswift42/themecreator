@@ -7,7 +7,7 @@
 
 (def active-preview
   (r/atom
-   prev/preview-c))
+   prev/preview-javascript))
 
 (defn toggle-preview
   [lang]
