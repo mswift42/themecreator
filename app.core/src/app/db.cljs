@@ -272,6 +272,21 @@
    :warning "#ff1276"
    :warning2 "#ff4d12"})
 
+(def thursday
+  {:themename "thursday"
+   :mainfg "#2f2f2f"
+   :mainbg "#f5f7f9"
+   :keyword "#28728f"
+   :builtin "#636792"
+   :string "#8c5c79"
+   :functionname "#935c54"
+   :variable "#7d6740"
+   :type "#56724b"
+   :constant "#28766e"
+   :comment "#949494"
+   :warning "#fa0c0c"
+   :warning2 "#fa7b0c"})
+
 (def contrastcolors
   [:mainfg :keyword :builtin :string :functionname :variable :type
    :constant :comment])
