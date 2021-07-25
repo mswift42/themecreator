@@ -1,5 +1,6 @@
 (ns app.app
   (:require [reagent.core :as reagent :refer [atom]]
+            [reagent.dom :as dom]
             [app.db :refer [app-db white-sand]]
             [app.db :as db]
             [app.components  :as comps]
@@ -75,10 +76,18 @@
     (.folder zip "templates/vscode/vsc-extension-quickstart.md", @vscodequickstarttemplate)
     (.folder zip "templates/vscode/themes/vscode-color-theme.json" @vscodetemplate)))
 
+;; (defn download-vscode
+;;   [filename]
+;;   (let [zip (generate-templates-vscode [@vscodetemplate])]
+;;     (save-zip-as! zip filename)))
+
 (defn download-vscode
   [filename]
-  (let [zip (generate-templates-vscode [@vscodetemplate])]
-    (save-zip-as! zip filename)))
+  (let [zip (js/JSZip.)
+        templ (generate-template @vscodetemplate)]
+    (do
+      (.file zip templ)
+      (save-zip-as! zip filename))))
 
 
 (defn window-url
@@ -223,8 +232,8 @@
 
 
 (defn init []
-  (reagent/render-component [navbar-component]
+  (dom/render-component [navbar-component]
                             (.getElementById js/document "navcontainer"))
 
-  (reagent/render-component [theme-component]
+  (dom/render-component [theme-component]
                             (.getElementById js/document "mainapp")))
