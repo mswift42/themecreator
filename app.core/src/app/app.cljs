@@ -1,5 +1,6 @@
 (ns app.app
   (:require [reagent.core :as reagent :refer [atom]]
+            [reagent.dom :as rdom]
             [app.db :refer [app-db white-sand]]
             [app.db :as db]
             [app.components  :as comps]
@@ -222,8 +223,8 @@
 
 
 (defn init []
-  (reagent/render-component [navbar-component]
+  (rdom/render [navbar-component]
                             (.getElementById js/document "navcontainer"))
 
-  (reagent/render-component [theme-component]
+  (rdom/render [theme-component]
                             (.getElementById js/document "mainapp")))
