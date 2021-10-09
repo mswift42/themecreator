@@ -56,30 +56,6 @@
                           (for [[k v] (derive-colors-from-theme @app-db)]
                             {k v}))))
 
-(def zip (js/JSZip.))
-
-(defn save-zip-as!
-  [zip filename]
-  (-> (.generateAsync zip #js {:type "blob"})
-      (.catch #(println %))
-      (.then #(js/saveAs % filename))))
-
-(defn generate-templates-vscode
-  [templates]
-  (let [zip (js/JSZip.)])
-  (do
-    (doseq [i templates]
-      (compile-template i (derive-colors-from-theme @app-db)))
-    (.folder zip "templates/vscode")
-    (.folder zip "templates/vscode/README.md" @vscodereadmetemplate)
-    (.folder zip "templates/vscode/package.json" @vscodepackagejsontemplate)
-    (.folder zip "templates/vscode/vsc-extension-quickstart.md", @vscodequickstarttemplate)
-    (.folder zip "templates/vscode/themes/vscode-color-theme.json" @vscodetemplate)))
-
-(defn download-vscode
-  [filename]
-  (let [zip (generate-templates-vscode [@vscodetemplate])]
-    (save-zip-as! zip filename)))
 
 
 (defn window-url
@@ -118,14 +94,6 @@
         #(create-blob (generate-template-intelli @intellitemplate) "intellilink"
                       (str (:themename @app-db) ".icls"))}
     "IntelliJ"]])
-
-(defn template-download-vscode
-  []
-  [:li
-   [:a {:href "#" :id "vscodelink" :on-click
-        #(download-vscode (str (:themename @app-db) ".zip"))}
-
-    "VSCode"]])
 
 
 (defn template-select-component
