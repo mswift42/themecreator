@@ -69,7 +69,7 @@ clone or download this repo.
 
 [install](https://clojure.org/guides/getting_started) clojure und the clojure cli tools.
 
-go into the `app.core` directory and run `clj:A:fig:build`.
+go into the `app.core` directory and run `clj -M:fig:build`.
 
 
 Screenshots:
