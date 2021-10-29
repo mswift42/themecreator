@@ -139,6 +139,7 @@
     [:span.sr-only]]
    [:ul#downloadsel.dropdown-menu {:aria-labelledby "templatedrop" }
     [template-download-intelli]
+    [template-download-vscode "vscode" "Visual Studio Code"]
     [template-download "tmthemelink" "Textmate"
      (str (:themename @app-db) ".tmTheme") @tmthemetemplate]
     [template-download "emacslink" "Emacs"
