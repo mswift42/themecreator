@@ -1,4 +1,4 @@
-;;; {{themename}}-theme.el --- Theme 
+;;; {{themename}}-theme.el --- Theme
 
 ;; Copyright (C) {{year}} , {{themeauthor}}
 
@@ -136,7 +136,7 @@
         `(js3-function-param-face ((,class (:foreground ,fg2))))
         `(js3-jsdoc-tag-face ((,class (:foreground ,keyword))))
         `(js3-instance-member-face ((,class (:foreground ,const))))
-	`(warning ((,class (:foreground ,warning)))) 
+	`(warning ((,class (:foreground ,warning))))
 	`(ac-completion-face ((,class (:underline t :foreground ,keyword))))
 	`(info-quoted-name ((,class (:foreground ,builtin))))
 	`(info-string ((,class (:foreground ,str))))
@@ -256,8 +256,6 @@
   (when (>= emacs-major-version 27)
     (custom-theme-set-faces
      '{{themename}}
-     `(line-number ((t (:background ,bg2 :foreground ,fg4))))
-     `(line-number-current-line ((t (:background ,bg2 :foreground ,fg1))))
      `(tab-line ((,class (:inherit fringe :box (:line-width 4 :color ,bg2)))))
      `(tab-line-tab ((,class (:inherit tab-line))))
      `(tab-line-tab-inactive ((,class (:inherit tab-line :foreground ,comment))))
