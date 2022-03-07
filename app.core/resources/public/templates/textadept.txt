@@ -67,7 +67,7 @@ styles.constant = {fore = colors.const}
 styles.embedded = {fore = colors.builtin, back = colors.bg2}
 styles.error = {fore = colors.warning, italics = true}
 styles['function'] = {fore = colors.func}
-styles.identifier = {}
+styles.identifier = {fore=colors.var}
 styles.keyword = {fore = colors.keyword}
 styles.label = {fore = colors.warning}
 styles.number = {fore = colors.const}
