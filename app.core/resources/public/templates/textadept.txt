@@ -1,34 +1,26 @@
-;;; {{themename}}.lua
+--- {{themename}}.lua
 
-;; Copyright (C) {{year}} , {{themeauthor}}
+-- Copyright (C) {{year}} , {{themeauthor}}
 
-;; Author: {{themeauthor}}
-;; Version: 0.1
-;; Package-Requires: ((emacs "24"))
-;; Created with ThemeCreator, https://github.com/mswift42/themecreator.
+-- Author: {{themeauthor}}
+-- Version: 0.1
+-- Package-Requires: ((emacs "24"))
+-- Created with ThemeCreator, https://github.com/mswift42/themecreator.
 
+-- This program is free software: you can redistribute it and/or modify
+-- it under the terms of the GNU General Public License as published by
+-- the Free Software Foundation, either version 3 of the License, or
+-- (at your option) any later version.
 
-;; This program is free software: you can redistribute it and/or modify
-;; it under the terms of the GNU General Public License as published by
-;; the Free Software Foundation, either version 3 of the License, or
-;; (at your option) any later version.
+-- This program is distributed in the hope that it will be useful,
+-- but WITHOUT ANY WARRANTY; without even the implied warranty of
+-- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+-- GNU General Public License for more details.
 
-;; This program is distributed in the hope that it will be useful,
-;; but WITHOUT ANY WARRANTY; without even the implied warranty of
-;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-;; GNU General Public License for more details.
+-- You should have received a copy of the GNU General Public License
+-- along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-;; You should have received a copy of the GNU General Public License
-;; along with this program. If not, see <http://www.gnu.org/licenses/>.
-
-;; This file is not part of TextAdept
-
-;;; Commentary:
-
-;;; Code:
-
-local view, colors, styles = view, lexer.colors, lexer.styles
-
+-- This file is not part of TextAdept
 
 colors.fg1      = {{mainfg}}
 colors.fg2      = {{fg2}}
@@ -51,12 +43,10 @@ colors.warning2 = {{warning2}}
 
 -- Default font.
 if not font then
-  font = 'Dejavu Sans Mono'
+  font = WIN32 and 'Courier New' or OSX and 'Monaco' or
+    'Bitstream Vera Sans Mono'
 end
-if not size then
-   size = 12
-end
-
+if not size then size = not OSX and 10 or 12 end
 -- Find/replace dialog
 ui.find.entry_font = font .. ' ' .. (size - 1)
 
@@ -64,30 +54,29 @@ ui.find.entry_font = font .. ' ' .. (size - 1)
 styles.default = {
   font = font, size = size, fore = colors.fg1, back = colors.bg1
 }
-
-styles.line_number = {fore = colors.fg2, back = colors.bg2}
+styles.line_number = {fore = colors.fg1, back = colors.bg2}
 --styles.control_char =
-styles.indent_guide = {fore = colors.fg3}
-styles.call_tip = {fore = colors.fg3, back = colors.bg2}
-styles.fold_display_text = {fore = colors.fg2}
+styles.indent_guide = {fore = colors.comment}
+styles.call_tip = {fore = colors.fg1, back = colors.bg2}
+styles.fold_display_text = {fore = colors.bg2}
 
 -- Token styles.
 styles.class = {fore = colors.func}
 styles.comment = {fore = colors.comment}
 styles.constant = {fore = colors.const}
-styles.embedded = {fore = colors.builtin, back = colors.bg1}
-styles.error = {fore = colors.warning2, italics = true}
+styles.embedded = {fore = colors.builtin, back = colors.bg2}
+styles.error = {fore = colors.warning, italics = true}
 styles['function'] = {fore = colors.func}
 styles.identifier = {}
 styles.keyword = {fore = colors.keyword}
-styles.label = {fore = colors.const}
-styles.number = {fore = colors.fg1}
-styles.operator = {fore = colors.fg1}
-styles.preprocessor = {fore = colors.builtin}
+styles.label = {fore = colors.warning}
+styles.number = {fore = colors.const}
+styles.operator = {fore = colors.fg2}
+styles.preprocessor = {fore = colors.str}
 styles.regex = {fore = colors.str}
 styles.string = {fore = colors.str}
-styles.type = {fore = colors.type}
-styles.variable = {fore = colors.var}
+styles.type = {fore = colors.func}
+styles.variable = {fore = colors.warning}
 styles.whitespace = {}
 
 -- Multiple Selection and Virtual Space
@@ -97,24 +86,27 @@ styles.whitespace = {}
 --view.additional_caret_fore =
 
 -- Caret and Selection Styles.
-view:set_sel_fore(true, colors.base06)
-view:set_sel_back(true, colors.base02)
+view:set_sel_fore(true, colors.fg3)
+view:set_sel_back(true, colors.bg3)
 --view.sel_alpha =
-view.caret_fore = colors.base05
-view.caret_line_back = colors.base01
+view.caret_fore = colors.fg2
+view.caret_line_back = colors.bg2
 --view.caret_line_back_alpha =
 
 -- Fold Margin.
-view:set_fold_margin_color(true, colors.fg1)
-view:set_fold_margin_hi_color(true, colors.fg1)
+view:set_fold_margin_color(true, colors.bg2)
+view:set_fold_margin_hi_color(true, colors.bg2)
 
 -- Markers.
-view.marker_back[textadept.bookmarks.MARK_BOOKMARK] = colors.fg4
-view.marker_back[textadept.run.MARK_WARNING] = colors.warning
-view.marker_back[textadept.run.MARK_ERROR] = colors.warning2
+--view.marker_fore[textadept.bookmarks.MARK_BOOKMARK] = colors.bg1
+view.marker_back[textadept.bookmarks.MARK_BOOKMARK] = colors.str
+--view.marker_fore[textadept.run.MARK_WARNING] = colors.bg1
+view.marker_back[textadept.run.MARK_WARNING] = colors.keyword
+--view.marker_fore[textadept.run.MARK_ERROR] = colors.bg1
+view.marker_back[textadept.run.MARK_ERROR] = colors.warning
 for i = view.MARKNUM_FOLDEREND, view.MARKNUM_FOLDEROPEN do -- fold margin
-  view.marker_fore[i] = colors.fg1
-  view.marker_back[i] = colors.bg2
+  view.marker_fore[i] = colors.bg1
+  view.marker_back[i] = colors.comment
   view.marker_back_selected[i] = colors.bg3
 end
 
@@ -122,15 +114,15 @@ end
 view.indic_fore[ui.find.INDIC_FIND] = colors.const
 view.indic_alpha[ui.find.INDIC_FIND] = 255
 view.indic_fore[textadept.editing.INDIC_BRACEMATCH] = colors.fg3
-view.indic_fore[textadept.editing.INDIC_HIGHLIGHT] = colors.fg2
+view.indic_fore[textadept.editing.INDIC_HIGHLIGHT] = colors.fg4
 view.indic_alpha[textadept.editing.INDIC_HIGHLIGHT] = 64
-view.indic_fore[textadept.snippets.INDIC_PLACEHOLDER] = colors.fg3
+view.indic_fore[textadept.snippets.INDIC_PLACEHOLDER] = colors.fg1
 
 -- Call tips.
-view.call_tip_fore_hlt = colors.fg2
+view.call_tip_fore_hlt = colors.fg3
 
 -- Long Lines.
-view.edge_color = colors.fg3
+view.edge_color = colors.bg3
 
 -- Add red, green, and yellow for diff lexer.
 colors.red = colors.warning
