@@ -4,7 +4,6 @@
 
 -- Author: {{themeauthor}}
 -- Version: 0.1
--- Package-Requires: ((emacs "24"))
 -- Created with ThemeCreator, https://github.com/mswift42/themecreator.
 
 -- This program is free software: you can redistribute it and/or modify
