@@ -20,25 +20,26 @@
 -- along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 -- This file is not part of TextAdept
+local view, colors, styles = view, lexer.colors, lexer.styles
 
-colors.fg1      = {{mainfg}}
-colors.fg2      = {{fg2}}
-colors.fg3      = {{fg3}}
-colors.fg4      = {{fg4}}
-colors.bg1      = {{mainbg}}
-colors.bg2      = {{bg2}}
-colors.bg3      = {{bg3}}
-colors.bg4      = {{bg4}}
-colors.builtin  = {{builtin}}
-colors.keyword  = {{keyword}}
-colors.const    = {{constant}}
-colors.comment  = {{comment}}
-colors.func     = {{functionname}}
-colors.str      = {{string}}
-colors.type     = {{type}}
-colors.var      = {{variable}}
-colors.warning  = {{warning}}
-colors.warning2 = {{warning2}}
+colors.fg1      = "{{mainfg}}"
+colors.fg2      = "{{fg2}}"
+colors.fg3      = "{{fg3}}"
+colors.fg4      = "{{fg4}}"
+colors.bg1      = "{{mainbg}}"
+colors.bg2      = "{{bg2}}"
+colors.bg3      = "{{bg3}}"
+colors.bg4      = "{{bg4}}"
+colors.builtin  = "{{builtin}}"
+colors.keyword  = "{{keyword}}"
+colors.const    = "{{constant}}"
+colors.comment  = "{{comment}}"
+colors.func     = "{{functionname}}"
+colors.str      = "{{string}}"
+colors.type     = "{{type}}"
+colors.var      = "{{variable}}"
+colors.warning  = "{{warning}}"
+colors.warning2 = "{{warning2}}"
 
 -- Default font.
 if not font then
