@@ -43,10 +43,11 @@ colors.warning2 = "{{warning2}}"
 
 -- Default font.
 if not font then
-  font = WIN32 and 'Courier New' or OSX and 'Monaco' or
+  font = WIN32 and 'Consolas' or OSX and 'Monaco' or
     'Bitstream Vera Sans Mono'
 end
-if not size then size = not OSX and 10 or 12 end
+if not size then size = OSX and 12 or 11 end
+
 -- Find/replace dialog
 ui.find.entry_font = font .. ' ' .. (size - 1)
 
@@ -86,8 +87,8 @@ styles.whitespace = {}
 --view.additional_caret_fore =
 
 -- Caret and Selection Styles.
-view:set_sel_fore(true, colors.fg3)
-view:set_sel_back(true, colors.bg3)
+view:set_sel_fore(true, colors.fg2)
+view:set_sel_back(true, colors.bg2)
 --view.sel_alpha =
 view.caret_fore = colors.fg2
 view.caret_line_back = colors.bg2
