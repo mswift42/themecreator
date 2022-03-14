@@ -199,16 +199,16 @@
 
 (defn theme-component []
   [navbar-component]
-  (GET "templates/intelli.txt" intellitemplate)
-  (GET "templates/tmtheme.txt" tmthemetemplate)
-  (GET "templates/emacs.txt" emacstemplate)
-  (GET "templates/textadept.txt" tatemplate)
-  (GET "templates/vim.txt" vimtemplate)
-  (GET "templates/gnome-terminal.txt" gnometerminaltemplate)
-  (GET "templates/vscode/package.json" vscodepackagejsontemplate)
-  (GET "templates/vscode/vsc-extension-quickstart.md" vscodequickstarttemplate)
-  (GET "templates/vscode/README.md" vscodereadmetemplate)
-  (GET "templates/vscode/themes/vscode-color-theme.json" vscodetemplate)
+  (GET "app.core/resources/public/templates/intelli.txt" intellitemplate)
+  (GET "app.core/resources/public/templates/tmtheme.txt" tmthemetemplate)
+  (GET "app.core/resources/public/templates/emacs.txt" emacstemplate)
+  (GET "app.core/resources/public/templates/textadept.txt" tatemplate)
+  (GET "app.core/resources/public/templates/vim.txt" vimtemplate)
+  (GET "app.core/resources/public/templates/gnome-terminal.txt" gnometerminaltemplate)
+  (GET "app.core/resources/public/templates/vscode/package.json" vscodepackagejsontemplate)
+  (GET "app.core/resources/public/templates/vscode/vsc-extension-quickstart.md" vscodequickstarttemplate)
+  (GET "app.core/resources/public/templates/vscode/README.md" vscodereadmetemplate)
+  (GET "app.core/resources/public/templates/vscode/themes/vscode-color-theme.json" vscodetemplate)
   (db/set-db-from-storage)
   [:div.row
    [color-components]
