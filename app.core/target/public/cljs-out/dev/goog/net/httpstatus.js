@@ -1,16 +1,8 @@
-// Copyright 2011 The Closure Library Authors. All Rights Reserved.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS-IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
+/**
+ * @license
+ * Copyright The Closure Library Authors.
+ * SPDX-License-Identifier: Apache-2.0
+ */
 
 /**
  * @fileoverview Constants for HTTP status codes.
@@ -20,9 +12,11 @@ goog.provide('goog.net.HttpStatus');
 
 
 /**
- * HTTP Status Codes defined in RFC 2616 and RFC 6585.
+ * HTTP Status Codes defined in RFC 2616, RFC 6585, RFC 4918 and RFC 7538.
  * @see http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
  * @see http://tools.ietf.org/html/rfc6585
+ * @see https://tools.ietf.org/html/rfc4918
+ * @see https://tools.ietf.org/html/rfc7538
  * @enum {number}
  */
 goog.net.HttpStatus = {
@@ -38,6 +32,7 @@ goog.net.HttpStatus = {
   NO_CONTENT: 204,
   RESET_CONTENT: 205,
   PARTIAL_CONTENT: 206,
+  MULTI_STATUS: 207,
 
   // Redirection 3xx
   MULTIPLE_CHOICES: 300,
@@ -47,6 +42,7 @@ goog.net.HttpStatus = {
   NOT_MODIFIED: 304,
   USE_PROXY: 305,
   TEMPORARY_REDIRECT: 307,
+  PERMANENT_REDIRECT: 308,
 
   // Client Error 4xx
   BAD_REQUEST: 400,
@@ -67,9 +63,13 @@ goog.net.HttpStatus = {
   UNSUPPORTED_MEDIA_TYPE: 415,
   REQUEST_RANGE_NOT_SATISFIABLE: 416,
   EXPECTATION_FAILED: 417,
+  UNPROCESSABLE_ENTITY: 422,
+  LOCKED: 423,
+  FAILED_DEPENDENCY: 424,
   PRECONDITION_REQUIRED: 428,
   TOO_MANY_REQUESTS: 429,
   REQUEST_HEADER_FIELDS_TOO_LARGE: 431,
+  CLIENT_CLOSED_REQUEST: 499,  // Nonstandard, used by GRPC
 
   // Server Error 5xx
   INTERNAL_SERVER_ERROR: 500,
@@ -78,6 +78,7 @@ goog.net.HttpStatus = {
   SERVICE_UNAVAILABLE: 503,
   GATEWAY_TIMEOUT: 504,
   HTTP_VERSION_NOT_SUPPORTED: 505,
+  INSUFFICIENT_STORAGE: 507,
   NETWORK_AUTHENTICATION_REQUIRED: 511,
 
   /*
@@ -85,7 +86,7 @@ goog.net.HttpStatus = {
    * code for 'Operation Aborted'. The status text is 'Unknown', the response
    * headers are ''. Known to occur on IE 6 on XP through IE9 on Win7.
    */
-  QUIRK_IE_NO_CONTENT: 1223
+  QUIRK_IE_NO_CONTENT: 1223,
 };
 
 
@@ -100,6 +101,7 @@ goog.net.HttpStatus = {
  * @return {boolean} Whether the status code should be considered successful.
  */
 goog.net.HttpStatus.isSuccess = function(status) {
+  'use strict';
   switch (status) {
     case goog.net.HttpStatus.OK:
     case goog.net.HttpStatus.CREATED:
