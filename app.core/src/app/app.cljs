@@ -1,9 +1,10 @@
 (ns app.app
   (:require [reagent.core :as reagent :refer [atom]]
+            [reagent.dom :as rdom]
             [app.db :refer [app-db white-sand]]
             [app.db :as db]
             [app.components  :as comps]
-            [app.colors :refer [derive-colors-from-theme]]
+            [app.colors :refer [derive-colors-from-theme hexToBgrHex]]
             [cljsjs.mustache]
             [cljsjs.jszip]
             [cljsjs.filesaverjs]
@@ -23,6 +24,7 @@
 (def tmthemetemplate (atom ""))
 (def atomtemplate (atom ""))
 (def emacstemplate (atom ""))
+(def tatemplate (atom ""))
 (def vimtemplate (atom ""))
 (def gnometerminaltemplate (atom ""))
 (def vscodetemplate (atom ""))
@@ -55,31 +57,14 @@
                           (for [[k v] (derive-colors-from-theme @app-db)]
                             {k v}))))
 
-(def zip (js/JSZip.))
-
-(defn save-zip-as!
-  [zip filename]
-  (-> (.generateAsync zip #js {:type "blob"})
-      (.catch #(println %))
-      (.then #(js/saveAs % filename))))
-
-(defn generate-templates-vscode
-  [templates]
-  (let [zip (js/JSZip.)])
-  (doseq [i templates]
-    (compile-template i (derive-colors-from-theme @app-db)))
-  (.folder zip "templates/vscode")
-  (.folder zip "templates/vscode/README.md" @vscodereadmetemplate)
-  (.folder zip "templates/vscode/package.json" @vscodepackagejsontemplate)
-  (.folder zip "templates/vscode/vsc-extension-quickstart.md", @vscodequickstarttemplate)
-  (.folder zip "templates/vscode/themes/vscode-color-theme.json" @vscodetemplate)
-  zip)
-
-(defn download-vscode
-  [filename]
-  (let [zip (generate-templates-vscode [@vscodetemplate])]
-    (save-zip-as! zip filename)))
-
+(defn generate-template-textadept
+  [template]
+  (compile-template template
+                    (into {}
+                          (for [[k v] (derive-colors-from-theme @app-db)]
+                            (if (clojure.string/starts-with? (str v) "#")
+                              {k (hexToBgrHex v)}
+                              {k v})))))
 
 (defn window-url
   []
@@ -108,6 +93,13 @@
         #(create-blob (generate-template template) id filename)}
     title]])
 
+(defn current-year
+  []
+  (str (.getFullYear (js/Date.))))
+
+(defn set-year
+  []
+  (swap! db/app-db assoc :year (current-year)))
 
 
 (defn template-download-intelli
@@ -118,13 +110,13 @@
                       (str (:themename @app-db) ".icls"))}
     "IntelliJ"]])
 
-(defn template-download-vscode
+(defn template-download-textadept
   []
   [:li
-   [:a {:href "#" :id "vscodelink" :on-click
-        #(download-vscode (str (:themename @app-db) ".zip"))}
-
-    "VSCode"]])
+   [:a {:href "#" :id "textadeptlink" :on-click
+        #(create-blob (generate-template-textadept @tatemplate) "textadeptlink"
+                      (str (:themename @app-db) ".lua"))}
+    "Textadept"]])
 
 
 (defn template-select-component
@@ -142,6 +134,7 @@
      (str (:themename @app-db) ".tmTheme") @tmthemetemplate]
     [template-download "emacslink" "Emacs"
      (str (:themename @app-db) "-theme.el") @emacstemplate ]
+    [template-download-textadept]
     [template-download "vimlink" "Vim"
      (str (:themename @app-db) ".vim") @vimtemplate]
     [template-download "gnometerminallink" "Gnome Terminal"
@@ -206,15 +199,16 @@
 
 (defn theme-component []
   [navbar-component]
-  (GET "app.core/resources/public/templates/intelli.txt" intellitemplate)
-  (GET "app.core/resources/public/templates/tmtheme.txt" tmthemetemplate)
-  (GET "app.core/resources/public/templates/emacs.txt" emacstemplate)
-  (GET "app.core/resources/public/templates/vim.txt" vimtemplate)
-  (GET "app.core/resources/public/templates/gnome-terminal.txt" gnometerminaltemplate)
-  (GET "app.core/resources/public/templates/vscode/package.json" vscodepackagejsontemplate)
-  (GET "app.core/resources/public/templates/vscode/vsc-extension-quickstart.md" vscodequickstarttemplate)
-  (GET "app.core/resources/public/templates/vscode/README.md" vscodereadmetemplate)
-  (GET "app.core/resources/public/templates/vscode/themes/vscode-color-theme.json" vscodetemplate)
+  (GET "templates/intelli.txt" intellitemplate)
+  (GET "templates/tmtheme.txt" tmthemetemplate)
+  (GET "templates/emacs.txt" emacstemplate)
+  (GET "templates/textadept.txt" tatemplate)
+  (GET "templates/vim.txt" vimtemplate)
+  (GET "templates/gnome-terminal.txt" gnometerminaltemplate)
+  (GET "templates/vscode/package.json" vscodepackagejsontemplate)
+  (GET "templates/vscode/vsc-extension-quickstart.md" vscodequickstarttemplate)
+  (GET "templates/vscode/README.md" vscodereadmetemplate)
+  (GET "templates/vscode/themes/vscode-color-theme.json" vscodetemplate)
   (db/set-db-from-storage)
   [:div.row
    [color-components]
@@ -222,8 +216,8 @@
 
 
 (defn init []
-  (reagent/render-component [navbar-component]
+  (rdom/render [navbar-component]
                             (.getElementById js/document "navcontainer"))
 
-  (reagent/render-component [theme-component]
+  (rdom/render [theme-component]
                             (.getElementById js/document "mainapp")))

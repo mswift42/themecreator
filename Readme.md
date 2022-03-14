@@ -3,7 +3,7 @@
 
 ![Screenshot](https://github.com/mswift42/themecreator/raw/master/screenshots/tc1chromehamburg.png)
 
-Create Color Themes for IntelliJ Editors, Atom, Emacs, Textmate, Vim and Gnome Terminal.
+Create Color Themes for IntelliJ Editors, Atom, Emacs, TextAdept, Textmate, Vim and Gnome Terminal.
 
 
 Installation Instructions:
@@ -24,13 +24,16 @@ To create an UI Theme plugin for jetbrains editors >= 191, go to [iui](https://g
 with your newly generated theme.
 
 ### Textmate:
-Download the textmate theme, then follow your editors instructions. For Visual Studio Code you can use the [yeoman code](https://code.visualstudio.com/docs/tools/yocode) generator. 
+Download the textmate theme, then follow your editors instructions. For Visual Studio Code you can use the [yeoman code](https://code.visualstudio.com/docs/tools/yocode) generator.
 
 ### Atom:
 [Generate](https://atom.io/docs/latest/hacking-atom-creating-a-theme) a new color theme from within atom. Then Download the atom theme you made with ThemeCreator, and download [base.less](https://github.com/mswift42/themecreator/raw/master/base.less) and [syntax-variables.less](https://github.com/mswift42/themecreator/raw/master/syntax-variables.less). Now copy the 3 files, `colors.less`, `base.less` and `syntax-variables.less` into the `styles/` folder of the Atom generated theme.
 
 ### Emacs:
 Download the emacs file. Add a fitting package description to the first line. You can try your new theme by visiting your new theme with `C-x C-f <filename.el>`. You can install your new theme with: `M-x package-install-file <filename.el>`.
+
+### TextAdept:
+Download the TextAdept file. Copy it into your ~/.textadept/themes directory, edit your preferences to use it and restart TextAdept.
 
 ### Vim:
 Download the vim theme and copy it to your `colors` folder. For Vim that's usually `~/.vim/colors`, for Neovim it's `~/.config/nvim/colors` .
@@ -61,13 +64,15 @@ By pressing the `store theme` button, you can store your theme and custom Lightn
 Contributing:
 -------------
 
-To run ThemeCreator locally, you need to install [boot](https://github.com/boot-clj/boot).
+**All contributions are welcome**.
 
-Then go to the app/ folder and run
+To run themecreator locally:
 
-`boot dev`
+clone or download this repo.
 
-to start the development server on localhost:3000.
+[install](https://clojure.org/guides/getting_started) clojure und the clojure cli tools.
+
+go into the `app.core` directory and run `clj -M:fig:build`.
 
 
 Screenshots:
@@ -102,6 +107,3 @@ ThemeCreator's maintenance has been made a lot easier with the support of
 <a href="https://www.jetbrains.com"> <img src="https://github.com/mswift42/themecreator/raw/master/jetbrains.png" width="200" height = "200" alt="JetBrains" /> </a>
 
 Thank you JetBrains.
-
-
-
