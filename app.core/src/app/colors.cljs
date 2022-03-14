@@ -7,6 +7,14 @@
   [hexcolor]
   (mapv #(/ % 255.0) (color/hexToRgb hexcolor)))
 
+(defn hexToBgrHex
+  "convert hex color in #rrggbb format to
+   format 0xbbggrr."
+  [hexcolor]
+  (let [[r g b] (color/hexToRgb hexcolor)
+        bgrhex (color/rgbToHex b g r)]
+    (clojure.string/replace-first (str "0x" bgrhex) "#" "")))
+
 (defn valid-rgb?
   [rgbcolor]
   (not-any? #(or (< % 0)

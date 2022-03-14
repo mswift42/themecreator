@@ -4,7 +4,7 @@
             [app.db :refer [app-db white-sand]]
             [app.db :as db]
             [app.components  :as comps]
-            [app.colors :refer [derive-colors-from-theme]]
+            [app.colors :refer [derive-colors-from-theme hexToBgrHex]]
             [cljsjs.mustache]
             [cljsjs.jszip]
             [cljsjs.filesaverjs]
@@ -24,6 +24,7 @@
 (def tmthemetemplate (atom ""))
 (def atomtemplate (atom ""))
 (def emacstemplate (atom ""))
+(def tatemplate (atom ""))
 (def vimtemplate (atom ""))
 (def gnometerminaltemplate (atom ""))
 (def vscodetemplate (atom ""))
@@ -56,7 +57,14 @@
                           (for [[k v] (derive-colors-from-theme @app-db)]
                             {k v}))))
 
-
+(defn generate-template-textadept
+  [template]
+  (compile-template template
+                    (into {}
+                          (for [[k v] (derive-colors-from-theme @app-db)]
+                            (if (clojure.string/starts-with? (str v) "#")
+                              {k (hexToBgrHex v)}
+                              {k v})))))
 
 (defn window-url
   []
@@ -95,6 +103,14 @@
                       (str (:themename @app-db) ".icls"))}
     "IntelliJ"]])
 
+(defn template-download-textadept
+  []
+  [:li
+   [:a {:href "#" :id "textadeptlink" :on-click
+        #(create-blob (generate-template-textadept @tatemplate) "textadeptlink"
+                      (str (:themename @app-db) ".lua"))}
+    "Textadept"]])
+
 
 (defn template-select-component
   []
@@ -111,6 +127,7 @@
      (str (:themename @app-db) ".tmTheme") @tmthemetemplate]
     [template-download "emacslink" "Emacs"
      (str (:themename @app-db) "-theme.el") @emacstemplate ]
+    [template-download-textadept]
     [template-download "vimlink" "Vim"
      (str (:themename @app-db) ".vim") @vimtemplate]
     [template-download "gnometerminallink" "Gnome Terminal"
@@ -178,6 +195,7 @@
   (GET "templates/intelli.txt" intellitemplate)
   (GET "templates/tmtheme.txt" tmthemetemplate)
   (GET "templates/emacs.txt" emacstemplate)
+  (GET "templates/textadept.txt" tatemplate)
   (GET "templates/vim.txt" vimtemplate)
   (GET "templates/gnome-terminal.txt" gnometerminaltemplate)
   (GET "templates/vscode/package.json" vscodepackagejsontemplate)
