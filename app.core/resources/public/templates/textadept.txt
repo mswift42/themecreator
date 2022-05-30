@@ -5,6 +5,8 @@
 -- Author: {{themeauthor}}
 -- Version: 0.1
 -- Created with ThemeCreator, https://github.com/mswift42/themecreator.
+-- Textadept theme template was provided by Pedro A. Aranda Gutiérrez,
+-- https://github.com/paaguti.
 
 -- This program is free software: you can redistribute it and/or modify
 -- it under the terms of the GNU General Public License as published by
