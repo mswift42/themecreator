@@ -240,6 +240,7 @@
         `(jde-java-font-lock-modifier-face ((t (:foreground ,fg2))))
         `(jde-jave-font-lock-protected-face ((t (:foreground ,keyword))))
         `(jde-java-font-lock-number-face ((t (:foreground ,var))))
+        `(yas-field-highlight-face ((t (:foregroung ,fg2 :background ,bg2))))
         )
   ;; emacs >= 26.1
   (when (>= emacs-major-version 26)
