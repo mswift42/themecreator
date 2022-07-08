@@ -242,10 +242,10 @@
         `(yas-field-highlight-face ((t (:background ,bg4))))
         )
   ;; Legacy
-  (if (< emacs-major-version 26)
+  (if (< emacs-major-version 22)
     (custom-theme-set-faces
       '{{themename}}
-      `(show-paren-match-face ((,class (:background ,warning))))
+      `(show-paren-match-face ((,class (:background ,warning)))) ;; obsoleted in 22.1, removed 2016
     )
    (custom-theme-set-faces
       '{{themename}}
