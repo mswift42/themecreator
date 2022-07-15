@@ -158,6 +158,7 @@
     [comps/color-component :type]
     [comps/color-component :constant]
     [comps/color-component :comment]
+    [comps/color-component :selection]
     [comps/color-component :warning]
     [comps/color-component :warning2]
     [:br]
