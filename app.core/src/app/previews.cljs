@@ -3,12 +3,14 @@
 
 (defn span-component
   "span-component represents a span component
-   with a text content 'text' of background-color 
+   with a text content 'text' of background-color
    'color'"
   ([text color ]
-   [:span (if (= color :keyword)
-            {:style {:color (color @app-db)
-                     :font-weight "bold"}}
+   [:span (case color
+           :keyword   {:style {:color (color @app-db)
+                       :font-weight "bold"}}
+           :selection {:style {:background (color @app-db)
+                       :color "black"}}
             {:style {:color (color @app-db)}})
     (str text)])
   ([text color textdecoration]
@@ -56,6 +58,7 @@
    [span-component "Array" :type]
    [span-component "();" :mainfg]
    [span-component " // start with an empty Array." :comment]
+   [span-component " A comment that is partially selected" :selection]
    [:br]
    [span-component "    for " :keyword]
    [span-component "(" :mainfg]
