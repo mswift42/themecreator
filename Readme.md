@@ -74,6 +74,19 @@ clone or download this repo.
 
 go into the `app.core` directory and run `clj -M:fig:build`.
 
+Extras:
+-------
+
+`Dockerfile` and the companion scripts `build-run.sh` and `kill-clean.sh` allow you
+to deploy ThemeCreator in a Docker container. You will need the Docker CLI tools to
+use them.
+
+`build-sh.run` will expose the container port `9500` to the host/VM where you are running
+ThemeCreator. If you are running ThemeCreator inside Dockeer inside a VM, you may also
+need to add a port translation for your virtual machine to access ThemeCreator from your host.
+
+This has been tested on a Ubuntu 20.04 server VM running on VirtualBox and on KVM directly.
+
 
 Screenshots:
 ------------
