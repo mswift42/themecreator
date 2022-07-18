@@ -198,7 +198,7 @@
    [span-component "log" :builtin]
    [span-component "(" :mainfg]
    [span-component "'An array of the prime numbers " :string]
-   [span-component "from 0 to 100: '" :string selection:]
+   [span-component "from 0 to 100: '" :string :selection]
    [span-component "+ " :mainfg]
    [span-component "primes" :variable]
    [span-component ");" :mainfg]
