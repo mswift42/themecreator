@@ -9,18 +9,18 @@
    [:span (case color
            :keyword   {:style {:color (color @app-db)
                        :font-weight "bold"}}
-           :selection {:style {:background (color @app-db)
-                       :color "black"}}
-            {:style {:color (color @app-db)}})
+                      {:style {:color (color @app-db)}})
     (str text)])
   ([text color textdecoration]
-   [:span {:style {:color (color @app-db)
-                   :text-decoration "underline"
-                   :text-decoration-style "wavy"
-                   :-webkit-text-decoration "underline"
-                   :-webkit-text-decoration-style "wavy"
-                   :text-decoration-color (textdecoration @app-db)
-                   :-webkit-text-decoration-color (textdecoration @app-db)}}
+   [:span (case textdecoration
+          :selection {:style {:background (textdecoration @app-db)}}
+                     {:style {:color (color @app-db)
+                              :text-decoration "underline"
+                              :text-decoration-style "wavy"
+                              :-webkit-text-decoration "underline"
+                              :-webkit-text-decoration-style "wavy"
+                              :text-decoration-color (textdecoration @app-db)
+                              :-webkit-text-decoration-color (textdecoration @app-db)}})
     (str text)]))
 
 (defn preview-javascript
@@ -58,7 +58,7 @@
    [span-component "Array" :type]
    [span-component "();" :mainfg]
    [span-component " // start with an empty Array." :comment]
-   [span-component " A comment that is partially selected" :selection]
+   [span-component " A comment that is partially selected" :comment :selection]
    [:br]
    [span-component "    for " :keyword]
    [span-component "(" :mainfg]
@@ -272,7 +272,7 @@
    [:br]
    [span-component "  // changeColor sets one themeface of" :comment]
    [:br]
-   [span-component "  // 'theme' to a given color." :selection]
+   [span-component "  // 'theme' to a given color." :comment :selection]
    [:br]
    [span-component "  changeColor" :functionname]
    [span-component "(face: Face): " :mainfg]
@@ -338,7 +338,7 @@
    [:br]
    [:br]
    [span-component "# Create a new object" :comment]
-   [span-component " which is partly selected" :selection]
+   [span-component " which is partly selected" :comment :selection]
    [:br]
    [span-component "g = " :mainfg]
    [span-component "Greeter" :type]
@@ -436,7 +436,7 @@
    [span-component "str" :builtin]
    [span-component "(num) " :mainfg]
    [span-component "# convert number to string of " :comment]
-   [span-component "its digits." :selection]
+   [span-component "its digits." :comment :selection]
    [:br]
    [span-component "    total " :variable]
    [span-component "= 0" :mainfg]
@@ -525,7 +525,7 @@
    [:br]
    [:br]
    [span-component "/* A comment " :comment]
-   [span-component "with selection" :selection]
+   [span-component "with selection" :comment :selection]
    [span-component " */" :comment]
    [:br]
    [:br]
