@@ -13,7 +13,7 @@
    :type "#d4d4d4"
    :constant "#d4d4d4"
    :comment "#808080"
-   :selection "#ff0000"
+   :selection "#0000ff"
    :warning "#ff0000"
    :warning2 "#ff8800"})
 
@@ -349,7 +349,7 @@
                              :saturation (:saturation @custom-palette-db))))))
 
 (defn string-to-keyword
-  "convert a map with strings as keys to a map with keyword keys and string 
+  "convert a map with strings as keys to a map with keyword keys and string
    values."
   [strmap]
   (into {} (for [[k v] strmap]
@@ -371,6 +371,3 @@
         (switch-theme storedtheme)
         (reset! custom-palette-db {:saturation (:saturation storedtheme)
                                    :lightness (:lightness storedtheme)})))))
-
-
-
