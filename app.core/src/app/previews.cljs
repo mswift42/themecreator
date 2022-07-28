@@ -21,7 +21,7 @@
                      :-webkit-text-decoration "underline"
                      :-webkit-text-decoration-style "wavy"
                      :text-decoration-color (textdecoration @app-db)
-                     :-webkit-text-decoration-color (textdecoration @app-db)}}
+                     :-webkit-text-decoration-color (textdecoration @app-db)}})
             (str text)]))
 
 (defn preview-javascript
@@ -198,7 +198,7 @@
    [span-component "log" :builtin]
    [span-component "(" :mainfg]
    [span-component "'An array of the prime numbers " :string]
-   [span-component "from 0 to 100: '" :string selection:]
+   [span-component "from 0 to 100: '" :string :selection]
    [span-component "+ " :mainfg]
    [span-component "primes" :variable]
    [span-component ");" :mainfg]
