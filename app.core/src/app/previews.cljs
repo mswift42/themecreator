@@ -3,7 +3,7 @@
 
 (defn span-component
   "span-component represents a span component
-   with a text content 'text' of background-color 
+   with a text content 'text' of background-color
    'color'"
   ([text color ]
    [:span (if (= color :keyword)
@@ -12,14 +12,17 @@
             {:style {:color (color @app-db)}})
     (str text)])
   ([text color textdecoration]
-   [:span {:style {:color (color @app-db)
-                   :text-decoration "underline"
-                   :text-decoration-style "wavy"
-                   :-webkit-text-decoration "underline"
-                   :-webkit-text-decoration-style "wavy"
-                   :text-decoration-color (textdecoration @app-db)
-                   :-webkit-text-decoration-color (textdecoration @app-db)}}
-    (str text)]))
+   [:span (case textdecoration
+            :selection {:style {:color (color @app-db)
+                                :background (textdecoration @app-db)}}
+            {:style {:color (color @app-db)
+                     :text-decoration "underline"
+                     :text-decoration-style "wavy"
+                     :-webkit-text-decoration "underline"
+                     :-webkit-text-decoration-style "wavy"
+                     :text-decoration-color (textdecoration @app-db)
+                     :-webkit-text-decoration-color (textdecoration @app-db)}}
+            (str text)]))
 
 (defn preview-javascript
   []
@@ -193,7 +196,8 @@
    [span-component "." :mainfg]
    [span-component "log" :builtin]
    [span-component "(" :mainfg]
-   [span-component "'An array of the prime numbers from 0 to 100: '" :string]
+   [span-component "'An array of the prime numbers " :string]
+   [span-component "from 0 to 100: '" :string selection:]
    [span-component "+ " :mainfg]
    [span-component "primes" :variable]
    [span-component ");" :mainfg]
@@ -406,7 +410,9 @@
    [span-component "fac" :functionname]
    [span-component "(num):" :mainfg]
    [:br]
-   [span-component "    \"return factorial of number num\"" :string]
+   [span-component "    \"return " :string]
+   [span-component "factorial " :string :selection]
+   [span-component "of number num\"" :string]
    [:br]
    [span-component "    if " :keyword]
    [span-component "num == 0:" :mainfg]
@@ -546,7 +552,8 @@
    [span-component "*" :mainfg]
    [span-component "str " :variable]
    [span-component "= " :mainfg]
-   [span-component "\"This is a string !\"" :string]
+   [span-component "\"This is a " :string]
+   [span-component "string !\"" :string :selection]
    [span-component ";" :mainfg]
    [:br]
    [span-component "    my_struct_t " :type]
