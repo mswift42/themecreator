@@ -9,12 +9,13 @@
 @mainfg: {{mainfg}};
 
 @comment: {{comment}};
-@builtin: {{builtin}}; 
+@builtin: {{builtin}};
 @keyword: {{keyword}};
 @type: {{type}};
 @const: {{constant}};
 @func: {{functionname}};
 @string: {{string}};
 @var: {{variable}};
+@selection: {{selection}};
 @warning: {{warning}};
 @warning2: {{warning2}};
