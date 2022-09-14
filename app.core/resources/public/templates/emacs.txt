@@ -241,7 +241,7 @@
    `(jde-java-font-lock-modifier-face ((t (:foreground ,fg2))))
    `(jde-jave-font-lock-protected-face ((t (:foreground ,keyword))))
    `(jde-java-font-lock-number-face ((t (:foreground ,var))))
-   `(yas-field-highlight-face ((t (:background ,bg4))))
+   `(yas-field-highlight-face ((t (:background ,selection))))
    )
   ;; Legacy
   (if (< emacs-major-version 22)
