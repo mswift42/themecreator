@@ -21,7 +21,7 @@
 -- You should have received a copy of the GNU General Public License
 -- along with this program. If not, see <http://www.gnu.org/licenses/>.
 
--- This theme is adapted for VERSION 5 of TextAdept
+-- This theme is adapted for version 11.5+ of TextAdept
 -- This file is not part of TextAdept
 local view, colors, styles = view, lexer.colors, lexer.styles
 
