@@ -46,7 +46,7 @@
    :type  "#8c4a79"
    :constant  "#697024"
    :comment  "#a9a9a9"
-   :selection  "#ff1276"
+   :selection  "#9cfcec"
    :warning  "#ff1276"
    :warning2  "#ff4d12"})
 
@@ -94,7 +94,7 @@
    :type "#634575"
    :constant "#64502f"
    :comment "#949494"
-   :selection "#fa0c0c"
+   :selection "#9cfcec"
    :warning "#fa0c0c"
    :warning2 "#fa7b0c"})
 
@@ -142,7 +142,7 @@
    :type "#c1d2b1"
    :constant "#a3d6cc"
    :comment "#5d5d5d"
-   :selection "#e81050"
+   :selection "#3c8c8c"
    :warning "#e81050"
    :warning2 "#e86310"})
 
