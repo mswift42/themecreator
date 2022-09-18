@@ -302,7 +302,7 @@
    :type "#56724b"
    :constant "#28766e"
    :comment "#949494"
-   :selection "#fa0c0c"
+   :selection "#eaec9c"
    :warning "#fa0c0c"
    :warning2 "#fa7b0c"})
 
