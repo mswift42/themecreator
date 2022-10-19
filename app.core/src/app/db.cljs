@@ -254,7 +254,7 @@
    :type "#76690b"
    :constant "#a74f31"
    :comment "#a9a9a9"
-   :selection "#ff1276"
+   :selection "#dbece3"
    :warning "#ff1276"
    :warning2 "#ff4d12"})
 
