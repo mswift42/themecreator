@@ -3,7 +3,7 @@
 
 (defn span-component
   "span-component represents a span component
-   with a text content 'text' of background-color 
+   with a text content 'text' of background-color
    'color'"
   ([text color ]
    [:span (if (= color :keyword)
@@ -12,14 +12,17 @@
             {:style {:color (color @app-db)}})
     (str text)])
   ([text color textdecoration]
-   [:span {:style {:color (color @app-db)
-                   :text-decoration "underline"
-                   :text-decoration-style "wavy"
-                   :-webkit-text-decoration "underline"
-                   :-webkit-text-decoration-style "wavy"
-                   :text-decoration-color (textdecoration @app-db)
-                   :-webkit-text-decoration-color (textdecoration @app-db)}}
-    (str text)]))
+   [:span (case textdecoration
+            :selection {:style {:color (color @app-db)
+                                :background (textdecoration @app-db)}}
+            {:style {:color (color @app-db)
+                     :text-decoration "underline"
+                     :text-decoration-style "wavy"
+                     :-webkit-text-decoration "underline"
+                     :-webkit-text-decoration-style "wavy"
+                     :text-decoration-color (textdecoration @app-db)
+                     :-webkit-text-decoration-color (textdecoration @app-db)}})
+            (str text)]))
 
 (defn preview-javascript
   []
@@ -56,6 +59,7 @@
    [span-component "Array" :type]
    [span-component "();" :mainfg]
    [span-component " // start with an empty Array." :comment]
+   [span-component " A comment that is partially selected" :comment :selection]
    [:br]
    [span-component "    for " :keyword]
    [span-component "(" :mainfg]
@@ -193,7 +197,8 @@
    [span-component "." :mainfg]
    [span-component "log" :builtin]
    [span-component "(" :mainfg]
-   [span-component "'An array of the prime numbers from 0 to 100: '" :string]
+   [span-component "'An array of the prime numbers " :string]
+   [span-component "from 0 to 100: '" :string :selection]
    [span-component "+ " :mainfg]
    [span-component "primes" :variable]
    [span-component ");" :mainfg]
@@ -269,7 +274,7 @@
    [:br]
    [span-component "  // changeColor sets one themeface of" :comment]
    [:br]
-   [span-component "  // 'theme' to a given color." :comment]
+   [span-component "  // 'theme' to a given color." :comment :selection]
    [:br]
    [span-component "  changeColor" :functionname]
    [span-component "(face: Face): " :mainfg]
@@ -335,6 +340,7 @@
    [:br]
    [:br]
    [span-component "# Create a new object" :comment]
+   [span-component " which is partly selected" :comment :selection]
    [:br]
    [span-component "g = " :mainfg]
    [span-component "Greeter" :type]
@@ -406,7 +412,9 @@
    [span-component "fac" :functionname]
    [span-component "(num):" :mainfg]
    [:br]
-   [span-component "    \"return factorial of number num\"" :string]
+   [span-component "    \"return " :string]
+   [span-component "factorial " :string :selection]
+   [span-component "of number num\"" :string]
    [:br]
    [span-component "    if " :keyword]
    [span-component "num == 0:" :mainfg]
@@ -431,7 +439,8 @@
    [span-component "= " :mainfg]
    [span-component "str" :builtin]
    [span-component "(num) " :mainfg]
-   [span-component "# convert number to string of its digits." :comment]
+   [span-component "# convert number to string of " :comment]
+   [span-component "its digits." :comment :selection]
    [:br]
    [span-component "    total " :variable]
    [span-component "= 0" :mainfg]
@@ -519,6 +528,11 @@
    [span-component "}" :mainfg]
    [:br]
    [:br]
+   [span-component "/* A comment " :comment]
+   [span-component "with selection inside" :comment :selection]
+   [span-component " */" :comment]
+   [:br]
+   [:br]
    [span-component "int " :type]
    [span-component "main " :functionname]
    [span-component "(" :mainfg]
@@ -546,7 +560,8 @@
    [span-component "*" :mainfg]
    [span-component "str " :variable]
    [span-component "= " :mainfg]
-   [span-component "\"This is a string !\"" :string]
+   [span-component "\"This is a " :string]
+   [span-component "string !\"" :string :selection]
    [span-component ";" :mainfg]
    [:br]
    [span-component "    my_struct_t " :type]
