@@ -1,0 +1,172 @@
+--- {{themename}}.lua
+
+-- Copyright (C) {{year}} , {{themeauthor}}
+
+-- Author: {{themeauthor}}
+-- Created with ThemeCreator, https://github.com/mswift42/themecreator.
+-- Textadept-12 theme template was provided by Pedro A. Aranda Gutiérrez,
+-- https://github.com/paaguti.
+-- Derived from the stock themes provided by Mitchell
+
+-- This program is free software: you can redistribute it and/or modify
+-- it under the terms of the GNU General Public License as published by
+-- the Free Software Foundation, either version 3 of the License, or
+-- (at your option) any later version.
+
+-- This program is distributed in the hope that it will be useful,
+-- but WITHOUT ANY WARRANTY; without even the implied warranty of
+-- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+-- GNU General Public License for more details.
+
+-- You should have received a copy of the GNU General Public License
+-- along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+-- This file is not part of TextAdept
+
+local view, colors, styles = view, view.colors, view.styles
+
+colors.fg1       = {{mainfg}}
+colors.fg2       = {{fg2}}
+colors.fg3       = {{fg3}}
+colors.fg4       = {{fg4}}
+colors.bg1       = {{mainbg}}
+colors.bg2       = {{bg2}}
+colors.bg3       = {{bg3}}
+colors.bg4       = {{bg4}}
+colors.builtin   = {{builtin}}
+colors.keyword   = {{keyword}}
+colors.const     = {{constant}}
+colors.comment   = {{comment}}
+colors.func      = {{functionname}}
+colors.str       = {{string}}
+colors.type      = {{type}}
+colors.var       = {{variable}}
+colors.selection = {{selection}}
+colors.warning   = {{warning}}
+colors.warning2  = {{warning2}}
+
+-- Default font.
+if not font then
+  font = WIN32 and 'Consolas' or OSX and 'Monaco' or
+    'Bitstream Vera Sans Mono'
+end
+if not size then size = OSX and 12 or 11 end
+
+-- Find/replace dialog
+ui.find.entry_font = font .. ' ' .. (size - 1)
+
+-- Predefined styles.
+styles[view.STYLE_DEFAULT] = { font = font, size = size, fore = colors.fg1, back = colors.bg1}
+styles[view.STYLE_LINENUMBER] = {fore = colors.fg1, back = colors.bg2}
+styles[view.STYLE_BRACELIGHT] = {fore = colors.func, bold = true}
+styles[view.STYLE_BRACEBAD] = {fore=colors.warning, bold=true}
+-- styles[view.STYLE_CONTROLCHAR] = {}
+styles[view.STYLE_INDENTGUIDE] = {fore = colors.comment}
+styles[view.STYLE_CALLTIP] = {fore = colors.fg1, back = colors.bg2}
+styles[view.STYLE_FOLDDISPLAYTEXT] = {fore = colors.bg2}
+
+-- Tgag styles.
+-- styles[lexer.ANNOTATION] = {fore = colors.magenta}
+styles[lexer.ATTRIBUTE] = {fore = colors.fg3}
+styles[lexer.BOLD] = {bold = true}
+styles[lexer.CLASS] =  {fore = colors.func, bold = true}
+--styles[lexer.CODE] =  {}
+styles[lexer.COMMENT] =  {fore = colors.comment}
+styles[lexer.CONSTANT] =  {fore = colors.const}
+styles[lexer.CONSTANT_BUILTIN] =  {fore = colors.const, bold=true}
+styles[lexer.EMBEDDED] =  {fore = colors.builtin, back = colors.bg2}
+styles[lexer.ERROR] =  {fore = colors.warning, italics = true}
+styles[lexer.FUNCTION] = {fore = colors.func}
+styles[lexer.FUNCTION_BUILTIN] = {fore = colors.func, bold=true}
+-- styles[lexer.FUNCTION_METHOD] = {}
+styles[lexer.HEADING] =  {fore=colors.var}
+styles[lexer.IDENTIFIER] =  {fore=colors.var}
+styles[lexer.ITALIC] =  {italic=true}
+styles[lexer.KEYWORD] =  {fore = colors.keyword}
+styles[lexer.LABEL] =  {fore = colors.warning}
+-- styles[lexer.LINK] =  {}
+-- styles[lexer.LIST] =  {}
+styles[lexer.NUMBER] =  {fore = colors.const}
+styles[lexer.OPERATOR] =  {fore = colors.fg2}
+styles[lexer.PREPROCESSOR] =  {fore = colors.str}
+styles[lexer.REFERENCE] =  {fore = colors.var}
+styles[lexer.REGEX] =  {fore = colors.str}
+styles[lexer.STRING] =  {fore = colors.str}
+styles[lexer.TAG] =  {fore = colors.fg3}
+styles[lexer.TYPE] =  {fore = colors.func}
+-- styles[lexer.UNDERLINE] =  {fore = colors.warning}
+styles[lexer.VARIABLE] =  {fore = colors.warning}
+styles[lexer.VARIABLE_BUILTIN] =  {fore = colors.warning, bold=true}
+-- styles[lexer.WHITESPACE] =  {}
+
+-- CSS.
+-- styles.property = styles[lexer.ATTRIBUTE]
+-- styles.pseudoclass = {}
+-- styles.pseudoelement = {}
+-- Diff.
+styles.addition = {fore = colors.str}
+styles.deletion = {fore = colors.warning}
+styles.change = {fore = colors.warning2}
+-- HTML.
+styles.tag_unknown = styles.tag .. {italics = true}
+styles.attribute_unknown = styles.attribute .. {italics = true}
+-- Latex, TeX, and Texinfo.
+styles.command = styles[lexer.KEYWORD]
+styles.command_section = styles[lexer.HEADING]
+styles.environment = styles[lexer.TYPE]
+styles.environment_math = styles[lexer.NUMBER]
+-- Makefile.
+-- styles.target = {}
+-- Markdown.
+-- styles.hr = {}
+-- XML.
+-- styles.cdata = {}
+-- YAML.
+styles.error_indent = {back = colors.warning}
+
+-- Element colors.
+-- view.element_color[view.ELEMENT_SELECTION_TEXT] = colors.black
+view.element_color[view.ELEMENT_SELECTION_BACK] = colors.selection
+-- view.element_color[view.ELEMENT_SELECTION_ADDITIONAL_TEXT] = colors.black
+-- view.element_color[view.ELEMENT_SELECTION_ADDITIONAL_BACK] = colors.light_grey
+-- view.element_color[view.ELEMENT_SELECTION_SECONDARY_TEXT] = colors.black
+-- view.element_color[view.ELEMENT_SELECTION_SECONDARY_BACK] = colors.light_grey
+-- view.element_color[view.ELEMENT_SELECTION_INACTIVE_TEXT] = colors.black
+-- view.element_color[view.ELEMENT_SELECTION_INACTIVE_BACK] = colors.light_grey
+view.element_color[view.ELEMENT_CARET] = colors.fg2
+-- view.element_color[view.ELEMENT_CARET_ADDITIONAL] =
+-- view.element_color[view.ELEMENT_CARET_LINE_BACK] = colors.light_grey | 0x60000000
+view.caret_line_layer = view.LAYER_UNDER_TEXT
+
+-- Fold Margin.
+view:set_fold_margin_color(true, colors.bg2)
+view:set_fold_margin_hi_color(true, colors.bg2)
+
+-- Markers.
+--view.marker_fore[textadept.bookmarks.MARK_BOOKMARK] = colors.bg1
+view.marker_back[textadept.bookmarks.MARK_BOOKMARK] = colors.str
+--view.marker_fore[textadept.run.MARK_WARNING] = colors.bg1
+view.marker_back[textadept.run.MARK_WARNING] = colors.keyword
+--view.marker_fore[textadept.run.MARK_ERROR] = colors.bg1
+view.marker_back[textadept.run.MARK_ERROR] = colors.warning
+for i = view.MARKNUM_FOLDEREND, view.MARKNUM_FOLDEROPEN do -- fold margin
+  view.marker_fore[i] = colors.bg1
+  view.marker_back[i] = colors.comment
+  view.marker_back_selected[i] = colors.bg3
+end
+
+-- Indicators.
+view.indic_fore[ui.find.INDIC_FIND] = colors.const
+view.indic_alpha[ui.find.INDIC_FIND] = 255
+view.indic_fore[textadept.editing.INDIC_HIGHLIGHT] = colors.fg4
+view.indic_alpha[textadept.editing.INDIC_HIGHLIGHT] = 64
+view.indic_fore[textadept.snippets.INDIC_PLACEHOLDER] = colors.fg1
+
+-- Call tips.
+view.call_tip_fore_hlt = colors.fg3
+
+-- Long Lines.
+view.edge_color = colors.bg3
+
+-- Find & replace pane entries.
+ui.find.entry_font = font .. ' ' .. (size - 1)
