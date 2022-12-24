@@ -45,6 +45,14 @@ colors.selection = {{selection}}
 colors.warning   = {{warning}}
 colors.warning2  = {{warning2}}
 
+-- Normal colors.
+-- Used by some modules, like file-diff or lsp
+colors.red = 0x000099
+colors.orange = 0x0066CC
+colors.yellow = 0x009999
+colors.green = 0x009900
+colors.blue = 0xCC6600
+
 -- Default font.
 if not font then
   font = WIN32 and 'Consolas' or OSX and 'Monaco' or
