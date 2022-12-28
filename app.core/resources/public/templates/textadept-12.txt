@@ -62,12 +62,11 @@ if not size then size = OSX and 12 or 11 end
 
 -- Find/replace dialog
 ui.find.entry_font = font .. ' ' .. (size - 1)
-
 -- Predefined styles.
 styles[view.STYLE_DEFAULT] = { font = font, size = size, fore = colors.fg1, back = colors.bg1}
 styles[view.STYLE_LINENUMBER] = {fore = colors.fg1, back = colors.bg2}
-styles[view.STYLE_BRACELIGHT] = {fore = colors.func, bold = true}
-styles[view.STYLE_BRACEBAD] = {fore=colors.warning, bold=true}
+styles[view.STYLE_BRACELIGHT] = {fore = colors.func,back=colors.bg2, bold = true}
+styles[view.STYLE_BRACEBAD] = {fore=colors.warning,back=colors.bg3, bold=true}
 -- styles[view.STYLE_CONTROLCHAR] = {}
 styles[view.STYLE_INDENTGUIDE] = {fore = colors.comment}
 styles[view.STYLE_CALLTIP] = {fore = colors.fg1, back = colors.bg2}
@@ -112,9 +111,9 @@ styles[lexer.VARIABLE_BUILTIN] =  {fore = colors.warning, bold=true}
 -- styles.pseudoclass = {}
 -- styles.pseudoelement = {}
 -- Diff.
-styles.addition = {fore = colors.str}
-styles.deletion = {fore = colors.warning}
-styles.change = {fore = colors.warning2}
+styles.addition = {fore = colors.green}
+styles.deletion = {fore = colors.red}
+styles.change = {fore = colors.blue}
 -- HTML.
 styles.tag_unknown = styles.tag .. {italics = true}
 styles.attribute_unknown = styles.attribute .. {italics = true}
@@ -154,7 +153,7 @@ view:set_fold_margin_hi_color(true, colors.bg2)
 --view.marker_fore[textadept.bookmarks.MARK_BOOKMARK] = colors.bg1
 view.marker_back[textadept.bookmarks.MARK_BOOKMARK] = colors.str
 --view.marker_fore[textadept.run.MARK_WARNING] = colors.bg1
-view.marker_back[textadept.run.MARK_WARNING] = colors.keyword
+view.marker_back[textadept.run.MARK_WARNING] = colors.warning2
 --view.marker_fore[textadept.run.MARK_ERROR] = colors.bg1
 view.marker_back[textadept.run.MARK_ERROR] = colors.warning
 for i = view.MARKNUM_FOLDEREND, view.MARKNUM_FOLDEROPEN do -- fold margin
