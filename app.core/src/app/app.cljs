@@ -25,6 +25,7 @@
 (def atomtemplate (atom ""))
 (def emacstemplate (atom ""))
 (def tatemplate (atom ""))
+(def ta12template (atom ""))
 (def vimtemplate (atom ""))
 (def gnometerminaltemplate (atom ""))
 (def vscodetemplate (atom ""))
@@ -104,12 +105,12 @@
     "IntelliJ"]])
 
 (defn template-download-textadept
-  []
+  [id title template]
   [:li
-   [:a {:href "#" :id "textadeptlink" :on-click
-        #(create-blob (generate-template-textadept @tatemplate) "textadeptlink"
+   [:a {:href "#" :id id :on-click
+        #(create-blob (generate-template-textadept template) id
                       (str (:themename @app-db) ".lua"))}
-    "Textadept"]])
+    title]])
 
 
 (defn template-select-component
@@ -127,7 +128,8 @@
      (str (:themename @app-db) ".tmTheme") @tmthemetemplate]
     [template-download "emacslink" "Emacs"
      (str (:themename @app-db) "-theme.el") @emacstemplate ]
-    [template-download-textadept]
+    [template-download-textadept "talink"   "Textadept"    "tatemplate"]
+    [template-download-textadept "ta12link" "Textadept 12" "ta12template"]
     [template-download "vimlink" "Vim"
      (str (:themename @app-db) ".vim") @vimtemplate]
     [template-download "gnometerminallink" "Gnome Terminal"
@@ -197,6 +199,7 @@
   (GET "templates/tmtheme.txt" tmthemetemplate)
   (GET "templates/emacs.txt" emacstemplate)
   (GET "templates/textadept.txt" tatemplate)
+  (GET "templates/textadept-12.txt" ta12template)
   (GET "templates/vim.txt" vimtemplate)
   (GET "templates/gnome-terminal.txt" gnometerminaltemplate)
   (GET "templates/vscode/package.json" vscodepackagejsontemplate)
