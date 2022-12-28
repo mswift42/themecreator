@@ -128,8 +128,8 @@
      (str (:themename @app-db) ".tmTheme") @tmthemetemplate]
     [template-download "emacslink" "Emacs"
      (str (:themename @app-db) "-theme.el") @emacstemplate ]
-    [template-download-textadept "talink"   "Textadept"    "tatemplate"]
-    [template-download-textadept "ta12link" "Textadept 12" "ta12template"]
+    [template-download-textadept "talink"   "Textadept"    @tatemplate]
+    [template-download-textadept "ta12link" "Textadept 12" @ta12template]
     [template-download "vimlink" "Vim"
      (str (:themename @app-db) ".vim") @vimtemplate]
     [template-download "gnometerminallink" "Gnome Terminal"
