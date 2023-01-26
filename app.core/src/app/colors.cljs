@@ -41,7 +41,7 @@
   [rgbcolor]
   (let [[r g b]
         (mapv #(* % 100)
-              (mapv 
+              (mapv
                #(if (> % 0.04045)
                   (js/Math.pow (/ (+ % 0.055) 1.055) 2.4)
                   (/ % 12.92)) rgbcolor))]
@@ -58,7 +58,7 @@
                          (+ (* % 7.787) (/ 16 116)))
                       (mapv / xyzcolor xyzreferencewhited65))]
     [(- (* 116 y) 16)
-     (* 500 (- x y)) 
+     (* 500 (- x y))
      (* 200 (- y z))]))
 
 (defn radToDegrees
@@ -124,7 +124,7 @@
 
 (defn darken
   "darken darkens a rgb color by a given factor.
-   if no factor is provided, the color will be darkened 
+   if no factor is provided, the color will be darkened
    with the factor of 0.2."
   ([colorstring] (darken colorstring 0.2))
   ([colorstring factor]
@@ -210,7 +210,7 @@
 (defn color-list
   "color-list takes a lightness and saturation value from the Cie-lch Color Space
    and returns a vector of size length of db/randomcolors. Hue values for each color
-   are of equidistant value. Every lch color is converted to rgb, then clamped if 
+   are of equidistant value. Every lch color is converted to rgb, then clamped if
    necessary and finally converted to Hex format."
   [lightness saturation]
   (let [hr (hue-range (count db/randomcolors) (random-hue))]
@@ -226,7 +226,7 @@
     (color-list 44.921 25.738)))
 
 (defn warm-palette
-  "warm-palette returns a vector of 7 random warm colors." 
+  "warm-palette returns a vector of 7 random warm colors."
   []
   (if (dark-bg? (:mainbg @db/app-db))
     (color-list  60.39 33.84)
@@ -269,7 +269,7 @@
 
 
 (defn derive-colors-from-theme
-  "return a theme map with additional lighter/darker 
+  "return a theme map with additional lighter/darker
    variants of the background and foreground colors."
   [theme]
   (let [dbg (dark-bg? (:mainbg theme))]
@@ -280,6 +280,7 @@
              :fg3 (darken (:mainfg theme) 0.16)
              :fg4 (darken (:mainfg theme) 0.24)
              :fg5 (lighten (:mainfg theme) 0.12)
+             :fg6 (lighten (:mainfg theme) 0.24)
              :bg2 (lighten (:mainbg theme) 0.08)
              :bg3 (lighten (:mainbg theme) 0.16)
              :bg4 (lighten (:mainbg theme) 0.24)
@@ -290,11 +291,8 @@
              :fg3 (lighten (:mainfg theme) 0.16)
              :fg4 (lighten (:mainfg theme) 0.24)
              :fg5 (darken  (:mainfg theme) 0.08)
+             :fg6 (darken  (:mainfg theme) 0.24)
              :bg2 (darken (:mainbg theme) 0.08)
              :bg3 (darken (:mainbg theme) 0.16)
              :bg4 (darken (:mainbg theme) 0.24)
              :year (current-year)))))
-
-
-
-
