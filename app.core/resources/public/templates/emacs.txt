@@ -4,9 +4,8 @@
 
 ;; Author: {{themeauthor}}
 ;; Version: 0.1
-;; Package-Requires: ((emacs "24"))
+;; Package-Requires: ((emacs "24.1"))
 ;; Created with ThemeCreator, https://github.com/mswift42/themecreator.
-
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -24,6 +23,7 @@
 ;; This file is not part of Emacs.
 
 ;;; Commentary:
+;;; {{themename}} theme created by {{themeauthor}} in {{year}}
 
 ;;; Code:
 
@@ -243,8 +243,7 @@
    `(jde-java-font-lock-modifier-face ((t (:foreground ,fg2))))
    `(jde-jave-font-lock-protected-face ((t (:foreground ,keyword))))
    `(jde-java-font-lock-number-face ((t (:foreground ,var))))
-   `(yas-field-highlight-face ((t (:background ,selection))))
-   )
+   `(yas-field-highlight-face ((t (:background ,selection)))))
    ;; Legacy
    (if (< emacs-major-version 22)
        (custom-theme-set-faces
@@ -291,9 +290,7 @@
   (when (boundp 'font-lock-regexp-face)
     (custom-theme-set-faces
     '{{themename}}
-    `(font-lock-regexp-face ((,class (:inherit font-lock-string-face :underline t))))
-    ))
-)
+    `(font-lock-regexp-face ((,class (:inherit font-lock-string-face :underline t)))))))
 
 ;;;###autoload
 (when load-file-name
