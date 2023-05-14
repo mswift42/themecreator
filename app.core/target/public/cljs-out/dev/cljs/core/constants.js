@@ -266,6 +266,7 @@ cljs.core.cst$kw$div$col_DASH_xs_DASH_3 = new cljs.core.Keyword(null,"div.col-xs
 cljs.core.cst$sym$id = new cljs.core.Symbol(null,"id","id",252129435,null);
 cljs.core.cst$kw$on_DASH_change = new cljs.core.Keyword(null,"on-change","on-change",-732046149);
 cljs.core.cst$sym$catch = new cljs.core.Symbol(null,"catch","catch",-1616370245,null);
+cljs.core.cst$kw$selection = new cljs.core.Keyword(null,"selection","selection",975998651);
 cljs.core.cst$kw$alt_DASH_impl = new cljs.core.Keyword(null,"alt-impl","alt-impl",670969595);
 cljs.core.cst$sym$ext_DASH_map_DASH_iter = new cljs.core.Symbol(null,"ext-map-iter","ext-map-iter",-1215982757,null);
 cljs.core.cst$sym$tail = new cljs.core.Symbol(null,"tail","tail",494507963,null);
