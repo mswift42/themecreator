@@ -13,6 +13,7 @@
    :type "#d4d4d4"
    :constant "#d4d4d4"
    :comment "#808080"
+   :selection "#0000ff"
    :warning "#ff0000"
    :warning2 "#ff8800"})
 
@@ -29,6 +30,7 @@
    :type "#000000"
    :constant "#000000"
    :comment "#606060"
+   :selection "#ff0000"
    :warning "#ff0000"
    :warning2 "#ff8800"})
 
@@ -44,6 +46,7 @@
    :type  "#8c4a79"
    :constant  "#697024"
    :comment  "#a9a9a9"
+   :selection  "#9cfcec"
    :warning  "#ff1276"
    :warning2  "#ff4d12"})
 
@@ -59,6 +62,7 @@
    :type "#8b8fc6"
    :constant "#bd845f"
    :comment "#5d5a58"
+   :selection "#e81050"
    :warning "#e81050"
    :warning2 "#e86310"})
 
@@ -74,6 +78,7 @@
    :type "#634575"
    :constant "#64502f"
    :comment "#949494"
+   :selection "#fa0c0c"
    :warning "#fa0c0c"
    :warning2 "#fa7b0c"})
 
@@ -89,6 +94,7 @@
    :type "#634575"
    :constant "#64502f"
    :comment "#949494"
+   :selection "#9cfcec"
    :warning "#fa0c0c"
    :warning2 "#fa7b0c"})
 
@@ -104,6 +110,7 @@
    :type "#8aa6c1"
    :constant "#8aa6c1"
    :comment "#808080"
+   :selection "#ff6523"
    :warning "#ff6523"
    :warning2 "#ff2370"})
 
@@ -119,6 +126,7 @@
    :type "#cf88af"
    :constant "#d7897c"
    :comment "#5d5d5d"
+   :selection "#e81050"
    :warning "#e81050"
    :warning2 "#e86310"})
 
@@ -134,6 +142,7 @@
    :type "#c1d2b1"
    :constant "#a3d6cc"
    :comment "#5d5d5d"
+   :selection "#3c8c8c"
    :warning "#e81050"
    :warning2 "#e86310"})
 
@@ -149,6 +158,7 @@
    :type "#00847a"
    :constant "#0081a6"
    :comment "#a9a9a9"
+   :selection "#ff1276"
    :warning "#ff1276"
    :warning2 "#ff4d12"})
 
@@ -164,6 +174,7 @@
    :type "#718bb6"
    :constant "#a27ea4"
    :comment "#5d5d5d"
+   :selection "#e81050"
    :warning "#e81050"
    :warning2 "#e86310"})
 
@@ -179,6 +190,7 @@
    :type "#727170"
    :constant "#f03f3f"
    :comment "#808080"
+   :selection "#ff6523"
    :warning "#ff6523"
    :warning2 "#e80f29"})
 
@@ -194,6 +206,7 @@
    :type "#ff909d"
    :constant "#eca661"
    :comment "#5d5d5d"
+   :selection "#e81050"
    :warning "#e81050"
    :warning2 "#e86310"})
 
@@ -209,6 +222,7 @@
    :type "#337d92"
    :constant "#337d92"
    :comment "#909090"
+   :selection "#ff0000"
    :warning "#ff0000"
    :warning2 "#ff8800"})
 
@@ -224,6 +238,7 @@
    :type "#8d5351"
    :constant "#3e8c9d"
    :comment "#626262"
+   :selection "#e81050"
    :warning "#e81050"
    :warning2 "#e86310"})
 
@@ -239,6 +254,7 @@
    :type "#76690b"
    :constant "#a74f31"
    :comment "#a9a9a9"
+   :selection "#dbece3"
    :warning "#ff1276"
    :warning2 "#ff4d12"})
 
@@ -254,6 +270,7 @@
    :type "#7a9f81"
    :constant "#5980a3"
    :comment "#727272"
+   :selection "#ff0000"
    :warning "#ff0000"
    :warning2 "#ff8800"})
 
@@ -269,6 +286,7 @@
    :type "#454b7a"
    :constant "#844c41"
    :comment "#906e86"
+   :selection "#ff1276"
    :warning "#ff1276"
    :warning2 "#ff4d12"})
 
@@ -284,6 +302,7 @@
    :type "#56724b"
    :constant "#28766e"
    :comment "#949494"
+   :selection "#eaec9c"
    :warning "#fa0c0c"
    :warning2 "#fa7b0c"})
 
