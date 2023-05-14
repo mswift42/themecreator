@@ -9,6 +9,7 @@ cljs.core.cst$kw$_DASH_webkit_DASH_text_DASH_decoration = new cljs.core.Keyword(
 cljs.core.cst$sym$uuid = new cljs.core.Symbol(null,"uuid","uuid",-504564192,null);
 cljs.core.cst$kw$path = new cljs.core.Keyword(null,"path","path",-188191168);
 cljs.core.cst$sym$case_STAR_ = new cljs.core.Symbol(null,"case*","case*",-1938255072,null);
+cljs.core.cst$kw$fg6 = new cljs.core.Keyword(null,"fg6","fg6",-584033408);
 cljs.core.cst$kw$bg3 = new cljs.core.Keyword(null,"bg3","bg3",1675855905);
 cljs.core.cst$sym$end = new cljs.core.Symbol(null,"end","end",1372345569,null);
 cljs.core.cst$sym$defrecord_STAR_ = new cljs.core.Symbol(null,"defrecord*","defrecord*",-1936366207,null);
