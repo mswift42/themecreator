@@ -25,6 +25,7 @@
 (def atomtemplate (atom ""))
 (def emacstemplate (atom ""))
 (def tatemplate (atom ""))
+(def ta12template (atom ""))
 (def vimtemplate (atom ""))
 (def gnometerminaltemplate (atom ""))
 (def vscodetemplate (atom ""))
@@ -111,12 +112,12 @@
     "IntelliJ"]])
 
 (defn template-download-textadept
-  []
+  [id title template]
   [:li
-   [:a {:href "#" :id "textadeptlink" :on-click
-        #(create-blob (generate-template-textadept @tatemplate) "textadeptlink"
+   [:a {:href "#" :id id :on-click
+        #(create-blob (generate-template-textadept template) id
                       (str (:themename @app-db) ".lua"))}
-    "Textadept"]])
+    title]])
 
 
 (defn template-select-component
@@ -134,7 +135,8 @@
      (str (:themename @app-db) ".tmTheme") @tmthemetemplate]
     [template-download "emacslink" "Emacs"
      (str (:themename @app-db) "-theme.el") @emacstemplate ]
-    [template-download-textadept]
+    [template-download-textadept "talink"   "Textadept"    @tatemplate]
+    [template-download-textadept "ta12link" "Textadept 12" @ta12template]
     [template-download "vimlink" "Vim"
      (str (:themename @app-db) ".vim") @vimtemplate]
     [template-download "gnometerminallink" "Gnome Terminal"
@@ -165,6 +167,7 @@
     [comps/color-component :type]
     [comps/color-component :constant]
     [comps/color-component :comment]
+    [comps/color-component :selection]
     [comps/color-component :warning]
     [comps/color-component :warning2]
     [:br]
@@ -199,16 +202,17 @@
 
 (defn theme-component []
   [navbar-component]
-  (GET "app.core/resources/public/templates/intelli.txt" intellitemplate)
-  (GET "app.core/resources/public/templates/tmtheme.txt" tmthemetemplate)
-  (GET "app.core/resources/public/templates/emacs.txt" emacstemplate)
-  (GET "app.core/resources/public/templates/textadept.txt" tatemplate)
-  (GET "app.core/resources/public/templates/vim.txt" vimtemplate)
-  (GET "app.core/resources/public/templates/gnome-terminal.txt" gnometerminaltemplate)
-  (GET "app.core/resources/public/templates/vscode/package.json" vscodepackagejsontemplate)
-  (GET "app.core/resources/public/templates/vscode/vsc-extension-quickstart.md" vscodequickstarttemplate)
-  (GET "app.core/resources/public/templates/vscode/README.md" vscodereadmetemplate)
-  (GET "app.core/resources/public/templates/vscode/themes/vscode-color-theme.json" vscodetemplate)
+  (GET "templates/intelli.txt" intellitemplate)
+  (GET "templates/tmtheme.txt" tmthemetemplate)
+  (GET "templates/emacs.txt" emacstemplate)
+  (GET "templates/textadept.txt" tatemplate)
+  (GET "templates/textadept-12.txt" ta12template)
+  (GET "templates/vim.txt" vimtemplate)
+  (GET "templates/gnome-terminal.txt" gnometerminaltemplate)
+  (GET "templates/vscode/package.json" vscodepackagejsontemplate)
+  (GET "templates/vscode/vsc-extension-quickstart.md" vscodequickstarttemplate)
+  (GET "templates/vscode/README.md" vscodereadmetemplate)
+  (GET "templates/vscode/themes/vscode-color-theme.json" vscodetemplate)
   (db/set-db-from-storage)
   [:div.row
    [color-components]
