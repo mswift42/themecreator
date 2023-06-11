@@ -89,12 +89,12 @@ styles.whitespace = {}
 --view.additional_caret_fore =
 
 -- Caret and Selection Styles.
--- view:set_sel_fore(true, colors.fg2)
-view:set_sel_back(true, colors.selection)
+view:set_sel_fore(true, colors.fg3)
+view:set_sel_back(true, colors.bg3)
 --view.sel_alpha =
 view.caret_fore = colors.fg2
-view.caret_line_back = colors.bg4
-view.caret_line_back_alpha = 50
+view.caret_line_back = colors.bg2
+--view.caret_line_back_alpha =
 
 -- Fold Margin.
 view:set_fold_margin_color(true, colors.bg2)
