@@ -83,7 +83,7 @@ styles[lexer.COMMENT] =  {fore = colors.comment}
 styles[lexer.CONSTANT] =  {fore = colors.const}
 styles[lexer.CONSTANT_BUILTIN] =  {fore = colors.const, bold=true}
 styles[lexer.EMBEDDED] =  {fore = colors.builtin, back = colors.bg2}
-styles[lexer.ERROR] =  {fore = colors.warning, italics = true}
+styles[lexer.ERROR] =  {fore = colors.warning}
 styles[lexer.FUNCTION] = {fore = colors.func}
 styles[lexer.FUNCTION_BUILTIN] = {fore = colors.func, bold=true}
 -- styles[lexer.FUNCTION_METHOD] = {}
