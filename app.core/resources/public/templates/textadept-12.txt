@@ -143,7 +143,7 @@ view.element_color[view.ELEMENT_SELECTION_BACK] = colors.selection
 -- view.element_color[view.ELEMENT_SELECTION_INACTIVE_BACK] = colors.light_grey
 view.element_color[view.ELEMENT_CARET] = colors.fg2
 -- view.element_color[view.ELEMENT_CARET_ADDITIONAL] =
-view.element_color[view.ELEMENT_CARET_LINE_BACK] = colors.fg4 | 0x60000000
+view.element_color[view.ELEMENT_CARET_LINE_BACK] = colors.bg3 | 0x60000000
 view.caret_line_layer = view.LAYER_UNDER_TEXT
 
 -- Fold Margin.
