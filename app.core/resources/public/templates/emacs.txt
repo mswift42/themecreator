@@ -258,7 +258,7 @@
      (custom-theme-set-faces
       '{{themename}}
       `(line-number ((t (:inherit fringe))))
-      `(line-number-current-line ((t (:inherit fringe :foreground ,fg6 :weight bold))))))
+      `(line-number-current-line ((t (:foreground ,fg6 :background ,bg3 :weight bold))))))
 
   ;; emacs >= 27.1
   (when (>= emacs-major-version 27)
