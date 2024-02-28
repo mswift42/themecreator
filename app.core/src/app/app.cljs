@@ -94,8 +94,6 @@
         #(create-blob (generate-template template) id filename)}
     title]])
 
-
-
 (defn template-download-intelli
   []
   [:li
@@ -111,7 +109,6 @@
         #(create-blob (generate-template-textadept template) id
                       (str (:themename @app-db) ".lua"))}
     title]])
-
 
 (defn template-select-component
   []

@@ -46,7 +46,7 @@ colors.selection = {{selection}}
 colors.warning   = {{warning}}
 colors.warning2  = {{warning2}}
 
--- Normal colors.
+-- /Normal/ colors.
 -- Used by some modules, like file-diff or lsp
 colors.red = 0x000099
 colors.orange = 0x0066CC
@@ -67,13 +67,13 @@ ui.find.entry_font = font .. ' ' .. (size - 1)
 styles[view.STYLE_DEFAULT] = { font = font, size = size, fore = colors.fg1, back = colors.bg1}
 styles[view.STYLE_LINENUMBER] = {fore = colors.fg6, back = colors.bg2}
 styles[view.STYLE_BRACELIGHT] = {fore = colors.func,back=colors.bg2, bold = true}
-styles[view.STYLE_BRACEBAD] = {fore=colors.warning,back=colors.bg3, bold=true}
+styles[view.STYLE_BRACEBAD] = {fore=colors.warning,back=colors.bg3, bold=true, italic=true}
 -- styles[view.STYLE_CONTROLCHAR] = {}
 styles[view.STYLE_INDENTGUIDE] = {fore = colors.comment}
 styles[view.STYLE_CALLTIP] = {fore = colors.fg1, back = colors.bg2}
 styles[view.STYLE_FOLDDISPLAYTEXT] = {fore = colors.bg2}
 
--- Tgag styles.
+-- Tag styles.
 -- styles[lexer.ANNOTATION] = {fore = colors.magenta}
 styles[lexer.ATTRIBUTE] = {fore = colors.fg3}
 styles[lexer.BOLD] = {bold = true}
@@ -83,7 +83,7 @@ styles[lexer.COMMENT] =  {fore = colors.comment}
 styles[lexer.CONSTANT] =  {fore = colors.const}
 styles[lexer.CONSTANT_BUILTIN] =  {fore = colors.const, bold=true}
 styles[lexer.EMBEDDED] =  {fore = colors.builtin, back = colors.bg2}
-styles[lexer.ERROR] =  {fore = colors.warning, italics = true}
+styles[lexer.ERROR] =  {fore = colors.warning, italic=true}
 styles[lexer.FUNCTION] = {fore = colors.func}
 styles[lexer.FUNCTION_BUILTIN] = {fore = colors.func, bold=true}
 -- styles[lexer.FUNCTION_METHOD] = {}
@@ -116,8 +116,9 @@ styles.addition = {fore = colors.green}
 styles.deletion = {fore = colors.red}
 styles.change = {fore = colors.blue}
 -- HTML.
-styles.tag_unknown = styles.tag .. {italics = true}
-styles.attribute_unknown = styles.attribute .. {italics = true}
+styles.tag_unknown = styles.tag .. {italic = true}
+styles.attribute_unknown = styles.attribute .. {italic = true}
+styles.tag = styles.tag .. {bold = true}
 -- Latex, TeX, and Texinfo.
 styles.command = styles[lexer.KEYWORD]
 styles.command_section = styles[lexer.HEADING]
@@ -143,7 +144,9 @@ view.element_color[view.ELEMENT_SELECTION_BACK] = colors.selection
 -- view.element_color[view.ELEMENT_SELECTION_INACTIVE_BACK] = colors.light_grey
 view.element_color[view.ELEMENT_CARET] = colors.fg2
 -- view.element_color[view.ELEMENT_CARET_ADDITIONAL] =
--- view.element_color[view.ELEMENT_CARET_LINE_BACK] = colors.light_grey | 0x60000000
+if view ~= ui.command_entry then
+  view.element_color[view.ELEMENT_CARET_LINE_BACK] = colors.bg3 | 0x60000000
+end
 view.caret_line_layer = view.LAYER_UNDER_TEXT
 
 -- Fold Margin.
